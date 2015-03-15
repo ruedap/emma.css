@@ -1,16 +1,16 @@
-# Emma.css { Emmet-like utility classes }
+# Emma.css { [Emmet](http://docs.emmet.io/cheat-sheet/)-like utility classes }
 
 A collection of [CSS utility classes](emma.css) for rapid front-end development.
 
 ## Example
 
 ``` html
-<article class="u-cf u-ml-xl u-p-lg">
-  <img class="u-d-b u-fl-l u-w-a u-mr-md u-bdw-2 u-bds-s u-bdc-orange u-bdrs-3" src="" alt="">
-  <div class="u-d-b u-fl-l">
+<article class="u-cf">
+  <img class="u-d-b u-fl-l u-w-a u-mr-xl u-bdrs-3" src="foo.png">
+  <div class="u-fl-l u-ml-lg u-p-md">
     <h1 class="u-m-0 u-ff-t">Title</h1>
     <p class="u-wow-bw u-wfsm-a">Description</p>
-    <a class="u-d-ib u-fz-sm u-lh-xs" href="#">Read more</a>
+    <a class="u-d-ib u-fz-sm u-lh-2" href="#">Read more</a>
   </div>
 </article>
 ```
@@ -18,23 +18,20 @@ A collection of [CSS utility classes](emma.css) for rapid front-end development.
 utility class name | declaration
 --- | ---
 `.u-cf` (clearfix) | [micro clearfix hack](http://nicolasgallagher.com/micro-clearfix-hack/)
-`.u-ml-xl` (extra large) | margin-left: 4.0rem;
-`.u-p-lg` (large) | padding: 2.0rem;
 `.u-d-b` | display: block;
 `.u-fl-l` | float: left;
 `.u-w-a` | width: auto;
-`.u-mr-md` (medium) | margin-right: 1.0rem;
-`.u-bdw-2` | border-width: 2px;
-`.u-bds-s` | border-style: solid;
-`.u-bdc-orange` | border-color: orange;
+`.u-mr-xl` (extra large) | margin-right: 4.0rem;
 `.u-bdrs-3` | border-radius: 3px;
+`.u-ml-lg` (large) | margin-left: 2.0rem;
+`.u-p-md` (medium) | padding: 1.0rem;
 `.u-m-0` | margin: 0;
 `.u-ff-t` | font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
 `.u-wow-bw` | word-wrap: break-word;
 `.u-wfsm-a` | -webkit-font-smoothing: antialiased;
 `.u-d-ib` | display: inline-block;
 `.u-fz-sm` (small) | font-size: small;
-`.u-lh-xs` (extra small) | line-height: 1.2;
+`.u-lh-2` | line-height: 2;
 
 See also: [emma.css](emma.css) (all utility classes)
 
@@ -107,7 +104,7 @@ You can select available snippets by `$emma-available-snippet-list` variable:
 
 ``` scss
 $emma-available-snippet-list: (
-  tt-u, ff-a, wfsm-a, cf,
+  tt-u, ff-a, wfsm-a, cf, // Select available snippets
 );
 @import "path/to/emma.scss";
 ```
@@ -122,7 +119,7 @@ CSS output:
 
 ### Change default sizes or colors
 
-You can change default sizes or colors by variables:
+You can change default sizes or colors by [variables](emma.scss):
 
 ``` scss
 $emma-padding-md: 20px;     // default: 1.0rem
