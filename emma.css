@@ -447,15 +447,15 @@
 .u-ff-v { font-family: Verdana, Geneva, sans-serif !important; }
 .u-ff-l { font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif !important; }
 .u-op-0 { opacity: 0 !important; }
-.u-op-01 { opacity: 0.1 !important; }
-.u-op-02 { opacity: 0.2 !important; }
-.u-op-03 { opacity: 0.3 !important; }
-.u-op-04 { opacity: 0.4 !important; }
-.u-op-05 { opacity: 0.5 !important; }
-.u-op-06 { opacity: 0.6 !important; }
-.u-op-07 { opacity: 0.7 !important; }
-.u-op-08 { opacity: 0.8 !important; }
-.u-op-09 { opacity: 0.9 !important; }
+.u-op-0_1 { opacity: 0.1 !important; }
+.u-op-0_2 { opacity: 0.2 !important; }
+.u-op-0_3 { opacity: 0.3 !important; }
+.u-op-0_4 { opacity: 0.4 !important; }
+.u-op-0_5 { opacity: 0.5 !important; }
+.u-op-0_6 { opacity: 0.6 !important; }
+.u-op-0_7 { opacity: 0.7 !important; }
+.u-op-0_8 { opacity: 0.8 !important; }
+.u-op-0_9 { opacity: 0.9 !important; }
 .u-op-1 { opacity: 1 !important; }
 .u-rsz-n { resize: none !important; }
 .u-rsz-b { resize: both !important; }
