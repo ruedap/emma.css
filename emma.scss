@@ -666,9 +666,9 @@ $emma-multiple-declaration-list: (
 //  | snippet     | extended selector
 // --------------------------------------------------------------------------
     ( cf          , "%emma-cf" ),
-    ( tet         , "%emma-tet" ),
-    ( lir         , "%emma-lir" ),
-    ( abc         , "%emma-abc" ),
+    ( tetr        , "%emma-tetr" ),
+    ( lire        , "%emma-lire" ),
+    ( abce        , "%emma-abce" ),
 ) !default;
 
 // Clearfix (Contain floats)
@@ -678,7 +678,7 @@ $emma-multiple-declaration-list: (
 }
 
 // Text truncation (ellipsis)
-%emma-tet {
+%emma-tetr {
   max-width: 100%;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
@@ -687,13 +687,13 @@ $emma-multiple-declaration-list: (
 }
 
 // List reset
-%emma-lir {
+%emma-lire {
   list-style: none;
   padding-left: 0;
 }
 
 // Absolute center
-%emma-abc {
+%emma-abce {
   bottom: 0;
   display: table;
   left: 0;

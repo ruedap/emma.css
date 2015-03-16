@@ -521,6 +521,6 @@
 .u-obf-sd { object-fit: scale-down !important; }
 .u-cf:before, .u-cf:after { content: " "; display: table; }
 .u-cf:after { clear: both; }
-.u-tet { max-width: 100%; overflow: hidden !important; text-overflow: ellipsis !important; white-space: nowrap !important; word-wrap: normal !important; }
-.u-lir { list-style: none; padding-left: 0; }
-.u-abc { bottom: 0; display: table; left: 0; margin: auto; right: 0; top: 0; }
+.u-tetr { max-width: 100%; overflow: hidden !important; text-overflow: ellipsis !important; white-space: nowrap !important; word-wrap: normal !important; }
+.u-lire { list-style: none; padding-left: 0; }
+.u-abce { bottom: 0; display: table; left: 0; margin: auto; right: 0; top: 0; }
