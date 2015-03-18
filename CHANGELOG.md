@@ -6,6 +6,7 @@
     * `tet` -> `tetr`
     * `lir` -> `lire`
     * `abc` -> `abce`
+* Add snippet: `m-a` (`margin: auto`)
 
 ## 0.1.0
 * Initial public release
