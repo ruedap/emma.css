@@ -202,6 +202,7 @@ $emma-single-declaration-list: (
     ( bxsh-n      , box-shadow             , none ),
     ( m-a         , margin                 , auto ),
     ( m-0         , margin                 , 0 ),
+    ( m-0_a       , margin                 , 0 auto ),              // ^1
     ( m-xs        , margin                 , $emma-margin-xs ),     // ^1
     ( m-sm        , margin                 , $emma-margin-sm ),     // ^1
     ( m-md        , margin                 , $emma-margin-md ),     // ^1

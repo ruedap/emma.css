@@ -7,6 +7,7 @@
     * `lir` -> `lire`
     * `abc` -> `abce`
 * Add snippet: `m-a` (`margin: auto`)
+* Add snippet: `m-0_a` (`margin: 0 auto`)
 
 ## 0.1.0
 * Initial public release
