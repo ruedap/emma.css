@@ -37,7 +37,15 @@ See also: [emma.css](emma.css) (all utility classes)
 
 ## Getting Started
 
-### Basic
+### Installation
+
+Install or download Emma.css from one of these sources:
+
+* **Bower**: `bower install emma.css`
+* **Rails**: [emma-css-rails](https://github.com/ruedap/emma-css-rails)
+* **Download**: [zip](https://github.com/ruedap/emma.css/archive/master.zip)
+
+### Basic usage
 
 SCSS:
 ``` scss
