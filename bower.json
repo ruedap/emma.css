@@ -2,7 +2,7 @@
   "name": "emma.css",
   "version": "0.1.0",
   "author": "ruedap",
-  "description": "Emma.css { Emmet-like utility classes }",
+  "description": "Emma.css { emmet-like utility classes }",
   "keywords": [
     "css", "emmet", "sass"
   ],

@@ -1,4 +1,4 @@
-# Emma.css { [Emmet](http://docs.emmet.io/cheat-sheet/)-like utility classes }
+# Emma.css { [emmet](http://docs.emmet.io/cheat-sheet/)-like utility classes }
 
 A collection of [CSS utility classes](emma.css) for rapid front-end development.
 
