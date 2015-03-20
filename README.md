@@ -4,6 +4,22 @@ A collection of [CSS utility classes](emma.css) for rapid front-end development.
 
 ## Example
 
+
+[SUIT CSS](https://suitcss.github.io/) + Emma.css:
+
+``` html
+<article class="Excerpt u-cf">
+  <img class="Excerpt-thumbnail u-d-b u-fl-l u-w-a" src="foo.png">
+  <div class="u-fl-l u-ml-lg u-p-md">
+    <h1 class="Excerpt-title">Title</h1>
+    <p class="u-wow-bw u-wfsm-a">Description</p>
+    <a class="Excerpt-readMore" href="#">Read more</a>
+  </div>
+</article>
+```
+
+Emma.css only:
+
 ``` html
 <article class="u-cf">
   <img class="u-d-b u-fl-l u-w-a u-mr-xl u-bdrs-3" src="foo.png">
