@@ -1,0 +1,16 @@
+{
+  "name": "emma.css",
+  "version": "0.1.0",
+  "author": "ruedap",
+  "description": "Emma.css { Emmet-like utility classes }",
+  "keywords": [
+    "css", "emmet", "sass"
+  ],
+  "ignore": [
+    "**/.*",
+    "bower.json",
+    "node_modules",
+    "package.json",
+    "tmp"
+  ]
+}
