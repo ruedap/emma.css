@@ -1,10 +1,11 @@
 # Emma.css Changelog
 
 ## master (unreleased)
+* Add snippet: `tehi` (Text hiding)
 
 ## 0.2.0
-* Improve `opacity` snippet names (e.g. `op-01` -> `op-0_1`)
-* Improve multiple declaration snippet names
+* Rename `opacity` snippet names (e.g. `op-01` -> `op-0_1`)
+* Rename multiple declaration snippet names
     * `tet` -> `tetr`
     * `lir` -> `lire`
     * `abc` -> `abce`

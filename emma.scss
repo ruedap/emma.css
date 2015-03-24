@@ -669,6 +669,7 @@ $emma-multiple-declaration-list: (
 // --------------------------------------------------------------------------
     ( cf          , "%emma-cf" ),
     ( tetr        , "%emma-tetr" ),
+    ( tehi        , "%emma-tehi" ),
     ( lire        , "%emma-lire" ),
     ( abce        , "%emma-abce" ),
 ) !default;
@@ -686,6 +687,13 @@ $emma-multiple-declaration-list: (
   text-overflow: ellipsis !important;
   white-space: nowrap !important;
   word-wrap: normal !important;
+}
+
+// Text hiding
+%emma-tehi {
+  overflow: hidden !important;
+  text-indent: 100% !important;
+  white-space: nowrap !important;
 }
 
 // List reset
