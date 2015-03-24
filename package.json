@@ -6,6 +6,7 @@
   "license": "MIT",
   "main": "emma.css",
   "style": "emma.css",
+  "scss": "emma.scss",
   "files": [
     "CHANGELOG.md",
     "LICENSE.md",
@@ -19,7 +20,8 @@
     "scss",
     "css",
     "emmet",
-    "utility"
+    "utility",
+    "coding"
   ],
   "bugs": {
     "url": "https://github.com/ruedap/emma.scss/issues"
