@@ -1,0 +1,33 @@
+{
+  "name": "emma.css",
+  "version": "0.2.0",
+  "description": "Emma.css { emmet-like utility classes }",
+  "author": "ruedap",
+  "license": "MIT",
+  "main": "emma.css",
+  "style": "emma.css",
+  "scss": "emma.scss",
+  "files": [
+    "CHANGELOG.md",
+    "LICENSE.md",
+    "README.md",
+    "emma.css",
+    "emma.scss"
+  ],
+  "homepage": "https://github.com/ruedap/emma.css",
+  "keywords": [
+    "sass",
+    "scss",
+    "css",
+    "emmet",
+    "utility",
+    "coding"
+  ],
+  "bugs": {
+    "url": "https://github.com/ruedap/emma.scss/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ruedap/emma.css.git"
+  }
+}
