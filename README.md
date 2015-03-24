@@ -4,20 +4,6 @@ A collection of [CSS utility classes](emma.css) for rapid front-end development.
 
 ## Example
 
-
-[SUIT CSS](https://suitcss.github.io/) + Emma.css:
-
-``` html
-<article class="Excerpt u-cf">
-  <img class="Excerpt-thumbnail u-d-b u-fl-l u-w-a" src="foo.png">
-  <div class="u-fl-l u-ml-lg u-p-md">
-    <h1 class="Excerpt-title">Title</h1>
-    <p class="u-wow-bw u-wfsm-a">Description</p>
-    <a class="Excerpt-readMore" href="#">Read more</a>
-  </div>
-</article>
-```
-
 Emma.css only:
 
 ``` html
@@ -27,6 +13,19 @@ Emma.css only:
     <h1 class="u-m-0 u-ff-t">Title</h1>
     <p class="u-wow-bw u-wfsm-a">Description</p>
     <a class="u-d-ib u-fz-sm u-lh-2" href="#">Read more</a>
+  </div>
+</article>
+```
+
+[SUIT CSS](https://suitcss.github.io/) naming convention + Emma.css:
+
+``` html
+<article class="Excerpt u-cf">
+  <img class="Excerpt-thumbnail u-d-b u-fl-l u-w-a" src="foo.png">
+  <div class="u-fl-l u-ml-lg u-p-md">
+    <h1 class="Excerpt-title">Title</h1>
+    <p class="u-wow-bw u-wfsm-a">Description</p>
+    <a class="Excerpt-readMore" href="#">Read more</a>
   </div>
 </article>
 ```
@@ -58,6 +57,7 @@ See also: [emma.css](emma.css) (all utility classes)
 Install or download Emma.css from one of these sources:
 
 * **Bower**: `bower install emma.css`
+* **npm**: `npm install emma.css`
 * **Rails**: [emma-css-rails](https://github.com/ruedap/emma-css-rails)
 * **Download**: [zip](https://github.com/ruedap/emma.css/archive/master.zip)
 
@@ -191,4 +191,4 @@ Released under the [MIT license](http://ruedap.mit-license.org/2015).
 
 ## Author
 
-<a href="https://github.com/ruedap"><img src="https://dl.dropboxusercontent.com/u/281168/images/github-ruedap-avatar-1500x1500.png" alt="ruedap" title="ruedap" width="100" height="100"></a>
+[ruedap](https://github.com/ruedap)
