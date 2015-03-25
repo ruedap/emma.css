@@ -1,13 +1,19 @@
 {
   "name": "emma.css",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "ruedap",
   "description": "Emma.css { emmet-like utility classes }",
   "keywords": [
-    "css", "emmet", "sass"
+    "sass",
+    "scss",
+    "css",
+    "emmet",
+    "utility",
+    "coding"
   ],
   "ignore": [
     "**/.*",
+    "npm-debug.log",
     "bower.json",
     "node_modules",
     "package.json",

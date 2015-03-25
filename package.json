@@ -1,6 +1,6 @@
 {
   "name": "emma.css",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Emma.css { emmet-like utility classes }",
   "author": "ruedap",
   "license": "MIT",
@@ -9,7 +9,6 @@
   "scss": "emma.scss",
   "files": [
     "CHANGELOG.md",
-    "LICENSE.md",
     "README.md",
     "emma.css",
     "emma.scss"
