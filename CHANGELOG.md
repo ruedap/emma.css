@@ -1,6 +1,8 @@
 # Emma.css Changelog
 
 ## master (unreleased)
+
+## 0.3.0
 * Add snippet: `tehi` (Text hiding)
 
 ## 0.2.0
