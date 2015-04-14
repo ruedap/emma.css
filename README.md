@@ -59,7 +59,8 @@ Install or download Emma.css from one of these sources:
 * **Bower**: `bower install emma.css`
 * **npm**: `npm install emma.css`
 * **Rails**: [emma-css-rails](https://github.com/ruedap/emma-css-rails)
-* **Download**: [zip](https://github.com/ruedap/emma.css/archive/master.zip)
+* **Download**: [zip](https://github.com/ruedap/emma.css/releases)
+* **Alfred 2**: [Emma.css Workflow](https://github.com/ruedap/alfred-emma-css-workflow)
 
 ### Basic usage
 
