@@ -670,7 +670,7 @@ $emma-multiple-declaration-list: (
     ( cf          , "%emma-cf" ),
     ( tetr        , "%emma-tetr" ),
     ( tehi        , "%emma-tehi" ),
-    ( lire        , "%emma-lire" ),
+    ( reli        , "%emma-reli" ),
     ( abce        , "%emma-abce" ),
 ) !default;
 
@@ -696,8 +696,8 @@ $emma-multiple-declaration-list: (
   white-space: nowrap !important;
 }
 
-// List reset
-%emma-lire {
+// Reset list
+%emma-reli {
   list-style: none;
   padding-left: 0;
 }

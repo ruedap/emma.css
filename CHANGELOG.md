@@ -1,7 +1,7 @@
 # Emma.css Changelog
 
 ## master (unreleased)
-* Nothing
+* Rename snippet name: `lire` -> `reli`
 
 ## 0.3.0
 * Add snippet: `tehi` (Text hiding)
