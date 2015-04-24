@@ -2,6 +2,7 @@
 
 ## master (unreleased)
 * Rename snippet name: `lire` -> `reli`
+* Improve snippet: `tehi`
 
 ## 0.3.0
 * Add snippet: `tehi` (Text hiding)
