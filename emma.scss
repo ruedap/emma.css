@@ -705,9 +705,9 @@ $emma-multiple-declaration-list: (
 // Absolute center
 %emma-abce {
   bottom: 0;
-  display: table;
   left: 0;
   margin: auto;
+  position: absolute;
   right: 0;
   top: 0;
 }

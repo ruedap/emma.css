@@ -526,4 +526,4 @@
 .u-tetr { max-width: 100%; overflow: hidden !important; text-overflow: ellipsis !important; white-space: nowrap !important; word-wrap: normal !important; }
 .u-tehi { overflow: hidden !important; text-indent: 200% !important; white-space: nowrap !important; }
 .u-reli { list-style: none; padding-left: 0; }
-.u-abce { bottom: 0; display: table; left: 0; margin: auto; right: 0; top: 0; }
+.u-abce { bottom: 0; left: 0; margin: auto; position: absolute; right: 0; top: 0; }
