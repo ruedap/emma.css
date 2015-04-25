@@ -1,6 +1,9 @@
 # Emma.css Changelog
 
 ## master (unreleased)
+* Nothing
+
+## 0.4.0
 * Rename snippet name: `lire` -> `reli`
 * Improve snippet: `tehi`
 * Improve snippet: `abce`
