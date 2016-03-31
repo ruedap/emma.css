@@ -6,35 +6,47 @@ $emma-validation: true !default;
 $emma-alternative-colors: false !default;
 $emma-available-snippet-list: ("!all") !default;
 
-$emma-font-size-xs: 0.75rem  !default;
-$emma-font-size-sm: 0.875rem !default;
-$emma-font-size-md: 1.0rem   !default;
-$emma-font-size-lg: 1.25rem  !default;
+$emma-font-size-xs: 0.75rem  !default; // Bootstrap 4 compatible
+$emma-font-size-sm: 0.875rem !default; // Bootstrap 4 compatible
+$emma-font-size-md: 1.0rem   !default; // Bootstrap 4 compatible
+$emma-font-size-lg: 1.25rem  !default; // Bootstrap 4 compatible
 $emma-font-size-xl: 1.5rem   !default;
-$emma-font-size-h1: 2.5rem   !default;
-$emma-font-size-h2: 2.0rem   !default;
-$emma-font-size-h3: 1.75rem  !default;
-$emma-font-size-h4: 1.5rem   !default;
-$emma-font-size-h5: 1.25rem  !default;
-$emma-font-size-h6: 1.0rem   !default;
+$emma-font-size-h1: 2.5rem   !default; // Bootstrap 4 compatible
+$emma-font-size-h2: 2.0rem   !default; // Bootstrap 4 compatible
+$emma-font-size-h3: 1.75rem  !default; // Bootstrap 4 compatible
+$emma-font-size-h4: 1.5rem   !default; // Bootstrap 4 compatible
+$emma-font-size-h5: 1.25rem  !default; // Bootstrap 4 compatible
+$emma-font-size-h6: 1.0rem   !default; // Bootstrap 4 compatible
 
 $emma-line-height-xs: 1.25 !default;
 $emma-line-height-sm: 1.33 !default;
-$emma-line-height-md: 1.5  !default;
+$emma-line-height-md: 1.5  !default; // Bootstrap 4 compatible
 $emma-line-height-lg: 1.75 !default;
 $emma-line-height-xl: 2.0  !default;
 
 $emma-margin-xs: 0.2rem !default;
 $emma-margin-sm: 0.5rem !default;
-$emma-margin-md: 1.0rem !default;
-$emma-margin-lg: 1.5rem !default;
-$emma-margin-xl: 3.0rem !default;
+$emma-margin-md: 1.0rem !default; // Bootstrap 4 compatible
+$emma-margin-lg: 1.5rem !default; // Bootstrap 4 compatible
+$emma-margin-xl: 3.0rem !default; // Bootstrap 4 compatible
 
 $emma-padding-xs: 0.2rem !default;
 $emma-padding-sm: 0.5rem !default;
-$emma-padding-md: 1.0rem !default;
-$emma-padding-lg: 1.5rem !default;
-$emma-padding-xl: 3.0rem !default;
+$emma-padding-md: 1.0rem !default; // Bootstrap 4 compatible
+$emma-padding-lg: 1.5rem !default; // Bootstrap 4 compatible
+$emma-padding-xl: 3.0rem !default; // Bootstrap 4 compatible
+
+$emma-border-radius-xs: 0.1rem  !default;
+$emma-border-radius-sm: 0.2rem  !default; // Bootstrap 4 compatible
+$emma-border-radius-md: 0.25rem !default; // Bootstrap 4 compatible
+$emma-border-radius-lg: 0.3rem  !default; // Bootstrap 4 compatible
+$emma-border-radius-xl: 0.4rem  !default;
+
+$emma-color-primary: #0275d8 !default; // Bootstrap 4 compatible
+$emma-color-success: #5cb85c !default; // Bootstrap 4 compatible
+$emma-color-info:    #5bc0de !default; // Bootstrap 4 compatible
+$emma-color-warning: #f0ad4e !default; // Bootstrap 4 compatible
+$emma-color-danger:  #d9534f !default; // Bootstrap 4 compatible
 
 $emma-color-white:   white   !default;
 $emma-color-silver:  silver  !default;
@@ -74,12 +86,6 @@ $emma-color-purple:  purple  !default;
   $emma-color-fuchsia: #f012be;
   $emma-color-purple:  #b10dc9;
 }
-
-$emma-color-primary: #0275d8 !default;
-$emma-color-success: #5cb85c !default;
-$emma-color-info:    #5bc0de !default;
-$emma-color-warning: #f0ad4e !default;
-$emma-color-danger:  #d9534f !default;
 
 $emma-important-string: "";
 @if $emma-important {
@@ -403,6 +409,11 @@ $emma-single-declaration-list: (
     ( bdl-0       , border-left            , 0 ),
     ( bdlc-t      , border-left-color      , transparent ),
     ( bdlc-cc     , border-left-color      , currentColor ),        // ^1
+    ( bdrs-xs     , border-radius          , $emma-border-radius-xs ), // ^1
+    ( bdrs-sm     , border-radius          , $emma-border-radius-sm ), // ^1
+    ( bdrs-md     , border-radius          , $emma-border-radius-md ), // ^1
+    ( bdrs-lg     , border-radius          , $emma-border-radius-lg ), // ^1
+    ( bdrs-xl     , border-radius          , $emma-border-radius-xl ), // ^1
     ( bdrs-0      , border-radius          , 0 ),
     ( bdrs-1      , border-radius          , 1px ),
     ( bdrs-2      , border-radius          , 2px ),
