@@ -75,6 +75,12 @@ $emma-color-purple:  purple  !default;
   $emma-color-purple:  #b10dc9;
 }
 
+$emma-color-primary: #0275d8 !default;
+$emma-color-success: #5cb85c !default;
+$emma-color-info:    #5bc0de !default;
+$emma-color-warning: #f0ad4e !default;
+$emma-color-danger:  #d9534f !default;
+
 $emma-important-string: "";
 @if $emma-important {
   $emma-important-string: " !important";
@@ -329,6 +335,11 @@ $emma-single-declaration-list: (
     ( bdc-maroon  , border-color           , $emma-color-maroon ),  // ^1
     ( bdc-fuchsia , border-color           , $emma-color-fuchsia ), // ^1
     ( bdc-purple  , border-color           , $emma-color-purple ),  // ^1
+    ( bdc-primary , border-color           , $emma-color-primary ), // ^1
+    ( bdc-success , border-color           , $emma-color-success ), // ^1
+    ( bdc-info    , border-color           , $emma-color-info ),    // ^1
+    ( bdc-warning , border-color           , $emma-color-warning ), // ^1
+    ( bdc-danger  , border-color           , $emma-color-danger ),  // ^1
     ( bdi-n       , border-image           , none ),
     ( bds-n       , border-style           , none ),
     ( bds-h       , border-style           , hidden ),
@@ -420,6 +431,11 @@ $emma-single-declaration-list: (
     ( bgc-maroon  , background-color       , $emma-color-maroon ),  // ^1
     ( bgc-fuchsia , background-color       , $emma-color-fuchsia ), // ^1
     ( bgc-purple  , background-color       , $emma-color-purple ),  // ^1
+    ( bgc-primary , background-color       , $emma-color-primary ), // ^1
+    ( bgc-success , background-color       , $emma-color-success ), // ^1
+    ( bgc-info    , background-color       , $emma-color-info ),    // ^1
+    ( bgc-warning , background-color       , $emma-color-warning ), // ^1
+    ( bgc-danger  , background-color       , $emma-color-danger ),  // ^1
     ( bgi-n       , background-image       , none ),
     ( bgr-n       , background-repeat      , no-repeat ),
     ( bgr-x       , background-repeat      , repeat-x ),
@@ -454,6 +470,11 @@ $emma-single-declaration-list: (
     ( c-maroon    , color                  , $emma-color-maroon ),  // ^1
     ( c-fuchsia   , color                  , $emma-color-fuchsia ), // ^1
     ( c-purple    , color                  , $emma-color-purple ),  // ^1
+    ( c-primary   , color                  , $emma-color-primary ), // ^1
+    ( c-success   , color                  , $emma-color-success ), // ^1
+    ( c-info      , color                  , $emma-color-info ),    // ^1
+    ( c-warning   , color                  , $emma-color-warning ), // ^1
+    ( c-danger    , color                  , $emma-color-danger ),  // ^1
     ( tbl-a       , table-layout           , auto ),
     ( tbl-f       , table-layout           , fixed ),
     ( lis-n       , list-style             , none ),
