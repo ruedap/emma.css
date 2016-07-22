@@ -139,7 +139,7 @@ $emma-important-string: "";
 // --------------------------------------------------------------------------
 
 $emma-single-declaration-list: (
-// source: https://github.com/emmetio/emmet/blob/master/lib/snippets.json
+// resource: https://github.com/emmetio/emmet/blob/master/lib/snippets.json
 // --------------------------------------------------------------------------
 //  | snippet     | property               | value
 // --------------------------------------------------------------------------
@@ -215,68 +215,68 @@ $emma-single-declaration-list: (
     ( bxsh-n      , box-shadow             , none ),
     ( m-a         , margin                 , auto ),
     ( m-0         , margin                 , 0 ),
-    ( m-0_a       , margin                 , 0 auto ),                 // ^1
-    ( m-xs        , margin                 , $emma-margin-xs ),        // ^1
-    ( m-sm        , margin                 , $emma-margin-sm ),        // ^1
-    ( m-md        , margin                 , $emma-margin-md ),        // ^1
-    ( m-lg        , margin                 , $emma-margin-lg ),        // ^1
-    ( m-xl        , margin                 , $emma-margin-xl ),        // ^1
+    ( m-0_a       , margin                 , 0 auto ),
+    ( m-xs        , margin                 , $emma-margin-xs ),
+    ( m-sm        , margin                 , $emma-margin-sm ),
+    ( m-md        , margin                 , $emma-margin-md ),
+    ( m-lg        , margin                 , $emma-margin-lg ),
+    ( m-xl        , margin                 , $emma-margin-xl ),
     ( mt-0        , margin-top             , 0 ),
-    ( mt-xs       , margin-top             , $emma-margin-xs ),        // ^1
-    ( mt-sm       , margin-top             , $emma-margin-sm ),        // ^1
-    ( mt-md       , margin-top             , $emma-margin-md ),        // ^1
-    ( mt-lg       , margin-top             , $emma-margin-lg ),        // ^1
-    ( mt-xl       , margin-top             , $emma-margin-xl ),        // ^1
+    ( mt-xs       , margin-top             , $emma-margin-xs ),
+    ( mt-sm       , margin-top             , $emma-margin-sm ),
+    ( mt-md       , margin-top             , $emma-margin-md ),
+    ( mt-lg       , margin-top             , $emma-margin-lg ),
+    ( mt-xl       , margin-top             , $emma-margin-xl ),
     ( mr-a        , margin-right           , auto ),
     ( mr-0        , margin-right           , 0 ),
-    ( mr-xs       , margin-right           , $emma-margin-xs ),        // ^1
-    ( mr-sm       , margin-right           , $emma-margin-sm ),        // ^1
-    ( mr-md       , margin-right           , $emma-margin-md ),        // ^1
-    ( mr-lg       , margin-right           , $emma-margin-lg ),        // ^1
-    ( mr-xl       , margin-right           , $emma-margin-xl ),        // ^1
+    ( mr-xs       , margin-right           , $emma-margin-xs ),
+    ( mr-sm       , margin-right           , $emma-margin-sm ),
+    ( mr-md       , margin-right           , $emma-margin-md ),
+    ( mr-lg       , margin-right           , $emma-margin-lg ),
+    ( mr-xl       , margin-right           , $emma-margin-xl ),
     ( mb-0        , margin-bottom          , 0 ),
-    ( mb-xs       , margin-bottom          , $emma-margin-xs ),        // ^1
-    ( mb-sm       , margin-bottom          , $emma-margin-sm ),        // ^1
-    ( mb-md       , margin-bottom          , $emma-margin-md ),        // ^1
-    ( mb-lg       , margin-bottom          , $emma-margin-lg ),        // ^1
-    ( mb-xl       , margin-bottom          , $emma-margin-xl ),        // ^1
+    ( mb-xs       , margin-bottom          , $emma-margin-xs ),
+    ( mb-sm       , margin-bottom          , $emma-margin-sm ),
+    ( mb-md       , margin-bottom          , $emma-margin-md ),
+    ( mb-lg       , margin-bottom          , $emma-margin-lg ),
+    ( mb-xl       , margin-bottom          , $emma-margin-xl ),
     ( ml-a        , margin-left            , auto ),
     ( ml-0        , margin-left            , 0 ),
-    ( ml-xs       , margin-left            , $emma-margin-xs ),        // ^1
-    ( ml-sm       , margin-left            , $emma-margin-sm ),        // ^1
-    ( ml-md       , margin-left            , $emma-margin-md ),        // ^1
-    ( ml-lg       , margin-left            , $emma-margin-lg ),        // ^1
-    ( ml-xl       , margin-left            , $emma-margin-xl ),        // ^1
+    ( ml-xs       , margin-left            , $emma-margin-xs ),
+    ( ml-sm       , margin-left            , $emma-margin-sm ),
+    ( ml-md       , margin-left            , $emma-margin-md ),
+    ( ml-lg       , margin-left            , $emma-margin-lg ),
+    ( ml-xl       , margin-left            , $emma-margin-xl ),
     ( p-0         , padding                , 0 ),
-    ( p-xs        , padding                , $emma-padding-xs ),       // ^1
-    ( p-sm        , padding                , $emma-padding-sm ),       // ^1
-    ( p-md        , padding                , $emma-padding-md ),       // ^1
-    ( p-lg        , padding                , $emma-padding-lg ),       // ^1
-    ( p-xl        , padding                , $emma-padding-xl ),       // ^1
+    ( p-xs        , padding                , $emma-padding-xs ),
+    ( p-sm        , padding                , $emma-padding-sm ),
+    ( p-md        , padding                , $emma-padding-md ),
+    ( p-lg        , padding                , $emma-padding-lg ),
+    ( p-xl        , padding                , $emma-padding-xl ),
     ( pt-0        , padding-top            , 0 ),
-    ( pt-xs       , padding-top            , $emma-padding-xs ),       // ^1
-    ( pt-sm       , padding-top            , $emma-padding-sm ),       // ^1
-    ( pt-md       , padding-top            , $emma-padding-md ),       // ^1
-    ( pt-lg       , padding-top            , $emma-padding-lg ),       // ^1
-    ( pt-xl       , padding-top            , $emma-padding-xl ),       // ^1
+    ( pt-xs       , padding-top            , $emma-padding-xs ),
+    ( pt-sm       , padding-top            , $emma-padding-sm ),
+    ( pt-md       , padding-top            , $emma-padding-md ),
+    ( pt-lg       , padding-top            , $emma-padding-lg ),
+    ( pt-xl       , padding-top            , $emma-padding-xl ),
     ( pr-0        , padding-right          , 0 ),
-    ( pr-xs       , padding-right          , $emma-padding-xs ),       // ^1
-    ( pr-sm       , padding-right          , $emma-padding-sm ),       // ^1
-    ( pr-md       , padding-right          , $emma-padding-md ),       // ^1
-    ( pr-lg       , padding-right          , $emma-padding-lg ),       // ^1
-    ( pr-xl       , padding-right          , $emma-padding-xl ),       // ^1
+    ( pr-xs       , padding-right          , $emma-padding-xs ),
+    ( pr-sm       , padding-right          , $emma-padding-sm ),
+    ( pr-md       , padding-right          , $emma-padding-md ),
+    ( pr-lg       , padding-right          , $emma-padding-lg ),
+    ( pr-xl       , padding-right          , $emma-padding-xl ),
     ( pb-0        , padding-bottom         , 0 ),
-    ( pb-xs       , padding-bottom         , $emma-padding-xs ),       // ^1
-    ( pb-sm       , padding-bottom         , $emma-padding-sm ),       // ^1
-    ( pb-md       , padding-bottom         , $emma-padding-md ),       // ^1
-    ( pb-lg       , padding-bottom         , $emma-padding-lg ),       // ^1
-    ( pb-xl       , padding-bottom         , $emma-padding-xl ),       // ^1
+    ( pb-xs       , padding-bottom         , $emma-padding-xs ),
+    ( pb-sm       , padding-bottom         , $emma-padding-sm ),
+    ( pb-md       , padding-bottom         , $emma-padding-md ),
+    ( pb-lg       , padding-bottom         , $emma-padding-lg ),
+    ( pb-xl       , padding-bottom         , $emma-padding-xl ),
     ( pl-0        , padding-left           , 0 ),
-    ( pl-xs       , padding-left           , $emma-padding-xs ),       // ^1
-    ( pl-sm       , padding-left           , $emma-padding-sm ),       // ^1
-    ( pl-md       , padding-left           , $emma-padding-md ),       // ^1
-    ( pl-lg       , padding-left           , $emma-padding-lg ),       // ^1
-    ( pl-xl       , padding-left           , $emma-padding-xl ),       // ^1
+    ( pl-xs       , padding-left           , $emma-padding-xs ),
+    ( pl-sm       , padding-left           , $emma-padding-sm ),
+    ( pl-md       , padding-left           , $emma-padding-md ),
+    ( pl-lg       , padding-left           , $emma-padding-lg ),
+    ( pl-xl       , padding-left           , $emma-padding-xl ),
     ( w-a         , width                  , auto ),
     ( w-0         , width                  , 0 ),
     ( w-1p        , width                  , 1% ),
@@ -338,29 +338,29 @@ $emma-single-declaration-list: (
     ( bdcl-c      , border-collapse        , collapse ),
     ( bdcl-s      , border-collapse        , separate ),
     ( bdc-t       , border-color           , transparent ),
-    ( bdc-cc      , border-color           , currentColor ),           // ^1
-    ( bdc-white   , border-color           , $emma-color-white ),      // ^1
-    ( bdc-silver  , border-color           , $emma-color-silver ),     // ^1
-    ( bdc-gray    , border-color           , $emma-color-gray ),       // ^1
-    ( bdc-black   , border-color           , $emma-color-black ),      // ^1
-    ( bdc-navy    , border-color           , $emma-color-navy ),       // ^1
-    ( bdc-blue    , border-color           , $emma-color-blue ),       // ^1
-    ( bdc-aqua    , border-color           , $emma-color-aqua ),       // ^1
-    ( bdc-teal    , border-color           , $emma-color-teal ),       // ^1
-    ( bdc-olive   , border-color           , $emma-color-olive ),      // ^1
-    ( bdc-green   , border-color           , $emma-color-green ),      // ^1
-    ( bdc-lime    , border-color           , $emma-color-lime ),       // ^1
-    ( bdc-yellow  , border-color           , $emma-color-yellow ),     // ^1
-    ( bdc-orange  , border-color           , $emma-color-orange ),     // ^1
-    ( bdc-red     , border-color           , $emma-color-red ),        // ^1
-    ( bdc-maroon  , border-color           , $emma-color-maroon ),     // ^1
-    ( bdc-fuchsia , border-color           , $emma-color-fuchsia ),    // ^1
-    ( bdc-purple  , border-color           , $emma-color-purple ),     // ^1
-    ( bdc-primary , border-color           , $emma-color-primary ),    // ^1
-    ( bdc-success , border-color           , $emma-color-success ),    // ^1
-    ( bdc-info    , border-color           , $emma-color-info ),       // ^1
-    ( bdc-warning , border-color           , $emma-color-warning ),    // ^1
-    ( bdc-danger  , border-color           , $emma-color-danger ),     // ^1
+    ( bdc-cc      , border-color           , currentColor ),
+    ( bdc-white   , border-color           , $emma-color-white ),
+    ( bdc-silver  , border-color           , $emma-color-silver ),
+    ( bdc-gray    , border-color           , $emma-color-gray ),
+    ( bdc-black   , border-color           , $emma-color-black ),
+    ( bdc-navy    , border-color           , $emma-color-navy ),
+    ( bdc-blue    , border-color           , $emma-color-blue ),
+    ( bdc-aqua    , border-color           , $emma-color-aqua ),
+    ( bdc-teal    , border-color           , $emma-color-teal ),
+    ( bdc-olive   , border-color           , $emma-color-olive ),
+    ( bdc-green   , border-color           , $emma-color-green ),
+    ( bdc-lime    , border-color           , $emma-color-lime ),
+    ( bdc-yellow  , border-color           , $emma-color-yellow ),
+    ( bdc-orange  , border-color           , $emma-color-orange ),
+    ( bdc-red     , border-color           , $emma-color-red ),
+    ( bdc-maroon  , border-color           , $emma-color-maroon ),
+    ( bdc-fuchsia , border-color           , $emma-color-fuchsia ),
+    ( bdc-purple  , border-color           , $emma-color-purple ),
+    ( bdc-primary , border-color           , $emma-color-primary ),
+    ( bdc-success , border-color           , $emma-color-success ),
+    ( bdc-info    , border-color           , $emma-color-info ),
+    ( bdc-warning , border-color           , $emma-color-warning ),
+    ( bdc-danger  , border-color           , $emma-color-danger ),
     ( bdi-n       , border-image           , none ),
     ( bds-n       , border-style           , none ),
     ( bds-h       , border-style           , hidden ),
@@ -411,24 +411,24 @@ $emma-single-declaration-list: (
     ( bdt-n       , border-top             , none ),
     ( bdt-0       , border-top             , 0 ),
     ( bdtc-t      , border-top-color       , transparent ),
-    ( bdtc-cc     , border-top-color       , currentColor ),           // ^1
+    ( bdtc-cc     , border-top-color       , currentColor ),
     ( bdr-n       , border-right           , none ),
     ( bdr-0       , border-right           , 0 ),
     ( bdrc-t      , border-right-color     , transparent ),
-    ( bdrc-cc     , border-right-color     , currentColor ),           // ^1
+    ( bdrc-cc     , border-right-color     , currentColor ),
     ( bdb-n       , border-bottom          , none ),
     ( bdb-0       , border-bottom          , 0 ),
     ( bdbc-t      , border-bottom-color    , transparent ),
-    ( bdbc-cc     , border-bottom-color    , currentColor ),           // ^1
+    ( bdbc-cc     , border-bottom-color    , currentColor ),
     ( bdl-n       , border-left            , none ),
     ( bdl-0       , border-left            , 0 ),
     ( bdlc-t      , border-left-color      , transparent ),
-    ( bdlc-cc     , border-left-color      , currentColor ),           // ^1
-    ( bdrs-xs     , border-radius          , $emma-border-radius-xs ), // ^1
-    ( bdrs-sm     , border-radius          , $emma-border-radius-sm ), // ^1
-    ( bdrs-md     , border-radius          , $emma-border-radius-md ), // ^1
-    ( bdrs-lg     , border-radius          , $emma-border-radius-lg ), // ^1
-    ( bdrs-xl     , border-radius          , $emma-border-radius-xl ), // ^1
+    ( bdlc-cc     , border-left-color      , currentColor ),
+    ( bdrs-xs     , border-radius          , $emma-border-radius-xs ),
+    ( bdrs-sm     , border-radius          , $emma-border-radius-sm ),
+    ( bdrs-md     , border-radius          , $emma-border-radius-md ),
+    ( bdrs-lg     , border-radius          , $emma-border-radius-lg ),
+    ( bdrs-xl     , border-radius          , $emma-border-radius-xl ),
     ( bdrs-0      , border-radius          , 0 ),
     ( bdrs-1      , border-radius          , 1px ),
     ( bdrs-2      , border-radius          , 2px ),
@@ -439,29 +439,29 @@ $emma-single-declaration-list: (
     ( bdrs-100p   , border-radius          , 100% ),
     ( bg-n        , background             , none ),
     ( bgc-t       , background-color       , transparent ),
-    ( bgc-cc      , background-color       , currentColor ),           // ^1
-    ( bgc-white   , background-color       , $emma-color-white ),      // ^1
-    ( bgc-silver  , background-color       , $emma-color-silver ),     // ^1
-    ( bgc-gray    , background-color       , $emma-color-gray ),       // ^1
-    ( bgc-black   , background-color       , $emma-color-black ),      // ^1
-    ( bgc-navy    , background-color       , $emma-color-navy ),       // ^1
-    ( bgc-blue    , background-color       , $emma-color-blue ),       // ^1
-    ( bgc-aqua    , background-color       , $emma-color-aqua ),       // ^1
-    ( bgc-teal    , background-color       , $emma-color-teal ),       // ^1
-    ( bgc-olive   , background-color       , $emma-color-olive ),      // ^1
-    ( bgc-green   , background-color       , $emma-color-green ),      // ^1
-    ( bgc-lime    , background-color       , $emma-color-lime ),       // ^1
-    ( bgc-yellow  , background-color       , $emma-color-yellow ),     // ^1
-    ( bgc-orange  , background-color       , $emma-color-orange ),     // ^1
-    ( bgc-red     , background-color       , $emma-color-red ),        // ^1
-    ( bgc-maroon  , background-color       , $emma-color-maroon ),     // ^1
-    ( bgc-fuchsia , background-color       , $emma-color-fuchsia ),    // ^1
-    ( bgc-purple  , background-color       , $emma-color-purple ),     // ^1
-    ( bgc-primary , background-color       , $emma-color-primary ),    // ^1
-    ( bgc-success , background-color       , $emma-color-success ),    // ^1
-    ( bgc-info    , background-color       , $emma-color-info ),       // ^1
-    ( bgc-warning , background-color       , $emma-color-warning ),    // ^1
-    ( bgc-danger  , background-color       , $emma-color-danger ),     // ^1
+    ( bgc-cc      , background-color       , currentColor ),
+    ( bgc-white   , background-color       , $emma-color-white ),
+    ( bgc-silver  , background-color       , $emma-color-silver ),
+    ( bgc-gray    , background-color       , $emma-color-gray ),
+    ( bgc-black   , background-color       , $emma-color-black ),
+    ( bgc-navy    , background-color       , $emma-color-navy ),
+    ( bgc-blue    , background-color       , $emma-color-blue ),
+    ( bgc-aqua    , background-color       , $emma-color-aqua ),
+    ( bgc-teal    , background-color       , $emma-color-teal ),
+    ( bgc-olive   , background-color       , $emma-color-olive ),
+    ( bgc-green   , background-color       , $emma-color-green ),
+    ( bgc-lime    , background-color       , $emma-color-lime ),
+    ( bgc-yellow  , background-color       , $emma-color-yellow ),
+    ( bgc-orange  , background-color       , $emma-color-orange ),
+    ( bgc-red     , background-color       , $emma-color-red ),
+    ( bgc-maroon  , background-color       , $emma-color-maroon ),
+    ( bgc-fuchsia , background-color       , $emma-color-fuchsia ),
+    ( bgc-purple  , background-color       , $emma-color-purple ),
+    ( bgc-primary , background-color       , $emma-color-primary ),
+    ( bgc-success , background-color       , $emma-color-success ),
+    ( bgc-info    , background-color       , $emma-color-info ),
+    ( bgc-warning , background-color       , $emma-color-warning ),
+    ( bgc-danger  , background-color       , $emma-color-danger ),
     ( bgi-n       , background-image       , none ),
     ( bgr-n       , background-repeat      , no-repeat ),
     ( bgr-x       , background-repeat      , repeat-x ),
@@ -470,37 +470,37 @@ $emma-single-declaration-list: (
     ( bgr-rd      , background-repeat      , round ),
     ( bga-f       , background-attachment  , fixed ),
     ( bga-s       , background-attachment  , scroll ),
-    ( bgp-t       , background-position    , top ),                    // ^1
-    ( bgp-r       , background-position    , right ),                  // ^1
-    ( bgp-b       , background-position    , bottom ),                 // ^1
-    ( bgp-l       , background-position    , left ),                   // ^1
-    ( bgp-c       , background-position    , center ),                 // ^1
+    ( bgp-t       , background-position    , top ),
+    ( bgp-r       , background-position    , right ),
+    ( bgp-b       , background-position    , bottom ),
+    ( bgp-l       , background-position    , left ),
+    ( bgp-c       , background-position    , center ),
     ( bgsz-a      , background-size        , auto ),
     ( bgsz-ct     , background-size        , contain ),
     ( bgsz-cv     , background-size        , cover ),
-    ( c-i         , color                  , inherit ),                // ^1
-    ( c-white     , color                  , $emma-color-white ),      // ^1
-    ( c-silver    , color                  , $emma-color-silver ),     // ^1
-    ( c-gray      , color                  , $emma-color-gray ),       // ^1
-    ( c-black     , color                  , $emma-color-black ),      // ^1
-    ( c-navy      , color                  , $emma-color-navy ),       // ^1
-    ( c-blue      , color                  , $emma-color-blue ),       // ^1
-    ( c-aqua      , color                  , $emma-color-aqua ),       // ^1
-    ( c-teal      , color                  , $emma-color-teal ),       // ^1
-    ( c-olive     , color                  , $emma-color-olive ),      // ^1
-    ( c-green     , color                  , $emma-color-green ),      // ^1
-    ( c-lime      , color                  , $emma-color-lime ),       // ^1
-    ( c-yellow    , color                  , $emma-color-yellow ),     // ^1
-    ( c-orange    , color                  , $emma-color-orange ),     // ^1
-    ( c-red       , color                  , $emma-color-red ),        // ^1
-    ( c-maroon    , color                  , $emma-color-maroon ),     // ^1
-    ( c-fuchsia   , color                  , $emma-color-fuchsia ),    // ^1
-    ( c-purple    , color                  , $emma-color-purple ),     // ^1
-    ( c-primary   , color                  , $emma-color-primary ),    // ^1
-    ( c-success   , color                  , $emma-color-success ),    // ^1
-    ( c-info      , color                  , $emma-color-info ),       // ^1
-    ( c-warning   , color                  , $emma-color-warning ),    // ^1
-    ( c-danger    , color                  , $emma-color-danger ),     // ^1
+    ( c-i         , color                  , inherit ),
+    ( c-white     , color                  , $emma-color-white ),
+    ( c-silver    , color                  , $emma-color-silver ),
+    ( c-gray      , color                  , $emma-color-gray ),
+    ( c-black     , color                  , $emma-color-black ),
+    ( c-navy      , color                  , $emma-color-navy ),
+    ( c-blue      , color                  , $emma-color-blue ),
+    ( c-aqua      , color                  , $emma-color-aqua ),
+    ( c-teal      , color                  , $emma-color-teal ),
+    ( c-olive     , color                  , $emma-color-olive ),
+    ( c-green     , color                  , $emma-color-green ),
+    ( c-lime      , color                  , $emma-color-lime ),
+    ( c-yellow    , color                  , $emma-color-yellow ),
+    ( c-orange    , color                  , $emma-color-orange ),
+    ( c-red       , color                  , $emma-color-red ),
+    ( c-maroon    , color                  , $emma-color-maroon ),
+    ( c-fuchsia   , color                  , $emma-color-fuchsia ),
+    ( c-purple    , color                  , $emma-color-purple ),
+    ( c-primary   , color                  , $emma-color-primary ),
+    ( c-success   , color                  , $emma-color-success ),
+    ( c-info      , color                  , $emma-color-info ),
+    ( c-warning   , color                  , $emma-color-warning ),
+    ( c-danger    , color                  , $emma-color-danger ),
     ( tbl-a       , table-layout           , auto ),
     ( tbl-f       , table-layout           , fixed ),
     ( lis-n       , list-style             , none ),
@@ -539,7 +539,7 @@ $emma-single-declaration-list: (
     ( te-b        , text-emphasis          , before ),
     ( te-a        , text-emphasis          , after ),
     ( ti-0        , text-indent            , 0 ),
-    ( ti--9999    , text-indent            , -9999px ),                // Emmet: ti-
+    ( ti--9999    , text-indent            , -9999px ),
     ( tov-e       , text-overflow          , ellipsis ),
     ( tov-c       , text-overflow          , clip ),
     ( tt-n        , text-transform         , none ),
@@ -561,12 +561,12 @@ $emma-single-declaration-list: (
     ( lh-md       , line-height            , $emma-line-height-md ),
     ( lh-lg       , line-height            , $emma-line-height-lg ),
     ( lh-xl       , line-height            , $emma-line-height-xl ),
-    ( whs-nm      , white-space            , normal ),                 // Emmet: whs:n
+    ( whs-nm      , white-space            , normal ),
     ( whs-p       , white-space            , pre ),
     ( whs-nw      , white-space            , nowrap ),
     ( whs-pw      , white-space            , pre-wrap ),
     ( whs-pl      , white-space            , pre-line ),
-    ( wob-nm      , word-break             , normal ),                 // Emmet: wob:n
+    ( wob-nm      , word-break             , normal ),
     ( wob-k       , word-break             , keep-all ),
     ( wob-ba      , word-break             , break-all ),
     ( wow-nm      , word-wrap              , normal ),
@@ -574,11 +574,11 @@ $emma-single-declaration-list: (
     ( wow-u       , word-wrap              , unrestricted ),
     ( wow-s       , word-wrap              , suppress ),
     ( wow-bw      , word-wrap              , break-word ),
-    ( lts-nm      , letter-spacing         , normal ),                 // Emmet: lts:n
-    ( fw-nm       , font-weight            , normal ),                 // Emmet: fw:n
+    ( lts-nm      , letter-spacing         , normal ),
+    ( fw-nm       , font-weight            , normal ),
     ( fw-b        , font-weight            , bold ),
     ( fw-br       , font-weight            , bolder ),
-    ( fw-l        , font-weight            , 200 ),                    // ^1
+    ( fw-l        , font-weight            , 200 ),
     ( fw-lr       , font-weight            , lighter ),
     ( fw-100      , font-weight            , 100 ),
     ( fw-200      , font-weight            , 200 ),
@@ -589,18 +589,18 @@ $emma-single-declaration-list: (
     ( fw-700      , font-weight            , 700 ),
     ( fw-800      , font-weight            , 800 ),
     ( fw-900      , font-weight            , 900 ),
-    ( fs-nm       , font-style             , normal ),                 // Emmet: fs:n
+    ( fs-nm       , font-style             , normal ),
     ( fs-i        , font-style             , italic ),
     ( fs-o        , font-style             , oblique ),
-    ( fv-nm       , font-variant           , normal ),                 // Emmet: fv:n
+    ( fv-nm       , font-variant           , normal ),
     ( fv-sc       , font-variant           , small-caps ),
-    ( fz-xs       , font-size              , $emma-font-size-xs ),     // ^1
-    ( fz-sm       , font-size              , $emma-font-size-sm ),     // ^1
-    ( fz-md       , font-size              , $emma-font-size-md ),     // ^1
-    ( fz-lg       , font-size              , $emma-font-size-lg ),     // ^1
-    ( fz-xl       , font-size              , $emma-font-size-xl ),     // ^1
-    ( fz-sr       , font-size              , smaller ),                // ^1
-    ( fz-lr       , font-size              , larger ),                 // ^1
+    ( fz-xs       , font-size              , $emma-font-size-xs ),
+    ( fz-sm       , font-size              , $emma-font-size-sm ),
+    ( fz-md       , font-size              , $emma-font-size-md ),
+    ( fz-lg       , font-size              , $emma-font-size-lg ),
+    ( fz-xl       , font-size              , $emma-font-size-xl ),
+    ( fz-sr       , font-size              , smaller ),
+    ( fz-lr       , font-size              , larger ),
     ( fz-10       , font-size              , 10px ),
     ( fz-11       , font-size              , 11px ),
     ( fz-12       , font-size              , 12px ),
@@ -612,12 +612,12 @@ $emma-single-declaration-list: (
     ( fz-18       , font-size              , 18px ),
     ( fz-19       , font-size              , 19px ),
     ( fz-20       , font-size              , 20px ),
-    ( fz-h1       , font-size              , $emma-font-size-h1 ),     // ^1
-    ( fz-h2       , font-size              , $emma-font-size-h2 ),     // ^1
-    ( fz-h3       , font-size              , $emma-font-size-h3 ),     // ^1
-    ( fz-h4       , font-size              , $emma-font-size-h4 ),     // ^1
-    ( fz-h5       , font-size              , $emma-font-size-h5 ),     // ^1
-    ( fz-h6       , font-size              , $emma-font-size-h6 ),     // ^1
+    ( fz-h1       , font-size              , $emma-font-size-h1 ),
+    ( fz-h2       , font-size              , $emma-font-size-h2 ),
+    ( fz-h3       , font-size              , $emma-font-size-h3 ),
+    ( fz-h4       , font-size              , $emma-font-size-h4 ),
+    ( fz-h5       , font-size              , $emma-font-size-h5 ),
+    ( fz-h6       , font-size              , $emma-font-size-h6 ),
     ( ff-s        , font-family            , serif ),
     ( ff-ss       , font-family            , sans-serif ),
     ( ff-c        , font-family            , cursive ),
@@ -629,15 +629,15 @@ $emma-single-declaration-list: (
     ( ff-l        , font-family            , '"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif' ),
     ( ff-j        , font-family            , '"Helvetica Neue", Helvetica, Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif' ),
     ( op-0        , opacity                , 0 ),
-    ( op-0_1      , opacity                , 0.1 ),                    // ^1
-    ( op-0_2      , opacity                , 0.2 ),                    // ^1
-    ( op-0_3      , opacity                , 0.3 ),                    // ^1
-    ( op-0_4      , opacity                , 0.4 ),                    // ^1
-    ( op-0_5      , opacity                , 0.5 ),                    // ^1
-    ( op-0_6      , opacity                , 0.6 ),                    // ^1
-    ( op-0_7      , opacity                , 0.7 ),                    // ^1
-    ( op-0_8      , opacity                , 0.8 ),                    // ^1
-    ( op-0_9      , opacity                , 0.9 ),                    // ^1
+    ( op-0_1      , opacity                , 0.1 ),
+    ( op-0_2      , opacity                , 0.2 ),
+    ( op-0_3      , opacity                , 0.3 ),
+    ( op-0_4      , opacity                , 0.4 ),
+    ( op-0_5      , opacity                , 0.5 ),
+    ( op-0_6      , opacity                , 0.6 ),
+    ( op-0_7      , opacity                , 0.7 ),
+    ( op-0_8      , opacity                , 0.8 ),
+    ( op-0_9      , opacity                , 0.9 ),
     ( op-1        , opacity                , 1 ),
     ( rsz-n       , resize                 , none ),
     ( rsz-b       , resize                 , both ),
@@ -684,9 +684,9 @@ $emma-single-declaration-list: (
     ( ord-6       , order                  , 6 ),
     ( ord-9999    , order                  , 9999 ),
     ( fx-n        , flex                   , none ),
-    ( fx-1_1_a    , flex                   , "1 1 auto" ),             // ^1
-    ( fx-1_0_a    , flex                   , "1 0 auto" ),             // ^1
-    ( fx-1_1_1    , flex                   , "1 1 1px" ),              // ^1
+    ( fx-1_1_a    , flex                   , "1 1 auto" ),
+    ( fx-1_0_a    , flex                   , "1 0 auto" ),
+    ( fx-1_1_1    , flex                   , "1 1 1px" ),
     ( as-a        , align-self             , auto ),
     ( as-fs       , align-self             , flex-start ),
     ( as-fe       , align-self             , flex-end ),
@@ -696,12 +696,11 @@ $emma-single-declaration-list: (
     ( wfsm-a      , -webkit-font-smoothing , antialiased ),
     ( wfsm-sa     , -webkit-font-smoothing , subpixel-antialiased ),
     ( wfsm-n      , -webkit-font-smoothing , none ),
-    ( obf-f       , object-fit             , fill ),                   // ^1
-    ( obf-ct      , object-fit             , contain ),                // ^1
-    ( obf-cv      , object-fit             , cover ),                  // ^1
-    ( obf-n       , object-fit             , none ),                   // ^1
-    ( obf-sd      , object-fit             , scale-down ),             // ^1
-// ^1 Not included in Emmet.
+    ( obf-f       , object-fit             , fill ),
+    ( obf-ct      , object-fit             , contain ),
+    ( obf-cv      , object-fit             , cover ),
+    ( obf-n       , object-fit             , none ),
+    ( obf-sd      , object-fit             , scale-down ),
 ) !default;
 
 @each $item in $emma-single-declaration-list {
