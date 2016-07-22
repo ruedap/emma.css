@@ -19,6 +19,7 @@
 .u-z-4 { z-index: 4 !important; }
 .u-z-5 { z-index: 5 !important; }
 .u-z-6 { z-index: 6 !important; }
+.u-z-9999 { z-index: 9999 !important; }
 .u-fl-n { float: none !important; }
 .u-fl-l { float: left !important; }
 .u-fl-r { float: right !important; }
