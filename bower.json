@@ -13,8 +13,6 @@
   ],
   "ignore": [
     "**/.*",
-    "Makefile",
-    "Makefile.vim",
     "npm-debug.log",
     "bower.json",
     "node_modules",
