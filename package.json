@@ -3,9 +3,9 @@
   "version": "0.6.0",
   "description": "Emma.css { emmet-like utility classes }",
   "scripts": {
-    "build": "npm run sass && npm run remove-blank-lines",
-    "sass": "node-sass --output-style compact emma.scss emma.css.tmp",
-    "remove-blank-lines": "sed '/^$/d' emma.css.tmp > emma.css && rm emma.css.tmp"
+    "build": "npm run sass && npm run remove-empty-lines",
+    "sass": "node-sass --output-style compact emma.scss emma.css",
+    "remove-empty-lines": "gulp remove-empty-lines"
   },
   "author": "ruedap",
   "license": "MIT",
