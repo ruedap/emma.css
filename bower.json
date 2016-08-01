@@ -17,6 +17,7 @@
     "bower.json",
     "node_modules",
     "package.json",
+    "gulpfile.babel.js",
     "tmp"
   ]
 }
