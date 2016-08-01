@@ -28,5 +28,8 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/ruedap/emma.css.git"
+  },
+  "devDependencies": {
+    "node-sass": "^3.8.0"
   }
 }
