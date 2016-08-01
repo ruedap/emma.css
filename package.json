@@ -35,6 +35,8 @@
     "url": "git://github.com/ruedap/emma.css.git"
   },
   "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-remove-empty-lines": "0.0.4",
     "node-sass": "^3.8.0"
   }
 }
