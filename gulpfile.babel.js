@@ -6,4 +6,3 @@ gulp.task('remove-empty-lines', () => {
   .pipe(removeEmptyLines())
   .pipe(gulp.dest('./'));
 });
-
