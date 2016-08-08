@@ -1,6 +1,6 @@
 {
   "name": "emma.css",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "author": "ruedap",
   "description": "Emma.css { emmet-like utility classes }",
   "keywords": [
@@ -13,12 +13,11 @@
   ],
   "ignore": [
     "**/.*",
-    "Makefile",
-    "Makefile.vim",
     "npm-debug.log",
     "bower.json",
     "node_modules",
     "package.json",
+    "gulpfile.babel.js",
     "tmp"
   ]
 }

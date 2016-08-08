@@ -3,6 +3,12 @@
 ## master (unreleased)
 * Nothing
 
+## 0.7.0
+* Add snippet: `ff-j` (font-family for Japanese)
+* Add snippet: `z-9999` (`z-index: 9999`)
+* Change from ruby-sass to node-sass
+* Introduce npm run commands to build sass
+
 ## 0.6.0
 * Change `$emma-alternative-colors` default value from false to true
 * Add Makefile

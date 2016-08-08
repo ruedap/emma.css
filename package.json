@@ -1,7 +1,12 @@
 {
   "name": "emma.css",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Emma.css { emmet-like utility classes }",
+  "scripts": {
+    "build": "npm run sass && npm run remove-empty-lines",
+    "sass": "node-sass --output-style compact emma.scss emma.css",
+    "remove-empty-lines": "gulp remove-empty-lines"
+  },
   "author": "ruedap",
   "license": "MIT",
   "main": "emma.css",
@@ -28,5 +33,12 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/ruedap/emma.css.git"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-preset-es2015": "^6.13.2",
+    "gulp": "^3.9.1",
+    "gulp-remove-empty-lines": "0.0.4",
+    "node-sass": "^3.8.0"
   }
 }
