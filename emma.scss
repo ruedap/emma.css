@@ -720,6 +720,18 @@ $emma-multiple-declaration-list: (
     ( tehi        , "%emma-tehi" ),
     ( reli        , "%emma-reli" ),
     ( abce        , "%emma-abce" ),
+    ( px-0        , "%emma-px-0" ),
+    ( py-0        , "%emma-py-0" ),
+    ( px-xs       , "%emma-px-xs" ),
+    ( py-xs       , "%emma-py-xs" ),
+    ( px-sm       , "%emma-px-sm" ),
+    ( py-sm       , "%emma-py-sm" ),
+    ( px-md       , "%emma-px-md" ),
+    ( py-md       , "%emma-py-md" ),
+    ( px-lg       , "%emma-px-lg" ),
+    ( py-lg       , "%emma-py-lg" ),
+    ( px-xl       , "%emma-px-xl" ),
+    ( py-xl       , "%emma-py-xl" ),
 ) !default;
 
 // Clearfix (Contain floats)
@@ -758,6 +770,56 @@ $emma-multiple-declaration-list: (
   position: absolute;
   right: 0;
   top: 0;
+}
+
+// Horizontal & Vertical padding
+%emma-px-0  {
+  padding-left: 0#{$emma-important-string};
+  padding-right: 0#{$emma-important-string};
+}
+%emma-py-0  {
+  padding-top: 0#{$emma-important-string};
+  padding-bottom: 0#{$emma-important-string};
+}
+%emma-px-xs {
+  padding-left: $emma-padding-xs#{$emma-important-string};
+  padding-right:  $emma-padding-xs#{$emma-important-string};
+}
+%emma-py-xs {
+  padding-top:  $emma-padding-xs#{$emma-important-string};
+  padding-bottom: $emma-padding-xs#{$emma-important-string};
+}
+%emma-px-sm {
+  padding-left: $emma-padding-sm#{$emma-important-string};
+  padding-right:  $emma-padding-sm#{$emma-important-string};
+}
+%emma-py-sm {
+  padding-top:  $emma-padding-sm#{$emma-important-string};
+  padding-bottom: $emma-padding-sm#{$emma-important-string};
+}
+%emma-px-md {
+  padding-left: $emma-padding-md#{$emma-important-string};
+  padding-right:  $emma-padding-md#{$emma-important-string};
+}
+%emma-py-md {
+  padding-top:  $emma-padding-md#{$emma-important-string};
+  padding-bottom: $emma-padding-md#{$emma-important-string};
+}
+%emma-px-lg {
+  padding-left: $emma-padding-lg#{$emma-important-string};
+  padding-right:  $emma-padding-lg#{$emma-important-string};
+}
+%emma-py-lg {
+  padding-top:  $emma-padding-lg#{$emma-important-string};
+  padding-bottom: $emma-padding-lg#{$emma-important-string};
+}
+%emma-px-xl {
+  padding-left: $emma-padding-xl#{$emma-important-string};
+  padding-right:  $emma-padding-xl#{$emma-important-string};
+}
+%emma-py-xl {
+  padding-top:  $emma-padding-xl#{$emma-important-string};
+  padding-bottom: $emma-padding-xl#{$emma-important-string};
 }
 
 @each $item in $emma-multiple-declaration-list {
