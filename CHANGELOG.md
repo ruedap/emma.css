@@ -3,6 +3,7 @@
 ## master (unreleased)
 * Add snippet: fz-0 (font-size: 0)
 * Add snippet: horizontal and vertical padding
+* Add snippet: horizontal and vertical margin
 
 ## 0.7.0
 * Add snippet: `ff-j` (font-family for Japanese)

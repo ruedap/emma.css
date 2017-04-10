@@ -213,35 +213,38 @@ $emma-single-declaration-list: (
     ( bxz-cb      , box-sizing             , content-box ),
     ( bxz-bb      , box-sizing             , border-box ),
     ( bxsh-n      , box-shadow             , none ),
-    ( m-a         , margin                 , auto ),
     ( m-0         , margin                 , 0 ),
+    ( m-a         , margin                 , auto ),
     ( m-0_a       , margin                 , 0 auto ),
+    ( m-a_0       , margin                 , auto 0 ),
     ( m-xs        , margin                 , $emma-margin-xs ),
     ( m-sm        , margin                 , $emma-margin-sm ),
     ( m-md        , margin                 , $emma-margin-md ),
     ( m-lg        , margin                 , $emma-margin-lg ),
     ( m-xl        , margin                 , $emma-margin-xl ),
     ( mt-0        , margin-top             , 0 ),
+    ( mt-a        , margin-top             , auto ),
     ( mt-xs       , margin-top             , $emma-margin-xs ),
     ( mt-sm       , margin-top             , $emma-margin-sm ),
     ( mt-md       , margin-top             , $emma-margin-md ),
     ( mt-lg       , margin-top             , $emma-margin-lg ),
     ( mt-xl       , margin-top             , $emma-margin-xl ),
-    ( mr-a        , margin-right           , auto ),
     ( mr-0        , margin-right           , 0 ),
+    ( mr-a        , margin-right           , auto ),
     ( mr-xs       , margin-right           , $emma-margin-xs ),
     ( mr-sm       , margin-right           , $emma-margin-sm ),
     ( mr-md       , margin-right           , $emma-margin-md ),
     ( mr-lg       , margin-right           , $emma-margin-lg ),
     ( mr-xl       , margin-right           , $emma-margin-xl ),
     ( mb-0        , margin-bottom          , 0 ),
+    ( mb-a        , margin-bottom          , auto ),
     ( mb-xs       , margin-bottom          , $emma-margin-xs ),
     ( mb-sm       , margin-bottom          , $emma-margin-sm ),
     ( mb-md       , margin-bottom          , $emma-margin-md ),
     ( mb-lg       , margin-bottom          , $emma-margin-lg ),
     ( mb-xl       , margin-bottom          , $emma-margin-xl ),
-    ( ml-a        , margin-left            , auto ),
     ( ml-0        , margin-left            , 0 ),
+    ( ml-a        , margin-left            , auto ),
     ( ml-xs       , margin-left            , $emma-margin-xs ),
     ( ml-sm       , margin-left            , $emma-margin-sm ),
     ( ml-md       , margin-left            , $emma-margin-md ),
@@ -720,6 +723,20 @@ $emma-multiple-declaration-list: (
     ( tehi        , "%emma-tehi" ),
     ( reli        , "%emma-reli" ),
     ( abce        , "%emma-abce" ),
+    ( mx-0        , "%emma-mx-0" ),
+    ( my-0        , "%emma-my-0" ),
+    ( mx-a        , "%emma-mx-a" ),
+    ( my-a        , "%emma-my-a" ),
+    ( mx-xs       , "%emma-mx-xs" ),
+    ( my-xs       , "%emma-my-xs" ),
+    ( mx-sm       , "%emma-mx-sm" ),
+    ( my-sm       , "%emma-my-sm" ),
+    ( mx-md       , "%emma-mx-md" ),
+    ( my-md       , "%emma-my-md" ),
+    ( mx-lg       , "%emma-mx-lg" ),
+    ( my-lg       , "%emma-my-lg" ),
+    ( mx-xl       , "%emma-mx-xl" ),
+    ( my-xl       , "%emma-my-xl" ),
     ( px-0        , "%emma-px-0" ),
     ( py-0        , "%emma-py-0" ),
     ( px-xs       , "%emma-px-xs" ),
@@ -770,6 +787,64 @@ $emma-multiple-declaration-list: (
   position: absolute;
   right: 0;
   top: 0;
+}
+
+// Horizontal & Vertical margin
+%emma-mx-0  {
+  margin-left: 0#{$emma-important-string};
+  margin-right: 0#{$emma-important-string};
+}
+%emma-my-0  {
+  margin-top: 0#{$emma-important-string};
+  margin-bottom: 0#{$emma-important-string};
+}
+%emma-mx-a  {
+  margin-left: auto#{$emma-important-string};
+  margin-right: auto#{$emma-important-string};
+}
+%emma-my-a  {
+  margin-top: auto#{$emma-important-string};
+  margin-bottom: auto#{$emma-important-string};
+}
+%emma-mx-xs {
+  margin-left: $emma-margin-xs#{$emma-important-string};
+  margin-right:  $emma-margin-xs#{$emma-important-string};
+}
+%emma-my-xs {
+  margin-top:  $emma-margin-xs#{$emma-important-string};
+  margin-bottom: $emma-margin-xs#{$emma-important-string};
+}
+%emma-mx-sm {
+  margin-left: $emma-margin-sm#{$emma-important-string};
+  margin-right:  $emma-margin-sm#{$emma-important-string};
+}
+%emma-my-sm {
+  margin-top:  $emma-margin-sm#{$emma-important-string};
+  margin-bottom: $emma-margin-sm#{$emma-important-string};
+}
+%emma-mx-md {
+  margin-left: $emma-margin-md#{$emma-important-string};
+  margin-right:  $emma-margin-md#{$emma-important-string};
+}
+%emma-my-md {
+  margin-top:  $emma-margin-md#{$emma-important-string};
+  margin-bottom: $emma-margin-md#{$emma-important-string};
+}
+%emma-mx-lg {
+  margin-left: $emma-margin-lg#{$emma-important-string};
+  margin-right:  $emma-margin-lg#{$emma-important-string};
+}
+%emma-my-lg {
+  margin-top:  $emma-margin-lg#{$emma-important-string};
+  margin-bottom: $emma-margin-lg#{$emma-important-string};
+}
+%emma-mx-xl {
+  margin-left: $emma-margin-xl#{$emma-important-string};
+  margin-right:  $emma-margin-xl#{$emma-important-string};
+}
+%emma-my-xl {
+  margin-top:  $emma-margin-xl#{$emma-important-string};
+  margin-bottom: $emma-margin-xl#{$emma-important-string};
 }
 
 // Horizontal & Vertical padding
