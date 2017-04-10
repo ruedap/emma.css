@@ -1,6 +1,9 @@
 # Emma.css Changelog
 
 ## master (unreleased)
+* Nothing
+
+## 0.8.0
 * Add snippet: fz-0 (font-size: 0)
 * Add snippet: horizontal and vertical padding
 * Add snippet: horizontal and vertical margin
