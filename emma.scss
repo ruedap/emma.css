@@ -1,4 +1,4 @@
-/*! Emma.css 0.7.0 | emmet-like utility classes | MIT License | git.io/emma */
+/*! Emma.css 0.8.0 | emmet-like utility classes | MIT License | git.io/emma */
 
 $emma-prefix: "u-" !default;
 $emma-important: true !default;
@@ -213,35 +213,38 @@ $emma-single-declaration-list: (
     ( bxz-cb      , box-sizing             , content-box ),
     ( bxz-bb      , box-sizing             , border-box ),
     ( bxsh-n      , box-shadow             , none ),
-    ( m-a         , margin                 , auto ),
     ( m-0         , margin                 , 0 ),
+    ( m-a         , margin                 , auto ),
     ( m-0_a       , margin                 , 0 auto ),
+    ( m-a_0       , margin                 , auto 0 ),
     ( m-xs        , margin                 , $emma-margin-xs ),
     ( m-sm        , margin                 , $emma-margin-sm ),
     ( m-md        , margin                 , $emma-margin-md ),
     ( m-lg        , margin                 , $emma-margin-lg ),
     ( m-xl        , margin                 , $emma-margin-xl ),
     ( mt-0        , margin-top             , 0 ),
+    ( mt-a        , margin-top             , auto ),
     ( mt-xs       , margin-top             , $emma-margin-xs ),
     ( mt-sm       , margin-top             , $emma-margin-sm ),
     ( mt-md       , margin-top             , $emma-margin-md ),
     ( mt-lg       , margin-top             , $emma-margin-lg ),
     ( mt-xl       , margin-top             , $emma-margin-xl ),
-    ( mr-a        , margin-right           , auto ),
     ( mr-0        , margin-right           , 0 ),
+    ( mr-a        , margin-right           , auto ),
     ( mr-xs       , margin-right           , $emma-margin-xs ),
     ( mr-sm       , margin-right           , $emma-margin-sm ),
     ( mr-md       , margin-right           , $emma-margin-md ),
     ( mr-lg       , margin-right           , $emma-margin-lg ),
     ( mr-xl       , margin-right           , $emma-margin-xl ),
     ( mb-0        , margin-bottom          , 0 ),
+    ( mb-a        , margin-bottom          , auto ),
     ( mb-xs       , margin-bottom          , $emma-margin-xs ),
     ( mb-sm       , margin-bottom          , $emma-margin-sm ),
     ( mb-md       , margin-bottom          , $emma-margin-md ),
     ( mb-lg       , margin-bottom          , $emma-margin-lg ),
     ( mb-xl       , margin-bottom          , $emma-margin-xl ),
-    ( ml-a        , margin-left            , auto ),
     ( ml-0        , margin-left            , 0 ),
+    ( ml-a        , margin-left            , auto ),
     ( ml-xs       , margin-left            , $emma-margin-xs ),
     ( ml-sm       , margin-left            , $emma-margin-sm ),
     ( ml-md       , margin-left            , $emma-margin-md ),
@@ -601,6 +604,7 @@ $emma-single-declaration-list: (
     ( fz-xl       , font-size              , $emma-font-size-xl ),
     ( fz-sr       , font-size              , smaller ),
     ( fz-lr       , font-size              , larger ),
+    ( fz-0        , font-size              , 0 ),
     ( fz-10       , font-size              , 10px ),
     ( fz-11       , font-size              , 11px ),
     ( fz-12       , font-size              , 12px ),
@@ -719,6 +723,32 @@ $emma-multiple-declaration-list: (
     ( tehi        , "%emma-tehi" ),
     ( reli        , "%emma-reli" ),
     ( abce        , "%emma-abce" ),
+    ( mx-0        , "%emma-mx-0" ),
+    ( my-0        , "%emma-my-0" ),
+    ( mx-a        , "%emma-mx-a" ),
+    ( my-a        , "%emma-my-a" ),
+    ( mx-xs       , "%emma-mx-xs" ),
+    ( my-xs       , "%emma-my-xs" ),
+    ( mx-sm       , "%emma-mx-sm" ),
+    ( my-sm       , "%emma-my-sm" ),
+    ( mx-md       , "%emma-mx-md" ),
+    ( my-md       , "%emma-my-md" ),
+    ( mx-lg       , "%emma-mx-lg" ),
+    ( my-lg       , "%emma-my-lg" ),
+    ( mx-xl       , "%emma-mx-xl" ),
+    ( my-xl       , "%emma-my-xl" ),
+    ( px-0        , "%emma-px-0" ),
+    ( py-0        , "%emma-py-0" ),
+    ( px-xs       , "%emma-px-xs" ),
+    ( py-xs       , "%emma-py-xs" ),
+    ( px-sm       , "%emma-px-sm" ),
+    ( py-sm       , "%emma-py-sm" ),
+    ( px-md       , "%emma-px-md" ),
+    ( py-md       , "%emma-py-md" ),
+    ( px-lg       , "%emma-px-lg" ),
+    ( py-lg       , "%emma-py-lg" ),
+    ( px-xl       , "%emma-px-xl" ),
+    ( py-xl       , "%emma-py-xl" ),
 ) !default;
 
 // Clearfix (Contain floats)
@@ -757,6 +787,114 @@ $emma-multiple-declaration-list: (
   position: absolute;
   right: 0;
   top: 0;
+}
+
+// Horizontal & Vertical margin
+%emma-mx-0  {
+  margin-left: 0#{$emma-important-string};
+  margin-right: 0#{$emma-important-string};
+}
+%emma-my-0  {
+  margin-top: 0#{$emma-important-string};
+  margin-bottom: 0#{$emma-important-string};
+}
+%emma-mx-a  {
+  margin-left: auto#{$emma-important-string};
+  margin-right: auto#{$emma-important-string};
+}
+%emma-my-a  {
+  margin-top: auto#{$emma-important-string};
+  margin-bottom: auto#{$emma-important-string};
+}
+%emma-mx-xs {
+  margin-left: $emma-margin-xs#{$emma-important-string};
+  margin-right:  $emma-margin-xs#{$emma-important-string};
+}
+%emma-my-xs {
+  margin-top:  $emma-margin-xs#{$emma-important-string};
+  margin-bottom: $emma-margin-xs#{$emma-important-string};
+}
+%emma-mx-sm {
+  margin-left: $emma-margin-sm#{$emma-important-string};
+  margin-right:  $emma-margin-sm#{$emma-important-string};
+}
+%emma-my-sm {
+  margin-top:  $emma-margin-sm#{$emma-important-string};
+  margin-bottom: $emma-margin-sm#{$emma-important-string};
+}
+%emma-mx-md {
+  margin-left: $emma-margin-md#{$emma-important-string};
+  margin-right:  $emma-margin-md#{$emma-important-string};
+}
+%emma-my-md {
+  margin-top:  $emma-margin-md#{$emma-important-string};
+  margin-bottom: $emma-margin-md#{$emma-important-string};
+}
+%emma-mx-lg {
+  margin-left: $emma-margin-lg#{$emma-important-string};
+  margin-right:  $emma-margin-lg#{$emma-important-string};
+}
+%emma-my-lg {
+  margin-top:  $emma-margin-lg#{$emma-important-string};
+  margin-bottom: $emma-margin-lg#{$emma-important-string};
+}
+%emma-mx-xl {
+  margin-left: $emma-margin-xl#{$emma-important-string};
+  margin-right:  $emma-margin-xl#{$emma-important-string};
+}
+%emma-my-xl {
+  margin-top:  $emma-margin-xl#{$emma-important-string};
+  margin-bottom: $emma-margin-xl#{$emma-important-string};
+}
+
+// Horizontal & Vertical padding
+%emma-px-0  {
+  padding-left: 0#{$emma-important-string};
+  padding-right: 0#{$emma-important-string};
+}
+%emma-py-0  {
+  padding-top: 0#{$emma-important-string};
+  padding-bottom: 0#{$emma-important-string};
+}
+%emma-px-xs {
+  padding-left: $emma-padding-xs#{$emma-important-string};
+  padding-right:  $emma-padding-xs#{$emma-important-string};
+}
+%emma-py-xs {
+  padding-top:  $emma-padding-xs#{$emma-important-string};
+  padding-bottom: $emma-padding-xs#{$emma-important-string};
+}
+%emma-px-sm {
+  padding-left: $emma-padding-sm#{$emma-important-string};
+  padding-right:  $emma-padding-sm#{$emma-important-string};
+}
+%emma-py-sm {
+  padding-top:  $emma-padding-sm#{$emma-important-string};
+  padding-bottom: $emma-padding-sm#{$emma-important-string};
+}
+%emma-px-md {
+  padding-left: $emma-padding-md#{$emma-important-string};
+  padding-right:  $emma-padding-md#{$emma-important-string};
+}
+%emma-py-md {
+  padding-top:  $emma-padding-md#{$emma-important-string};
+  padding-bottom: $emma-padding-md#{$emma-important-string};
+}
+%emma-px-lg {
+  padding-left: $emma-padding-lg#{$emma-important-string};
+  padding-right:  $emma-padding-lg#{$emma-important-string};
+}
+%emma-py-lg {
+  padding-top:  $emma-padding-lg#{$emma-important-string};
+  padding-bottom: $emma-padding-lg#{$emma-important-string};
+}
+%emma-px-xl {
+  padding-left: $emma-padding-xl#{$emma-important-string};
+  padding-right:  $emma-padding-xl#{$emma-important-string};
+}
+%emma-py-xl {
+  padding-top:  $emma-padding-xl#{$emma-important-string};
+  padding-bottom: $emma-padding-xl#{$emma-important-string};
 }
 
 @each $item in $emma-multiple-declaration-list {

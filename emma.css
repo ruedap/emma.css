@@ -1,4 +1,4 @@
-/*! Emma.css 0.7.0 | emmet-like utility classes | MIT License | git.io/emma */
+/*! Emma.css 0.8.0 | emmet-like utility classes | MIT License | git.io/emma */
 .u-pos-s { position: static !important; }
 .u-pos-a { position: absolute !important; }
 .u-pos-r { position: relative !important; }
@@ -69,35 +69,38 @@
 .u-bxz-cb { box-sizing: content-box !important; }
 .u-bxz-bb { box-sizing: border-box !important; }
 .u-bxsh-n { box-shadow: none !important; }
-.u-m-a { margin: auto !important; }
 .u-m-0 { margin: 0 !important; }
+.u-m-a { margin: auto !important; }
 .u-m-0_a { margin: 0 auto !important; }
+.u-m-a_0 { margin: auto 0 !important; }
 .u-m-xs { margin: 0.2rem !important; }
 .u-m-sm { margin: 0.5rem !important; }
 .u-m-md { margin: 1rem !important; }
 .u-m-lg { margin: 1.5rem !important; }
 .u-m-xl { margin: 3rem !important; }
 .u-mt-0 { margin-top: 0 !important; }
+.u-mt-a { margin-top: auto !important; }
 .u-mt-xs { margin-top: 0.2rem !important; }
 .u-mt-sm { margin-top: 0.5rem !important; }
 .u-mt-md { margin-top: 1rem !important; }
 .u-mt-lg { margin-top: 1.5rem !important; }
 .u-mt-xl { margin-top: 3rem !important; }
-.u-mr-a { margin-right: auto !important; }
 .u-mr-0 { margin-right: 0 !important; }
+.u-mr-a { margin-right: auto !important; }
 .u-mr-xs { margin-right: 0.2rem !important; }
 .u-mr-sm { margin-right: 0.5rem !important; }
 .u-mr-md { margin-right: 1rem !important; }
 .u-mr-lg { margin-right: 1.5rem !important; }
 .u-mr-xl { margin-right: 3rem !important; }
 .u-mb-0 { margin-bottom: 0 !important; }
+.u-mb-a { margin-bottom: auto !important; }
 .u-mb-xs { margin-bottom: 0.2rem !important; }
 .u-mb-sm { margin-bottom: 0.5rem !important; }
 .u-mb-md { margin-bottom: 1rem !important; }
 .u-mb-lg { margin-bottom: 1.5rem !important; }
 .u-mb-xl { margin-bottom: 3rem !important; }
-.u-ml-a { margin-left: auto !important; }
 .u-ml-0 { margin-left: 0 !important; }
+.u-ml-a { margin-left: auto !important; }
 .u-ml-xs { margin-left: 0.2rem !important; }
 .u-ml-sm { margin-left: 0.5rem !important; }
 .u-ml-md { margin-left: 1rem !important; }
@@ -457,6 +460,7 @@
 .u-fz-xl { font-size: 1.5rem !important; }
 .u-fz-sr { font-size: smaller !important; }
 .u-fz-lr { font-size: larger !important; }
+.u-fz-0 { font-size: 0 !important; }
 .u-fz-10 { font-size: 10px !important; }
 .u-fz-11 { font-size: 11px !important; }
 .u-fz-12 { font-size: 12px !important; }
@@ -563,3 +567,29 @@
 .u-tehi { overflow: hidden !important; text-indent: 200% !important; white-space: nowrap !important; }
 .u-reli { list-style: none; padding-left: 0; }
 .u-abce { bottom: 0; left: 0; margin: auto; position: absolute; right: 0; top: 0; }
+.u-mx-0 { margin-left: 0 !important; margin-right: 0 !important; }
+.u-my-0 { margin-top: 0 !important; margin-bottom: 0 !important; }
+.u-mx-a { margin-left: auto !important; margin-right: auto !important; }
+.u-my-a { margin-top: auto !important; margin-bottom: auto !important; }
+.u-mx-xs { margin-left: 0.2rem !important; margin-right: 0.2rem !important; }
+.u-my-xs { margin-top: 0.2rem !important; margin-bottom: 0.2rem !important; }
+.u-mx-sm { margin-left: 0.5rem !important; margin-right: 0.5rem !important; }
+.u-my-sm { margin-top: 0.5rem !important; margin-bottom: 0.5rem !important; }
+.u-mx-md { margin-left: 1rem !important; margin-right: 1rem !important; }
+.u-my-md { margin-top: 1rem !important; margin-bottom: 1rem !important; }
+.u-mx-lg { margin-left: 1.5rem !important; margin-right: 1.5rem !important; }
+.u-my-lg { margin-top: 1.5rem !important; margin-bottom: 1.5rem !important; }
+.u-mx-xl { margin-left: 3rem !important; margin-right: 3rem !important; }
+.u-my-xl { margin-top: 3rem !important; margin-bottom: 3rem !important; }
+.u-px-0 { padding-left: 0 !important; padding-right: 0 !important; }
+.u-py-0 { padding-top: 0 !important; padding-bottom: 0 !important; }
+.u-px-xs { padding-left: 0.2rem !important; padding-right: 0.2rem !important; }
+.u-py-xs { padding-top: 0.2rem !important; padding-bottom: 0.2rem !important; }
+.u-px-sm { padding-left: 0.5rem !important; padding-right: 0.5rem !important; }
+.u-py-sm { padding-top: 0.5rem !important; padding-bottom: 0.5rem !important; }
+.u-px-md { padding-left: 1rem !important; padding-right: 1rem !important; }
+.u-py-md { padding-top: 1rem !important; padding-bottom: 1rem !important; }
+.u-px-lg { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
+.u-py-lg { padding-top: 1.5rem !important; padding-bottom: 1.5rem !important; }
+.u-px-xl { padding-left: 3rem !important; padding-right: 3rem !important; }
+.u-py-xl { padding-top: 3rem !important; padding-bottom: 3rem !important; }
