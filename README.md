@@ -1,6 +1,6 @@
 # Emma.css { [emmet](http://docs.emmet.io/cheat-sheet/)-like utility classes }
 
-A collection of [CSS utility classes](emma.css) for rapid front-end development.
+A collection of [CSS utility classes](emma.css) in Sass for rapid and easy front-end development.
 
 ## Example
 
@@ -107,12 +107,12 @@ CSS output:
 (snip)
 ```
 
-### Remove !important decralations
+### Remove !important annotations
 
-You can remove `!important` decralations by `$emma-important` variable:
+You can remove `!important` annotations by `$emma-important` variable:
 
 ``` scss
-$emma-important: false; // Remove !important decralations
+$emma-important: false; // Remove !important annotations
 @import "path/to/emma.scss";
 ```
 CSS output:
