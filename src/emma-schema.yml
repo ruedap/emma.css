@@ -1,0 +1,80 @@
+$schema: 'http://json-schema.org/draft-06/schema#'
+type: object
+properties:
+  vars:
+    type: array
+    items:
+      type: object
+      required:
+        - name
+        - value
+      properties:
+        name:
+          type: string
+        value:
+          type: string
+  rules:
+    type: object
+    properties:
+      props:
+        type: array
+        items:
+          type: object
+          required:
+            - name
+            - abbr
+            - group
+            - values
+          properties:
+            name:
+              type: string
+            abbr:
+              type: string
+            group:
+              type: string
+            values:
+              type: array
+              items:
+                type: object
+                required:
+                  - name
+                  - abbr
+                properties:
+                  name:
+                    type: string
+                  abbr:
+                    type: string
+      mixins:
+        type: array
+        items:
+          type: object
+          required:
+            - name
+            - abbr
+            - group
+            - decls
+          properties:
+            name:
+              type: string
+            abbr:
+              type: string
+            desc:
+              type: string
+            group:
+              type: string
+            decls:
+              type: array
+              items:
+                oneOf:
+                  -
+                    type: string
+                  -
+                    type: object
+                    required:
+                      - prop
+                      - value
+                    properties:
+                      prop:
+                        type: string
+                      value:
+                        type: string

@@ -8,7 +8,7 @@ export class Emma {
   readonly SASS_DIR = './sass';
   readonly TEMP_DIR = './tmp';
   readonly RULE_PATH = 'rules';
-  readonly EMMA_JSON = `${this.TEMP_DIR}/emma.json`;
+  readonly EMMA_JSON = `${this.TEMP_DIR}/emma-data.json`;
   private doc;
 
   constructor(
