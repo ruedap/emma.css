@@ -1,0 +1,168 @@
+// Clearfix (Contain floats)
+@mixin emma-cf($important: $emma-important) {
+  &:before, &:after { content: " "; display: table; }
+  &:after { clear: both; }
+}
+
+// Text truncation (ellipsis)
+@mixin emma-tetr($important: $emma-important) {
+  max-width: 100% #{emma-important($important)};
+  overflow: hidden #{emma-important($important)};
+  text-overflow: ellipsis #{emma-important($important)};
+  white-space: nowrap #{emma-important($important)};
+  word-wrap: normal #{emma-important($important)};
+}
+
+// Text hiding
+@mixin emma-tehi($important: $emma-important) {
+  overflow: hidden #{emma-important($important)};
+  text-indent: 200% #{emma-important($important)};
+  white-space: nowrap #{emma-important($important)};
+}
+
+// Reset list
+@mixin emma-reli($important: $emma-important) {
+  list-style: none #{emma-important($important)};
+  padding-left: 0 #{emma-important($important)};
+}
+
+// Absolute center
+@mixin emma-abce($important: $emma-important) {
+  bottom: 0 #{emma-important($important)};
+  left: 0 #{emma-important($important)};
+  margin: auto #{emma-important($important)};
+  position: auto #{emma-important($important)};
+  right: 0 #{emma-important($important)};
+  top: 0 #{emma-important($important)};
+}
+
+@mixin emma-mx-0($important: $emma-important) {
+  margin-left: 0 #{emma-important($important)};
+  margin-right: 0 #{emma-important($important)};
+}
+
+@mixin emma-my-0($important: $emma-important) {
+  margin-top: 0 #{emma-important($important)};
+  margin-bottom: 0 #{emma-important($important)};
+}
+
+@mixin emma-mx-a($important: $emma-important) {
+  margin-left: auto #{emma-important($important)};
+  margin-right: auto #{emma-important($important)};
+}
+
+@mixin emma-my-a($important: $emma-important) {
+  margin-top: auto #{emma-important($important)};
+  margin-bottom: auto #{emma-important($important)};
+}
+
+@mixin emma-mx-xs($important: $emma-important) {
+  margin-left: $emma-margin-xs #{emma-important($important)};
+  margin-right: $emma-margin-xs #{emma-important($important)};
+}
+
+@mixin emma-my-xs($important: $emma-important) {
+  margin-top: $emma-margin-xs #{emma-important($important)};
+  margin-bottom: $emma-margin-xs #{emma-important($important)};
+}
+
+@mixin emma-mx-sm($important: $emma-important) {
+  margin-left: $emma-margin-sm #{emma-important($important)};
+  margin-right: $emma-margin-sm #{emma-important($important)};
+}
+
+@mixin emma-my-sm($important: $emma-important) {
+  margin-top: $emma-margin-sm #{emma-important($important)};
+  margin-bottom: $emma-margin-sm #{emma-important($important)};
+}
+
+@mixin emma-mx-md($important: $emma-important) {
+  margin-left: $emma-margin-md #{emma-important($important)};
+  margin-right: $emma-margin-md #{emma-important($important)};
+}
+
+@mixin emma-my-md($important: $emma-important) {
+  margin-top: $emma-margin-md #{emma-important($important)};
+  margin-bottom: $emma-margin-md #{emma-important($important)};
+}
+
+@mixin emma-mx-lg($important: $emma-important) {
+  margin-left: $emma-margin-lg #{emma-important($important)};
+  margin-right: $emma-margin-lg #{emma-important($important)};
+}
+
+@mixin emma-my-lg($important: $emma-important) {
+  margin-top: $emma-margin-lg #{emma-important($important)};
+  margin-bottom: $emma-margin-lg #{emma-important($important)};
+}
+
+@mixin emma-mx-xl($important: $emma-important) {
+  margin-left: $emma-margin-xl #{emma-important($important)};
+  margin-right: $emma-margin-xl #{emma-important($important)};
+}
+
+@mixin emma-my-xl($important: $emma-important) {
+  margin-top: $emma-margin-xl #{emma-important($important)};
+  margin-bottom: $emma-margin-xl #{emma-important($important)};
+}
+
+@mixin emma-px-0($important: $emma-important) {
+  padding-left: 0 #{emma-important($important)};
+  padding-right: 0 #{emma-important($important)};
+}
+
+@mixin emma-py-0($important: $emma-important) {
+  padding-top: 0 #{emma-important($important)};
+  padding-bottom: 0 #{emma-important($important)};
+}
+
+@mixin emma-px-xs($important: $emma-important) {
+  padding-left: $emma-padding-xs #{emma-important($important)};
+  padding-right: $emma-padding-xs #{emma-important($important)};
+}
+
+@mixin emma-py-xs($important: $emma-important) {
+  padding-top: $emma-padding-xs #{emma-important($important)};
+  padding-bottom: $emma-padding-xs #{emma-important($important)};
+}
+
+@mixin emma-px-sm($important: $emma-important) {
+  padding-left: $emma-padding-sm #{emma-important($important)};
+  padding-right: $emma-padding-sm #{emma-important($important)};
+}
+
+@mixin emma-py-sm($important: $emma-important) {
+  padding-top: $emma-padding-sm #{emma-important($important)};
+  padding-bottom: $emma-padding-sm #{emma-important($important)};
+}
+
+@mixin emma-px-md($important: $emma-important) {
+  padding-left: $emma-padding-md #{emma-important($important)};
+  padding-right: $emma-padding-md #{emma-important($important)};
+}
+
+@mixin emma-py-md($important: $emma-important) {
+  padding-top: $emma-padding-md #{emma-important($important)};
+  padding-bottom: $emma-padding-md #{emma-important($important)};
+}
+
+@mixin emma-px-lg($important: $emma-important) {
+  padding-left: $emma-padding-lg #{emma-important($important)};
+  padding-right: $emma-padding-lg #{emma-important($important)};
+}
+
+@mixin emma-py-lg($important: $emma-important) {
+  padding-top: $emma-padding-lg #{emma-important($important)};
+  padding-bottom: $emma-padding-lg #{emma-important($important)};
+}
+
+@mixin emma-px-xl($important: $emma-important) {
+  padding-left: $emma-padding-xl #{emma-important($important)};
+  padding-right: $emma-padding-xl #{emma-important($important)};
+}
+
+@mixin emma-py-xl($important: $emma-important) {
+  padding-top: $emma-padding-xl #{emma-important($important)};
+  padding-bottom: $emma-padding-xl #{emma-important($important)};
+}
+

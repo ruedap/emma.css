@@ -1,0 +1,63 @@
+// Variables
+$emma-prefix: "u-" !default;
+$emma-important: true !default;
+$emma-font-size-xs: 0.75rem !default;
+$emma-font-size-sm: 0.875rem !default;
+$emma-font-size-md: 1.0rem !default;
+$emma-font-size-lg: 1.25rem !default;
+$emma-font-size-xl: 1.5rem !default;
+$emma-font-size-h1: 2.5rem !default;
+$emma-font-size-h2: 2.0rem !default;
+$emma-font-size-h3: 1.75rem !default;
+$emma-font-size-h4: 1.5rem !default;
+$emma-font-size-h5: 1.25rem !default;
+$emma-font-size-h6: 1.0rem !default;
+$emma-line-height-xs: 1.25 !default;
+$emma-line-height-sm: 1.33 !default;
+$emma-line-height-md: 1.5 !default;
+$emma-line-height-lg: 1.75 !default;
+$emma-line-height-xl: 2.0 !default;
+$emma-margin-xs: 0.2rem !default;
+$emma-margin-sm: 0.5rem !default;
+$emma-margin-md: 1.0rem !default;
+$emma-margin-lg: 1.5rem !default;
+$emma-margin-xl: 3.0rem !default;
+$emma-padding-xs: 0.2rem !default;
+$emma-padding-sm: 0.5rem !default;
+$emma-padding-md: 1.0rem !default;
+$emma-padding-lg: 1.5rem !default;
+$emma-padding-xl: 3.0rem !default;
+$emma-border-radius-xs: 0.1rem !default;
+$emma-border-radius-sm: 0.2rem !default;
+$emma-border-radius-md: 0.25rem !default;
+$emma-border-radius-lg: 0.3rem !default;
+$emma-border-radius-xl: 0.4rem !default;
+$emma-color-primary: #0275d8 !default;
+$emma-color-success: #5cb85c !default;
+$emma-color-info: #5bc0de !default;
+$emma-color-warning: #f0ad4e !default;
+$emma-color-danger: #d9534f !default;
+$emma-color-white: #ffffff !default;
+$emma-color-silver: #dddddd !default;
+$emma-color-gray: #aaaaaa !default;
+$emma-color-black: #111111 !default;
+$emma-color-navy: #001f3f !default;
+$emma-color-blue: #0074d9 !default;
+$emma-color-aqua: #7fdbff !default;
+$emma-color-teal: #39cccc !default;
+$emma-color-olive: #3d9970 !default;
+$emma-color-green: #2ecc40 !default;
+$emma-color-lime: #01ff70 !default;
+$emma-color-yellow: #ffdc00 !default;
+$emma-color-orange: #ff851b !default;
+$emma-color-red: #ff4136 !default;
+$emma-color-maroon: #85144b !default;
+$emma-color-fuchsia: #f012be !default;
+$emma-color-purple: #b10dc9 !default;
+
+// Functions
+@function emma-important($bool: $emma-important) {
+  $important: "";
+  @if $bool { $important: "!important"; }
+  @return $important;
+}

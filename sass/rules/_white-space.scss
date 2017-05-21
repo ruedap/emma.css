@@ -1,0 +1,20 @@
+.#{$emma-prefix}whs-nm {
+  white-space: normal #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}whs-p {
+  white-space: pre #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}whs-nw {
+  white-space: nowrap #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}whs-pw {
+  white-space: pre-wrap #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}whs-pl {
+  white-space: pre-line #{emma-important($emma-important)};
+}
+

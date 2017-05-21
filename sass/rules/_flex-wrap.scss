@@ -1,0 +1,12 @@
+.#{$emma-prefix}fxw-n {
+  flex-wrap: nowrap #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fxw-w {
+  flex-wrap: wrap #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fxw-wr {
+  flex-wrap: wrap-reverse #{emma-important($emma-important)};
+}
+

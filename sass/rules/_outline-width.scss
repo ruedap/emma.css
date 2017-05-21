@@ -1,0 +1,12 @@
+.#{$emma-prefix}olw-tn {
+  outline-width: thin #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}olw-md {
+  outline-width: medium #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}olw-tc {
+  outline-width: thick #{emma-important($emma-important)};
+}
+

@@ -1,6 +1,8 @@
 # Emma.css { [emmet](http://docs.emmet.io/cheat-sheet/)-like utility classes }
 
-A collection of [CSS utility classes](emma.css) for rapid front-end development.
+A collection of [CSS utility classes](emma.css) for rapid and easy front-end development.
+
+[![CircleCI](https://circleci.com/gh/ruedap/emma.css.svg?style=shield)](https://circleci.com/gh/ruedap/emma.css)
 
 ## Example
 
@@ -56,8 +58,8 @@ See also: [emma.css](emma.css) (all utility classes)
 
 Install or download Emma.css from one of these sources:
 
-* **Bower**: `bower install emma.css`
 * **npm**: `npm install emma.css`
+* **Bower**: `bower install emma.css`
 * **Rails**: [emma-css-rails](https://github.com/ruedap/emma-css-rails)
 * **Download**: [zip](https://github.com/ruedap/emma.css/releases)
 * **Alfred 2**: [Emma.css Workflow](https://github.com/ruedap/alfred-emma-css-workflow)
@@ -107,12 +109,12 @@ CSS output:
 (snip)
 ```
 
-### Remove !important decralations
+### Remove !important annotations
 
-You can remove `!important` decralations by `$emma-important` variable:
+You can remove `!important` annotations by `$emma-important` variable:
 
 ``` scss
-$emma-important: false; // Remove !important decralations
+$emma-important: false; // Remove !important annotations
 @import "path/to/emma.scss";
 ```
 CSS output:
@@ -123,59 +125,14 @@ CSS output:
 (snip)
 ```
 
-### Select available snippets
-
-You can select available snippets by `$emma-available-snippet-list` variable:
-
-``` scss
-$emma-available-snippet-list: (
-  tt-u, ff-a, wfsm-a, cf, // Select available snippets
-);
-@import "path/to/emma.scss";
-```
-CSS output:
-``` css
-.u-tt-u { text-transform: uppercase !important; }
-.u-ff-a { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important; }
-.u-wfsm-a { -webkit-font-smoothing: antialiased !important; }
-.u-cf:before, .u-cf:after { content: " "; display: table; }
-.u-cf:after { clear: both; }
-```
-
 ### Change default sizes or colors
 
-You can change default sizes or colors by [variables](emma.scss):
+You can change default sizes or colors by [variables](sass/_vars.scss):
 
 ``` scss
-$emma-padding-md: 20px;     // default: 1.0rem
-$emma-color-black: #111111; // default: black
+$emma-padding-md: 20px;   // default: `1.0rem`
+$emma-color-black: #000;  // default: `#111111`
 @import "path/to/emma.scss";
-```
-
-If you need to change [nicer color palette](http://clrs.cc/):
-
-``` scss
-$emma-alternative-colors: true;
-@import "path/to/emma.scss";
-```
-
-### Define custom snippets
-
-You can define custom snippets by `emma` mixin:
-
-``` scss
-@import "path/to/emma.scss";
-@include emma(foo-bar, color, #369); // Single declaration
-@include emma(baz) {                 // Multiple declaration
-  font-size: 2.1em !important;
-  line-height: 1.618;
-}
-```
-CSS output:
-``` css
-(snip)
-.u-foo-bar { color: #369 !important; }
-.u-baz { font-size: 2.1em !important; line-height: 1.618; }
 ```
 
 ## Inspired by
@@ -188,7 +145,7 @@ CSS output:
 
 ## License
 
-Released under the [MIT license](http://ruedap.mit-license.org/2015).
+Released under the [MIT license](LICENSE).
 
 ## Author
 

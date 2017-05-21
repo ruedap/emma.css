@@ -1,0 +1,16 @@
+.#{$emma-prefix}td-n {
+  text-decoration: none #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}td-u {
+  text-decoration: underline #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}td-o {
+  text-decoration: overline #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}td-l {
+  text-decoration: line-through #{emma-important($emma-important)};
+}
+

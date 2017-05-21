@@ -1,6 +1,6 @@
 {
   "name": "emma.css",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "author": "ruedap",
   "description": "Emma.css { emmet-like utility classes }",
   "keywords": [
@@ -13,11 +13,17 @@
   ],
   "ignore": [
     "**/.*",
+    "node_modules",
+    "src",
+    "test",
+    "tmp",
+    ".*",
     "npm-debug.log",
     "bower.json",
-    "node_modules",
-    "package.json",
+    "circle.yml",
     "gulpfile.babel.js",
-    "tmp"
+    "package.json",
+    "tsconfig.json",
+    "yarn.lock"
   ]
 }

@@ -1,0 +1,12 @@
+.#{$emma-prefix}v-v {
+  visibility: visible #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}v-h {
+  visibility: hidden #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}v-c {
+  visibility: collapse #{emma-important($emma-important)};
+}
+

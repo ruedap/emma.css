@@ -1,0 +1,8 @@
+.#{$emma-prefix}tbl-a {
+  table-layout: auto #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}tbl-f {
+  table-layout: fixed #{emma-important($emma-important)};
+}
+

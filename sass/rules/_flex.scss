@@ -1,0 +1,16 @@
+.#{$emma-prefix}fx-n {
+  flex: none #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fx-1_1_a {
+  flex: 1 1 auto #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fx-1_0_a {
+  flex: 1 0 auto #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fx-1_1_1 {
+  flex: 1 1 1px #{emma-important($emma-important)};
+}
+

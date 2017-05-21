@@ -1,0 +1,24 @@
+.#{$emma-prefix}pl-0 {
+  padding-left: 0 #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}pl-xs {
+  padding-left: $emma-padding-xs #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}pl-sm {
+  padding-left: $emma-padding-sm #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}pl-md {
+  padding-left: $emma-padding-md #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}pl-lg {
+  padding-left: $emma-padding-lg #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}pl-xl {
+  padding-left: $emma-padding-xl #{emma-important($emma-important)};
+}
+

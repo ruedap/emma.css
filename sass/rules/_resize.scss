@@ -1,0 +1,16 @@
+.#{$emma-prefix}rsz-n {
+  resize: none #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}rsz-b {
+  resize: both #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}rsz-h {
+  resize: horizontal #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}rsz-v {
+  resize: vertical #{emma-important($emma-important)};
+}
+

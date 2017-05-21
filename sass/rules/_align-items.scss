@@ -1,0 +1,20 @@
+.#{$emma-prefix}ai-fs {
+  align-items: flex-start #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ai-fe {
+  align-items: flex-end #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ai-c {
+  align-items: center #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ai-b {
+  align-items: baseline #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ai-s {
+  align-items: stretch #{emma-important($emma-important)};
+}
+

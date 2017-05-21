@@ -1,0 +1,16 @@
+.#{$emma-prefix}ovx-v {
+  overflow-x: visible #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ovx-h {
+  overflow-x: hidden #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ovx-s {
+  overflow-x: scroll #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ovx-a {
+  overflow-x: auto #{emma-important($emma-important)};
+}
+

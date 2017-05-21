@@ -1,0 +1,24 @@
+.#{$emma-prefix}as-a {
+  align-self: auto #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}as-fs {
+  align-self: flex-start #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}as-fe {
+  align-self: flex-end #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}as-c {
+  align-self: center #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}as-b {
+  align-self: baseline #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}as-s {
+  align-self: stretch #{emma-important($emma-important)};
+}
+

@@ -1,0 +1,7 @@
+// Text hiding
+.#{$emma-prefix}tehi {
+  overflow: hidden #{emma-important($emma-important)};
+  text-indent: 200% #{emma-important($emma-important)};
+  white-space: nowrap #{emma-important($emma-important)};
+}
+

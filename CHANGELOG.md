@@ -1,7 +1,10 @@
-# Emma.css Changelog
+# CHANGELOG
 
 ## master (unreleased)
 * Nothing
+
+## 0.9.0
+* Restructure based on YAML documents
 
 ## 0.8.0
 * Add snippet: fz-0 (font-size: 0)

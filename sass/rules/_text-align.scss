@@ -1,0 +1,16 @@
+.#{$emma-prefix}ta-l {
+  text-align: left #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ta-c {
+  text-align: center #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ta-r {
+  text-align: right #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ta-j {
+  text-align: justify #{emma-important($emma-important)};
+}
+

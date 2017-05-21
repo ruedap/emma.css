@@ -1,0 +1,32 @@
+.#{$emma-prefix}cur-a {
+  cursor: auto #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}cur-d {
+  cursor: default #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}cur-c {
+  cursor: crosshair #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}cur-ha {
+  cursor: hand #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}cur-he {
+  cursor: help #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}cur-m {
+  cursor: move #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}cur-p {
+  cursor: pointer #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}cur-t {
+  cursor: text #{emma-important($emma-important)};
+}
+

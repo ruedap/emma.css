@@ -1,0 +1,8 @@
+.#{$emma-prefix}lisp-i {
+  list-style-position: inside #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lisp-o {
+  list-style-position: outside #{emma-important($emma-important)};
+}
+

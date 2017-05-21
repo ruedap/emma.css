@@ -1,0 +1,44 @@
+.#{$emma-prefix}bds-n {
+  border-style: none #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}bds-h {
+  border-style: hidden #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}bds-dt {
+  border-style: dotted #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}bds-ds {
+  border-style: dashed #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}bds-s {
+  border-style: solid #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}bds-db {
+  border-style: double #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}bds-w {
+  border-style: wave #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}bds-g {
+  border-style: groove #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}bds-r {
+  border-style: ridge #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}bds-i {
+  border-style: inset #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}bds-o {
+  border-style: outset #{emma-important($emma-important)};
+}
+

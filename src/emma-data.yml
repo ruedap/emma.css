@@ -1,0 +1,2716 @@
+vars:
+  -
+    name: prefix
+    value: '"u-"'
+  -
+    name: important
+    value: 'true'
+  -
+    name: font-size-xs
+    value: 0.75rem
+  -
+    name: font-size-sm
+    value: 0.875rem
+  -
+    name: font-size-md
+    value: 1.0rem
+  -
+    name: font-size-lg
+    value: 1.25rem
+  -
+    name: font-size-xl
+    value: 1.5rem
+  -
+    name: font-size-h1
+    value: 2.5rem
+  -
+    name: font-size-h2
+    value: 2.0rem
+  -
+    name: font-size-h3
+    value: 1.75rem
+  -
+    name: font-size-h4
+    value: 1.5rem
+  -
+    name: font-size-h5
+    value: 1.25rem
+  -
+    name: font-size-h6
+    value: 1.0rem
+  -
+    name: line-height-xs
+    value: '1.25'
+  -
+    name: line-height-sm
+    value: '1.33'
+  -
+    name: line-height-md
+    value: '1.5'
+  -
+    name: line-height-lg
+    value: '1.75'
+  -
+    name: line-height-xl
+    value: '2.0'
+  -
+    name: margin-xs
+    value: 0.2rem
+  -
+    name: margin-sm
+    value: 0.5rem
+  -
+    name: margin-md
+    value: 1.0rem
+  -
+    name: margin-lg
+    value: 1.5rem
+  -
+    name: margin-xl
+    value: 3.0rem
+  -
+    name: padding-xs
+    value: 0.2rem
+  -
+    name: padding-sm
+    value: 0.5rem
+  -
+    name: padding-md
+    value: 1.0rem
+  -
+    name: padding-lg
+    value: 1.5rem
+  -
+    name: padding-xl
+    value: 3.0rem
+  -
+    name: border-radius-xs
+    value: 0.1rem
+  -
+    name: border-radius-sm
+    value: 0.2rem
+  -
+    name: border-radius-md
+    value: 0.25rem
+  -
+    name: border-radius-lg
+    value: 0.3rem
+  -
+    name: border-radius-xl
+    value: 0.4rem
+  -
+    name: color-primary
+    value: '#0275d8'
+  -
+    name: color-success
+    value: '#5cb85c'
+  -
+    name: color-info
+    value: '#5bc0de'
+  -
+    name: color-warning
+    value: '#f0ad4e'
+  -
+    name: color-danger
+    value: '#d9534f'
+  -
+    name: color-white
+    value: '#ffffff'
+  -
+    name: color-silver
+    value: '#dddddd'
+  -
+    name: color-gray
+    value: '#aaaaaa'
+  -
+    name: color-black
+    value: '#111111'
+  -
+    name: color-navy
+    value: '#001f3f'
+  -
+    name: color-blue
+    value: '#0074d9'
+  -
+    name: color-aqua
+    value: '#7fdbff'
+  -
+    name: color-teal
+    value: '#39cccc'
+  -
+    name: color-olive
+    value: '#3d9970'
+  -
+    name: color-green
+    value: '#2ecc40'
+  -
+    name: color-lime
+    value: '#01ff70'
+  -
+    name: color-yellow
+    value: '#ffdc00'
+  -
+    name: color-orange
+    value: '#ff851b'
+  -
+    name: color-red
+    value: '#ff4136'
+  -
+    name: color-maroon
+    value: '#85144b'
+  -
+    name: color-fuchsia
+    value: '#f012be'
+  -
+    name: color-purple
+    value: '#b10dc9'
+rules:
+  props:
+    -
+      name: position
+      abbr: pos
+      group: display
+      values:
+        -
+          name: static
+          abbr: s
+        -
+          name: absolute
+          abbr: a
+        -
+          name: relative
+          abbr: r
+        -
+          name: fixed
+          abbr: f
+    -
+      name: top
+      abbr: t
+      group: display
+      values:
+        -
+          name: auto
+          abbr: a
+        -
+          name: '0'
+          abbr: '0'
+    -
+      name: right
+      abbr: r
+      group: display
+      values:
+        -
+          name: auto
+          abbr: a
+        -
+          name: '0'
+          abbr: '0'
+    -
+      name: bottom
+      abbr: b
+      group: display
+      values:
+        -
+          name: auto
+          abbr: a
+        -
+          name: '0'
+          abbr: '0'
+    -
+      name: left
+      abbr: l
+      group: display
+      values:
+        -
+          name: auto
+          abbr: a
+        -
+          name: '0'
+          abbr: '0'
+    -
+      name: z-index
+      abbr: z
+      group: display
+      values:
+        -
+          name: auto
+          abbr: a
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: '1'
+          abbr: '1'
+        -
+          name: '2'
+          abbr: '2'
+        -
+          name: '3'
+          abbr: '3'
+        -
+          name: '4'
+          abbr: '4'
+        -
+          name: '5'
+          abbr: '5'
+        -
+          name: '6'
+          abbr: '6'
+        -
+          name: '9999'
+          abbr: '9999'
+    -
+      name: float
+      abbr: fl
+      group: float
+      values:
+        -
+          name: none
+          abbr: n
+        -
+          name: left
+          abbr: l
+        -
+          name: right
+          abbr: r
+    -
+      name: clear
+      abbr: cl
+      group: float
+      values:
+        -
+          name: none
+          abbr: n
+        -
+          name: left
+          abbr: l
+        -
+          name: right
+          abbr: r
+        -
+          name: both
+          abbr: b
+    -
+      name: display
+      abbr: d
+      group: display
+      values:
+        -
+          name: none
+          abbr: n
+        -
+          name: block
+          abbr: b
+        -
+          name: flex
+          abbr: f
+        -
+          name: inline-flex
+          abbr: if
+        -
+          name: inline
+          abbr: i
+        -
+          name: inline-block
+          abbr: ib
+        -
+          name: list-item
+          abbr: li
+        -
+          name: run-in
+          abbr: ri
+        -
+          name: compact
+          abbr: cp
+        -
+          name: table
+          abbr: tb
+        -
+          name: inline-table
+          abbr: itb
+        -
+          name: table-caption
+          abbr: tbcp
+        -
+          name: table-column
+          abbr: tbcl
+        -
+          name: table-column-group
+          abbr: tbclg
+        -
+          name: table-header-group
+          abbr: tbhg
+        -
+          name: table-footer-group
+          abbr: tbfg
+        -
+          name: table-row
+          abbr: tbr
+        -
+          name: table-row-group
+          abbr: tbrg
+        -
+          name: table-cell
+          abbr: tbc
+        -
+          name: ruby
+          abbr: rb
+        -
+          name: ruby-base
+          abbr: rbb
+        -
+          name: ruby-base-group
+          abbr: rbbg
+        -
+          name: ruby-text
+          abbr: rbt
+        -
+          name: ruby-text-group
+          abbr: rbtg
+    -
+      name: visibility
+      abbr: v
+      group: display
+      values:
+        -
+          name: visible
+          abbr: v
+        -
+          name: hidden
+          abbr: h
+        -
+          name: collapse
+          abbr: c
+    -
+      name: overflow
+      abbr: ov
+      group: display
+      values:
+        -
+          name: visible
+          abbr: v
+        -
+          name: hidden
+          abbr: h
+        -
+          name: scroll
+          abbr: s
+        -
+          name: auto
+          abbr: a
+    -
+      name: overflow-x
+      abbr: ovx
+      group: display
+      values:
+        -
+          name: visible
+          abbr: v
+        -
+          name: hidden
+          abbr: h
+        -
+          name: scroll
+          abbr: s
+        -
+          name: auto
+          abbr: a
+    -
+      name: overflow-y
+      abbr: ovy
+      group: display
+      values:
+        -
+          name: visible
+          abbr: v
+        -
+          name: hidden
+          abbr: h
+        -
+          name: scroll
+          abbr: s
+        -
+          name: auto
+          abbr: a
+    -
+      name: box-sizing
+      abbr: bxz
+      group: display
+      values:
+        -
+          name: content-box
+          abbr: cb
+        -
+          name: border-box
+          abbr: bb
+    -
+      name: box-shadow
+      abbr: bxsh
+      group: background
+      values:
+        -
+          name: none
+          abbr: n
+    -
+      name: margin
+      abbr: m
+      group: margin
+      values:
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: auto
+          abbr: a
+        -
+          name: '0 auto'
+          abbr: 0_a
+        -
+          name: 'auto 0'
+          abbr: a_0
+        -
+          name: $margin-xs
+          abbr: xs
+        -
+          name: $margin-sm
+          abbr: sm
+        -
+          name: $margin-md
+          abbr: md
+        -
+          name: $margin-lg
+          abbr: lg
+        -
+          name: $margin-xl
+          abbr: xl
+    -
+      name: margin-top
+      abbr: mt
+      group: margin
+      values:
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: auto
+          abbr: a
+        -
+          name: $margin-xs
+          abbr: xs
+        -
+          name: $margin-sm
+          abbr: sm
+        -
+          name: $margin-md
+          abbr: md
+        -
+          name: $margin-lg
+          abbr: lg
+        -
+          name: $margin-xl
+          abbr: xl
+    -
+      name: margin-right
+      abbr: mr
+      group: margin
+      values:
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: auto
+          abbr: a
+        -
+          name: $margin-xs
+          abbr: xs
+        -
+          name: $margin-sm
+          abbr: sm
+        -
+          name: $margin-md
+          abbr: md
+        -
+          name: $margin-lg
+          abbr: lg
+        -
+          name: $margin-xl
+          abbr: xl
+    -
+      name: margin-bottom
+      abbr: mb
+      group: margin
+      values:
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: auto
+          abbr: a
+        -
+          name: $margin-xs
+          abbr: xs
+        -
+          name: $margin-sm
+          abbr: sm
+        -
+          name: $margin-md
+          abbr: md
+        -
+          name: $margin-lg
+          abbr: lg
+        -
+          name: $margin-xl
+          abbr: xl
+    -
+      name: margin-left
+      abbr: ml
+      group: margin
+      values:
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: auto
+          abbr: a
+        -
+          name: $margin-xs
+          abbr: xs
+        -
+          name: $margin-sm
+          abbr: sm
+        -
+          name: $margin-md
+          abbr: md
+        -
+          name: $margin-lg
+          abbr: lg
+        -
+          name: $margin-xl
+          abbr: xl
+    -
+      name: padding
+      abbr: p
+      group: padding
+      values:
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: $padding-xs
+          abbr: xs
+        -
+          name: $padding-sm
+          abbr: sm
+        -
+          name: $padding-md
+          abbr: md
+        -
+          name: $padding-lg
+          abbr: lg
+        -
+          name: $padding-xl
+          abbr: xl
+    -
+      name: padding-top
+      abbr: pt
+      group: padding
+      values:
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: $padding-xs
+          abbr: xs
+        -
+          name: $padding-sm
+          abbr: sm
+        -
+          name: $padding-md
+          abbr: md
+        -
+          name: $padding-lg
+          abbr: lg
+        -
+          name: $padding-xl
+          abbr: xl
+    -
+      name: padding-right
+      abbr: pr
+      group: padding
+      values:
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: $padding-xs
+          abbr: xs
+        -
+          name: $padding-sm
+          abbr: sm
+        -
+          name: $padding-md
+          abbr: md
+        -
+          name: $padding-lg
+          abbr: lg
+        -
+          name: $padding-xl
+          abbr: xl
+    -
+      name: padding-bottom
+      abbr: pb
+      group: padding
+      values:
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: $padding-xs
+          abbr: xs
+        -
+          name: $padding-sm
+          abbr: sm
+        -
+          name: $padding-md
+          abbr: md
+        -
+          name: $padding-lg
+          abbr: lg
+        -
+          name: $padding-xl
+          abbr: xl
+    -
+      name: padding-left
+      abbr: pl
+      group: padding
+      values:
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: $padding-xs
+          abbr: xs
+        -
+          name: $padding-sm
+          abbr: sm
+        -
+          name: $padding-md
+          abbr: md
+        -
+          name: $padding-lg
+          abbr: lg
+        -
+          name: $padding-xl
+          abbr: xl
+    -
+      name: width
+      abbr: w
+      group: width
+      values:
+        -
+          name: auto
+          abbr: a
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: 1%
+          abbr: 1p
+        -
+          name: 10%
+          abbr: 10p
+        -
+          name: 20%
+          abbr: 20p
+        -
+          name: 25%
+          abbr: 25p
+        -
+          name: 30%
+          abbr: 30p
+        -
+          name: 33%
+          abbr: 33p
+        -
+          name: 40%
+          abbr: 40p
+        -
+          name: 50%
+          abbr: 50p
+        -
+          name: 60%
+          abbr: 60p
+        -
+          name: 66%
+          abbr: 66p
+        -
+          name: 70%
+          abbr: 70p
+        -
+          name: 75%
+          abbr: 75p
+        -
+          name: 80%
+          abbr: 80p
+        -
+          name: 90%
+          abbr: 90p
+        -
+          name: 100%
+          abbr: 100p
+    -
+      name: height
+      abbr: h
+      group: height
+      values:
+        -
+          name: auto
+          abbr: a
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: 100%
+          abbr: 100p
+    -
+      name: max-width
+      abbr: maw
+      group: width
+      values:
+        -
+          name: none
+          abbr: n
+        -
+          name: 1%
+          abbr: 1p
+        -
+          name: 10%
+          abbr: 10p
+        -
+          name: 20%
+          abbr: 20p
+        -
+          name: 25%
+          abbr: 25p
+        -
+          name: 30%
+          abbr: 30p
+        -
+          name: 33%
+          abbr: 33p
+        -
+          name: 40%
+          abbr: 40p
+        -
+          name: 50%
+          abbr: 50p
+        -
+          name: 60%
+          abbr: 60p
+        -
+          name: 66%
+          abbr: 66p
+        -
+          name: 70%
+          abbr: 70p
+        -
+          name: 75%
+          abbr: 75p
+        -
+          name: 80%
+          abbr: 80p
+        -
+          name: 90%
+          abbr: 90p
+        -
+          name: 100%
+          abbr: 100p
+    -
+      name: max-height
+      abbr: mah
+      group: height
+      values:
+        -
+          name: none
+          abbr: n
+        -
+          name: 100%
+          abbr: 100p
+    -
+      name: min-width
+      abbr: miw
+      group: width
+      values:
+        -
+          name: '0'
+          abbr: '0'
+    -
+      name: min-height
+      abbr: mih
+      group: height
+      values:
+        -
+          name: '0'
+          abbr: '0'
+    -
+      name: outline
+      abbr: ol
+      group: border
+      values:
+        -
+          name: none
+          abbr: n
+    -
+      name: outline-width
+      abbr: olw
+      group: border
+      values:
+        -
+          name: thin
+          abbr: tn
+        -
+          name: medium
+          abbr: md
+        -
+          name: thick
+          abbr: tc
+    -
+      name: outline-style
+      abbr: ols
+      group: border
+      values:
+        -
+          name: none
+          abbr: n
+        -
+          name: dotted
+          abbr: dt
+        -
+          name: dashed
+          abbr: ds
+        -
+          name: solid
+          abbr: s
+        -
+          name: double
+          abbr: db
+        -
+          name: groove
+          abbr: g
+        -
+          name: ridge
+          abbr: r
+        -
+          name: inset
+          abbr: i
+        -
+          name: outset
+          abbr: o
+    -
+      name: outline-color
+      abbr: olc
+      group: border
+      values:
+        -
+          name: invert
+          abbr: i
+    -
+      name: backface-visibility
+      abbr: bfv
+      group: border
+      values:
+        -
+          name: hidden
+          abbr: h
+        -
+          name: visible
+          abbr: v
+    -
+      name: border
+      abbr: bd
+      group: border
+      values:
+        -
+          name: none
+          abbr: n
+        -
+          name: '0'
+          abbr: '0'
+    -
+      name: border-collapse
+      abbr: bdcl
+      group: border
+      values:
+        -
+          name: collapse
+          abbr: c
+        -
+          name: separate
+          abbr: s
+    -
+      name: border-color
+      abbr: bdc
+      group: border
+      values:
+        -
+          name: transparent
+          abbr: t
+        -
+          name: currentColor
+          abbr: cc
+        -
+          name: $color-white
+          abbr: white
+        -
+          name: $color-silver
+          abbr: silver
+        -
+          name: $color-gray
+          abbr: gray
+        -
+          name: $color-black
+          abbr: black
+        -
+          name: $color-navy
+          abbr: navy
+        -
+          name: $color-blue
+          abbr: blue
+        -
+          name: $color-aqua
+          abbr: aqua
+        -
+          name: $color-teal
+          abbr: teal
+        -
+          name: $color-olive
+          abbr: olive
+        -
+          name: $color-green
+          abbr: green
+        -
+          name: $color-lime
+          abbr: lime
+        -
+          name: $color-yellow
+          abbr: yellow
+        -
+          name: $color-orange
+          abbr: orange
+        -
+          name: $color-red
+          abbr: red
+        -
+          name: $color-maroon
+          abbr: maroon
+        -
+          name: $color-fuchsia
+          abbr: fuchsia
+        -
+          name: $color-purple
+          abbr: purple
+        -
+          name: $color-primary
+          abbr: primary
+        -
+          name: $color-success
+          abbr: success
+        -
+          name: $color-info
+          abbr: info
+        -
+          name: $color-warning
+          abbr: warning
+        -
+          name: $color-danger
+          abbr: danger
+    -
+      name: border-image
+      abbr: bdi
+      group: border
+      values:
+        -
+          name: none
+          abbr: n
+    -
+      name: border-style
+      abbr: bds
+      group: border
+      values:
+        -
+          name: none
+          abbr: n
+        -
+          name: hidden
+          abbr: h
+        -
+          name: dotted
+          abbr: dt
+        -
+          name: dashed
+          abbr: ds
+        -
+          name: solid
+          abbr: s
+        -
+          name: double
+          abbr: db
+        -
+          name: wave
+          abbr: w
+        -
+          name: groove
+          abbr: g
+        -
+          name: ridge
+          abbr: r
+        -
+          name: inset
+          abbr: i
+        -
+          name: outset
+          abbr: o
+    -
+      name: border-width
+      abbr: bdw
+      group: border
+      values:
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: 1px
+          abbr: '1'
+        -
+          name: 2px
+          abbr: '2'
+        -
+          name: 3px
+          abbr: '3'
+        -
+          name: 4px
+          abbr: '4'
+        -
+          name: 5px
+          abbr: '5'
+        -
+          name: 6px
+          abbr: '6'
+    -
+      name: border-top-width
+      abbr: bdtw
+      group: border
+      values:
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: 1px
+          abbr: '1'
+        -
+          name: 2px
+          abbr: '2'
+        -
+          name: 3px
+          abbr: '3'
+        -
+          name: 4px
+          abbr: '4'
+        -
+          name: 5px
+          abbr: '5'
+        -
+          name: 6px
+          abbr: '6'
+    -
+      name: border-right-width
+      abbr: bdrw
+      group: border
+      values:
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: 1px
+          abbr: '1'
+        -
+          name: 2px
+          abbr: '2'
+        -
+          name: 3px
+          abbr: '3'
+        -
+          name: 4px
+          abbr: '4'
+        -
+          name: 5px
+          abbr: '5'
+        -
+          name: 6px
+          abbr: '6'
+    -
+      name: border-bottom-width
+      abbr: bdbw
+      group: border
+      values:
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: 1px
+          abbr: '1'
+        -
+          name: 2px
+          abbr: '2'
+        -
+          name: 3px
+          abbr: '3'
+        -
+          name: 4px
+          abbr: '4'
+        -
+          name: 5px
+          abbr: '5'
+        -
+          name: 6px
+          abbr: '6'
+    -
+      name: border-left-width
+      abbr: bdlw
+      group: border
+      values:
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: 1px
+          abbr: '1'
+        -
+          name: 2px
+          abbr: '2'
+        -
+          name: 3px
+          abbr: '3'
+        -
+          name: 4px
+          abbr: '4'
+        -
+          name: 5px
+          abbr: '5'
+        -
+          name: 6px
+          abbr: '6'
+    -
+      name: border-top
+      abbr: bdt
+      group: border
+      values:
+        -
+          name: none
+          abbr: n
+        -
+          name: '0'
+          abbr: '0'
+    -
+      name: border-top-color
+      abbr: bdtc
+      group: border
+      values:
+        -
+          name: transparent
+          abbr: t
+        -
+          name: currentColor
+          abbr: cc
+    -
+      name: border-right
+      abbr: bdr
+      group: border
+      values:
+        -
+          name: none
+          abbr: n
+        -
+          name: '0'
+          abbr: '0'
+    -
+      name: border-right-color
+      abbr: bdrc
+      group: border
+      values:
+        -
+          name: transparent
+          abbr: t
+        -
+          name: currentColor
+          abbr: cc
+    -
+      name: border-bottom
+      abbr: bdb
+      group: border
+      values:
+        -
+          name: none
+          abbr: n
+        -
+          name: '0'
+          abbr: '0'
+    -
+      name: border-bottom-color
+      abbr: bdbc
+      group: border
+      values:
+        -
+          name: transparent
+          abbr: t
+        -
+          name: currentColor
+          abbr: cc
+    -
+      name: border-left
+      abbr: bdl
+      group: border
+      values:
+        -
+          name: none
+          abbr: n
+        -
+          name: '0'
+          abbr: '0'
+    -
+      name: border-left-color
+      abbr: bdlc
+      group: border
+      values:
+        -
+          name: transparent
+          abbr: t
+        -
+          name: currentColor
+          abbr: cc
+    -
+      name: border-radius
+      abbr: bdrs
+      group: border
+      values:
+        -
+          name: $border-radius-xs
+          abbr: xs
+        -
+          name: $border-radius-sm
+          abbr: sm
+        -
+          name: $border-radius-md
+          abbr: md
+        -
+          name: $border-radius-lg
+          abbr: lg
+        -
+          name: $border-radius-xl
+          abbr: xl
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: 1px
+          abbr: '1'
+        -
+          name: 2px
+          abbr: '2'
+        -
+          name: 3px
+          abbr: '3'
+        -
+          name: 4px
+          abbr: '4'
+        -
+          name: 5px
+          abbr: '5'
+        -
+          name: 6px
+          abbr: '6'
+        -
+          name: 100%
+          abbr: 100p
+    -
+      name: background
+      abbr: bg
+      group: background
+      values:
+        -
+          name: none
+          abbr: n
+    -
+      name: background-color
+      abbr: bgc
+      group: background
+      values:
+        -
+          name: transparent
+          abbr: t
+        -
+          name: currentColor
+          abbr: cc
+        -
+          name: $color-white
+          abbr: white
+        -
+          name: $color-silver
+          abbr: silver
+        -
+          name: $color-gray
+          abbr: gray
+        -
+          name: $color-black
+          abbr: black
+        -
+          name: $color-navy
+          abbr: navy
+        -
+          name: $color-blue
+          abbr: blue
+        -
+          name: $color-aqua
+          abbr: aqua
+        -
+          name: $color-teal
+          abbr: teal
+        -
+          name: $color-olive
+          abbr: olive
+        -
+          name: $color-green
+          abbr: green
+        -
+          name: $color-lime
+          abbr: lime
+        -
+          name: $color-yellow
+          abbr: yellow
+        -
+          name: $color-orange
+          abbr: orange
+        -
+          name: $color-red
+          abbr: red
+        -
+          name: $color-maroon
+          abbr: maroon
+        -
+          name: $color-fuchsia
+          abbr: fuchsia
+        -
+          name: $color-purple
+          abbr: purple
+        -
+          name: $color-primary
+          abbr: primary
+        -
+          name: $color-success
+          abbr: success
+        -
+          name: $color-info
+          abbr: info
+        -
+          name: $color-warning
+          abbr: warning
+        -
+          name: $color-danger
+          abbr: danger
+    -
+      name: background-image
+      abbr: bgi
+      group: background
+      values:
+        -
+          name: none
+          abbr: n
+    -
+      name: background-repeat
+      abbr: bgr
+      group: background
+      values:
+        -
+          name: no-repeat
+          abbr: n
+        -
+          name: repeat-x
+          abbr: x
+        -
+          name: repeat-y
+          abbr: y
+        -
+          name: space
+          abbr: sp
+        -
+          name: round
+          abbr: rd
+    -
+      name: background-attachment
+      abbr: bga
+      group: background
+      values:
+        -
+          name: fixed
+          abbr: f
+        -
+          name: scroll
+          abbr: s
+    -
+      name: background-position
+      abbr: bgp
+      group: background
+      values:
+        -
+          name: top
+          abbr: t
+        -
+          name: right
+          abbr: r
+        -
+          name: bottom
+          abbr: b
+        -
+          name: left
+          abbr: l
+        -
+          name: center
+          abbr: c
+    -
+      name: background-size
+      abbr: bgsz
+      group: background
+      values:
+        -
+          name: auto
+          abbr: a
+        -
+          name: contain
+          abbr: ct
+        -
+          name: cover
+          abbr: cv
+    -
+      name: color
+      abbr: c
+      group: text
+      values:
+        -
+          name: inherit
+          abbr: i
+        -
+          name: $color-white
+          abbr: white
+        -
+          name: $color-silver
+          abbr: silver
+        -
+          name: $color-gray
+          abbr: gray
+        -
+          name: $color-black
+          abbr: black
+        -
+          name: $color-navy
+          abbr: navy
+        -
+          name: $color-blue
+          abbr: blue
+        -
+          name: $color-aqua
+          abbr: aqua
+        -
+          name: $color-teal
+          abbr: teal
+        -
+          name: $color-olive
+          abbr: olive
+        -
+          name: $color-green
+          abbr: green
+        -
+          name: $color-lime
+          abbr: lime
+        -
+          name: $color-yellow
+          abbr: yellow
+        -
+          name: $color-orange
+          abbr: orange
+        -
+          name: $color-red
+          abbr: red
+        -
+          name: $color-maroon
+          abbr: maroon
+        -
+          name: $color-fuchsia
+          abbr: fuchsia
+        -
+          name: $color-purple
+          abbr: purple
+        -
+          name: $color-primary
+          abbr: primary
+        -
+          name: $color-success
+          abbr: success
+        -
+          name: $color-info
+          abbr: info
+        -
+          name: $color-warning
+          abbr: warning
+        -
+          name: $color-danger
+          abbr: danger
+    -
+      name: table-layout
+      abbr: tbl
+      group: display
+      values:
+        -
+          name: auto
+          abbr: a
+        -
+          name: fixed
+          abbr: f
+    -
+      name: list-style
+      abbr: lis
+      group: text
+      values:
+        -
+          name: none
+          abbr: n
+    -
+      name: list-style-position
+      abbr: lisp
+      group: text
+      values:
+        -
+          name: inside
+          abbr: i
+        -
+          name: outside
+          abbr: o
+    -
+      name: list-style-type
+      abbr: list
+      group: text
+      values:
+        -
+          name: none
+          abbr: n
+        -
+          name: disc
+          abbr: d
+        -
+          name: circle
+          abbr: c
+        -
+          name: square
+          abbr: s
+        -
+          name: decimal
+          abbr: dc
+        -
+          name: decimal-leading-zero
+          abbr: dclz
+        -
+          name: lower-roman
+          abbr: lr
+        -
+          name: upper-roman
+          abbr: ur
+    -
+      name: list-style-image
+      abbr: lisi
+      group: text
+      values:
+        -
+          name: none
+          abbr: n
+    -
+      name: vertical-align
+      abbr: va
+      group: text
+      values:
+        -
+          name: super
+          abbr: sup
+        -
+          name: top
+          abbr: t
+        -
+          name: text-top
+          abbr: tt
+        -
+          name: middle
+          abbr: m
+        -
+          name: baseline
+          abbr: bl
+        -
+          name: bottom
+          abbr: b
+        -
+          name: text-bottom
+          abbr: tb
+        -
+          name: sub
+          abbr: sub
+    -
+      name: text-align
+      abbr: ta
+      group: text
+      values:
+        -
+          name: left
+          abbr: l
+        -
+          name: center
+          abbr: c
+        -
+          name: right
+          abbr: r
+        -
+          name: justify
+          abbr: j
+    -
+      name: text-decoration
+      abbr: td
+      group: text
+      values:
+        -
+          name: none
+          abbr: n
+        -
+          name: underline
+          abbr: u
+        -
+          name: overline
+          abbr: o
+        -
+          name: line-through
+          abbr: l
+    -
+      name: text-emphasis
+      abbr: te
+      group: text
+      values:
+        -
+          name: none
+          abbr: n
+        -
+          name: accent
+          abbr: ac
+        -
+          name: dot
+          abbr: dt
+        -
+          name: circle
+          abbr: c
+        -
+          name: disc
+          abbr: ds
+        -
+          name: before
+          abbr: b
+        -
+          name: after
+          abbr: a
+    -
+      name: text-indent
+      abbr: ti
+      group: text
+      values:
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: '-9999px'
+          abbr: '9999'
+    -
+      name: text-overflow
+      abbr: tov
+      group: text
+      values:
+        -
+          name: ellipsis
+          abbr: e
+        -
+          name: clip
+          abbr: c
+    -
+      name: text-transform
+      abbr: tt
+      group: text
+      values:
+        -
+          name: none
+          abbr: n
+        -
+          name: capitalize
+          abbr: c
+        -
+          name: uppercase
+          abbr: u
+        -
+          name: lowercase
+          abbr: l
+    -
+      name: text-shadow
+      abbr: tsh
+      group: text
+      values:
+        -
+          name: none
+          abbr: n
+    -
+      name: line-height
+      abbr: lh
+      group: text
+      values:
+        -
+          name: normal
+          abbr: nm
+        -
+          name: inherit
+          abbr: i
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: '1'
+          abbr: '1'
+        -
+          name: '2'
+          abbr: '2'
+        -
+          name: '3'
+          abbr: '3'
+        -
+          name: '4'
+          abbr: '4'
+        -
+          name: '5'
+          abbr: '5'
+        -
+          name: '6'
+          abbr: '6'
+        -
+          name: $line-height-xs
+          abbr: xs
+        -
+          name: $line-height-sm
+          abbr: sm
+        -
+          name: $line-height-md
+          abbr: md
+        -
+          name: $line-height-lg
+          abbr: lg
+        -
+          name: $line-height-xl
+          abbr: xl
+    -
+      name: white-space
+      abbr: whs
+      group: text
+      values:
+        -
+          name: normal
+          abbr: nm
+        -
+          name: pre
+          abbr: p
+        -
+          name: nowrap
+          abbr: nw
+        -
+          name: pre-wrap
+          abbr: pw
+        -
+          name: pre-line
+          abbr: pl
+    -
+      name: word-break
+      abbr: wob
+      group: text
+      values:
+        -
+          name: normal
+          abbr: nm
+        -
+          name: keep-all
+          abbr: k
+        -
+          name: break-all
+          abbr: ba
+    -
+      name: word-wrap
+      abbr: wow
+      group: text
+      values:
+        -
+          name: normal
+          abbr: nm
+        -
+          name: none
+          abbr: n
+        -
+          name: unrestricted
+          abbr: u
+        -
+          name: suppress
+          abbr: s
+        -
+          name: break-word
+          abbr: bw
+    -
+      name: letter-spacing
+      abbr: lts
+      group: text
+      values:
+        -
+          name: normal
+          abbr: nm
+    -
+      name: font-weight
+      abbr: fw
+      group: text
+      values:
+        -
+          name: normal
+          abbr: nm
+        -
+          name: bold
+          abbr: b
+        -
+          name: bolder
+          abbr: br
+        -
+          name: '200'
+          abbr: l
+        -
+          name: lighter
+          abbr: lr
+        -
+          name: '100'
+          abbr: '100'
+        -
+          name: '200'
+          abbr: '200'
+        -
+          name: '300'
+          abbr: '300'
+        -
+          name: '400'
+          abbr: '400'
+        -
+          name: '500'
+          abbr: '500'
+        -
+          name: '600'
+          abbr: '600'
+        -
+          name: '700'
+          abbr: '700'
+        -
+          name: '800'
+          abbr: '800'
+        -
+          name: '900'
+          abbr: '900'
+    -
+      name: font-style
+      abbr: fs
+      group: text
+      values:
+        -
+          name: normal
+          abbr: nm
+        -
+          name: italic
+          abbr: i
+        -
+          name: oblique
+          abbr: o
+    -
+      name: font-variant
+      abbr: fv
+      group: text
+      values:
+        -
+          name: normal
+          abbr: nm
+        -
+          name: small-caps
+          abbr: sc
+    -
+      name: font-size
+      abbr: fz
+      group: text
+      values:
+        -
+          name: $font-size-xs
+          abbr: xs
+        -
+          name: $font-size-sm
+          abbr: sm
+        -
+          name: $font-size-md
+          abbr: md
+        -
+          name: $font-size-lg
+          abbr: lg
+        -
+          name: $font-size-xl
+          abbr: xl
+        -
+          name: smaller
+          abbr: sr
+        -
+          name: larger
+          abbr: lr
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: 10px
+          abbr: '10'
+        -
+          name: 11px
+          abbr: '11'
+        -
+          name: 12px
+          abbr: '12'
+        -
+          name: 13px
+          abbr: '13'
+        -
+          name: 14px
+          abbr: '14'
+        -
+          name: 15px
+          abbr: '15'
+        -
+          name: 16px
+          abbr: '16'
+        -
+          name: 17px
+          abbr: '17'
+        -
+          name: 18px
+          abbr: '18'
+        -
+          name: 19px
+          abbr: '19'
+        -
+          name: 20px
+          abbr: '20'
+        -
+          name: $font-size-h1
+          abbr: h1
+        -
+          name: $font-size-h2
+          abbr: h2
+        -
+          name: $font-size-h3
+          abbr: h3
+        -
+          name: $font-size-h4
+          abbr: h4
+        -
+          name: $font-size-h5
+          abbr: h5
+        -
+          name: $font-size-h6
+          abbr: h6
+    -
+      name: font-family
+      abbr: ff
+      group: text
+      values:
+        -
+          name: serif
+          abbr: s
+        -
+          name: sans-serif
+          abbr: ss
+        -
+          name: cursive
+          abbr: c
+        -
+          name: fantasy
+          abbr: f
+        -
+          name: monospace
+          abbr: m
+        -
+          name: 'Arial, "Helvetica Neue", Helvetica, sans-serif'
+          abbr: a
+        -
+          name: '"Times New Roman", Times, Baskerville, Georgia, serif'
+          abbr: t
+        -
+          name: 'Verdana, Geneva, sans-serif'
+          abbr: v
+        -
+          name: '"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif'
+          abbr: l
+        -
+          name: '"Helvetica Neue", Helvetica, Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif'
+          abbr: j
+    -
+      name: opacity
+      abbr: op
+      group: text
+      values:
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: '0.1'
+          abbr: '0_1'
+        -
+          name: '0.2'
+          abbr: '0_2'
+        -
+          name: '0.3'
+          abbr: '0_3'
+        -
+          name: '0.4'
+          abbr: '0_4'
+        -
+          name: '0.5'
+          abbr: '0_5'
+        -
+          name: '0.6'
+          abbr: '0_6'
+        -
+          name: '0.7'
+          abbr: '0_7'
+        -
+          name: '0.8'
+          abbr: '0_8'
+        -
+          name: '0.9'
+          abbr: '0_9'
+        -
+          name: '1'
+          abbr: '1'
+    -
+      name: resize
+      abbr: rsz
+      group: other
+      values:
+        -
+          name: none
+          abbr: n
+        -
+          name: both
+          abbr: b
+        -
+          name: horizontal
+          abbr: h
+        -
+          name: vertical
+          abbr: v
+    -
+      name: cursor
+      abbr: cur
+      group: other
+      values:
+        -
+          name: auto
+          abbr: a
+        -
+          name: default
+          abbr: d
+        -
+          name: crosshair
+          abbr: c
+        -
+          name: hand
+          abbr: ha
+        -
+          name: help
+          abbr: he
+        -
+          name: move
+          abbr: m
+        -
+          name: pointer
+          abbr: p
+        -
+          name: text
+          abbr: t
+    -
+      name: flex-direction
+      abbr: fxd
+      group: display
+      values:
+        -
+          name: row
+          abbr: r
+        -
+          name: row-reverse
+          abbr: rr
+        -
+          name: column
+          abbr: c
+        -
+          name: column-reverse
+          abbr: cr
+    -
+      name: flex-wrap
+      abbr: fxw
+      group: display
+      values:
+        -
+          name: nowrap
+          abbr: n
+        -
+          name: wrap
+          abbr: w
+        -
+          name: wrap-reverse
+          abbr: wr
+    -
+      name: justify-content
+      abbr: jc
+      group: display
+      values:
+        -
+          name: flex-start
+          abbr: fs
+        -
+          name: flex-end
+          abbr: fe
+        -
+          name: center
+          abbr: c
+        -
+          name: space-between
+          abbr: sb
+        -
+          name: space-around
+          abbr: sa
+    -
+      name: align-items
+      abbr: ai
+      group: display
+      values:
+        -
+          name: flex-start
+          abbr: fs
+        -
+          name: flex-end
+          abbr: fe
+        -
+          name: center
+          abbr: c
+        -
+          name: baseline
+          abbr: b
+        -
+          name: stretch
+          abbr: s
+    -
+      name: align-content
+      abbr: ac
+      group: display
+      values:
+        -
+          name: flex-start
+          abbr: fs
+        -
+          name: flex-end
+          abbr: fe
+        -
+          name: center
+          abbr: c
+        -
+          name: space-between
+          abbr: sb
+        -
+          name: space-around
+          abbr: sa
+        -
+          name: stretch
+          abbr: s
+    -
+      name: order
+      abbr: ord
+      group: display
+      values:
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: '1'
+          abbr: '1'
+        -
+          name: '2'
+          abbr: '2'
+        -
+          name: '3'
+          abbr: '3'
+        -
+          name: '4'
+          abbr: '4'
+        -
+          name: '5'
+          abbr: '5'
+        -
+          name: '6'
+          abbr: '6'
+        -
+          name: '9999'
+          abbr: '9999'
+        -
+          name: '-1'
+          abbr: '-1'
+    -
+      name: flex
+      abbr: fx
+      group: display
+      values:
+        -
+          name: none
+          abbr: n
+        -
+          name: '1 1 auto'
+          abbr: '1_1_a'
+        -
+          name: '1 0 auto'
+          abbr: '1_0_a'
+        -
+          name: '1 1 1px'
+          abbr: '1_1_1'
+    -
+      name: align-self
+      abbr: as
+      group: display
+      values:
+        -
+          name: auto
+          abbr: a
+        -
+          name: flex-start
+          abbr: fs
+        -
+          name: flex-end
+          abbr: fe
+        -
+          name: center
+          abbr: c
+        -
+          name: baseline
+          abbr: b
+        -
+          name: stretch
+          abbr: s
+    -
+      name: '-webkit-font-smoothing'
+      abbr: wfsm
+      group: text
+      values:
+        -
+          name: antialiased
+          abbr: a
+        -
+          name: subpixel-antialiased
+          abbr: sa
+        -
+          name: none
+          abbr: n
+    -
+      name: object-fit
+      abbr: obf
+      group: other
+      values:
+        -
+          name: fill
+          abbr: f
+        -
+          name: contain
+          abbr: ct
+        -
+          name: cover
+          abbr: cv
+        -
+          name: none
+          abbr: n
+        -
+          name: scale-down
+          abbr: sd
+  mixins:
+    -
+      name: clearfix
+      abbr: cf
+      desc: 'Clearfix (Contain floats)'
+      group: float
+      decls:
+        - '&:before, &:after { content: " "; display: table; }'
+        - '&:after { clear: both; }'
+    -
+      name: text-truncation
+      abbr: tetr
+      desc: 'Text truncation (ellipsis)'
+      group: text
+      decls:
+        -
+          prop: max-width
+          value: 100%
+        -
+          prop: overflow
+          value: hidden
+        -
+          prop: text-overflow
+          value: ellipsis
+        -
+          prop: white-space
+          value: nowrap
+        -
+          prop: word-wrap
+          value: normal
+    -
+      name: text-hiding
+      abbr: tehi
+      desc: 'Text hiding'
+      group: text
+      decls:
+        -
+          prop: overflow
+          value: hidden
+        -
+          prop: text-indent
+          value: 200%
+        -
+          prop: white-space
+          value: nowrap
+    -
+      name: reset-list
+      abbr: reli
+      desc: 'Reset list'
+      group: text
+      decls:
+        -
+          prop: list-style
+          value: none
+        -
+          prop: padding-left
+          value: '0'
+    -
+      name: absolute-center
+      abbr: abce
+      desc: 'Absolute center'
+      group: display
+      decls:
+        -
+          prop: bottom
+          value: '0'
+        -
+          prop: left
+          value: '0'
+        -
+          prop: margin
+          value: auto
+        -
+          prop: position
+          value: auto
+        -
+          prop: right
+          value: '0'
+        -
+          prop: top
+          value: '0'
+    -
+      name: margin-x-0
+      abbr: mx-0
+      group: margin
+      decls:
+        -
+          prop: margin-left
+          value: '0'
+        -
+          prop: margin-right
+          value: '0'
+    -
+      name: margin-y-0
+      abbr: my-0
+      group: margin
+      decls:
+        -
+          prop: margin-top
+          value: '0'
+        -
+          prop: margin-bottom
+          value: '0'
+    -
+      name: margin-x-auto
+      abbr: mx-a
+      group: margin
+      decls:
+        -
+          prop: margin-left
+          value: auto
+        -
+          prop: margin-right
+          value: auto
+    -
+      name: margin-y-auto
+      abbr: my-a
+      group: margin
+      decls:
+        -
+          prop: margin-top
+          value: auto
+        -
+          prop: margin-bottom
+          value: auto
+    -
+      name: margin-x-xs
+      abbr: mx-xs
+      group: margin
+      decls:
+        -
+          prop: margin-left
+          value: $margin-xs
+        -
+          prop: margin-right
+          value: $margin-xs
+    -
+      name: margin-y-xs
+      abbr: my-xs
+      group: margin
+      decls:
+        -
+          prop: margin-top
+          value: $margin-xs
+        -
+          prop: margin-bottom
+          value: $margin-xs
+    -
+      name: margin-x-sm
+      abbr: mx-sm
+      group: margin
+      decls:
+        -
+          prop: margin-left
+          value: $margin-sm
+        -
+          prop: margin-right
+          value: $margin-sm
+    -
+      name: margin-y-sm
+      abbr: my-sm
+      group: margin
+      decls:
+        -
+          prop: margin-top
+          value: $margin-sm
+        -
+          prop: margin-bottom
+          value: $margin-sm
+    -
+      name: margin-x-md
+      abbr: mx-md
+      group: margin
+      decls:
+        -
+          prop: margin-left
+          value: $margin-md
+        -
+          prop: margin-right
+          value: $margin-md
+    -
+      name: margin-y-md
+      abbr: my-md
+      group: margin
+      decls:
+        -
+          prop: margin-top
+          value: $margin-md
+        -
+          prop: margin-bottom
+          value: $margin-md
+    -
+      name: margin-x-lg
+      abbr: mx-lg
+      group: margin
+      decls:
+        -
+          prop: margin-left
+          value: $margin-lg
+        -
+          prop: margin-right
+          value: $margin-lg
+    -
+      name: margin-y-lg
+      abbr: my-lg
+      group: margin
+      decls:
+        -
+          prop: margin-top
+          value: $margin-lg
+        -
+          prop: margin-bottom
+          value: $margin-lg
+    -
+      name: margin-x-xl
+      abbr: mx-xl
+      group: margin
+      decls:
+        -
+          prop: margin-left
+          value: $margin-xl
+        -
+          prop: margin-right
+          value: $margin-xl
+    -
+      name: margin-y-xl
+      abbr: my-xl
+      group: margin
+      decls:
+        -
+          prop: margin-top
+          value: $margin-xl
+        -
+          prop: margin-bottom
+          value: $margin-xl
+    -
+      name: padding-x-0
+      abbr: px-0
+      group: padding
+      decls:
+        -
+          prop: padding-left
+          value: '0'
+        -
+          prop: padding-right
+          value: '0'
+    -
+      name: padding-y-0
+      abbr: py-0
+      group: padding
+      decls:
+        -
+          prop: padding-top
+          value: '0'
+        -
+          prop: padding-bottom
+          value: '0'
+    -
+      name: padding-x-xs
+      abbr: px-xs
+      group: padding
+      decls:
+        -
+          prop: padding-left
+          value: $padding-xs
+        -
+          prop: padding-right
+          value: $padding-xs
+    -
+      name: padding-y-xs
+      abbr: py-xs
+      group: padding
+      decls:
+        -
+          prop: padding-top
+          value: $padding-xs
+        -
+          prop: padding-bottom
+          value: $padding-xs
+    -
+      name: padding-x-sm
+      abbr: px-sm
+      group: padding
+      decls:
+        -
+          prop: padding-left
+          value: $padding-sm
+        -
+          prop: padding-right
+          value: $padding-sm
+    -
+      name: padding-y-sm
+      abbr: py-sm
+      group: padding
+      decls:
+        -
+          prop: padding-top
+          value: $padding-sm
+        -
+          prop: padding-bottom
+          value: $padding-sm
+    -
+      name: padding-x-md
+      abbr: px-md
+      group: padding
+      decls:
+        -
+          prop: padding-left
+          value: $padding-md
+        -
+          prop: padding-right
+          value: $padding-md
+    -
+      name: padding-y-md
+      abbr: py-md
+      group: padding
+      decls:
+        -
+          prop: padding-top
+          value: $padding-md
+        -
+          prop: padding-bottom
+          value: $padding-md
+    -
+      name: padding-x-lg
+      abbr: px-lg
+      group: padding
+      decls:
+        -
+          prop: padding-left
+          value: $padding-lg
+        -
+          prop: padding-right
+          value: $padding-lg
+    -
+      name: padding-y-lg
+      abbr: py-lg
+      group: padding
+      decls:
+        -
+          prop: padding-top
+          value: $padding-lg
+        -
+          prop: padding-bottom
+          value: $padding-lg
+    -
+      name: padding-x-xl
+      abbr: px-xl
+      group: padding
+      decls:
+        -
+          prop: padding-left
+          value: $padding-xl
+        -
+          prop: padding-right
+          value: $padding-xl
+    -
+      name: padding-y-xl
+      abbr: py-xl
+      group: padding
+      decls:
+        -
+          prop: padding-top
+          value: $padding-xl
+        -
+          prop: padding-bottom
+          value: $padding-xl

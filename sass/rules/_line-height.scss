@@ -1,0 +1,56 @@
+.#{$emma-prefix}lh-nm {
+  line-height: normal #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lh-i {
+  line-height: inherit #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lh-0 {
+  line-height: 0 #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lh-1 {
+  line-height: 1 #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lh-2 {
+  line-height: 2 #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lh-3 {
+  line-height: 3 #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lh-4 {
+  line-height: 4 #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lh-5 {
+  line-height: 5 #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lh-6 {
+  line-height: 6 #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lh-xs {
+  line-height: $emma-line-height-xs #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lh-sm {
+  line-height: $emma-line-height-sm #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lh-md {
+  line-height: $emma-line-height-md #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lh-lg {
+  line-height: $emma-line-height-lg #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lh-xl {
+  line-height: $emma-line-height-xl #{emma-important($emma-important)};
+}
+

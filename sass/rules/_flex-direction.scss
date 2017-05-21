@@ -1,0 +1,16 @@
+.#{$emma-prefix}fxd-r {
+  flex-direction: row #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fxd-rr {
+  flex-direction: row-reverse #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fxd-c {
+  flex-direction: column #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fxd-cr {
+  flex-direction: column-reverse #{emma-important($emma-important)};
+}
+

@@ -1,0 +1,20 @@
+.#{$emma-prefix}obf-f {
+  object-fit: fill #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}obf-ct {
+  object-fit: contain #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}obf-cv {
+  object-fit: cover #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}obf-n {
+  object-fit: none #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}obf-sd {
+  object-fit: scale-down #{emma-important($emma-important)};
+}
+
