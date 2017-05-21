@@ -1,0 +1,20 @@
+.#{$emma-prefix}bgr-n {
+  background-repeat: no-repeat #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}bgr-x {
+  background-repeat: repeat-x #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}bgr-y {
+  background-repeat: repeat-y #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}bgr-sp {
+  background-repeat: space #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}bgr-rd {
+  background-repeat: round #{emma-important($emma-important)};
+}
+

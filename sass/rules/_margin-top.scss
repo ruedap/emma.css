@@ -1,0 +1,28 @@
+.#{$emma-prefix}mt-0 {
+  margin-top: 0 #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mt-a {
+  margin-top: auto #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mt-xs {
+  margin-top: $emma-margin-xs #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mt-sm {
+  margin-top: $emma-margin-sm #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mt-md {
+  margin-top: $emma-margin-md #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mt-lg {
+  margin-top: $emma-margin-lg #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mt-xl {
+  margin-top: $emma-margin-xl #{emma-important($emma-important)};
+}
+

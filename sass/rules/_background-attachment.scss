@@ -1,0 +1,8 @@
+.#{$emma-prefix}bga-f {
+  background-attachment: fixed #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}bga-s {
+  background-attachment: scroll #{emma-important($emma-important)};
+}
+

@@ -1,0 +1,12 @@
+.#{$emma-prefix}wob-nm {
+  word-break: normal #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}wob-k {
+  word-break: keep-all #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}wob-ba {
+  word-break: break-all #{emma-important($emma-important)};
+}
+

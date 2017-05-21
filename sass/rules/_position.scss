@@ -1,0 +1,16 @@
+.#{$emma-prefix}pos-s {
+  position: static #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}pos-a {
+  position: absolute #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}pos-r {
+  position: relative #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}pos-f {
+  position: fixed #{emma-important($emma-important)};
+}
+

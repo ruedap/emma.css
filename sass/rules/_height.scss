@@ -1,0 +1,12 @@
+.#{$emma-prefix}h-a {
+  height: auto #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}h-0 {
+  height: 0 #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}h-100p {
+  height: 100% #{emma-important($emma-important)};
+}
+

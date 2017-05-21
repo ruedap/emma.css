@@ -1,0 +1,32 @@
+.#{$emma-prefix}va-sup {
+  vertical-align: super #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}va-t {
+  vertical-align: top #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}va-tt {
+  vertical-align: text-top #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}va-m {
+  vertical-align: middle #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}va-bl {
+  vertical-align: baseline #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}va-b {
+  vertical-align: bottom #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}va-tb {
+  vertical-align: text-bottom #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}va-sub {
+  vertical-align: sub #{emma-important($emma-important)};
+}
+

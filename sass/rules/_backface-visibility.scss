@@ -1,0 +1,8 @@
+.#{$emma-prefix}bfv-h {
+  backface-visibility: hidden #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}bfv-v {
+  backface-visibility: visible #{emma-important($emma-important)};
+}
+

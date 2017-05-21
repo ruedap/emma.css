@@ -1,0 +1,16 @@
+.#{$emma-prefix}tt-n {
+  text-transform: none #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}tt-c {
+  text-transform: capitalize #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}tt-u {
+  text-transform: uppercase #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}tt-l {
+  text-transform: lowercase #{emma-important($emma-important)};
+}
+

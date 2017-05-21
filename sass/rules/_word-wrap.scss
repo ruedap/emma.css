@@ -1,0 +1,20 @@
+.#{$emma-prefix}wow-nm {
+  word-wrap: normal #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}wow-n {
+  word-wrap: none #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}wow-u {
+  word-wrap: unrestricted #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}wow-s {
+  word-wrap: suppress #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}wow-bw {
+  word-wrap: break-word #{emma-important($emma-important)};
+}
+

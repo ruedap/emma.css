@@ -1,0 +1,20 @@
+.#{$emma-prefix}bgp-t {
+  background-position: top #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}bgp-r {
+  background-position: right #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}bgp-b {
+  background-position: bottom #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}bgp-l {
+  background-position: left #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}bgp-c {
+  background-position: center #{emma-important($emma-important)};
+}
+

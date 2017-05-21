@@ -1,0 +1,12 @@
+.#{$emma-prefix}wfsm-a {
+  -webkit-font-smoothing: antialiased #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}wfsm-sa {
+  -webkit-font-smoothing: subpixel-antialiased #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}wfsm-n {
+  -webkit-font-smoothing: none #{emma-important($emma-important)};
+}
+

@@ -1,0 +1,28 @@
+.#{$emma-prefix}mr-0 {
+  margin-right: 0 #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mr-a {
+  margin-right: auto #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mr-xs {
+  margin-right: $emma-margin-xs #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mr-sm {
+  margin-right: $emma-margin-sm #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mr-md {
+  margin-right: $emma-margin-md #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mr-lg {
+  margin-right: $emma-margin-lg #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mr-xl {
+  margin-right: $emma-margin-xl #{emma-important($emma-important)};
+}
+

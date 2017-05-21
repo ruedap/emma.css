@@ -1,0 +1,24 @@
+.#{$emma-prefix}ac-fs {
+  align-content: flex-start #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ac-fe {
+  align-content: flex-end #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ac-c {
+  align-content: center #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ac-sb {
+  align-content: space-between #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ac-sa {
+  align-content: space-around #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ac-s {
+  align-content: stretch #{emma-important($emma-important)};
+}
+

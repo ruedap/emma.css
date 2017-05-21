@@ -1,0 +1,16 @@
+.#{$emma-prefix}cl-n {
+  clear: none #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}cl-l {
+  clear: left #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}cl-r {
+  clear: right #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}cl-b {
+  clear: both #{emma-important($emma-important)};
+}
+

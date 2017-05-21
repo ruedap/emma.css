@@ -1,0 +1,8 @@
+.#{$emma-prefix}tov-e {
+  text-overflow: ellipsis #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}tov-c {
+  text-overflow: clip #{emma-important($emma-important)};
+}
+

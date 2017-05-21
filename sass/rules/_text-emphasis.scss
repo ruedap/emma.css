@@ -1,0 +1,28 @@
+.#{$emma-prefix}te-n {
+  text-emphasis: none #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}te-ac {
+  text-emphasis: accent #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}te-dt {
+  text-emphasis: dot #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}te-c {
+  text-emphasis: circle #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}te-ds {
+  text-emphasis: disc #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}te-b {
+  text-emphasis: before #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}te-a {
+  text-emphasis: after #{emma-important($emma-important)};
+}
+

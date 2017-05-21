@@ -1,0 +1,20 @@
+.#{$emma-prefix}jc-fs {
+  justify-content: flex-start #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}jc-fe {
+  justify-content: flex-end #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}jc-c {
+  justify-content: center #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}jc-sb {
+  justify-content: space-between #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}jc-sa {
+  justify-content: space-around #{emma-important($emma-important)};
+}
+

@@ -1,0 +1,36 @@
+.#{$emma-prefix}ols-n {
+  outline-style: none #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ols-dt {
+  outline-style: dotted #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ols-ds {
+  outline-style: dashed #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ols-s {
+  outline-style: solid #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ols-db {
+  outline-style: double #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ols-g {
+  outline-style: groove #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ols-r {
+  outline-style: ridge #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ols-i {
+  outline-style: inset #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ols-o {
+  outline-style: outset #{emma-important($emma-important)};
+}
+

@@ -1,0 +1,8 @@
+.#{$emma-prefix}bdrc-t {
+  border-right-color: transparent #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}bdrc-cc {
+  border-right-color: currentColor #{emma-important($emma-important)};
+}
+
