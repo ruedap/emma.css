@@ -1,6 +1,8 @@
 # Emma.css { [emmet](http://docs.emmet.io/cheat-sheet/)-like utility classes }
 
-A collection of [CSS utility classes](emma.css) in Sass for rapid and easy front-end development.
+A collection of [CSS utility classes](emma.css) for rapid and easy front-end development.
+
+[![CircleCI](https://circleci.com/gh/ruedap/emma.css.svg?style=shield)](https://circleci.com/gh/ruedap/emma.css)
 
 ## Example
 
