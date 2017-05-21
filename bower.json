@@ -13,11 +13,16 @@
   ],
   "ignore": [
     "**/.*",
+    "node_modules",
+    "src",
+    "test",
+    "tmp",
+    ".*",
     "npm-debug.log",
     "bower.json",
-    "node_modules",
-    "package.json",
     "gulpfile.babel.js",
-    "tmp"
+    "package.json",
+    "tsconfig.json",
+    "yarn.lock"
   ]
 }
