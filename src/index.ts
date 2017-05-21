@@ -1,3 +1,3 @@
 import { Emma } from './emma';
 
-new Emma().execute();
+new Emma().exec();

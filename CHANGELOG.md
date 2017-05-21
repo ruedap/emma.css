@@ -1,7 +1,7 @@
 # CHANGELOG
 
 ## master (unreleased)
-* Nothing
+* Move root sass file (from `./emma.scss` to `./sass/emma.scss`)
 
 ## 0.9.0
 * Restructure based on YAML documents

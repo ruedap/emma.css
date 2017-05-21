@@ -223,10 +223,18 @@ describe("Emma",() => {
     });
   });
 
+  describe("generateRootFile()", () => {
+    it("returns valid string", () => {
+      const actual = emma.generateRootFile('0.10.0');
+      const expected = "/*! Emma.css 0.10.0 | MIT License | https://git.io/emma */\n@import \"sass/vars\";\n@import \"sass/mixins\";\n@import \"sass/rules\";\n";
+      assert(actual === expected);
+    });
+  });
+
   describe("writeFileSync()", () => {
     it("calls the original function", () => {
       const fsMock = sinon.mock(fs);
-      fsMock.expects("writeFileSync").withArgs("./sass/foo.scss", "bar").exactly(1);
+      fsMock.expects("writeFileSync").withArgs("sass/foo.scss", "bar").exactly(1);
 
       emma.writeFileSync("foo", "bar");
       assert(fsMock.verify());
@@ -236,7 +244,7 @@ describe("Emma",() => {
   describe("appendFileSync()", () => {
     it("calls the original function", () => {
       const fsMock = sinon.mock(fs);
-      fsMock.expects("appendFileSync").withArgs("./sass/foo.scss", "bar").exactly(1);
+      fsMock.expects("appendFileSync").withArgs("sass/foo.scss", "bar").exactly(1);
 
       emma.appendFileSync("foo", "bar");
       assert(fsMock.verify());

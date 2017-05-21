@@ -11,7 +11,7 @@
     "compile:json": "npm run convert:data && npm run convert:schema && npm run validate:json",
     "compile:ts": "tsc",
     "compile:js": "node tmp/index.js",
-    "compile:sass": "node-sass --output-style compact emma.scss emma.css",
+    "compile:sass": "node-sass --output-style compact ./sass/emma.scss ./emma.css",
     "compile": "npm run compile:json && npm run compile:ts && npm run compile:js && npm run compile:sass && npm run remove-empty-lines",
     "remove-empty-lines": "gulp remove-empty-lines",
     "watch": "watch 'npm run test' src/ test/ --wait 10 -d -u",
@@ -22,12 +22,11 @@
   "license": "MIT",
   "main": "emma.css",
   "style": "emma.css",
-  "scss": "emma.scss",
+  "scss": "sass/emma.scss",
   "files": [
     "sass",
     "CHANGELOG.md",
     "emma.css",
-    "emma.scss",
     "LICENSE",
     "README.md"
   ],

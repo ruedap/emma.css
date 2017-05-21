@@ -1,6 +1,8 @@
 $schema: 'http://json-schema.org/draft-06/schema#'
 type: object
 properties:
+  ver:
+    type: string
   vars:
     type: array
     items:
