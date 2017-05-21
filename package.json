@@ -14,7 +14,8 @@
     "compile": "npm run compile:json && npm run compile:ts && npm run compile:js && npm run compile:sass && npm run remove-empty-lines",
     "remove-empty-lines": "gulp remove-empty-lines",
     "watch": "watch 'npm run test' src/ test/ --wait 10 -d -u",
-    "test": "npm run compile:json && mocha"
+    "test": "npm run compile:json && mocha",
+    "test:ci": "npm run build && mocha"
   },
   "author": "ruedap",
   "license": "MIT",

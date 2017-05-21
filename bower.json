@@ -20,6 +20,7 @@
     ".*",
     "npm-debug.log",
     "bower.json",
+    "circle.yml",
     "gulpfile.babel.js",
     "package.json",
     "tsconfig.json",
