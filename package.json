@@ -3,7 +3,8 @@
   "version": "0.9.0",
   "description": "Emma.css { emmet-like utility classes }",
   "scripts": {
-    "build": "npm run compile",
+    "build": "npm run clean && npm run compile",
+    "clean": "rimraf tmp/ sass/ && mkdirp tmp/",
     "convert:data": "js-yaml src/emma-data.yml > tmp/emma-data.json",
     "convert:schema": "js-yaml src/emma-schema.yml > tmp/emma-schema.json",
     "validate:json": "ajv -s tmp/emma-schema.json -d tmp/emma-data.json",
