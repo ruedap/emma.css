@@ -1,6 +1,5 @@
 import * as fs from 'fs-extra';
 import * as _ from 'lodash';
-import * as jsyaml from 'js-yaml';
 
 export default class Emma {
   readonly PREFIX_VAR;
