@@ -1,0 +1,2 @@
+--compilers ts:espower-typescript/guess src/**/*.test.ts
+--reporter dot

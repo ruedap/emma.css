@@ -14,9 +14,10 @@
     "compile:sass": "node-sass --output-style compact ./sass/emma.scss ./emma.css",
     "compile": "npm run compile:json && npm run compile:ts && npm run compile:js && npm run compile:sass && npm run remove-empty-lines",
     "remove-empty-lines": "gulp remove-empty-lines",
-    "watch": "watch 'npm run test' src/ test/ --wait 10 -d -u",
-    "test": "npm run compile:json && mocha",
-    "test:ci": "npm run build && mocha"
+    "watch": "watch 'npm run test' src/ --wait 10 -d -u",
+    "mocha": "mocha --opts src/mocha.opts",
+    "test": "npm run compile:json && npm run mocha",
+    "test:ci": "npm run build && npm run mocha"
   },
   "author": "ruedap",
   "license": "MIT",

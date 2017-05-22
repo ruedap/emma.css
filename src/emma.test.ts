@@ -2,7 +2,7 @@ import * as mocha from "mocha";
 import * as sinon from "sinon";
 import * as assert from "power-assert";
 
-import Emma from "../src/emma";
+import Emma from "./emma";
 import * as fs from 'fs-extra';
 
 describe("Emma",() => {
@@ -141,7 +141,7 @@ describe("Emma",() => {
 
   describe("generateMixinDesc()", () => {
     it("returns valid string", () => {
-      const actual = emma.generateMixinDesc(mixinsArg[0].desc);
+      const actual = emma.generateMixinDesc(mixinsArg[0]["desc"]);
       assert(actual === "// Clearfix (Contain floats)\n");
     });
   });
