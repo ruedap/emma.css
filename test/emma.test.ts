@@ -2,7 +2,7 @@ import * as mocha from "mocha";
 import * as sinon from "sinon";
 import * as assert from "power-assert";
 
-import { Emma } from "../src/emma";
+import Emma from "../src/emma";
 import * as fs from 'fs-extra';
 
 describe("Emma",() => {

@@ -2,7 +2,7 @@ import * as fs from 'fs-extra';
 import * as _ from 'lodash';
 import * as jsyaml from 'js-yaml';
 
-export class Emma {
+export default class Emma {
   readonly PREFIX_VAR;
   readonly PREFIX_MIXIN;
   readonly SASS_DIR = 'sass';
