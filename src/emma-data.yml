@@ -1892,9 +1892,6 @@ rules:
           name: bolder
           abbr: br
         -
-          name: '200'
-          abbr: l
-        -
           name: lighter
           abbr: lr
         -

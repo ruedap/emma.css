@@ -2,17 +2,18 @@
 
 ## master (unreleased)
 * Move root sass file (from `./emma.scss` to `./sass/emma.scss`)
+* Remove snippet: `fw-l`
 
 ## 0.9.0
 * Restructure based on YAML documents
 
 ## 0.8.0
-* Add snippet: fz-0 (font-size: 0)
+* Add snippet: `fz-0` (`font-size: 0`)
 * Add snippet: horizontal and vertical padding
 * Add snippet: horizontal and vertical margin
 
 ## 0.7.0
-* Add snippet: `ff-j` (font-family for Japanese)
+* Add snippet: `ff-j` (`font-family for Japanese`)
 * Add snippet: `z-9999` (`z-index: 9999`)
 * Change from ruby-sass to node-sass
 * Introduce npm run commands to build sass

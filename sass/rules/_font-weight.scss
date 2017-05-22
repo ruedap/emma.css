@@ -10,10 +10,6 @@
   font-weight: bolder #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}fw-l {
-  font-weight: 200 #{emma-important($emma-important)};
-}
-
 .#{$emma-prefix}fw-lr {
   font-weight: lighter #{emma-important($emma-important)};
 }

@@ -255,9 +255,6 @@ describe("Emma",() => {
     it("returns doc", () => {
       let doc = emma.loadEmmaDoc();
       assert(typeof doc === 'object');
-      assert(doc.vars.length === 55);
-      assert(doc.rules.mixins.length === 31);
-      assert(doc.rules.props.length === 99);
     });
 
     it("causes error", () => {
