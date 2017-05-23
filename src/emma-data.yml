@@ -465,10 +465,10 @@ rules:
           abbr: a
         -
           name: '0 auto'
-          abbr: 0_a
+          abbr: 0-a
         -
           name: 'auto 0'
-          abbr: a_0
+          abbr: a-0
         -
           name: $margin-xs
           abbr: xs
@@ -1731,7 +1731,7 @@ rules:
           abbr: '0'
         -
           name: '-9999px'
-          abbr: '9999'
+          abbr: '-9999'
     -
       name: text-overflow
       abbr: tov
@@ -2281,13 +2281,13 @@ rules:
           abbr: n
         -
           name: '1 1 auto'
-          abbr: '1_1_a'
+          abbr: '1-1-a'
         -
           name: '1 0 auto'
-          abbr: '1_0_a'
+          abbr: '1-0-a'
         -
           name: '1 1 1px'
-          abbr: '1_1_1'
+          abbr: '1-1-1'
     -
       name: align-self
       abbr: as
@@ -2427,8 +2427,8 @@ rules:
           prop: top
           value: '0'
     -
-      name: margin-x-0
-      abbr: mx-0
+      name: margin-x0
+      abbr: mx0
       group: margin
       decls:
         -
@@ -2438,8 +2438,8 @@ rules:
           prop: margin-right
           value: '0'
     -
-      name: margin-y-0
-      abbr: my-0
+      name: margin-y0
+      abbr: my0
       group: margin
       decls:
         -
@@ -2581,8 +2581,8 @@ rules:
           prop: margin-bottom
           value: $margin-xl
     -
-      name: padding-x-0
-      abbr: px-0
+      name: padding-x0
+      abbr: px0
       group: padding
       decls:
         -
@@ -2592,8 +2592,8 @@ rules:
           prop: padding-right
           value: '0'
     -
-      name: padding-y-0
-      abbr: py-0
+      name: padding-y0
+      abbr: py0
       group: padding
       decls:
         -

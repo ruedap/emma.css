@@ -140,7 +140,8 @@ export default class Emma {
 
       _.forEach(p.values, (v) => {
         const v_name = this.isVar(v.name) ? this.prefixedVar(this.PREFIX_VAR, v.name) : v.name;
-        rulesets += `.#{$emma-prefix}${p.abbr}-${v.abbr} {\n`;
+        const abbr = this.generateAbbr(p.abbr, v.abbr);
+        rulesets += `.#{$emma-prefix}${abbr} {\n`;
         rulesets += `  ${p.name}: ${v_name} ${important};\n`;
         rulesets += `}\n\n`;
       });
@@ -150,6 +151,20 @@ export default class Emma {
       result += rulesets;
     });
 
+    return result;
+  }
+
+  private generateAbbr(propAbbr: string, valueAbbr: string): string {
+    if (this.isUnit(valueAbbr)) {
+      return `${propAbbr}${valueAbbr}`;
+    } else {
+      return `${propAbbr}-${valueAbbr}`;
+    }
+  }
+
+  private isUnit(str: string): boolean {
+    let result = false;
+    result = str.match(/^[\d-]/) ? true : false;
     return result;
   }
 

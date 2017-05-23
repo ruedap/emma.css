@@ -195,9 +195,27 @@ describe("Emma",() => {
       emmaMock.expects("writeFileSync").exactly(2);
 
       const actual = emma.generatePropRules(propsArg);
-      const expected = ".#{$emma-prefix}pos-s {\n  position: static #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}pos-a {\n  position: absolute #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}pos-r {\n  position: relative #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}pos-f {\n  position: fixed #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}t-a {\n  top: auto #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}t-0 {\n  top: 0 #{emma-important($emma-important)};\n}\n\n";
+      const expected = ".#{$emma-prefix}pos-s {\n  position: static #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}pos-a {\n  position: absolute #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}pos-r {\n  position: relative #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}pos-f {\n  position: fixed #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}t-a {\n  top: auto #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}t0 {\n  top: 0 #{emma-important($emma-important)};\n}\n\n";
       assert(emmaMock.verify());
       assert(actual === expected);
+    });
+  });
+
+  describe("generateAbbr()", () => {
+    it("returns valid string", () => {
+      assert(emma.generateAbbr('z', '1') === 'z1');
+      assert(emma.generateAbbr('ti', '-9999') === 'ti-9999');
+    });
+  });
+
+  describe("isUnit()", () => {
+    it("returns true", () => {
+      assert(emma.isUnit('1') === true);
+      assert(emma.isUnit('-') === true);
+    });
+
+    it("returns false", () => {
+      assert(emma.isUnit('a') === false);
     });
   });
 

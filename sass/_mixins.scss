@@ -36,12 +36,12 @@
   top: 0 #{emma-important($important)};
 }
 
-@mixin emma-mx-0($important: $emma-important) {
+@mixin emma-mx0($important: $emma-important) {
   margin-left: 0 #{emma-important($important)};
   margin-right: 0 #{emma-important($important)};
 }
 
-@mixin emma-my-0($important: $emma-important) {
+@mixin emma-my0($important: $emma-important) {
   margin-top: 0 #{emma-important($important)};
   margin-bottom: 0 #{emma-important($important)};
 }
@@ -106,12 +106,12 @@
   margin-bottom: $emma-margin-xl #{emma-important($important)};
 }
 
-@mixin emma-px-0($important: $emma-important) {
+@mixin emma-px0($important: $emma-important) {
   padding-left: 0 #{emma-important($important)};
   padding-right: 0 #{emma-important($important)};
 }
 
-@mixin emma-py-0($important: $emma-important) {
+@mixin emma-py0($important: $emma-important) {
   padding-top: 0 #{emma-important($important)};
   padding-bottom: 0 #{emma-important($important)};
 }
