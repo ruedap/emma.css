@@ -334,10 +334,10 @@ rules:
           abbr: tbcp
         -
           name: table-column
-          abbr: tbcl
+          abbr: tbco
         -
           name: table-column-group
-          abbr: tbclg
+          abbr: tbcog
         -
           name: table-header-group
           abbr: tbhg
@@ -1421,10 +1421,10 @@ rules:
           abbr: n
         -
           name: repeat-x
-          abbr: x
+          abbr: rx
         -
           name: repeat-y
-          abbr: y
+          abbr: ry
         -
           name: space
           abbr: sp
@@ -1599,10 +1599,10 @@ rules:
           abbr: s
         -
           name: decimal
-          abbr: dc
+          abbr: de
         -
           name: decimal-leading-zero
-          abbr: dclz
+          abbr: dlz
         -
           name: lower-roman
           abbr: lr

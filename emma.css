@@ -32,8 +32,8 @@
 .u-d-tb { display: table !important; }
 .u-d-itb { display: inline-table !important; }
 .u-d-tbcp { display: table-caption !important; }
-.u-d-tbcl { display: table-column !important; }
-.u-d-tbclg { display: table-column-group !important; }
+.u-d-tbco { display: table-column !important; }
+.u-d-tbcog { display: table-column-group !important; }
 .u-d-tbhg { display: table-header-group !important; }
 .u-d-tbfg { display: table-footer-group !important; }
 .u-d-tbr { display: table-row !important; }
@@ -138,8 +138,8 @@
 .u-bgc-danger { background-color: #d9534f !important; }
 .u-bgi-n { background-image: none !important; }
 .u-bgr-n { background-repeat: no-repeat !important; }
-.u-bgr-x { background-repeat: repeat-x !important; }
-.u-bgr-y { background-repeat: repeat-y !important; }
+.u-bgr-rx { background-repeat: repeat-x !important; }
+.u-bgr-ry { background-repeat: repeat-y !important; }
 .u-bgr-sp { background-repeat: space !important; }
 .u-bgr-rd { background-repeat: round !important; }
 .u-bga-f { background-attachment: fixed !important; }
@@ -435,8 +435,8 @@
 .u-list-d { list-style-type: disc !important; }
 .u-list-c { list-style-type: circle !important; }
 .u-list-s { list-style-type: square !important; }
-.u-list-dc { list-style-type: decimal !important; }
-.u-list-dclz { list-style-type: decimal-leading-zero !important; }
+.u-list-de { list-style-type: decimal !important; }
+.u-list-dlz { list-style-type: decimal-leading-zero !important; }
 .u-list-lr { list-style-type: lower-roman !important; }
 .u-list-ur { list-style-type: upper-roman !important; }
 .u-lisi-n { list-style-image: none !important; }
