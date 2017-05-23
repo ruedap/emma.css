@@ -47,6 +47,11 @@
     "url": "git://github.com/ruedap/emma.css.git"
   },
   "devDependencies": {
+    "@emmetio/css-abbreviation": "^0.3.1",
+    "@emmetio/css-snippets-resolver": "^0.2.5",
+    "@emmetio/output-profile": "^0.1.5",
+    "@emmetio/snippets-registry": "^0.3.1",
+    "@emmetio/stylesheet-formatters": "^0.1.2",
     "@types/fs-extra": "^3.0.1",
     "@types/js-yaml": "3.5",
     "@types/lodash": "^4.14.64",
