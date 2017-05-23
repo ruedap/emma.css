@@ -74,23 +74,3 @@
   display: table-cell #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}d-rb {
-  display: ruby #{emma-important($emma-important)};
-}
-
-.#{$emma-prefix}d-rbb {
-  display: ruby-base #{emma-important($emma-important)};
-}
-
-.#{$emma-prefix}d-rbbg {
-  display: ruby-base-group #{emma-important($emma-important)};
-}
-
-.#{$emma-prefix}d-rbt {
-  display: ruby-text #{emma-important($emma-important)};
-}
-
-.#{$emma-prefix}d-rbtg {
-  display: ruby-text-group #{emma-important($emma-important)};
-}
-

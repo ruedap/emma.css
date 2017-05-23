@@ -353,21 +353,6 @@ rules:
         -
           name: table-cell
           abbr: tbc
-        -
-          name: ruby
-          abbr: rb
-        -
-          name: ruby-base
-          abbr: rbb
-        -
-          name: ruby-base-group
-          abbr: rbbg
-        -
-          name: ruby-text
-          abbr: rbt
-        -
-          name: ruby-text-group
-          abbr: rbtg
     -
       name: visibility
       abbr: v
