@@ -3,6 +3,7 @@
 ## master (unreleased)
 * Move root sass file (from `./emma.scss` to `./sass/emma.scss`)
 * Remove snippet: `fw-l`
+* [Bower is deprecated](https://github.com/bower/bower#bower---a-package-manager-for-the-web)
 
 ## 0.9.0
 * Restructure based on YAML documents
