@@ -2294,6 +2294,23 @@ rules:
           name: '3'
           abbr: '3'
     -
+      name: flex-shrink
+      abbr: fxs
+      group: display
+      values:
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: '1'
+          abbr: '1'
+        -
+          name: '2'
+          abbr: '2'
+        -
+          name: '3'
+          abbr: '3'
+    -
       name: align-self
       abbr: as
       group: display

@@ -99,6 +99,10 @@
 .u-fxg1 { flex-grow: 1 !important; }
 .u-fxg2 { flex-grow: 2 !important; }
 .u-fxg3 { flex-grow: 3 !important; }
+.u-fxs0 { flex-shrink: 0 !important; }
+.u-fxs1 { flex-shrink: 1 !important; }
+.u-fxs2 { flex-shrink: 2 !important; }
+.u-fxs3 { flex-shrink: 3 !important; }
 .u-as-a { align-self: auto !important; }
 .u-as-fs { align-self: flex-start !important; }
 .u-as-fe { align-self: flex-end !important; }
