@@ -95,6 +95,10 @@
 .u-fx1-0-a { flex: 1 0 auto !important; }
 .u-fx0-1-a { flex: 0 1 auto !important; }
 .u-fx1-1-1 { flex: 1 1 1px !important; }
+.u-fxg0 { flex-grow: 0 !important; }
+.u-fxg1 { flex-grow: 1 !important; }
+.u-fxg2 { flex-grow: 2 !important; }
+.u-fxg3 { flex-grow: 3 !important; }
 .u-as-a { align-self: auto !important; }
 .u-as-fs { align-self: flex-start !important; }
 .u-as-fe { align-self: flex-end !important; }

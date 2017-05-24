@@ -2,9 +2,15 @@
 
 ## master (unreleased)
 * Move root sass file (from `./emma.scss` to `./sass/emma.scss`)
+* Avoid hyphenation at unit value (e.g. `mt-0` -> `mt0`)
 * Add snippets:
     * `pos-sk` (`position: sticky`)
     * `fx0-1-a` (`flex: 0 1 a`)
+    * flex-grow
+        * `fxg0` (`flex-grow: 0`)
+        * `fxg1` (`flex-grow: 1`)
+        * `fxg2` (`flex-grow: 2`)
+        * `fxg3` (`flex-grow: 3`)
 * Remove snippets:
     * `fw-l` (`font-weight: light`)
     * `d-rb` (`display: ruby`)
@@ -14,7 +20,6 @@
     * `d-rbtg` (`display: ruby-text-group`)
     * `d-ri` (`display: run-in`)
 * [Bower is deprecated](https://github.com/bower/bower#bower---a-package-manager-for-the-web)
-* Avoid hyphenation at unit value (e.g. `mt-0` -> `mt0`)
 
 ## 0.9.0
 * Restructure based on YAML documents

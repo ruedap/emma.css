@@ -49,9 +49,9 @@ export default class Emma {
 
     // DEBUG
     console.log(`/*! Emma.css ${ver} */`);
-    console.log(`variables: ${vars.length}`);
+    console.log(`vars: ${vars.length}`);
     console.log(`mixins: ${mixins.length}`);
-    console.log(`properties: ${props.length}`);
+    console.log(`props: ${props.length}`);
   }
 
   private generateVars(vars: any): string {
