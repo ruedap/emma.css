@@ -700,11 +700,20 @@ rules:
           name: '0'
           abbr: '0'
         -
+          name: 1px
+          abbr: '1'
+        -
           name: 1%
           abbr: 1p
         -
+          name: 5%
+          abbr: 5p
+        -
           name: 10%
           abbr: 10p
+        -
+          name: 15%
+          abbr: 15p
         -
           name: 20%
           abbr: 20p
@@ -718,17 +727,35 @@ rules:
           name: 33%
           abbr: 33p
         -
+          name: 34%
+          abbr: 34p
+        -
+          name: 35%
+          abbr: 35p
+        -
           name: 40%
           abbr: 40p
+        -
+          name: 45%
+          abbr: 45p
         -
           name: 50%
           abbr: 50p
         -
+          name: 55%
+          abbr: 55p
+        -
           name: 60%
           abbr: 60p
         -
+          name: 65%
+          abbr: 65p
+        -
           name: 66%
           abbr: 66p
+        -
+          name: 67%
+          abbr: 67p
         -
           name: 70%
           abbr: 70p
@@ -739,8 +766,14 @@ rules:
           name: 80%
           abbr: 80p
         -
+          name: 85%
+          abbr: 85p
+        -
           name: 90%
           abbr: 90p
+        -
+          name: 95%
+          abbr: 95p
         -
           name: 100%
           abbr: 100p

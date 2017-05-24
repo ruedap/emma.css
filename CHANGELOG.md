@@ -9,6 +9,8 @@
     * flex-basis
     * `pos-sk` (`position: sticky`)
     * `fx0-1-a` (`flex: 0 1 a`)
+* Improve snippets:
+    * width
 * Remove snippets:
     * `fw-l` (`font-weight: light`)
     * `d-rb` (`display: ruby`)
