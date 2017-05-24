@@ -4,13 +4,11 @@
 * Move root sass file (from `./emma.scss` to `./sass/emma.scss`)
 * Avoid hyphenation at unit value (e.g. `mt-0` -> `mt0`)
 * Add snippets:
+    * flex-grow
+    * flex-shrink
+    * flex-basis
     * `pos-sk` (`position: sticky`)
     * `fx0-1-a` (`flex: 0 1 a`)
-    * flex-grow
-        * `fxg0` (`flex-grow: 0`)
-        * `fxg1` (`flex-grow: 1`)
-        * `fxg2` (`flex-grow: 2`)
-        * `fxg3` (`flex-grow: 3`)
 * Remove snippets:
     * `fw-l` (`font-weight: light`)
     * `d-rb` (`display: ruby`)
