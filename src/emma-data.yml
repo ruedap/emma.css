@@ -2271,6 +2271,9 @@ rules:
           name: '1 0 auto'
           abbr: '1-0-a'
         -
+          name: '0 1 auto'
+          abbr: '0-1-a'
+        -
           name: '1 1 1px'
           abbr: '1-1-1'
     -

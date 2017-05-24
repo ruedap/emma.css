@@ -93,6 +93,7 @@
 .u-fx-n { flex: none !important; }
 .u-fx1-1-a { flex: 1 1 auto !important; }
 .u-fx1-0-a { flex: 1 0 auto !important; }
+.u-fx0-1-a { flex: 0 1 auto !important; }
 .u-fx1-1-1 { flex: 1 1 1px !important; }
 .u-as-a { align-self: auto !important; }
 .u-as-fs { align-self: flex-start !important; }
