@@ -318,9 +318,6 @@ rules:
           name: list-item
           abbr: li
         -
-          name: run-in
-          abbr: ri
-        -
           name: compact
           abbr: cp
         -

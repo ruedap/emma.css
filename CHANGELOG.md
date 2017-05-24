@@ -2,7 +2,14 @@
 
 ## master (unreleased)
 * Move root sass file (from `./emma.scss` to `./sass/emma.scss`)
-* Remove snippet: `fw-l` (`font-weight: light`), `d-rb` (`display: ruby`), `d-rbb` (`display: ruby-base`), `d-rbbg` (`display: ruby-base-group`), `d-rbt` (`display: ruby-text`), `d-rbtg` (`display: ruby-text-group`)
+* Remove snippet:
+    * `fw-l` (`font-weight: light`)
+    * `d-rb` (`display: ruby`)
+    * `d-rbb` (`display: ruby-base`)
+    * `d-rbbg` (`display: ruby-base-group`)
+    * `d-rbt` (`display: ruby-text`)
+    * `d-rbtg` (`display: ruby-text-group`)
+    * `d-ri` (`display: run-in`)
 * [Bower is deprecated](https://github.com/bower/bower#bower---a-package-manager-for-the-web)
 * Avoid hyphenation at unit value (e.g. `mt-0` -> `mt0`)
 

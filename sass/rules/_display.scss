@@ -26,10 +26,6 @@
   display: list-item #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}d-ri {
-  display: run-in #{emma-important($emma-important)};
-}
-
 .#{$emma-prefix}d-cp {
   display: compact #{emma-important($emma-important)};
 }
