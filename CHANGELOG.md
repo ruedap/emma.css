@@ -11,6 +11,7 @@
     * `fx0-1-a` (`flex: 0 1 a`)
 * Improve snippets:
     * width
+    * max-width
 * Remove snippets:
     * `fw-l` (`font-weight: light`)
     * `d-rb` (`display: ruby`)
