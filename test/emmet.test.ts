@@ -24,7 +24,7 @@ describe("emma-data.json",() => {
     const emmaProps = {};
     _.each(doc.rules.props, (p) => {
       let values = '';
-      _.each(p.values, (v) => {
+      _.each(_.reverse(p.values), (v) => {
         values += `${v.name}|`
       });
       values = _.trimEnd(values, '|');

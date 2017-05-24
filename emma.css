@@ -1,7 +1,8 @@
 /*! Emma.css 0.9.0 | MIT License | https://git.io/emma */
 .u-pos-s { position: static !important; }
-.u-pos-a { position: absolute !important; }
 .u-pos-r { position: relative !important; }
+.u-pos-a { position: absolute !important; }
+.u-pos-sk { position: sticky !important; }
 .u-pos-f { position: fixed !important; }
 .u-t-a { top: auto !important; }
 .u-t0 { top: 0 !important; }

@@ -2,12 +2,16 @@
   position: static #{emma-important($emma-important)};
 }
 
+.#{$emma-prefix}pos-r {
+  position: relative #{emma-important($emma-important)};
+}
+
 .#{$emma-prefix}pos-a {
   position: absolute #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}pos-r {
-  position: relative #{emma-important($emma-important)};
+.#{$emma-prefix}pos-sk {
+  position: sticky #{emma-important($emma-important)};
 }
 
 .#{$emma-prefix}pos-f {

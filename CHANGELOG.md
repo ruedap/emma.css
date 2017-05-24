@@ -2,7 +2,9 @@
 
 ## master (unreleased)
 * Move root sass file (from `./emma.scss` to `./sass/emma.scss`)
-* Remove snippet:
+* Add snippet:
+    * `pos-sk` (`position: sticky`)
+* Remove snippets:
     * `fw-l` (`font-weight: light`)
     * `d-rb` (`display: ruby`)
     * `d-rbb` (`display: ruby-base`)

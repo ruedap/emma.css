@@ -176,11 +176,14 @@ rules:
           name: static
           abbr: s
         -
+          name: relative
+          abbr: r
+        -
           name: absolute
           abbr: a
         -
-          name: relative
-          abbr: r
+          name: sticky
+          abbr: sk
         -
           name: fixed
           abbr: f
