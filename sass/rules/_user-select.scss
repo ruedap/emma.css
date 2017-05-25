@@ -1,0 +1,12 @@
+.#{$emma-prefix}us-a {
+  user-select: auto #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}us-n {
+  user-select: none #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}us-t {
+  user-select: text #{emma-important($emma-important)};
+}
+

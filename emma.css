@@ -651,3 +651,6 @@
 .u-ap-b { appearance: button !important; }
 .u-ap-c { appearance: checkbox !important; }
 .u-ap-su { appearance: scrollbarbutton-up !important; }
+.u-us-a { user-select: auto !important; }
+.u-us-n { user-select: none !important; }
+.u-us-t { user-select: text !important; }

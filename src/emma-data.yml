@@ -2542,6 +2542,20 @@ rules:
         -
           name: scrollbarbutton-up
           abbr: su
+    -
+      name: user-select
+      abbr: us
+      group: other
+      values:
+        -
+          name: auto
+          abbr: a
+        -
+          name: none
+          abbr: n
+        -
+          name: text
+          abbr: t
   mixins:
     -
       name: clearfix
