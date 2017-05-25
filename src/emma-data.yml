@@ -2492,20 +2492,6 @@ rules:
           name: stretch
           abbr: s
     -
-      name: '-webkit-font-smoothing'
-      abbr: wkfsm
-      group: text
-      values:
-        -
-          name: antialiased
-          abbr: a
-        -
-          name: subpixel-antialiased
-          abbr: sa
-        -
-          name: none
-          abbr: n
-    -
       name: object-fit
       abbr: obf
       group: other
@@ -2556,6 +2542,31 @@ rules:
         -
           name: text
           abbr: t
+    -
+      name: '-webkit-font-smoothing'
+      abbr: wkfsm
+      group: text
+      values:
+        -
+          name: antialiased
+          abbr: a
+        -
+          name: subpixel-antialiased
+          abbr: sa
+        -
+          name: none
+          abbr: n
+    -
+      name: '-webkit-touch-callout'
+      abbr: wktc
+      group: other
+      values:
+        -
+          name: default
+          abbr: d
+        -
+          name: none
+          abbr: n
   mixins:
     -
       name: clearfix

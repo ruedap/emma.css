@@ -654,3 +654,5 @@
 .u-us-a { user-select: auto !important; }
 .u-us-n { user-select: none !important; }
 .u-us-t { user-select: text !important; }
+.u-wktc-d { -webkit-touch-callout: default !important; }
+.u-wktc-n { -webkit-touch-callout: none !important; }
