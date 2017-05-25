@@ -627,6 +627,8 @@
 .u-wkfsm-a { -webkit-font-smoothing: antialiased !important; }
 .u-wkfsm-sa { -webkit-font-smoothing: subpixel-antialiased !important; }
 .u-wkfsm-n { -webkit-font-smoothing: none !important; }
+.u-mzfsm-g { -moz-osx-font-smoothing: grayscale !important; }
+.u-mzfsm-u { -moz-osx-font-smoothing: unset !important; }
 .u-tetr { max-width: 100% !important; overflow: hidden !important; text-overflow: ellipsis !important; white-space: nowrap !important; word-wrap: normal !important; }
 .u-tehi { overflow: hidden !important; text-indent: 200% !important; white-space: nowrap !important; }
 .u-reli { list-style: none !important; padding-left: 0 !important; }

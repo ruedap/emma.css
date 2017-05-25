@@ -2557,6 +2557,17 @@ rules:
           name: none
           abbr: n
     -
+      name: '-moz-osx-font-smoothing'
+      abbr: mzfsm
+      group: text
+      values:
+        -
+          name: grayscale
+          abbr: g
+        -
+          name: unset
+          abbr: u
+    -
       name: '-webkit-touch-callout'
       abbr: wktc
       group: other
