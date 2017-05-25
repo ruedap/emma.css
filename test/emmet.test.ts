@@ -56,7 +56,7 @@ describe("emma-data.json",() => {
             'ff-t',
             'ff-v',
             'ff-l',
-            'ff-j',
+            'ff-ja',
             'op0_1',
             'op0_2',
             'op0_3',
