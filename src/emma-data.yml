@@ -2846,8 +2846,7 @@ rules:
       desc: 'Clearfix (Contain floats)'
       group: float
       decls:
-        - '&:before, &:after { content: " "; display: table; }'
-        - '&:after { clear: both; }'
+        - '&::after { content: ""; display: table; clear: both; }'
     -
       name: text-truncation
       abbr: tetr

@@ -21,6 +21,7 @@
     * width
     * max-width
     * `ff-ja`
+    * `cf` (clearfix)
 * Rename snippets:
     * `d-f` -> `d-fx` (`display: flex`)
     * `d-if` -> `d-ifx` (`display: inline-flex`)

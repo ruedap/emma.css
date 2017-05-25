@@ -156,8 +156,7 @@
 .u-cl-l { clear: left !important; }
 .u-cl-r { clear: right !important; }
 .u-cl-b { clear: both !important; }
-.u-cf:before, .u-cf:after { content: " "; display: table; }
-.u-cf:after { clear: both; }
+.u-cf::after { content: ""; display: table; clear: both; }
 .u-bxsh-n { box-shadow: none !important; }
 .u-bg-n { background: none !important; }
 .u-bgc-t { background-color: transparent !important; }
