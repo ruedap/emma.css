@@ -300,6 +300,9 @@ rules:
       group: display
       values:
         -
+          name: inline
+          abbr: i
+        -
           name: none
           abbr: n
         -
@@ -312,17 +315,11 @@ rules:
           name: inline-flex
           abbr: ifx
         -
-          name: inline
-          abbr: i
-        -
           name: inline-block
           abbr: ib
         -
           name: list-item
           abbr: li
-        -
-          name: compact
-          abbr: cp
         -
           name: table
           abbr: tb

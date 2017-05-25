@@ -23,6 +23,7 @@
     * `d-rbt` (`display: ruby-text`)
     * `d-rbtg` (`display: ruby-text-group`)
     * `d-ri` (`display: run-in`)
+    * `d-cp` (`display: compact`)
 * [Bower is deprecated](https://github.com/bower/bower#bower---a-package-manager-for-the-web)
 
 ## 0.9.0

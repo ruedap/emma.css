@@ -1,3 +1,7 @@
+.#{$emma-prefix}d-i {
+  display: inline #{emma-important($emma-important)};
+}
+
 .#{$emma-prefix}d-n {
   display: none #{emma-important($emma-important)};
 }
@@ -14,20 +18,12 @@
   display: inline-flex #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}d-i {
-  display: inline #{emma-important($emma-important)};
-}
-
 .#{$emma-prefix}d-ib {
   display: inline-block #{emma-important($emma-important)};
 }
 
 .#{$emma-prefix}d-li {
   display: list-item #{emma-important($emma-important)};
-}
-
-.#{$emma-prefix}d-cp {
-  display: compact #{emma-important($emma-important)};
 }
 
 .#{$emma-prefix}d-tb {

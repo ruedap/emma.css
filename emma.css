@@ -21,14 +21,13 @@
 .u-z5 { z-index: 5 !important; }
 .u-z6 { z-index: 6 !important; }
 .u-z9999 { z-index: 9999 !important; }
+.u-d-i { display: inline !important; }
 .u-d-n { display: none !important; }
 .u-d-b { display: block !important; }
 .u-d-fx { display: flex !important; }
 .u-d-ifx { display: inline-flex !important; }
-.u-d-i { display: inline !important; }
 .u-d-ib { display: inline-block !important; }
 .u-d-li { display: list-item !important; }
-.u-d-cp { display: compact !important; }
 .u-d-tb { display: table !important; }
 .u-d-itb { display: inline-table !important; }
 .u-d-tbcp { display: table-caption !important; }
