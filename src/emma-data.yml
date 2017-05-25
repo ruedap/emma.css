@@ -341,6 +341,9 @@ rules:
         -
           name: list-item
           abbr: li
+        -
+          name: inherit
+          abbr: ih
     -
       name: visibility
       abbr: v
@@ -1540,7 +1543,7 @@ rules:
       values:
         -
           name: inherit
-          abbr: i
+          abbr: ih
         -
           name: $color-white
           abbr: white
@@ -1820,7 +1823,7 @@ rules:
           abbr: nm
         -
           name: inherit
-          abbr: i
+          abbr: ih
         -
           name: '0'
           abbr: '0'

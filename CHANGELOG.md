@@ -8,6 +8,7 @@
     * flex-shrink
     * flex-basis
     * `pos-sk` (`position: sticky`)
+    * `d-ih` (`display: inherit`)
 * Improve snippets:
     * flex
     * width

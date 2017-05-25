@@ -23,7 +23,7 @@ describe("emma-data.json",() => {
     const propValuesLength = _.reduce(doc.rules.props, (result, v) => {
       return result + v.values.length;
     }, 0);
-    assert(propValuesLength === 614);
+    assert(propValuesLength === 615);
   });
 
   describe("[ver]",() => {

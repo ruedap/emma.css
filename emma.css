@@ -35,6 +35,7 @@
 .u-d-tbr { display: table-row !important; }
 .u-d-tbc { display: table-cell !important; }
 .u-d-li { display: list-item !important; }
+.u-d-ih { display: inherit !important; }
 .u-v-v { visibility: visible !important; }
 .u-v-h { visibility: hidden !important; }
 .u-v-c { visibility: collapse !important; }
@@ -463,7 +464,7 @@
 .u-bdrs5 { border-radius: 5px !important; }
 .u-bdrs6 { border-radius: 6px !important; }
 .u-bdrs100p { border-radius: 100% !important; }
-.u-c-i { color: inherit !important; }
+.u-c-ih { color: inherit !important; }
 .u-c-white { color: #ffffff !important; }
 .u-c-silver { color: #dddddd !important; }
 .u-c-gray { color: #aaaaaa !important; }
@@ -531,7 +532,7 @@
 .u-tt-l { text-transform: lowercase !important; }
 .u-tsh-n { text-shadow: none !important; }
 .u-lh-nm { line-height: normal !important; }
-.u-lh-i { line-height: inherit !important; }
+.u-lh-ih { line-height: inherit !important; }
 .u-lh0 { line-height: 0 !important; }
 .u-lh1 { line-height: 1 !important; }
 .u-lh2 { line-height: 2 !important; }
