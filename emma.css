@@ -647,3 +647,7 @@
 .u-obf-cv { object-fit: cover !important; }
 .u-obf-n { object-fit: none !important; }
 .u-obf-sd { object-fit: scale-down !important; }
+.u-ap-n { appearance: none !important; }
+.u-ap-b { appearance: button !important; }
+.u-ap-c { appearance: checkbox !important; }
+.u-ap-su { appearance: scrollbarbutton-up !important; }

@@ -2525,6 +2525,23 @@ rules:
         -
           name: scale-down
           abbr: sd
+    -
+      name: appearance
+      abbr: ap
+      group: other
+      values:
+        -
+          name: none
+          abbr: n
+        -
+          name: button
+          abbr: b
+        -
+          name: checkbox
+          abbr: c
+        -
+          name: scrollbarbutton-up
+          abbr: su
   mixins:
     -
       name: clearfix

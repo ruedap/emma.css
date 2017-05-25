@@ -7,6 +7,7 @@
     * flex-grow
     * flex-shrink
     * flex-basis
+    * appearance
     * `pos-sk` (`position: sticky`)
     * `d-ih` (`display: inherit`)
     * `bdrs9999` (`border-radius: 9999px`)
