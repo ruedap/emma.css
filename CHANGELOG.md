@@ -12,6 +12,9 @@
     * flex
     * width
     * max-width
+* Rename snippets:
+    * `d-f` -> `d-fx` (`display: flex`)
+    * `d-if` -> `d-ifx` (`display: inline-flex`)
 * Remove snippets:
     * `fw-l` (`font-weight: light`)
     * `d-rb` (`display: ruby`)

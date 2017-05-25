@@ -307,10 +307,10 @@ rules:
           abbr: b
         -
           name: flex
-          abbr: f
+          abbr: fx
         -
           name: inline-flex
-          abbr: if
+          abbr: ifx
         -
           name: inline
           abbr: i

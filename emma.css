@@ -23,8 +23,8 @@
 .u-z9999 { z-index: 9999 !important; }
 .u-d-n { display: none !important; }
 .u-d-b { display: block !important; }
-.u-d-f { display: flex !important; }
-.u-d-if { display: inline-flex !important; }
+.u-d-fx { display: flex !important; }
+.u-d-ifx { display: inline-flex !important; }
 .u-d-i { display: inline !important; }
 .u-d-ib { display: inline-block !important; }
 .u-d-li { display: list-item !important; }
