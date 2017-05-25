@@ -166,3 +166,8 @@
   padding-bottom: $emma-padding-xl #{emma-important($important)};
 }
 
+@mixin emma-fsm-a($important: $emma-important) {
+  -webkit-font-smoothing: antialiased #{emma-important($important)};
+  -moz-osx-font-smoothing: grayscale #{emma-important($important)};
+}
+

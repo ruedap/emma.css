@@ -14,6 +14,7 @@
     * `pos-sk` (`position: sticky`)
     * `d-ih` (`display: inherit`)
     * `bdrs9999` (`border-radius: 9999px`)
+    * `fsm-a` (mixin)
 * Improve snippets:
     * flex
     * width

@@ -18,12 +18,25 @@ describe("emma-data.json",() => {
 
   it("is valid length", () => {
     assert(doc.vars.length === 55);
-    assert(doc.rules.mixins.length === 31);
+    assert(doc.rules.mixins.length === 32);
     assert(doc.rules.props.length === 106);
     const propValuesLength = _.reduce(doc.rules.props, (result, v) => {
       return result + v.values.length;
     }, 0);
     assert(propValuesLength === 627);
+  });
+
+  it("is unique abbreviations", () => {
+    let actual = [];
+    _.each(doc.rules.props, (p) => {
+      _.each(p.values, (v) => {
+        actual.push(emma.generateAbbr(p.abbr, v.abbr));
+      });
+    });
+    _.each(doc.rules.mixins, (m) => {
+      actual.push(m.abbr);
+    });
+    assert(_.isEqual(actual, _.uniq(actual)));
   });
 
   describe("[ver]",() => {

@@ -2945,3 +2945,14 @@ rules:
         -
           prop: padding-bottom
           value: $padding-xl
+    -
+      name: font-smoothing-antialiased
+      abbr: fsm-a
+      group: text
+      decls:
+        -
+          prop: -webkit-font-smoothing
+          value: antialiased
+        -
+          prop:  -moz-osx-font-smoothing
+          value: grayscale

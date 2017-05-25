@@ -632,6 +632,7 @@
 .u-tetr { max-width: 100% !important; overflow: hidden !important; text-overflow: ellipsis !important; white-space: nowrap !important; word-wrap: normal !important; }
 .u-tehi { overflow: hidden !important; text-indent: 200% !important; white-space: nowrap !important; }
 .u-reli { list-style: none !important; padding-left: 0 !important; }
+.u-fsm-a { -webkit-font-smoothing: antialiased !important; -moz-osx-font-smoothing: grayscale !important; }
 .u-rsz-n { resize: none !important; }
 .u-rsz-b { resize: both !important; }
 .u-rsz-h { resize: horizontal !important; }
