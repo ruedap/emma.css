@@ -110,6 +110,54 @@
   flex-basis: 100% #{emma-important($emma-important)};
 }
 
+.#{$emma-prefix}fxb25vw {
+  flex-basis: 25vw #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fxb50vw {
+  flex-basis: 50vw #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fxb75vw {
+  flex-basis: 75vw #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fxb90vw {
+  flex-basis: 90vw #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fxb100vw {
+  flex-basis: 100vw #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fxb25vh {
+  flex-basis: 25vh #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fxb50vh {
+  flex-basis: 50vh #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fxb75vh {
+  flex-basis: 75vh #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fxb90vh {
+  flex-basis: 90vh #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fxb100vh {
+  flex-basis: 100vh #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fxb100vmax {
+  flex-basis: 100vmax #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fxb100vmin {
+  flex-basis: 100vmin #{emma-important($emma-important)};
+}
+
 .#{$emma-prefix}fxb-c {
   flex-basis: content #{emma-important($emma-important)};
 }

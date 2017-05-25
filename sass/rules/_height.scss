@@ -10,3 +10,35 @@
   height: 100% #{emma-important($emma-important)};
 }
 
+.#{$emma-prefix}h100vw {
+  height: 100vw #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}h25vh {
+  height: 25vh #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}h50vh {
+  height: 50vh #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}h75vh {
+  height: 75vh #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}h90vh {
+  height: 90vh #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}h100vh {
+  height: 100vh #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}h100vmax {
+  height: 100vmax #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}h100vmin {
+  height: 100vmin #{emma-important($emma-important)};
+}
+

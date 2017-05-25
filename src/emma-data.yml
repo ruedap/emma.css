@@ -768,6 +768,30 @@ rules:
         -
           name: 100%
           abbr: 100p
+        -
+          name: 25vw
+          abbr: 25vw
+        -
+          name: 50vw
+          abbr: 50vw
+        -
+          name: 75vw
+          abbr: 75vw
+        -
+          name: 90vw
+          abbr: 90vw
+        -
+          name: 100vw
+          abbr: 100vw
+        -
+          name: 100vh
+          abbr: 100vh
+        -
+          name: 100vmax
+          abbr: 100vmax
+        -
+          name: 100vmin
+          abbr: 100vmin
     -
       name: height
       abbr: h
@@ -782,6 +806,30 @@ rules:
         -
           name: 100%
           abbr: 100p
+        -
+          name: 100vw
+          abbr: 100vw
+        -
+          name: 25vh
+          abbr: 25vh
+        -
+          name: 50vh
+          abbr: 50vh
+        -
+          name: 75vh
+          abbr: 75vh
+        -
+          name: 90vh
+          abbr: 90vh
+        -
+          name: 100vh
+          abbr: 100vh
+        -
+          name: 100vmax
+          abbr: 100vmax
+        -
+          name: 100vmin
+          abbr: 100vmin
     -
       name: max-width
       abbr: maw
@@ -871,6 +919,30 @@ rules:
         -
           name: 100%
           abbr: 100p
+        -
+          name: 25vw
+          abbr: 25vw
+        -
+          name: 50vw
+          abbr: 50vw
+        -
+          name: 75vw
+          abbr: 75vw
+        -
+          name: 90vw
+          abbr: 90vw
+        -
+          name: 100vw
+          abbr: 100vw
+        -
+          name: 100vh
+          abbr: 100vh
+        -
+          name: 100vmax
+          abbr: 100vmax
+        -
+          name: 100vmin
+          abbr: 100vmin
     -
       name: max-height
       abbr: mah
@@ -882,6 +954,30 @@ rules:
         -
           name: 100%
           abbr: 100p
+        -
+          name: 100vw
+          abbr: 100vw
+        -
+          name: 25vh
+          abbr: 25vh
+        -
+          name: 50vh
+          abbr: 50vh
+        -
+          name: 75vh
+          abbr: 75vh
+        -
+          name: 90vh
+          abbr: 90vh
+        -
+          name: 100vh
+          abbr: 100vh
+        -
+          name: 100vmax
+          abbr: 100vmax
+        -
+          name: 100vmin
+          abbr: 100vmin
     -
       name: min-width
       abbr: miw
@@ -890,6 +986,108 @@ rules:
         -
           name: '0'
           abbr: '0'
+        -
+          name: 1px
+          abbr: '1'
+        -
+          name: 1%
+          abbr: 1p
+        -
+          name: 5%
+          abbr: 5p
+        -
+          name: 10%
+          abbr: 10p
+        -
+          name: 15%
+          abbr: 15p
+        -
+          name: 20%
+          abbr: 20p
+        -
+          name: 25%
+          abbr: 25p
+        -
+          name: 30%
+          abbr: 30p
+        -
+          name: 33%
+          abbr: 33p
+        -
+          name: 34%
+          abbr: 34p
+        -
+          name: 35%
+          abbr: 35p
+        -
+          name: 40%
+          abbr: 40p
+        -
+          name: 45%
+          abbr: 45p
+        -
+          name: 50%
+          abbr: 50p
+        -
+          name: 55%
+          abbr: 55p
+        -
+          name: 60%
+          abbr: 60p
+        -
+          name: 65%
+          abbr: 65p
+        -
+          name: 66%
+          abbr: 66p
+        -
+          name: 67%
+          abbr: 67p
+        -
+          name: 70%
+          abbr: 70p
+        -
+          name: 75%
+          abbr: 75p
+        -
+          name: 80%
+          abbr: 80p
+        -
+          name: 85%
+          abbr: 85p
+        -
+          name: 90%
+          abbr: 90p
+        -
+          name: 95%
+          abbr: 95p
+        -
+          name: 100%
+          abbr: 100p
+        -
+          name: 25vw
+          abbr: 25vw
+        -
+          name: 50vw
+          abbr: 50vw
+        -
+          name: 75vw
+          abbr: 75vw
+        -
+          name: 90vw
+          abbr: 90vw
+        -
+          name: 100vw
+          abbr: 100vw
+        -
+          name: 100vh
+          abbr: 100vh
+        -
+          name: 100vmax
+          abbr: 100vmax
+        -
+          name: 100vmin
+          abbr: 100vmin
     -
       name: min-height
       abbr: mih
@@ -898,6 +1096,33 @@ rules:
         -
           name: '0'
           abbr: '0'
+        -
+          name: 1px
+          abbr: '1'
+        -
+          name: 100vw
+          abbr: 100vw
+        -
+          name: 25vh
+          abbr: 25vh
+        -
+          name: 50vh
+          abbr: 50vh
+        -
+          name: 75vh
+          abbr: 75vh
+        -
+          name: 90vh
+          abbr: 90vh
+        -
+          name: 100vh
+          abbr: 100vh
+        -
+          name: 100vmax
+          abbr: 100vmax
+        -
+          name: 100vmin
+          abbr: 100vmin
     -
       name: outline
       abbr: ol
@@ -2465,6 +2690,42 @@ rules:
         -
           name: 100%
           abbr: 100p
+        -
+          name: 25vw
+          abbr: 25vw
+        -
+          name: 50vw
+          abbr: 50vw
+        -
+          name: 75vw
+          abbr: 75vw
+        -
+          name: 90vw
+          abbr: 90vw
+        -
+          name: 100vw
+          abbr: 100vw
+        -
+          name: 25vh
+          abbr: 25vh
+        -
+          name: 50vh
+          abbr: 50vh
+        -
+          name: 75vh
+          abbr: 75vh
+        -
+          name: 90vh
+          abbr: 90vh
+        -
+          name: 100vh
+          abbr: 100vh
+        -
+          name: 100vmax
+          abbr: 100vmax
+        -
+          name: 100vmin
+          abbr: 100vmin
         -
           name: content
           abbr: c

@@ -2,3 +2,39 @@
   min-height: 0 #{emma-important($emma-important)};
 }
 
+.#{$emma-prefix}mih1 {
+  min-height: 1px #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mih100vw {
+  min-height: 100vw #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mih25vh {
+  min-height: 25vh #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mih50vh {
+  min-height: 50vh #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mih75vh {
+  min-height: 75vh #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mih90vh {
+  min-height: 90vh #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mih100vh {
+  min-height: 100vh #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mih100vmax {
+  min-height: 100vmax #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mih100vmin {
+  min-height: 100vmin #{emma-important($emma-important)};
+}
+

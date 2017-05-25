@@ -110,3 +110,35 @@
   width: 100% #{emma-important($emma-important)};
 }
 
+.#{$emma-prefix}w25vw {
+  width: 25vw #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w50vw {
+  width: 50vw #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w75vw {
+  width: 75vw #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w90vw {
+  width: 90vw #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w100vw {
+  width: 100vw #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w100vh {
+  width: 100vh #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w100vmax {
+  width: 100vmax #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w100vmin {
+  width: 100vmin #{emma-important($emma-important)};
+}
+

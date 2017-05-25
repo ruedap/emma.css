@@ -15,6 +15,7 @@
     * `d-ih` (`display: inherit`)
     * `bdrs9999` (`border-radius: 9999px`)
     * `fsm-a` (mixin)
+    * Viewport units (vw, vh, vmax, vmin)
 * Improve snippets:
     * flex
     * width
