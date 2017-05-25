@@ -75,7 +75,7 @@ describe("emma-data.json",() => {
             'ord6',
             'ord9999',
             'ord-1',
-            'fx1-1-1',
+            'fx1-0-0',
           ];
           if (_.includes(invalidEmmetAbbrList, abbr)) { return; }
           assert.equal(expand(abbr), `${p.name}: ${v.name};`);

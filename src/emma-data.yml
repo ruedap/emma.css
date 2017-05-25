@@ -2331,20 +2331,23 @@ rules:
       group: display
       values:
         -
-          name: none
-          abbr: n
-        -
-          name: '1 1 auto'
-          abbr: '1-1-a'
+          name: '0 1 auto'
+          abbr: '0-1-a'
         -
           name: '1 0 auto'
           abbr: '1-0-a'
         -
-          name: '0 1 auto'
-          abbr: '0-1-a'
+          name: '1 1 auto'
+          abbr: '1-1-a'
         -
-          name: '1 1 1px'
-          abbr: '1-1-1'
+          name: '0 0 auto'
+          abbr: '0-0-a'
+        -
+          name: none
+          abbr: n
+        -
+          name: '1 0 0%' # for flexbugs #4
+          abbr: '1-0-0'
     -
       name: flex-grow
       abbr: fxg

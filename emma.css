@@ -90,11 +90,12 @@
 .u-ord6 { order: 6 !important; }
 .u-ord9999 { order: 9999 !important; }
 .u-ord-1 { order: -1 !important; }
-.u-fx-n { flex: none !important; }
-.u-fx1-1-a { flex: 1 1 auto !important; }
-.u-fx1-0-a { flex: 1 0 auto !important; }
 .u-fx0-1-a { flex: 0 1 auto !important; }
-.u-fx1-1-1 { flex: 1 1 1px !important; }
+.u-fx1-0-a { flex: 1 0 auto !important; }
+.u-fx1-1-a { flex: 1 1 auto !important; }
+.u-fx0-0-a { flex: 0 0 auto !important; }
+.u-fx-n { flex: none !important; }
+.u-fx1-0-0 { flex: 1 0 0% !important; }
 .u-fxg0 { flex-grow: 0 !important; }
 .u-fxg1 { flex-grow: 1 !important; }
 .u-fxg2 { flex-grow: 2 !important; }

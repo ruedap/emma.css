@@ -8,8 +8,8 @@
     * flex-shrink
     * flex-basis
     * `pos-sk` (`position: sticky`)
-    * `fx0-1-a` (`flex: 0 1 a`)
 * Improve snippets:
+    * flex
     * width
     * max-width
 * Remove snippets:
