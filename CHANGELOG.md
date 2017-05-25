@@ -1,9 +1,10 @@
 # CHANGELOG
 
 ## master (unreleased)
-* Move root sass file (from `./emma.scss` to `./sass/emma.scss`)
+* Move root Sass file (from `./emma.scss` to `./sass/emma.scss`)
 * Avoid hyphenation at unit value (e.g. `mt-0` -> `mt0`)
 * Add snippets:
+    * Viewport units (vw, vh, vmax, vmin)
     * flex-grow
     * flex-shrink
     * flex-basis
@@ -11,23 +12,21 @@
     * user-select
     * -webkit-touch-callout
     * -moz-osx-font-smoothing
-    * `pos-sk` (`position: sticky`)
-    * `d-ih` (`display: inherit`)
-    * `bdrs9999` (`border-radius: 9999px`)
     * `fsm-a` (mixin)
-    * Viewport units (vw, vh, vmax, vmin)
+    * `d-ih` (`display: inherit`)
+    * `pos-sk` (`position: sticky`)
+    * `bdrs9999` (`border-radius: 9999px`)
 * Improve snippets:
     * flex
     * width
     * max-width
-    * `ff-ja`
     * `cf` (clearfix)
+    * `ff-ja` (Japanese font-family)
 * Rename snippets:
     * `d-f` -> `d-fx` (`display: flex`)
     * `d-if` -> `d-ifx` (`display: inline-flex`)
     * `wfsm` -> `wkfsm` (`-webkit-font-smoothing`)
 * Remove snippets:
-    * `fw-l` (`font-weight: light`)
     * `d-rb` (`display: ruby`)
     * `d-rbb` (`display: ruby-base`)
     * `d-rbbg` (`display: ruby-base-group`)
@@ -38,6 +37,7 @@
     * `d-tbcp` (`display: table-caption`)
     * `d-tbco` (`display: table-column`)
     * `d-tbcog` (`display: table-column-group`)
+    * `fw-l` (`font-weight: light`)
 * [Bower is deprecated](https://github.com/bower/bower#bower---a-package-manager-for-the-web)
 
 ## 0.9.0
