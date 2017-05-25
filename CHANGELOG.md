@@ -20,6 +20,7 @@
 * Rename snippets:
     * `d-f` -> `d-fx` (`display: flex`)
     * `d-if` -> `d-ifx` (`display: inline-flex`)
+    * `wfsm` -> `wkfsm` (`-webkit-font-smoothing`)
 * Remove snippets:
     * `fw-l` (`font-weight: light`)
     * `d-rb` (`display: ruby`)

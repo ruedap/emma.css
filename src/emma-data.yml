@@ -2493,7 +2493,7 @@ rules:
           abbr: s
     -
       name: '-webkit-font-smoothing'
-      abbr: wfsm
+      abbr: wkfsm
       group: text
       values:
         -

@@ -624,9 +624,9 @@
 .u-op0_8 { opacity: 0.8 !important; }
 .u-op0_9 { opacity: 0.9 !important; }
 .u-op1 { opacity: 1 !important; }
-.u-wfsm-a { -webkit-font-smoothing: antialiased !important; }
-.u-wfsm-sa { -webkit-font-smoothing: subpixel-antialiased !important; }
-.u-wfsm-n { -webkit-font-smoothing: none !important; }
+.u-wkfsm-a { -webkit-font-smoothing: antialiased !important; }
+.u-wkfsm-sa { -webkit-font-smoothing: subpixel-antialiased !important; }
+.u-wkfsm-n { -webkit-font-smoothing: none !important; }
 .u-tetr { max-width: 100% !important; overflow: hidden !important; text-overflow: ellipsis !important; white-space: nowrap !important; word-wrap: normal !important; }
 .u-tehi { overflow: hidden !important; text-indent: 200% !important; white-space: nowrap !important; }
 .u-reli { list-style: none !important; padding-left: 0 !important; }
