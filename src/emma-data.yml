@@ -309,17 +309,14 @@ rules:
           name: block
           abbr: b
         -
+          name: inline-block
+          abbr: ib
+        -
           name: flex
           abbr: fx
         -
           name: inline-flex
           abbr: ifx
-        -
-          name: inline-block
-          abbr: ib
-        -
-          name: list-item
-          abbr: li
         -
           name: table
           abbr: tb
@@ -327,29 +324,23 @@ rules:
           name: inline-table
           abbr: itb
         -
-          name: table-caption
-          abbr: tbcp
-        -
-          name: table-column
-          abbr: tbco
-        -
-          name: table-column-group
-          abbr: tbcog
-        -
           name: table-header-group
           abbr: tbhg
         -
           name: table-footer-group
           abbr: tbfg
         -
-          name: table-row
-          abbr: tbr
-        -
           name: table-row-group
           abbr: tbrg
         -
+          name: table-row
+          abbr: tbr
+        -
           name: table-cell
           abbr: tbc
+        -
+          name: list-item
+          abbr: li
     -
       name: visibility
       abbr: v

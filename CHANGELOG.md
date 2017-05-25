@@ -24,6 +24,9 @@
     * `d-rbtg` (`display: ruby-text-group`)
     * `d-ri` (`display: run-in`)
     * `d-cp` (`display: compact`)
+    * `d-tbcp` (`display: table-caption`)
+    * `d-tbco` (`display: table-column`)
+    * `d-tbcog` (`display: table-column-group`)
 * [Bower is deprecated](https://github.com/bower/bower#bower---a-package-manager-for-the-web)
 
 ## 0.9.0
