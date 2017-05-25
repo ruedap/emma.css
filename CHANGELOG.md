@@ -9,6 +9,7 @@
     * flex-basis
     * `pos-sk` (`position: sticky`)
     * `d-ih` (`display: inherit`)
+    * `bdrs9999` (`border-radius: 9999px`)
 * Improve snippets:
     * flex
     * width

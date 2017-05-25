@@ -1376,6 +1376,9 @@ rules:
           name: 6px
           abbr: '6'
         -
+          name: 9999px
+          abbr: '9999'
+        -
           name: 100%
           abbr: 100p
     -
