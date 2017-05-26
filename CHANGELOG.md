@@ -39,7 +39,7 @@
     * `d-tbco` (`display: table-column`)
     * `d-tbcog` (`display: table-column-group`)
     * `fw-l` (`font-weight: light`)
-* [Bower is deprecated](https://github.com/bower/bower#bower---a-package-manager-for-the-web)
+* [Bower is deprecated](https://github.com/bower/bower/pull/2458)
 
 ## 0.9.0
 * Restructure based on YAML documents
