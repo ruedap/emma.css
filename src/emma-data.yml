@@ -2374,7 +2374,7 @@ rules:
           abbr: '1'
     -
       name: resize
-      abbr: rsz
+      abbr: rz
       group: other
       values:
         -

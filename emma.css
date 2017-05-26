@@ -719,10 +719,10 @@
 .tehi { overflow: hidden !important; text-indent: 200% !important; white-space: nowrap !important; }
 .reli { list-style: none !important; padding-left: 0 !important; }
 .fsm-a { -webkit-font-smoothing: antialiased !important; -moz-osx-font-smoothing: grayscale !important; }
-.rsz-n { resize: none !important; }
-.rsz-b { resize: both !important; }
-.rsz-h { resize: horizontal !important; }
-.rsz-v { resize: vertical !important; }
+.rz-n { resize: none !important; }
+.rz-b { resize: both !important; }
+.rz-h { resize: horizontal !important; }
+.rz-v { resize: vertical !important; }
 .cur-a { cursor: auto !important; }
 .cur-d { cursor: default !important; }
 .cur-c { cursor: crosshair !important; }
