@@ -1,7 +1,7 @@
 # CHANGELOG
 
 ## master (unreleased)
-* Move root SCSS file (from `./emma.scss` to `./scss/all.scss`)
+* Move root Sass file (from `./emma.scss` to `./sass/all.scss`)
 * Remove default prefix `u-`
 * Avoid hyphenation at unit value (e.g. `mt-0` -> `mt0`)
 * Add snippets:

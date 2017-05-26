@@ -68,7 +68,7 @@ Install or download Emma.css from one of these sources:
 
 SCSS:
 ``` scss
-@import "emma.css/scss/all";
+@import "emma.css/sass/all";
 ```
 CSS output:
 ``` css
@@ -84,7 +84,7 @@ You can add prefix to utility classes by `$emma-prefix` variable:
 
 ``` scss
 $emma-prefix: "u-"; // Set prefix
-@import "emma.css/scss/all";
+@import "emma.css/sass/all";
 ```
 CSS output:
 ``` css
@@ -100,7 +100,7 @@ You can remove `!important` annotations by `$emma-important` variable:
 
 ``` scss
 $emma-important: false; // Remove !important annotations
-@import "emma.css/scss/all";
+@import "emma.css/sass/all";
 ```
 CSS output:
 ``` css
@@ -112,12 +112,12 @@ CSS output:
 
 ### Change default sizes or colors
 
-You can change default sizes or colors by [variables](scss/_vars.scss):
+You can change default sizes or colors by [variables](sass/_vars.scss):
 
 ``` scss
 $emma-padding-md: 20px;  // default: `1.0rem`
 $emma-color-black: #000; // default: `#111111`
-@import "emma.css/scss/all";
+@import "emma.css/sass/all";
 ```
 
 ## Inspired by

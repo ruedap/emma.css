@@ -252,7 +252,7 @@ describe("Emma",() => {
   describe("writeFileSync()", () => {
     it("calls the original function", () => {
       const fsMock = sinon.mock(fs);
-      fsMock.expects("writeFileSync").withArgs("scss/foo.scss", "bar").exactly(1);
+      fsMock.expects("writeFileSync").withArgs("sass/foo.scss", "bar").exactly(1);
 
       emma.writeFileSync("foo", "bar");
       assert(fsMock.verify());
@@ -262,7 +262,7 @@ describe("Emma",() => {
   describe("appendFileSync()", () => {
     it("calls the original function", () => {
       const fsMock = sinon.mock(fs);
-      fsMock.expects("appendFileSync").withArgs("scss/foo.scss", "bar").exactly(1);
+      fsMock.expects("appendFileSync").withArgs("sass/foo.scss", "bar").exactly(1);
 
       emma.appendFileSync("foo", "bar");
       assert(fsMock.verify());

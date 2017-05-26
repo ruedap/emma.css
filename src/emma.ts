@@ -4,7 +4,7 @@ import * as _ from 'lodash';
 export default class Emma {
   readonly PREFIX_VAR;
   readonly PREFIX_MIXIN;
-  readonly SASS_DIR = 'scss';
+  readonly SASS_DIR = 'sass';
   readonly TEMP_DIR = 'tmp';
   readonly VAR_FILE = 'vars';
   readonly MIXIN_FILE = 'mixins';
