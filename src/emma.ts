@@ -4,12 +4,12 @@ import * as _ from 'lodash';
 export default class Emma {
   readonly PREFIX_VAR;
   readonly PREFIX_MIXIN;
-  readonly SASS_DIR = 'sass';
+  readonly SASS_DIR = 'scss';
   readonly TEMP_DIR = 'tmp';
   readonly VAR_FILE = 'vars';
   readonly MIXIN_FILE = 'mixins';
   readonly RULE_FILE = 'rules';
-  readonly ROOT_FILE = 'emma';
+  readonly ROOT_FILE = 'all';
   readonly EMMA_JSON = `${this.TEMP_DIR}/emma-data.json`;
   private doc;
 
@@ -213,9 +213,9 @@ export default class Emma {
     let result = '';
 
     result += `/*! Emma.css ${ver} | MIT License | https://git.io/emma */\n`
-    result += `@import "${this.SASS_DIR}/${this.VAR_FILE}";\n`
-    result += `@import "${this.SASS_DIR}/${this.MIXIN_FILE}";\n`
-    result += `@import "${this.SASS_DIR}/${this.RULE_FILE}";\n`
+    result += `@import "${this.VAR_FILE}";\n`
+    result += `@import "${this.MIXIN_FILE}";\n`
+    result += `@import "${this.RULE_FILE}";\n`
 
     return result;
   }

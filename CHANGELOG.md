@@ -1,7 +1,7 @@
 # CHANGELOG
 
 ## master (unreleased)
-* Move root Sass file (from `./emma.scss` to `./sass/emma.scss`)
+* Move root SCSS file (from `./emma.scss` to `./scss/all.scss`)
 * Avoid hyphenation at unit value (e.g. `mt-0` -> `mt0`)
 * Add snippets:
     * Viewport units (vw, vh, vmax, vmin)
