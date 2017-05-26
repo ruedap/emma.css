@@ -196,9 +196,9 @@
 .bgp-b { background-position: bottom !important; }
 .bgp-l { background-position: left !important; }
 .bgp-c { background-position: center !important; }
-.bgsz-a { background-size: auto !important; }
-.bgsz-ct { background-size: contain !important; }
-.bgsz-cv { background-size: cover !important; }
+.bgz-a { background-size: auto !important; }
+.bgz-ct { background-size: contain !important; }
+.bgz-cv { background-size: cover !important; }
 .m0 { margin: 0 !important; }
 .m-a { margin: auto !important; }
 .m0-a { margin: 0 auto !important; }

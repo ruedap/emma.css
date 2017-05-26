@@ -27,6 +27,7 @@
     * `d-f` -> `d-fx` (`display: flex`)
     * `d-if` -> `d-ifx` (`display: inline-flex`)
     * `wfsm` -> `wkfsm` (`-webkit-font-smoothing`)
+    * `bgsz` -> `bgz` (`background-size`)
 * Remove snippets:
     * `d-rb` (`display: ruby`)
     * `d-rbb` (`display: ruby-base`)

@@ -1752,7 +1752,7 @@ rules:
           abbr: c
     -
       name: background-size
-      abbr: bgsz
+      abbr: bgz
       group: background
       values:
         -
