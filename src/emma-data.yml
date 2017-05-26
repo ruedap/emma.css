@@ -2,7 +2,7 @@ ver: '0.9.0'
 vars:
   -
     name: prefix
-    value: '"u-"'
+    value: '""'
   -
     name: important
     value: 'true'

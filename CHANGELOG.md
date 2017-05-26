@@ -2,6 +2,7 @@
 
 ## master (unreleased)
 * Move root SCSS file (from `./emma.scss` to `./scss/all.scss`)
+* Remove default prefix `u-`
 * Avoid hyphenation at unit value (e.g. `mt-0` -> `mt0`)
 * Add snippets:
     * Viewport units (vw, vh, vmax, vmin)
