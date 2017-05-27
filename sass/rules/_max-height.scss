@@ -2,7 +2,39 @@
   max-height: none #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}mah-100p {
+.#{$emma-prefix}mah100p {
   max-height: 100% #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mah100vw {
+  max-height: 100vw #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mah25vh {
+  max-height: 25vh #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mah50vh {
+  max-height: 50vh #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mah75vh {
+  max-height: 75vh #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mah90vh {
+  max-height: 90vh #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mah100vh {
+  max-height: 100vh #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mah100vmax {
+  max-height: 100vmax #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mah100vmin {
+  max-height: 100vmin #{emma-important($emma-important)};
 }
 

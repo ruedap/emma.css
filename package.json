@@ -1,6 +1,6 @@
 {
   "name": "emma.css",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "Emma.css { emmet-like utility classes }",
   "scripts": {
     "build": "npm run clean && npm run compile",
@@ -11,7 +11,7 @@
     "compile:json": "npm run convert:data && npm run convert:schema && npm run validate:json",
     "compile:ts": "tsc",
     "compile:js": "node tmp/index.js",
-    "compile:sass": "node-sass --output-style compact emma.scss emma.css",
+    "compile:sass": "node-sass --output-style compact ./sass/all.scss ./emma.css",
     "compile": "npm run compile:json && npm run compile:ts && npm run compile:js && npm run compile:sass && npm run remove-empty-lines",
     "remove-empty-lines": "gulp remove-empty-lines",
     "watch": "watch 'npm run test' src/ test/ --wait 10 -d -u",
@@ -22,12 +22,11 @@
   "license": "MIT",
   "main": "emma.css",
   "style": "emma.css",
-  "scss": "emma.scss",
+  "scss": "sass/all.scss",
   "files": [
     "sass",
     "CHANGELOG.md",
     "emma.css",
-    "emma.scss",
     "LICENSE",
     "README.md"
   ],
@@ -48,11 +47,16 @@
     "url": "git://github.com/ruedap/emma.css.git"
   },
   "devDependencies": {
-    "@types/fs-extra": "^3.0.1",
+    "@emmetio/css-abbreviation": "^0.3.1",
+    "@emmetio/css-snippets-resolver": "^0.2.5",
+    "@emmetio/output-profile": "^0.1.5",
+    "@emmetio/snippets-registry": "^0.3.1",
+    "@emmetio/stylesheet-formatters": "^0.1.2",
+    "@types/fs-extra": "^3.0.2",
     "@types/js-yaml": "3.5",
     "@types/lodash": "^4.14.64",
     "@types/mocha": "^2.2.41",
-    "@types/node": "^7.0.18",
+    "@types/node": "^7.0.22",
     "@types/power-assert": "1.4",
     "@types/sinon": "2.2",
     "ajv-cli": "^2.1.0",
@@ -73,8 +77,9 @@
     "postcss-map": "^0.9.0",
     "power-assert": "1.4",
     "rimraf": "^2.6.1",
+    "semver-regex": "^1.0.0",
     "sinon": "2.2",
-    "typescript": "^2.3.2",
+    "typescript": "^2.3.3",
     "watch": "^1.0.2"
   }
 }

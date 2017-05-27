@@ -23,6 +23,8 @@
 @import "rules/font-family";
 @import "rules/opacity";
 @import "rules/webkit-font-smoothing";
+@import "rules/moz-osx-font-smoothing";
 @import "rules/text-truncation";
 @import "rules/text-hiding";
 @import "rules/reset-list";
+@import "rules/font-smoothing-antialiased";

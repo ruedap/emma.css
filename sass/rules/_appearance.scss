@@ -1,0 +1,16 @@
+.#{$emma-prefix}ap-n {
+  appearance: none #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ap-b {
+  appearance: button #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ap-c {
+  appearance: checkbox #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}ap-su {
+  appearance: scrollbarbutton-up #{emma-important($emma-important)};
+}
+

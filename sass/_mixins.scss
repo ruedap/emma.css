@@ -1,7 +1,6 @@
 // Clearfix (Contain floats)
 @mixin emma-cf($important: $emma-important) {
-  &:before, &:after { content: " "; display: table; }
-  &:after { clear: both; }
+  &::after { content: ""; display: table; clear: both; }
 }
 
 // Text truncation (ellipsis)
@@ -36,12 +35,12 @@
   top: 0 #{emma-important($important)};
 }
 
-@mixin emma-mx-0($important: $emma-important) {
+@mixin emma-mx0($important: $emma-important) {
   margin-left: 0 #{emma-important($important)};
   margin-right: 0 #{emma-important($important)};
 }
 
-@mixin emma-my-0($important: $emma-important) {
+@mixin emma-my0($important: $emma-important) {
   margin-top: 0 #{emma-important($important)};
   margin-bottom: 0 #{emma-important($important)};
 }
@@ -106,12 +105,12 @@
   margin-bottom: $emma-margin-xl #{emma-important($important)};
 }
 
-@mixin emma-px-0($important: $emma-important) {
+@mixin emma-px0($important: $emma-important) {
   padding-left: 0 #{emma-important($important)};
   padding-right: 0 #{emma-important($important)};
 }
 
-@mixin emma-py-0($important: $emma-important) {
+@mixin emma-py0($important: $emma-important) {
   padding-top: 0 #{emma-important($important)};
   padding-bottom: 0 #{emma-important($important)};
 }
@@ -164,5 +163,10 @@
 @mixin emma-py-xl($important: $emma-important) {
   padding-top: $emma-padding-xl #{emma-important($important)};
   padding-bottom: $emma-padding-xl #{emma-important($important)};
+}
+
+@mixin emma-fsm-a($important: $emma-important) {
+  -webkit-font-smoothing: antialiased #{emma-important($important)};
+  -moz-osx-font-smoothing: grayscale #{emma-important($important)};
 }
 

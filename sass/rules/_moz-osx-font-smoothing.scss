@@ -1,0 +1,8 @@
+.#{$emma-prefix}mzfsm-g {
+  -moz-osx-font-smoothing: grayscale #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}mzfsm-u {
+  -moz-osx-font-smoothing: unset #{emma-important($emma-important)};
+}
+

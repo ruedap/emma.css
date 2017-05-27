@@ -18,35 +18,39 @@
   border-radius: $emma-border-radius-xl #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}bdrs-0 {
+.#{$emma-prefix}bdrs0 {
   border-radius: 0 #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}bdrs-1 {
+.#{$emma-prefix}bdrs1 {
   border-radius: 1px #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}bdrs-2 {
+.#{$emma-prefix}bdrs2 {
   border-radius: 2px #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}bdrs-3 {
+.#{$emma-prefix}bdrs3 {
   border-radius: 3px #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}bdrs-4 {
+.#{$emma-prefix}bdrs4 {
   border-radius: 4px #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}bdrs-5 {
+.#{$emma-prefix}bdrs5 {
   border-radius: 5px #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}bdrs-6 {
+.#{$emma-prefix}bdrs6 {
   border-radius: 6px #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}bdrs-100p {
+.#{$emma-prefix}bdrs9999 {
+  border-radius: 9999px #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}bdrs100p {
   border-radius: 100% #{emma-important($emma-important)};
 }
 

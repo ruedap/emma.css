@@ -1,7 +1,8 @@
+ver: '0.10.0'
 vars:
   -
     name: prefix
-    value: '"u-"'
+    value: '""'
   -
     name: important
     value: 'true'
@@ -175,11 +176,14 @@ rules:
           name: static
           abbr: s
         -
+          name: relative
+          abbr: r
+        -
           name: absolute
           abbr: a
         -
-          name: relative
-          abbr: r
+          name: sticky
+          abbr: sk
         -
           name: fixed
           abbr: f
@@ -296,32 +300,23 @@ rules:
       group: display
       values:
         -
+          name: inline
+          abbr: i
+        -
           name: none
           abbr: n
         -
           name: block
           abbr: b
         -
-          name: flex
-          abbr: f
-        -
-          name: inline-flex
-          abbr: if
-        -
-          name: inline
-          abbr: i
-        -
           name: inline-block
           abbr: ib
         -
-          name: list-item
-          abbr: li
+          name: flex
+          abbr: fx
         -
-          name: run-in
-          abbr: ri
-        -
-          name: compact
-          abbr: cp
+          name: inline-flex
+          abbr: ifx
         -
           name: table
           abbr: tb
@@ -329,44 +324,26 @@ rules:
           name: inline-table
           abbr: itb
         -
-          name: table-caption
-          abbr: tbcp
-        -
-          name: table-column
-          abbr: tbcl
-        -
-          name: table-column-group
-          abbr: tbclg
-        -
           name: table-header-group
           abbr: tbhg
         -
           name: table-footer-group
           abbr: tbfg
         -
-          name: table-row
-          abbr: tbr
-        -
           name: table-row-group
           abbr: tbrg
+        -
+          name: table-row
+          abbr: tbr
         -
           name: table-cell
           abbr: tbc
         -
-          name: ruby
-          abbr: rb
+          name: list-item
+          abbr: li
         -
-          name: ruby-base
-          abbr: rbb
-        -
-          name: ruby-base-group
-          abbr: rbbg
-        -
-          name: ruby-text
-          abbr: rbt
-        -
-          name: ruby-text-group
-          abbr: rbtg
+          name: inherit
+          abbr: ih
     -
       name: visibility
       abbr: v
@@ -464,10 +441,10 @@ rules:
           abbr: a
         -
           name: '0 auto'
-          abbr: 0_a
+          abbr: 0-a
         -
           name: 'auto 0'
-          abbr: a_0
+          abbr: a-0
         -
           name: $margin-xs
           abbr: xs
@@ -714,11 +691,20 @@ rules:
           name: '0'
           abbr: '0'
         -
+          name: 1px
+          abbr: '1'
+        -
           name: 1%
           abbr: 1p
         -
+          name: 5%
+          abbr: 5p
+        -
           name: 10%
           abbr: 10p
+        -
+          name: 15%
+          abbr: 15p
         -
           name: 20%
           abbr: 20p
@@ -732,17 +718,35 @@ rules:
           name: 33%
           abbr: 33p
         -
+          name: 34%
+          abbr: 34p
+        -
+          name: 35%
+          abbr: 35p
+        -
           name: 40%
           abbr: 40p
+        -
+          name: 45%
+          abbr: 45p
         -
           name: 50%
           abbr: 50p
         -
+          name: 55%
+          abbr: 55p
+        -
           name: 60%
           abbr: 60p
         -
+          name: 65%
+          abbr: 65p
+        -
           name: 66%
           abbr: 66p
+        -
+          name: 67%
+          abbr: 67p
         -
           name: 70%
           abbr: 70p
@@ -753,11 +757,41 @@ rules:
           name: 80%
           abbr: 80p
         -
+          name: 85%
+          abbr: 85p
+        -
           name: 90%
           abbr: 90p
         -
+          name: 95%
+          abbr: 95p
+        -
           name: 100%
           abbr: 100p
+        -
+          name: 25vw
+          abbr: 25vw
+        -
+          name: 50vw
+          abbr: 50vw
+        -
+          name: 75vw
+          abbr: 75vw
+        -
+          name: 90vw
+          abbr: 90vw
+        -
+          name: 100vw
+          abbr: 100vw
+        -
+          name: 100vh
+          abbr: 100vh
+        -
+          name: 100vmax
+          abbr: 100vmax
+        -
+          name: 100vmin
+          abbr: 100vmin
     -
       name: height
       abbr: h
@@ -772,6 +806,30 @@ rules:
         -
           name: 100%
           abbr: 100p
+        -
+          name: 100vw
+          abbr: 100vw
+        -
+          name: 25vh
+          abbr: 25vh
+        -
+          name: 50vh
+          abbr: 50vh
+        -
+          name: 75vh
+          abbr: 75vh
+        -
+          name: 90vh
+          abbr: 90vh
+        -
+          name: 100vh
+          abbr: 100vh
+        -
+          name: 100vmax
+          abbr: 100vmax
+        -
+          name: 100vmin
+          abbr: 100vmin
     -
       name: max-width
       abbr: maw
@@ -781,11 +839,23 @@ rules:
           name: none
           abbr: n
         -
+          name: '0'
+          abbr: '0'
+        -
+          name: 1px
+          abbr: '1'
+        -
           name: 1%
           abbr: 1p
         -
+          name: 5%
+          abbr: 5p
+        -
           name: 10%
           abbr: 10p
+        -
+          name: 15%
+          abbr: 15p
         -
           name: 20%
           abbr: 20p
@@ -799,17 +869,35 @@ rules:
           name: 33%
           abbr: 33p
         -
+          name: 34%
+          abbr: 34p
+        -
+          name: 35%
+          abbr: 35p
+        -
           name: 40%
           abbr: 40p
+        -
+          name: 45%
+          abbr: 45p
         -
           name: 50%
           abbr: 50p
         -
+          name: 55%
+          abbr: 55p
+        -
           name: 60%
           abbr: 60p
         -
+          name: 65%
+          abbr: 65p
+        -
           name: 66%
           abbr: 66p
+        -
+          name: 67%
+          abbr: 67p
         -
           name: 70%
           abbr: 70p
@@ -820,11 +908,41 @@ rules:
           name: 80%
           abbr: 80p
         -
+          name: 85%
+          abbr: 85p
+        -
           name: 90%
           abbr: 90p
         -
+          name: 95%
+          abbr: 95p
+        -
           name: 100%
           abbr: 100p
+        -
+          name: 25vw
+          abbr: 25vw
+        -
+          name: 50vw
+          abbr: 50vw
+        -
+          name: 75vw
+          abbr: 75vw
+        -
+          name: 90vw
+          abbr: 90vw
+        -
+          name: 100vw
+          abbr: 100vw
+        -
+          name: 100vh
+          abbr: 100vh
+        -
+          name: 100vmax
+          abbr: 100vmax
+        -
+          name: 100vmin
+          abbr: 100vmin
     -
       name: max-height
       abbr: mah
@@ -836,6 +954,30 @@ rules:
         -
           name: 100%
           abbr: 100p
+        -
+          name: 100vw
+          abbr: 100vw
+        -
+          name: 25vh
+          abbr: 25vh
+        -
+          name: 50vh
+          abbr: 50vh
+        -
+          name: 75vh
+          abbr: 75vh
+        -
+          name: 90vh
+          abbr: 90vh
+        -
+          name: 100vh
+          abbr: 100vh
+        -
+          name: 100vmax
+          abbr: 100vmax
+        -
+          name: 100vmin
+          abbr: 100vmin
     -
       name: min-width
       abbr: miw
@@ -844,6 +986,108 @@ rules:
         -
           name: '0'
           abbr: '0'
+        -
+          name: 1px
+          abbr: '1'
+        -
+          name: 1%
+          abbr: 1p
+        -
+          name: 5%
+          abbr: 5p
+        -
+          name: 10%
+          abbr: 10p
+        -
+          name: 15%
+          abbr: 15p
+        -
+          name: 20%
+          abbr: 20p
+        -
+          name: 25%
+          abbr: 25p
+        -
+          name: 30%
+          abbr: 30p
+        -
+          name: 33%
+          abbr: 33p
+        -
+          name: 34%
+          abbr: 34p
+        -
+          name: 35%
+          abbr: 35p
+        -
+          name: 40%
+          abbr: 40p
+        -
+          name: 45%
+          abbr: 45p
+        -
+          name: 50%
+          abbr: 50p
+        -
+          name: 55%
+          abbr: 55p
+        -
+          name: 60%
+          abbr: 60p
+        -
+          name: 65%
+          abbr: 65p
+        -
+          name: 66%
+          abbr: 66p
+        -
+          name: 67%
+          abbr: 67p
+        -
+          name: 70%
+          abbr: 70p
+        -
+          name: 75%
+          abbr: 75p
+        -
+          name: 80%
+          abbr: 80p
+        -
+          name: 85%
+          abbr: 85p
+        -
+          name: 90%
+          abbr: 90p
+        -
+          name: 95%
+          abbr: 95p
+        -
+          name: 100%
+          abbr: 100p
+        -
+          name: 25vw
+          abbr: 25vw
+        -
+          name: 50vw
+          abbr: 50vw
+        -
+          name: 75vw
+          abbr: 75vw
+        -
+          name: 90vw
+          abbr: 90vw
+        -
+          name: 100vw
+          abbr: 100vw
+        -
+          name: 100vh
+          abbr: 100vh
+        -
+          name: 100vmax
+          abbr: 100vmax
+        -
+          name: 100vmin
+          abbr: 100vmin
     -
       name: min-height
       abbr: mih
@@ -852,6 +1096,33 @@ rules:
         -
           name: '0'
           abbr: '0'
+        -
+          name: 1px
+          abbr: '1'
+        -
+          name: 100vw
+          abbr: 100vw
+        -
+          name: 25vh
+          abbr: 25vh
+        -
+          name: 50vh
+          abbr: 50vh
+        -
+          name: 75vh
+          abbr: 75vh
+        -
+          name: 90vh
+          abbr: 90vh
+        -
+          name: 100vh
+          abbr: 100vh
+        -
+          name: 100vmax
+          abbr: 100vmax
+        -
+          name: 100vmin
+          abbr: 100vmin
     -
       name: outline
       abbr: ol
@@ -1330,6 +1601,9 @@ rules:
           name: 6px
           abbr: '6'
         -
+          name: 9999px
+          abbr: '9999'
+        -
           name: 100%
           abbr: 100p
     -
@@ -1435,10 +1709,10 @@ rules:
           abbr: n
         -
           name: repeat-x
-          abbr: x
+          abbr: rx
         -
           name: repeat-y
-          abbr: y
+          abbr: ry
         -
           name: space
           abbr: sp
@@ -1478,7 +1752,7 @@ rules:
           abbr: c
     -
       name: background-size
-      abbr: bgsz
+      abbr: bgz
       group: background
       values:
         -
@@ -1497,7 +1771,7 @@ rules:
       values:
         -
           name: inherit
-          abbr: i
+          abbr: ih
         -
           name: $color-white
           abbr: white
@@ -1613,10 +1887,10 @@ rules:
           abbr: s
         -
           name: decimal
-          abbr: dc
+          abbr: de
         -
           name: decimal-leading-zero
-          abbr: dclz
+          abbr: dlz
         -
           name: lower-roman
           abbr: lr
@@ -1730,7 +2004,7 @@ rules:
           abbr: '0'
         -
           name: '-9999px'
-          abbr: '9999'
+          abbr: '-9999'
     -
       name: text-overflow
       abbr: tov
@@ -1777,7 +2051,7 @@ rules:
           abbr: nm
         -
           name: inherit
-          abbr: i
+          abbr: ih
         -
           name: '0'
           abbr: '0'
@@ -1890,9 +2164,6 @@ rules:
         -
           name: bolder
           abbr: br
-        -
-          name: '200'
-          abbr: l
         -
           name: lighter
           abbr: lr
@@ -2061,8 +2332,8 @@ rules:
           name: '"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif'
           abbr: l
         -
-          name: '"Helvetica Neue", Helvetica, Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif'
-          abbr: j
+          name: '"Helvetica Neue", Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, Meiryo, sans-serif'
+          abbr: ja
     -
       name: opacity
       abbr: op
@@ -2103,7 +2374,7 @@ rules:
           abbr: '1'
     -
       name: resize
-      abbr: rsz
+      abbr: rz
       group: other
       values:
         -
@@ -2279,17 +2550,185 @@ rules:
       group: display
       values:
         -
+          name: '0 1 auto'
+          abbr: '0-1-a'
+        -
+          name: '1 0 auto'
+          abbr: '1-0-a'
+        -
+          name: '1 1 auto'
+          abbr: '1-1-a'
+        -
+          name: '0 0 auto'
+          abbr: '0-0-a'
+        -
           name: none
           abbr: n
         -
-          name: '1 1 auto'
-          abbr: '1_1_a'
+          name: '1 0 0%' # for flexbugs #4
+          abbr: '1-0-0'
+    -
+      name: flex-grow
+      abbr: fxg
+      group: display
+      values:
         -
-          name: '1 0 auto'
-          abbr: '1_0_a'
+          name: '0'
+          abbr: '0'
         -
-          name: '1 1 1px'
-          abbr: '1_1_1'
+          name: '1'
+          abbr: '1'
+        -
+          name: '2'
+          abbr: '2'
+        -
+          name: '3'
+          abbr: '3'
+    -
+      name: flex-shrink
+      abbr: fxs
+      group: display
+      values:
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: '1'
+          abbr: '1'
+        -
+          name: '2'
+          abbr: '2'
+        -
+          name: '3'
+          abbr: '3'
+    -
+      name: flex-basis
+      abbr: fxb
+      group: display
+      values:
+        -
+          name: auto
+          abbr: a
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: 1px
+          abbr: '1'
+        -
+          name: 1%
+          abbr: 1p
+        -
+          name: 5%
+          abbr: 5p
+        -
+          name: 10%
+          abbr: 10p
+        -
+          name: 15%
+          abbr: 15p
+        -
+          name: 20%
+          abbr: 20p
+        -
+          name: 25%
+          abbr: 25p
+        -
+          name: 30%
+          abbr: 30p
+        -
+          name: 33%
+          abbr: 33p
+        -
+          name: 34%
+          abbr: 34p
+        -
+          name: 35%
+          abbr: 35p
+        -
+          name: 40%
+          abbr: 40p
+        -
+          name: 45%
+          abbr: 45p
+        -
+          name: 50%
+          abbr: 50p
+        -
+          name: 55%
+          abbr: 55p
+        -
+          name: 60%
+          abbr: 60p
+        -
+          name: 65%
+          abbr: 65p
+        -
+          name: 66%
+          abbr: 66p
+        -
+          name: 67%
+          abbr: 67p
+        -
+          name: 70%
+          abbr: 70p
+        -
+          name: 75%
+          abbr: 75p
+        -
+          name: 80%
+          abbr: 80p
+        -
+          name: 85%
+          abbr: 85p
+        -
+          name: 90%
+          abbr: 90p
+        -
+          name: 95%
+          abbr: 95p
+        -
+          name: 100%
+          abbr: 100p
+        -
+          name: 25vw
+          abbr: 25vw
+        -
+          name: 50vw
+          abbr: 50vw
+        -
+          name: 75vw
+          abbr: 75vw
+        -
+          name: 90vw
+          abbr: 90vw
+        -
+          name: 100vw
+          abbr: 100vw
+        -
+          name: 25vh
+          abbr: 25vh
+        -
+          name: 50vh
+          abbr: 50vh
+        -
+          name: 75vh
+          abbr: 75vh
+        -
+          name: 90vh
+          abbr: 90vh
+        -
+          name: 100vh
+          abbr: 100vh
+        -
+          name: 100vmax
+          abbr: 100vmax
+        -
+          name: 100vmin
+          abbr: 100vmin
+        -
+          name: content
+          abbr: c
     -
       name: align-self
       abbr: as
@@ -2314,20 +2753,6 @@ rules:
           name: stretch
           abbr: s
     -
-      name: '-webkit-font-smoothing'
-      abbr: wfsm
-      group: text
-      values:
-        -
-          name: antialiased
-          abbr: a
-        -
-          name: subpixel-antialiased
-          abbr: sa
-        -
-          name: none
-          abbr: n
-    -
       name: object-fit
       abbr: obf
       group: other
@@ -2347,6 +2772,73 @@ rules:
         -
           name: scale-down
           abbr: sd
+    -
+      name: appearance
+      abbr: ap
+      group: other
+      values:
+        -
+          name: none
+          abbr: n
+        -
+          name: button
+          abbr: b
+        -
+          name: checkbox
+          abbr: c
+        -
+          name: scrollbarbutton-up
+          abbr: su
+    -
+      name: user-select
+      abbr: us
+      group: other
+      values:
+        -
+          name: auto
+          abbr: a
+        -
+          name: none
+          abbr: n
+        -
+          name: text
+          abbr: t
+    -
+      name: '-webkit-font-smoothing'
+      abbr: wkfsm
+      group: text
+      values:
+        -
+          name: antialiased
+          abbr: a
+        -
+          name: subpixel-antialiased
+          abbr: sa
+        -
+          name: none
+          abbr: n
+    -
+      name: '-moz-osx-font-smoothing'
+      abbr: mzfsm
+      group: text
+      values:
+        -
+          name: grayscale
+          abbr: g
+        -
+          name: unset
+          abbr: u
+    -
+      name: '-webkit-touch-callout'
+      abbr: wktc
+      group: other
+      values:
+        -
+          name: default
+          abbr: d
+        -
+          name: none
+          abbr: n
   mixins:
     -
       name: clearfix
@@ -2354,8 +2846,7 @@ rules:
       desc: 'Clearfix (Contain floats)'
       group: float
       decls:
-        - '&:before, &:after { content: " "; display: table; }'
-        - '&:after { clear: both; }'
+        - '&::after { content: ""; display: table; clear: both; }'
     -
       name: text-truncation
       abbr: tetr
@@ -2429,8 +2920,8 @@ rules:
           prop: top
           value: '0'
     -
-      name: margin-x-0
-      abbr: mx-0
+      name: margin-x0
+      abbr: mx0
       group: margin
       decls:
         -
@@ -2440,8 +2931,8 @@ rules:
           prop: margin-right
           value: '0'
     -
-      name: margin-y-0
-      abbr: my-0
+      name: margin-y0
+      abbr: my0
       group: margin
       decls:
         -
@@ -2583,8 +3074,8 @@ rules:
           prop: margin-bottom
           value: $margin-xl
     -
-      name: padding-x-0
-      abbr: px-0
+      name: padding-x0
+      abbr: px0
       group: padding
       decls:
         -
@@ -2594,8 +3085,8 @@ rules:
           prop: padding-right
           value: '0'
     -
-      name: padding-y-0
-      abbr: py-0
+      name: padding-y0
+      abbr: py0
       group: padding
       decls:
         -
@@ -2714,3 +3205,14 @@ rules:
         -
           prop: padding-bottom
           value: $padding-xl
+    -
+      name: font-smoothing-antialiased
+      abbr: fsm-a
+      group: text
+      decls:
+        -
+          prop: -webkit-font-smoothing
+          value: antialiased
+        -
+          prop:  -moz-osx-font-smoothing
+          value: grayscale

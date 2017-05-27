@@ -2,63 +2,143 @@
   max-width: none #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}maw-1p {
+.#{$emma-prefix}maw0 {
+  max-width: 0 #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}maw1 {
+  max-width: 1px #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}maw1p {
   max-width: 1% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}maw-10p {
+.#{$emma-prefix}maw5p {
+  max-width: 5% #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}maw10p {
   max-width: 10% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}maw-20p {
+.#{$emma-prefix}maw15p {
+  max-width: 15% #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}maw20p {
   max-width: 20% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}maw-25p {
+.#{$emma-prefix}maw25p {
   max-width: 25% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}maw-30p {
+.#{$emma-prefix}maw30p {
   max-width: 30% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}maw-33p {
+.#{$emma-prefix}maw33p {
   max-width: 33% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}maw-40p {
+.#{$emma-prefix}maw34p {
+  max-width: 34% #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}maw35p {
+  max-width: 35% #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}maw40p {
   max-width: 40% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}maw-50p {
+.#{$emma-prefix}maw45p {
+  max-width: 45% #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}maw50p {
   max-width: 50% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}maw-60p {
+.#{$emma-prefix}maw55p {
+  max-width: 55% #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}maw60p {
   max-width: 60% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}maw-66p {
+.#{$emma-prefix}maw65p {
+  max-width: 65% #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}maw66p {
   max-width: 66% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}maw-70p {
+.#{$emma-prefix}maw67p {
+  max-width: 67% #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}maw70p {
   max-width: 70% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}maw-75p {
+.#{$emma-prefix}maw75p {
   max-width: 75% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}maw-80p {
+.#{$emma-prefix}maw80p {
   max-width: 80% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}maw-90p {
+.#{$emma-prefix}maw85p {
+  max-width: 85% #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}maw90p {
   max-width: 90% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}maw-100p {
+.#{$emma-prefix}maw95p {
+  max-width: 95% #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}maw100p {
   max-width: 100% #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}maw25vw {
+  max-width: 25vw #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}maw50vw {
+  max-width: 50vw #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}maw75vw {
+  max-width: 75vw #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}maw90vw {
+  max-width: 90vw #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}maw100vw {
+  max-width: 100vw #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}maw100vh {
+  max-width: 100vh #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}maw100vmax {
+  max-width: 100vmax #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}maw100vmin {
+  max-width: 100vmin #{emma-important($emma-important)};
 }
 

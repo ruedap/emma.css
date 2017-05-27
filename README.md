@@ -9,17 +9,17 @@ A collection of [CSS utility classes](emma.css) for rapid and easy front-end dev
 Emma.css only:
 
 ``` html
-<article class="u-cf">
-  <img class="u-d-b u-fl-l u-w-a u-mr-xl u-bdrs-3" src="foo.png">
-  <div class="u-fl-l u-ml-lg u-p-md">
-    <h1 class="u-m-0 u-ff-t">Title</h1>
-    <p class="u-wow-bw u-wfsm-a">Description</p>
-    <a class="u-d-ib u-fz-sm u-lh-2" href="#">Read more</a>
+<article class="cf">
+  <img class="d-b fl-l w-a mr-xl bdrs3" src="foo.png">
+  <div class="fl-l ml-lg p-md">
+    <h1 class="m0 ff-t">Title</h1>
+    <p class="wow-bw wfsm-a">Description</p>
+    <a class="d-ib fz-sm lh2" href="#">Read more</a>
   </div>
 </article>
 ```
 
-[SUIT CSS](https://suitcss.github.io/) naming convention + Emma.css:
+[SUIT CSS](https://suitcss.github.io/) naming convention + Emma.css (set prefix `u-`):
 
 ``` html
 <article class="Excerpt u-cf">
@@ -34,21 +34,21 @@ Emma.css only:
 
 utility class name | declaration
 --- | ---
-`.u-cf` (clearfix) | [micro clearfix hack](http://nicolasgallagher.com/micro-clearfix-hack/)
-`.u-d-b` | display: block;
-`.u-fl-l` | float: left;
-`.u-w-a` | width: auto;
-`.u-mr-xl` (extra large) | margin-right: 4.0rem;
-`.u-bdrs-3` | border-radius: 3px;
-`.u-ml-lg` (large) | margin-left: 2.0rem;
-`.u-p-md` (medium) | padding: 1.0rem;
-`.u-m-0` | margin: 0;
-`.u-ff-t` | font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
-`.u-wow-bw` | word-wrap: break-word;
-`.u-wfsm-a` | -webkit-font-smoothing: antialiased;
-`.u-d-ib` | display: inline-block;
-`.u-fz-sm` (small) | font-size: small;
-`.u-lh-2` | line-height: 2;
+`.cf` (clearfix) | [micro clearfix hack](http://nicolasgallagher.com/micro-clearfix-hack/)
+`.d-b` | display: block;
+`.fl-l` | float: left;
+`.w-a` | width: auto;
+`.mr-xl` (extra large) | margin-right: 4.0rem;
+`.bdrs3` | border-radius: 3px;
+`.ml-lg` (large) | margin-left: 2.0rem;
+`.p-md` (medium) | padding: 1.0rem;
+`.m0` | margin: 0;
+`.ff-t` | font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+`.wow-bw` | word-wrap: break-word;
+`.wfsm-a` | -webkit-font-smoothing: antialiased;
+`.d-ib` | display: inline-block;
+`.fz-sm` (small) | font-size: small;
+`.lh2` | line-height: 2;
 
 See also: [emma.css](emma.css) (all utility classes)
 
@@ -59,7 +59,7 @@ See also: [emma.css](emma.css) (all utility classes)
 Install or download Emma.css from one of these sources:
 
 * **npm**: `npm install emma.css`
-* **Bower**: `bower install emma.css`
+* **Bower**: `bower install emma.css` - [Bower is deprecated.](https://github.com/bower/bower/pull/2458)
 * **Rails**: [emma-css-rails](https://github.com/ruedap/emma-css-rails)
 * **Download**: [zip](https://github.com/ruedap/emma.css/releases)
 * **Alfred 2**: [Emma.css Workflow](https://github.com/ruedap/alfred-emma-css-workflow)
@@ -68,38 +68,7 @@ Install or download Emma.css from one of these sources:
 
 SCSS:
 ``` scss
-@import "path/to/emma.scss";
-```
-CSS output:
-``` css
-.u-pos-s { position: static !important; }
-.u-pos-a { position: absolute !important; }
-.u-pos-r { position: relative !important; }
-(snip)
-```
-
-### Change prefix of utility classes
-
-Default prefix: `u-`  
-You can change prefix of utility classes by `$emma-prefix` variable:
-
-``` scss
-$emma-prefix: "foo-"; // Change prefix
-@import "path/to/emma.scss";
-```
-CSS output:
-``` css
-.foo-pos-s { position: static !important; }
-.foo-pos-a { position: absolute !important; }
-.foo-pos-r { position: relative !important; }
-(snip)
-```
-
-If you need to remove prefix:
-
-``` scss
-$emma-prefix: ""; // Remove prefix
-@import "path/to/emma.scss";
+@import "emma.css/sass/all";
 ```
 CSS output:
 ``` css
@@ -109,19 +78,35 @@ CSS output:
 (snip)
 ```
 
+### Add prefix to utility classes
+
+You can add prefix to utility classes by `$emma-prefix` variable:
+
+``` scss
+$emma-prefix: "u-"; // Set prefix
+@import "emma.css/sass/all";
+```
+CSS output:
+``` css
+.u-pos-s { position: static !important; }
+.u-pos-a { position: absolute !important; }
+.u-pos-r { position: relative !important; }
+(snip)
+```
+
 ### Remove !important annotations
 
 You can remove `!important` annotations by `$emma-important` variable:
 
 ``` scss
 $emma-important: false; // Remove !important annotations
-@import "path/to/emma.scss";
+@import "emma.css/sass/all";
 ```
 CSS output:
 ``` css
-.u-pos-s { position: static; }
-.u-pos-a { position: absolute; }
-.u-pos-r { position: relative; }
+.pos-s { position: static; }
+.pos-a { position: absolute; }
+.pos-r { position: relative; }
 (snip)
 ```
 
@@ -130,9 +115,9 @@ CSS output:
 You can change default sizes or colors by [variables](sass/_vars.scss):
 
 ``` scss
-$emma-padding-md: 20px;   // default: `1.0rem`
-$emma-color-black: #000;  // default: `#111111`
-@import "path/to/emma.scss";
+$emma-padding-md: 20px;  // default: `1.0rem`
+$emma-color-black: #000; // default: `#111111`
+@import "emma.css/sass/all";
 ```
 
 ## Inspired by

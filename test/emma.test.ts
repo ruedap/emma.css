@@ -2,7 +2,7 @@ import * as mocha from "mocha";
 import * as sinon from "sinon";
 import * as assert from "power-assert";
 
-import { Emma } from "../src/emma";
+import Emma from "../src/emma";
 import * as fs from 'fs-extra';
 
 describe("Emma",() => {
@@ -195,9 +195,27 @@ describe("Emma",() => {
       emmaMock.expects("writeFileSync").exactly(2);
 
       const actual = emma.generatePropRules(propsArg);
-      const expected = ".#{$emma-prefix}pos-s {\n  position: static #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}pos-a {\n  position: absolute #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}pos-r {\n  position: relative #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}pos-f {\n  position: fixed #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}t-a {\n  top: auto #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}t-0 {\n  top: 0 #{emma-important($emma-important)};\n}\n\n";
+      const expected = ".#{$emma-prefix}pos-s {\n  position: static #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}pos-a {\n  position: absolute #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}pos-r {\n  position: relative #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}pos-f {\n  position: fixed #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}t-a {\n  top: auto #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}t0 {\n  top: 0 #{emma-important($emma-important)};\n}\n\n";
       assert(emmaMock.verify());
       assert(actual === expected);
+    });
+  });
+
+  describe("generateAbbr()", () => {
+    it("returns valid string", () => {
+      assert(emma.generateAbbr('z', '1') === 'z1');
+      assert(emma.generateAbbr('ti', '-9999') === 'ti-9999');
+    });
+  });
+
+  describe("isUnit()", () => {
+    it("returns true", () => {
+      assert(emma.isUnit('1') === true);
+      assert(emma.isUnit('-') === true);
+    });
+
+    it("returns false", () => {
+      assert(emma.isUnit('a') === false);
     });
   });
 
@@ -223,10 +241,18 @@ describe("Emma",() => {
     });
   });
 
+  describe("generateRootFile()", () => {
+    it("returns valid string", () => {
+      const actual = emma.generateRootFile('0.10.0');
+      const expected = "/*! Emma.css 0.10.0 | MIT License | https://git.io/emma */\n@import \"vars\";\n@import \"mixins\";\n@import \"rules\";\n";
+      assert(actual === expected);
+    });
+  });
+
   describe("writeFileSync()", () => {
     it("calls the original function", () => {
       const fsMock = sinon.mock(fs);
-      fsMock.expects("writeFileSync").withArgs("./sass/foo.scss", "bar").exactly(1);
+      fsMock.expects("writeFileSync").withArgs("sass/foo.scss", "bar").exactly(1);
 
       emma.writeFileSync("foo", "bar");
       assert(fsMock.verify());
@@ -236,7 +262,7 @@ describe("Emma",() => {
   describe("appendFileSync()", () => {
     it("calls the original function", () => {
       const fsMock = sinon.mock(fs);
-      fsMock.expects("appendFileSync").withArgs("./sass/foo.scss", "bar").exactly(1);
+      fsMock.expects("appendFileSync").withArgs("sass/foo.scss", "bar").exactly(1);
 
       emma.appendFileSync("foo", "bar");
       assert(fsMock.verify());
@@ -247,9 +273,6 @@ describe("Emma",() => {
     it("returns doc", () => {
       let doc = emma.loadEmmaDoc();
       assert(typeof doc === 'object');
-      assert(doc.vars.length === 55);
-      assert(doc.rules.mixins.length === 31);
-      assert(doc.rules.props.length === 99);
     });
 
     it("causes error", () => {

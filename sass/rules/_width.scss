@@ -2,67 +2,143 @@
   width: auto #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}w-0 {
+.#{$emma-prefix}w0 {
   width: 0 #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}w-1p {
+.#{$emma-prefix}w1 {
+  width: 1px #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w1p {
   width: 1% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}w-10p {
+.#{$emma-prefix}w5p {
+  width: 5% #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w10p {
   width: 10% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}w-20p {
+.#{$emma-prefix}w15p {
+  width: 15% #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w20p {
   width: 20% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}w-25p {
+.#{$emma-prefix}w25p {
   width: 25% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}w-30p {
+.#{$emma-prefix}w30p {
   width: 30% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}w-33p {
+.#{$emma-prefix}w33p {
   width: 33% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}w-40p {
+.#{$emma-prefix}w34p {
+  width: 34% #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w35p {
+  width: 35% #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w40p {
   width: 40% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}w-50p {
+.#{$emma-prefix}w45p {
+  width: 45% #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w50p {
   width: 50% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}w-60p {
+.#{$emma-prefix}w55p {
+  width: 55% #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w60p {
   width: 60% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}w-66p {
+.#{$emma-prefix}w65p {
+  width: 65% #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w66p {
   width: 66% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}w-70p {
+.#{$emma-prefix}w67p {
+  width: 67% #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w70p {
   width: 70% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}w-75p {
+.#{$emma-prefix}w75p {
   width: 75% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}w-80p {
+.#{$emma-prefix}w80p {
   width: 80% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}w-90p {
+.#{$emma-prefix}w85p {
+  width: 85% #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w90p {
   width: 90% #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}w-100p {
+.#{$emma-prefix}w95p {
+  width: 95% #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w100p {
   width: 100% #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w25vw {
+  width: 25vw #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w50vw {
+  width: 50vw #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w75vw {
+  width: 75vw #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w90vw {
+  width: 90vw #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w100vw {
+  width: 100vw #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w100vh {
+  width: 100vh #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w100vmax {
+  width: 100vmax #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}w100vmin {
+  width: 100vmin #{emma-important($emma-important)};
 }
 

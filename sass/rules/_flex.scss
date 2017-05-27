@@ -1,16 +1,24 @@
+.#{$emma-prefix}fx0-1-a {
+  flex: 0 1 auto #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fx1-0-a {
+  flex: 1 0 auto #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fx1-1-a {
+  flex: 1 1 auto #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fx0-0-a {
+  flex: 0 0 auto #{emma-important($emma-important)};
+}
+
 .#{$emma-prefix}fx-n {
   flex: none #{emma-important($emma-important)};
 }
 
-.#{$emma-prefix}fx-1_1_a {
-  flex: 1 1 auto #{emma-important($emma-important)};
-}
-
-.#{$emma-prefix}fx-1_0_a {
-  flex: 1 0 auto #{emma-important($emma-important)};
-}
-
-.#{$emma-prefix}fx-1_1_1 {
-  flex: 1 1 1px #{emma-important($emma-important)};
+.#{$emma-prefix}fx1-0-0 {
+  flex: 1 0 0% #{emma-important($emma-important)};
 }
 

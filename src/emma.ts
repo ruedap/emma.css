@@ -1,13 +1,15 @@
 import * as fs from 'fs-extra';
 import * as _ from 'lodash';
-import * as jsyaml from 'js-yaml';
 
-export class Emma {
+export default class Emma {
   readonly PREFIX_VAR;
   readonly PREFIX_MIXIN;
-  readonly SASS_DIR = './sass';
-  readonly TEMP_DIR = './tmp';
-  readonly RULE_PATH = 'rules';
+  readonly SASS_DIR = 'sass';
+  readonly TEMP_DIR = 'tmp';
+  readonly VAR_FILE = 'vars';
+  readonly MIXIN_FILE = 'mixins';
+  readonly RULE_FILE = 'rules';
+  readonly ROOT_FILE = 'all';
   readonly EMMA_JSON = `${this.TEMP_DIR}/emma-data.json`;
   private doc;
 
@@ -17,33 +19,39 @@ export class Emma {
   ) {
     this.PREFIX_VAR = prefix_var;
     this.PREFIX_MIXIN = prefix_mixin;
-
-    this.doc = this.loadEmmaDoc();
   }
 
-  public execute() {
+  public exec(): void {
+    this.doc = this.loadEmmaDoc();
+    const ver = this.doc.ver;
     const vars = this.doc.vars;
-    console.log(`variables: ${vars.length}`);
     const mixins = this.doc.rules.mixins;
-    console.log(`mixins: ${mixins.length}`);
     const props = this.doc.rules.props;
-    console.log(`properties: ${props.length}`);
 
     // Make dir
-    fs.ensureDirSync(`${this.SASS_DIR}/${this.RULE_PATH}`);
+    fs.ensureDirSync(`${this.SASS_DIR}/${this.RULE_FILE}`);
 
     // Vars
-    this.writeFileSync('_vars', this.generateVars(vars));
+    this.writeFileSync(`_${this.VAR_FILE}`, this.generateVars(vars));
 
     // Mixins
-    this.writeFileSync('_mixins', this.generateMixins(mixins));
+    this.writeFileSync(`_${this.MIXIN_FILE}`, this.generateMixins(mixins));
 
     // Rules
     this.generateMixinRules(mixins);
     this.generatePropRules(props);
     const imports = this.generatePropGroupImports(props);
     this.generateMixinGroupImports(mixins);
-    this.writeFileSync(`_${this.RULE_PATH}`, imports);
+    this.writeFileSync(`_${this.RULE_FILE}`, imports);
+
+    // Root
+    this.writeFileSync(`${this.ROOT_FILE}`, this.generateRootFile(ver));
+
+    // DEBUG
+    console.log(`/*! Emma.css ${ver} */`);
+    console.log(`vars: ${vars.length}`);
+    console.log(`mixins: ${mixins.length}`);
+    console.log(`props: ${props.length}`);
   }
 
   private generateVars(vars: any): string {
@@ -87,7 +95,7 @@ export class Emma {
       rulesets += `.#{$emma-prefix}${m.abbr} {\n`;
       rulesets += this.generateMixinDecls(m.decls, important);
       rulesets += `}\n\n`;
-      this.writeFileSync(`${this.RULE_PATH}/_${m.name}`, rulesets);
+      this.writeFileSync(`${this.RULE_FILE}/_${m.name}`, rulesets);
       result += rulesets;
     });
 
@@ -132,16 +140,31 @@ export class Emma {
 
       _.forEach(p.values, (v) => {
         const v_name = this.isVar(v.name) ? this.prefixedVar(this.PREFIX_VAR, v.name) : v.name;
-        rulesets += `.#{$emma-prefix}${p.abbr}-${v.abbr} {\n`;
+        const abbr = this.generateAbbr(p.abbr, v.abbr);
+        rulesets += `.#{$emma-prefix}${abbr} {\n`;
         rulesets += `  ${p.name}: ${v_name} ${important};\n`;
         rulesets += `}\n\n`;
       });
 
       const pFileName = _.trimStart(p.name, '-');
-      this.writeFileSync(`${this.RULE_PATH}/_${pFileName}`, rulesets);
+      this.writeFileSync(`${this.RULE_FILE}/_${pFileName}`, rulesets);
       result += rulesets;
     });
 
+    return result;
+  }
+
+  private generateAbbr(propAbbr: string, valueAbbr: string): string {
+    if (this.isUnit(valueAbbr)) {
+      return `${propAbbr}${valueAbbr}`;
+    } else {
+      return `${propAbbr}-${valueAbbr}`;
+    }
+  }
+
+  private isUnit(str: string): boolean {
+    let result = false;
+    result = str.match(/^[\d-]/) ? true : false;
     return result;
   }
 
@@ -159,7 +182,7 @@ export class Emma {
 
       _.forEach(v, (p) => {
         const pFileName = _.trimStart(p.name, '-');
-        imports += `@import "${this.RULE_PATH}/${pFileName}";\n`;
+        imports += `@import "${this.RULE_FILE}/${pFileName}";\n`;
       });
 
       this.writeFileSync(`_${groupName}`, imports);
@@ -179,11 +202,22 @@ export class Emma {
 
       _.forEach(v, (p) => {
         const pFileName = _.trimStart(p.name, '-');
-        imports += `@import "${this.RULE_PATH}/${pFileName}";\n`;
+        imports += `@import "${this.RULE_FILE}/${pFileName}";\n`;
       });
 
       this.appendFileSync(`_${groupName}`, imports);
     });
+  }
+
+  private generateRootFile(ver: string): string {
+    let result = '';
+
+    result += `/*! Emma.css ${ver} | MIT License | https://git.io/emma */\n`
+    result += `@import "${this.VAR_FILE}";\n`
+    result += `@import "${this.MIXIN_FILE}";\n`
+    result += `@import "${this.RULE_FILE}";\n`
+
+    return result;
   }
 
   private writeFileSync(filename: string, str: string): void {
