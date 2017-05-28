@@ -6,7 +6,7 @@
 ## 0.10.0
 * Move root Sass file (from `./emma.scss` to `./sass/all.scss`)
 * Remove default prefix `u-`
-* Avoid hyphenation at unit value (e.g. `mt-0` -> `mt0`)
+* Avoid hyphenation at numeric values (e.g. `mt-0` -> `mt0`)
 * Add snippets:
     * Viewport units (vw, vh, vmax, vmin)
     * flex-grow
