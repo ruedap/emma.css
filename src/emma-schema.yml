@@ -1,5 +1,9 @@
 $schema: 'http://json-schema.org/draft-06/schema#'
 type: object
+required:
+  - ver
+  - vars
+  - rules
 properties:
   ver:
     type: string
@@ -17,6 +21,9 @@ properties:
           type: string
   rules:
     type: object
+    required:
+      - props
+      - mixins
     properties:
       props:
         type: array
@@ -34,6 +41,7 @@ properties:
               type: string
             group:
               type: string
+              pattern: ^display|float|background|margin|padding|width|height|border|text|other$
             values:
               type: array
               items:
@@ -64,6 +72,7 @@ properties:
               type: string
             group:
               type: string
+              pattern: ^display|float|background|margin|padding|width|height|border|text|other$
             decls:
               type: array
               items:
