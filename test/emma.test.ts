@@ -2,11 +2,17 @@ import * as mocha from "mocha";
 import * as sinon from "sinon";
 import * as assert from "power-assert";
 
-import Emma from "../src/emma";
+import {
+  default as Emma,
+  TEmmaDocVar,
+  TEmmaDocProp,
+  TEmmaDocMixin,
+  TEmmaDoc,
+} from "../src/emma";
 import * as fs from 'fs-extra';
 
 describe("Emma",() => {
-  const varsArg = [
+  const varsArg: TEmmaDocVar[] = [
     {
       "name": "prefix",
       "value": "\"u-\""
@@ -20,7 +26,7 @@ describe("Emma",() => {
       "value": "0.75rem"
     },
   ];
-  const mixinsArg = [
+  const mixinsArg: TEmmaDocMixin[] = [
     {
       "name": "clearfix",
       "abbr": "cf",
@@ -47,7 +53,7 @@ describe("Emma",() => {
       ]
     },
   ];
-  const propsArg = [
+  const propsArg: TEmmaDocProp[] = [
     {
       "name": "position",
       "abbr": "pos",
