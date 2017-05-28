@@ -1,6 +1,41 @@
 import * as fs from 'fs-extra';
 import * as _ from 'lodash';
 
+export type TEmmaDocVar = {
+  name: string;
+  value: string;
+}
+
+export type TEmmaDocProp = {
+  name: string;
+  abbr: string;
+  group: string;
+  values: {
+    name: string;
+    abbr: string;
+  }[];
+}
+
+export type TEmmaDocMixin = {
+  name: string;
+  abbr: string;
+  desc?: string;
+  group: string;
+  decls: (string | {
+    prop: string;
+    value: string;
+  })[];
+}
+
+export type TEmmaDoc = {
+  ver: string;
+  vars: TEmmaDocVar[];
+  rules: {
+    props: TEmmaDocProp[];
+    mixins: TEmmaDocMixin[];
+  };
+}
+
 export default class Emma {
   readonly PREFIX_VAR;
   readonly PREFIX_MIXIN;
@@ -11,7 +46,7 @@ export default class Emma {
   readonly RULE_FILE = 'rules';
   readonly ROOT_FILE = 'all';
   readonly EMMA_JSON = `${this.TEMP_DIR}/emma-data.json`;
-  private doc;
+  private emmaDoc: TEmmaDoc;
 
   constructor(
     prefix_var: string = 'emma-',
@@ -22,11 +57,11 @@ export default class Emma {
   }
 
   public exec(): void {
-    this.doc = this.loadEmmaDoc();
-    const ver = this.doc.ver;
-    const vars = this.doc.vars;
-    const mixins = this.doc.rules.mixins;
-    const props = this.doc.rules.props;
+    this.emmaDoc = this.loadEmmaDoc();
+    const ver = this.emmaDoc.ver;
+    const vars = this.emmaDoc.vars;
+    const mixins = this.emmaDoc.rules.mixins;
+    const props = this.emmaDoc.rules.props;
 
     // Make dir
     fs.ensureDirSync(`${this.SASS_DIR}/${this.RULE_FILE}`);
@@ -54,7 +89,7 @@ export default class Emma {
     console.log(`props: ${props.length}`);
   }
 
-  private generateVars(vars: any): string {
+  private generateVars(vars: TEmmaDocVar[]): string {
     let result = `// Variables\n`;
 
     _.forEach(vars, (v) => {
@@ -71,7 +106,7 @@ export default class Emma {
     return result;
   }
 
-  private generateMixins(mixins: any): string {
+  private generateMixins(mixins: TEmmaDocMixin[]): string {
     const important = "#{emma-important($important)}";
     let result = '';
 
@@ -85,7 +120,7 @@ export default class Emma {
     return result;
   }
 
-  private generateMixinRules(mixins: any): string {
+  private generateMixinRules(mixins: TEmmaDocMixin[]): string {
     const important = "#{emma-important($emma-important)}";
     let result = '';
 
@@ -108,7 +143,7 @@ export default class Emma {
     return result;
   }
 
-  private generateMixinDecls(decls: any, important: string): string {
+  private generateMixinDecls(decls: string | object, important: string): string {
     let result = '';
 
     _.forEach(decls, (d) => {
@@ -131,7 +166,7 @@ export default class Emma {
     return `${sign}${prefix}${_.trimStart(name, sign)}`;
   }
 
-  private generatePropRules(props: any): string {
+  private generatePropRules(props: TEmmaDocProp[]): string {
     const important = "#{emma-important($emma-important)}";
     let result = '';
 
@@ -168,7 +203,7 @@ export default class Emma {
     return result;
   }
 
-  private generatePropGroupImports(props: any): string {
+  private generatePropGroupImports(props: TEmmaDocProp[]): string {
     const groups: any = _.groupBy(props, 'group');
     if (_.isEmpty(groups)) {
       throw new Error('Failed generate single group declarations.');
@@ -191,7 +226,7 @@ export default class Emma {
     return result;
   }
 
-  private generateMixinGroupImports(mixins: any): void {
+  private generateMixinGroupImports(mixins: TEmmaDocMixin[]): void {
     const groups: any = _.groupBy(mixins, 'group');
     if (_.isEmpty(groups)) {
       throw new Error('Failed generate multiple group declarations.');
@@ -228,11 +263,11 @@ export default class Emma {
     fs.appendFileSync(`${this.SASS_DIR}/${filename}.scss`, str);
   }
 
-  private loadEmmaDoc(filename: string = this.EMMA_JSON): object {
+  private loadEmmaDoc(filename: string = this.EMMA_JSON): TEmmaDoc {
     let doc;
 
     try {
-      doc = JSON.parse(fs.readFileSync(filename, 'utf8'));
+      doc = JSON.parse(fs.readFileSync(filename, 'utf8')) as TEmmaDoc;
     } catch (e) {
       throw new Error(e.message);
     }
