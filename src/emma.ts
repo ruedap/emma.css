@@ -16,15 +16,17 @@ export type TEmmaDocProp = {
   }[];
 }
 
+export type TEmmaDocMixinDecl = {
+  prop: string;
+  value: string;
+}
+
 export type TEmmaDocMixin = {
   name: string;
   abbr: string;
   desc?: string;
   group: string;
-  decls: (string | {
-    prop: string;
-    value: string;
-  })[];
+  decls: TEmmaDocMixinDecl[];
 }
 
 export type TEmmaDoc = {
@@ -143,13 +145,13 @@ export default class Emma {
     return result;
   }
 
-  private generateMixinDecls(decls: string | object, important: string): string {
+  private generateMixinDecls(decls: TEmmaDocMixinDecl[], important: string): string {
     let result = '';
 
     _.forEach(decls, (d) => {
       const r_value = (this.isVar(d.value)) ? this.prefixedVar(this.PREFIX_VAR, d.value) : d.value;
-      if (typeof d === 'string') {
-        result += `  ${d}\n`;
+      if (d.prop === '') {
+        result += `  ${d.value}\n`;
       } else {
         result += `  ${d.prop}: ${r_value} ${important};\n`;
       }

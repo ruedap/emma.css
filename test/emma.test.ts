@@ -6,6 +6,7 @@ import {
   default as Emma,
   TEmmaDocVar,
   TEmmaDocProp,
+  TEmmaDocMixinDecl,
   TEmmaDocMixin,
   TEmmaDoc,
 } from "../src/emma";
@@ -33,8 +34,10 @@ describe("Emma",() => {
       "desc": "Clearfix (Contain floats)",
       "group": "float",
       "decls": [
-        "&:before, &:after { content: \" \"; display: table; }",
-        "&:after { clear: both; }"
+        {
+          "prop": "",
+          "value": "&::after { content: \"\"; display: table; clear: both; }"
+        },
       ]
     },
     {
@@ -93,16 +96,6 @@ describe("Emma",() => {
       ]
     },
   ];
-  const declsArg = [
-    {
-      "prop": "margin-left",
-      "value": "0"
-    },
-    {
-      "prop": "margin-right",
-      "value": "0"
-    }
-  ];
   let emma;
 
   beforeEach(() => {
@@ -128,7 +121,7 @@ describe("Emma",() => {
   describe("generateMixins()", () => {
     it("returns valid string", () => {
       const actual = emma.generateMixins(mixinsArg);
-      const expected = "// Clearfix (Contain floats)\n@mixin emma-cf($important: $emma-important) {\n  &:before, &:after { content: \" \"; display: table; }\n  &:after { clear: both; }\n}\n\n@mixin emma-mx-0($important: $emma-important) {\n  margin-left: 0 #{emma-important($important)};\n  margin-right: 0 #{emma-important($important)};\n}\n\n";
+      const expected = "// Clearfix (Contain floats)\n@mixin emma-cf($important: $emma-important) {\n  &::after { content: \"\"; display: table; clear: both; }\n}\n\n@mixin emma-mx-0($important: $emma-important) {\n  margin-left: 0 #{emma-important($important)};\n  margin-right: 0 #{emma-important($important)};\n}\n\n";
       assert(actual === expected);
     });
   });
@@ -139,7 +132,7 @@ describe("Emma",() => {
       emmaMock.expects("writeFileSync").exactly(2);
 
       const actual = emma.generateMixinRules(mixinsArg);
-      const expected = "// Clearfix (Contain floats)\n.#{$emma-prefix}cf {\n  &:before, &:after { content: \" \"; display: table; }\n  &:after { clear: both; }\n}\n\n.#{$emma-prefix}mx-0 {\n  margin-left: 0 #{emma-important($emma-important)};\n  margin-right: 0 #{emma-important($emma-important)};\n}\n\n";
+      const expected = "// Clearfix (Contain floats)\n.#{$emma-prefix}cf {\n  &::after { content: \"\"; display: table; clear: both; }\n}\n\n.#{$emma-prefix}mx-0 {\n  margin-left: 0 #{emma-important($emma-important)};\n  margin-right: 0 #{emma-important($emma-important)};\n}\n\n";
       assert(emmaMock.verify());
       assert(actual === expected);
     });
@@ -153,24 +146,37 @@ describe("Emma",() => {
   });
 
   describe("generateMixinDecls()", () => {
-    describe("when the argument is a string", () => {
+    describe("when the prop is a blank string", () => {
       it("returns valid string", () => {
-        const arg = [
-          "&:before, &:after { content: \" \"; display: table; }",
-          "&:after { clear: both; }"
+        const arg1: TEmmaDocMixinDecl[] = [
+          {
+            "prop": "",
+            "value": "&::after { content: \"\"; display: table; clear: both; }"
+          },
         ];
+        const arg2 = "";
 
-        const actual = emma.generateMixinDecls(arg);
-        const expected = "  &:before, &:after { content: \" \"; display: table; }\n  &:after { clear: both; }\n";
+        const actual = emma.generateMixinDecls(arg1, arg2);
+        const expected = "  &::after { content: \"\"; display: table; clear: both; }\n";
         assert(actual === expected);
       });
     });
 
-    describe("when the argument is a object", () => {
+    describe("when the prop is not a blank string", () => {
       it("returns valid string", () => {
+        const arg1: TEmmaDocMixinDecl[] = [
+          {
+            "prop": "margin-left",
+            "value": "0"
+          },
+          {
+            "prop": "margin-right",
+            "value": "0"
+          }
+        ];
         const arg2 = "#{emma-important($emma-important)}";
 
-        const actual = emma.generateMixinDecls(declsArg, arg2);
+        const actual = emma.generateMixinDecls(arg1, arg2);
         const expected = "  margin-left: 0 #{emma-important($emma-important)};\n  margin-right: 0 #{emma-important($emma-important)};\n";
         assert(actual === expected);
       });

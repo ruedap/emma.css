@@ -76,16 +76,12 @@ properties:
             decls:
               type: array
               items:
-                oneOf:
-                  -
+                type: object
+                required:
+                  - prop
+                  - value
+                properties:
+                  prop:
                     type: string
-                  -
-                    type: object
-                    required:
-                      - prop
-                      - value
-                    properties:
-                      prop:
-                        type: string
-                      value:
-                        type: string
+                  value:
+                    type: string
