@@ -215,19 +215,25 @@ describe("Emma",() => {
 
   describe("generateAbbr()", () => {
     it("returns valid string", () => {
-      assert(emma.generateAbbr('z', '1') === 'z1');
+      assert(emma.generateAbbr('w', 'a') === 'w-a');
+      assert(emma.generateAbbr('w', '0') === 'w0');
+      assert(emma.generateAbbr('w', '1') === 'w1');
+      assert(emma.generateAbbr('w', '25vw') === 'w25vw');
       assert(emma.generateAbbr('ti', '-9999') === 'ti-9999');
     });
   });
 
-  describe("isUnit()", () => {
+  describe("isNumeric()", () => {
     it("returns true", () => {
-      assert(emma.isUnit('1') === true);
-      assert(emma.isUnit('-') === true);
+      assert(emma.isNumeric('0') === true);
+      assert(emma.isNumeric('10px') === true);
+      assert(emma.isNumeric('-3') === true);
     });
 
     it("returns false", () => {
-      assert(emma.isUnit('a') === false);
+      assert(emma.isNumeric('a1') === false);
+      assert(emma.isNumeric('b-') === false);
+      assert(emma.isNumeric('-moz') === false);
     });
   });
 

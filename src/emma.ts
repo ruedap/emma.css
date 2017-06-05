@@ -192,17 +192,15 @@ export default class Emma {
   }
 
   private generateAbbr(propAbbr: string, valueAbbr: string): string {
-    if (this.isUnit(valueAbbr)) {
+    if (this.isNumeric(valueAbbr)) {
       return `${propAbbr}${valueAbbr}`;
     } else {
       return `${propAbbr}-${valueAbbr}`;
     }
   }
 
-  private isUnit(str: string): boolean {
-    let result = false;
-    result = str.match(/^[\d-]/) ? true : false;
-    return result;
+  private isNumeric(str: string): boolean {
+    return str.match(/^(\d|-\d)/) ? true : false;
   }
 
   private generatePropGroupImports(props: TEmmaDocProp[]): string {
