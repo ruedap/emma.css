@@ -1,10 +1,34 @@
-# Emma.css { [emmet](http://docs.emmet.io/cheat-sheet/)-like utility classes }
+<h1 align="center">
+<img src="http://ruedap.github.io/emma.css/logo-box.svg" style="max-width:100%;"></img>
+</h1>
 
-A collection of [CSS utility classes](emma.css) for rapid and easy front-end development.
+<p align="center">Emmet-like utility classes for rapid and easy front-end development.</p>
 
-[![CircleCI](https://circleci.com/gh/ruedap/emma.css.svg?style=shield)](https://circleci.com/gh/ruedap/emma.css)
+<div align="center">
+<a href="https://circleci.com/gh/ruedap/emma.css"><img src="https://circleci.com/gh/ruedap/emma.css.svg?style=shield" alt="Circle CI"></a>
+<a href="https://www.npmjs.com/package/emma.css"><img src="https://img.shields.io/npm/v/emma.css.svg?style=flat" alt="NPM Version"></a>
+<a href="https://github.com/ruedap/emma.css/blob/master/LICENSE"><img src="https://img.shields.io/github/license/ruedap/emma.css.svg" alt="License"></a>
+</div>
 
 ## Example
+
+| Emma.css class | [Emmet](https://docs.emmet.io/cheat-sheet/) abbreviation | Declaration (Expanded abbreviation)                                   |
+|----------|---------|---------------------------------------------------------------------|
+| d-b      | d-b     | display: block;                                                     |
+| d-fx     | d-fx    | display: flex;                                                      |
+| m-a      | m-a     | marign: auto;                                                       |
+| p0       | p0      | padding: 0;                                                         |
+| ―        | p-5     | padding: -5px;                                                      |
+| w1       | w1      | width: 1px;                                                         |
+| h100p    | h100p   | height: 100%;                                                       |
+| mah50vh  | mah50vh | max-height: 50vh;                                                   |
+| ff-t     | ff-t    | font-family: "Times New Roman", Times, Baskerville, Georgia, serif; |
+| fz16     | fz16    | font-size: 16px;                                                    |
+| fz-sm    | ―       | font-size: small;                                                   |
+| pb-md    | ―       | padding-bottom: 1.0rem; *(default value)*                           |
+| ml-lg    | ―       | margin-left: 2.0rem; *(default value)*                              |
+
+See [emma.css](emma.css) (all classes)
 
 Emma.css only:
 
@@ -32,45 +56,53 @@ Emma.css only:
 </article>
 ```
 
-utility class name | declaration
---- | ---
-`.cf` (clearfix) | [micro clearfix hack](http://nicolasgallagher.com/micro-clearfix-hack/)
-`.d-b` | display: block;
-`.fl-l` | float: left;
-`.w-a` | width: auto;
-`.mr-xl` (extra large) | margin-right: 4.0rem;
-`.bdrs3` | border-radius: 3px;
-`.ml-lg` (large) | margin-left: 2.0rem;
-`.p-md` (medium) | padding: 1.0rem;
-`.m0` | margin: 0;
-`.ff-t` | font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
-`.wow-bw` | word-wrap: break-word;
-`.wfsm-a` | -webkit-font-smoothing: antialiased;
-`.d-ib` | display: inline-block;
-`.fz-sm` (small) | font-size: small;
-`.lh2` | line-height: 2;
 
-See also: [emma.css](emma.css) (all utility classes)
+## Installation
+
+Install or download Emma.css from one of these sources.
+
+**NPM**
+
+```sh
+npm install --save emma.css
+```
+
+**Bower**
+
+```sh
+bower install --save emma.css
+```
+
+**Rails** ([RubyGems](https://rubygems.org/gems/emma-css-rails))
+
+```sh
+gem install emma-css-rails
+```
+
+**Download**
+
+https://github.com/ruedap/emma.css/releases
+
+**Alfred**
+
+https://github.com/ruedap/alfred-emma-css-workflow
+
+**CLI** (Golang)
+
+https://github.com/ruedap/go-emma
 
 ## Getting Started
-
-### Installation
-
-Install or download Emma.css from one of these sources:
-
-* **npm**: `npm install emma.css`
-* **Bower**: `bower install emma.css` - [Bower is deprecated.](https://github.com/bower/bower/pull/2458)
-* **Rails**: [emma-css-rails](https://github.com/ruedap/emma-css-rails)
-* **Download**: [zip](https://github.com/ruedap/emma.css/releases)
-* **Alfred 2**: [Emma.css Workflow](https://github.com/ruedap/alfred-emma-css-workflow)
 
 ### Basic usage
 
 SCSS:
+
 ``` scss
 @import "emma.css/sass/all";
 ```
+
 CSS output:
+
 ``` css
 .pos-s { position: static !important; }
 .pos-a { position: absolute !important; }
@@ -120,17 +152,11 @@ $emma-color-black: #000; // default: `#111111`
 @import "emma.css/sass/all";
 ```
 
-## Inspired by
-
-* [emmetio/emmet](https://github.com/emmetio/emmet)
-* [suitcss/suit](https://github.com/suitcss/suit)
-* [jxnblk/basscss](https://github.com/jxnblk/basscss)
-* [t32k/wisteria](https://github.com/t32k/wisteria)
-* [hail2u/node-edjo](https://github.com/hail2u/node-edjo)
 
 ## License
 
 Released under the [MIT license](LICENSE).
+
 
 ## Author
 
