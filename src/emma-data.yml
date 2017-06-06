@@ -1,4 +1,4 @@
-ver: '0.10.0'
+ver: '0.10.1'
 vars:
   -
     name: prefix
@@ -2846,7 +2846,9 @@ rules:
       desc: 'Clearfix (Contain floats)'
       group: float
       decls:
-        - '&::after { content: ""; display: table; clear: both; }'
+        -
+          prop: ''
+          value: '&::after { content: ""; display: table; clear: both; }'
     -
       name: text-truncation
       abbr: tetr
