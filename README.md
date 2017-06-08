@@ -13,20 +13,20 @@
 ## Example
 
 | Emma.css class | [Emmet](https://docs.emmet.io/cheat-sheet/) abbreviation | Declaration (Expanded abbreviation)                                   |
-|----------|---------|---------------------------------------------------------------------|
-| d-b      | d-b     | display: block;                                                     |
-| d-fx     | d-fx    | display: flex;                                                      |
-| m-a      | m-a     | marign: auto;                                                       |
-| p0       | p0      | padding: 0;                                                         |
-| ―        | p-5     | padding: -5px;                                                      |
-| w1       | w1      | width: 1px;                                                         |
-| h100p    | h100p   | height: 100%;                                                       |
-| mah50vh  | mah50vh | max-height: 50vh;                                                   |
-| ff-t     | ff-t    | font-family: "Times New Roman", Times, Baskerville, Georgia, serif; |
-| fz16     | fz16    | font-size: 16px;                                                    |
-| fz-sm    | ―       | font-size: small;                                                   |
-| pb-md    | ―       | padding-bottom: 1.0rem; *(default value)*                           |
-| ml-lg    | ―       | margin-left: 2.0rem; *(default value)*                              |
+|-----------|---------|---------------------------------------------------------------------|
+| .d-b      | d-b     | display: block;                                                     |
+| .d-fx     | d-fx    | display: flex;                                                      |
+| .m-a      | m-a     | marign: auto;                                                       |
+| .p0       | p0      | padding: 0;                                                         |
+| ―         | p-5     | padding: -5px;                                                      |
+| .w1       | w1      | width: 1px;                                                         |
+| .h100p    | h100p   | height: 100%;                                                       |
+| .mah50vh  | mah50vh | max-height: 50vh;                                                   |
+| .ff-t     | ff-t    | font-family: "Times New Roman", Times, Baskerville, Georgia, serif; |
+| .fz16     | fz16    | font-size: 16px;                                                    |
+| .fz-sm    | ―       | font-size: small;                                                   |
+| .pb-md    | ―       | padding-bottom: 1.0rem; *(default value)*                           |
+| .ml-lg    | ―       | margin-left: 2.0rem; *(default value)*                              |
 
 See [emma.css](emma.css) (all classes)
 
@@ -64,13 +64,13 @@ Install or download Emma.css from one of these sources.
 **NPM**
 
 ```sh
-npm install --save emma.css
+npm install emma.css
 ```
 
 **Bower**
 
 ```sh
-bower install --save emma.css
+bower install emma.css
 ```
 
 **Rails** ([RubyGems](https://rubygems.org/gems/emma-css-rails))
