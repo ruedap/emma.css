@@ -8,93 +8,93 @@ import {
   TEmmaDocProp,
   TEmmaDocMixinDecl,
   TEmmaDocMixin,
-  TEmmaDoc,
+  TEmmaDoc
 } from "../src/emma";
-import * as fs from 'fs-extra';
+import * as fs from "fs-extra";
 
-describe("Emma",() => {
+describe("Emma", () => {
   const varsArg: TEmmaDocVar[] = [
     {
-      "name": "prefix",
-      "value": "\"u-\""
+      name: "prefix",
+      value: '"u-"'
     },
     {
-      "name": "important",
-      "value": "true"
+      name: "important",
+      value: "true"
     },
     {
-      "name": "font-size-xs",
-      "value": "0.75rem"
-    },
+      name: "font-size-xs",
+      value: "0.75rem"
+    }
   ];
   const mixinsArg: TEmmaDocMixin[] = [
     {
-      "name": "clearfix",
-      "abbr": "cf",
-      "desc": "Clearfix (Contain floats)",
-      "group": "float",
-      "decls": [
+      name: "clearfix",
+      abbr: "cf",
+      desc: "Clearfix (Contain floats)",
+      group: "float",
+      decls: [
         {
-          "prop": "",
-          "value": "&::after { content: \"\"; display: table; clear: both; }"
-        },
-      ]
-    },
-    {
-      "name": "margin-x-0",
-      "abbr": "mx-0",
-      "group": "margin",
-      "decls": [
-        {
-          "prop": "margin-left",
-          "value": "0"
-        },
-        {
-          "prop": "margin-right",
-          "value": "0"
+          prop: "",
+          value: '&::after { content: ""; display: table; clear: both; }'
         }
       ]
     },
+    {
+      name: "margin-x-0",
+      abbr: "mx-0",
+      group: "margin",
+      decls: [
+        {
+          prop: "margin-left",
+          value: "0"
+        },
+        {
+          prop: "margin-right",
+          value: "0"
+        }
+      ]
+    }
   ];
   const propsArg: TEmmaDocProp[] = [
     {
-      "name": "position",
-      "abbr": "pos",
-      "group": "display",
-      "values": [
+      name: "position",
+      abbr: "pos",
+      group: "display",
+      values: [
         {
-          "name": "static",
-          "abbr": "s"
+          name: "static",
+          abbr: "s"
         },
         {
-          "name": "absolute",
-          "abbr": "a"
+          name: "absolute",
+          abbr: "a"
         },
         {
-          "name": "relative",
-          "abbr": "r"
+          name: "relative",
+          abbr: "r"
         },
         {
-          "name": "fixed",
-          "abbr": "f"
+          name: "fixed",
+          abbr: "f"
         }
       ]
     },
     {
-      "name": "top",
-      "abbr": "t",
-      "group": "display",
-      "values": [
+      name: "top",
+      abbr: "t",
+      group: "display",
+      values: [
         {
-          "name": "auto",
-          "abbr": "a"
+          name: "auto",
+          abbr: "a"
         },
         {
-          "name": "0",
-          "abbr": "0"
+          name: "0",
+          abbr: "0"
         }
       ]
-    },
+    }
   ];
   let emma;
 
@@ -104,16 +104,17 @@ describe("Emma",() => {
 
   describe("constructor()", () => {
     it("sets args", () => {
-      emma = new Emma('var-', 'mixin-');
-      assert(emma.PREFIX_VAR === 'var-');
-      assert(emma.PREFIX_MIXIN === 'mixin-');
+      emma = new Emma("var-", "mixin-");
+      assert(emma.PREFIX_VAR === "var-");
+      assert(emma.PREFIX_MIXIN === "mixin-");
     });
   });
 
   describe("generateVars()", () => {
     it("returns valid string", () => {
       const actual = emma.generateVars(varsArg);
-      const expected = "// Variables\n$emma-prefix: \"u-\" !default;\n$emma-important: true !default;\n$emma-font-size-xs: 0.75rem !default;\n\n// Functions\n@function emma-important($bool: $emma-important) {\n  $important: \"\";\n  @if $bool { $important: \"!important\"; }\n  @return $important;\n}\n";
+      const expected =
+        '// Variables\n$emma-prefix: "u-" !default;\n$emma-important: true !default;\n$emma-font-size-xs: 0.75rem !default;\n\n// Functions\n@function emma-important($bool: $emma-important) {\n  $important: "";\n  @if $bool { $important: "!important"; }\n  @return $important;\n}\n';
       assert(actual === expected);
     });
   });
@@ -121,7 +122,8 @@ describe("Emma",() => {
   describe("generateMixins()", () => {
     it("returns valid string", () => {
       const actual = emma.generateMixins(mixinsArg);
-      const expected = "// Clearfix (Contain floats)\n@mixin emma-cf($important: $emma-important) {\n  &::after { content: \"\"; display: table; clear: both; }\n}\n\n@mixin emma-mx-0($important: $emma-important) {\n  margin-left: 0 #{emma-important($important)};\n  margin-right: 0 #{emma-important($important)};\n}\n\n";
+      const expected =
+        '// Clearfix (Contain floats)\n@mixin emma-cf($important: $emma-important) {\n  &::after { content: ""; display: table; clear: both; }\n}\n\n@mixin emma-mx-0($important: $emma-important) {\n  margin-left: 0 #{emma-important($important)};\n  margin-right: 0 #{emma-important($important)};\n}\n\n';
       assert(actual === expected);
     });
   });
@@ -132,7 +134,8 @@ describe("Emma",() => {
       emmaMock.expects("writeFileSync").exactly(2);
 
       const actual = emma.generateMixinRules(mixinsArg);
-      const expected = "// Clearfix (Contain floats)\n.#{$emma-prefix}cf {\n  &::after { content: \"\"; display: table; clear: both; }\n}\n\n.#{$emma-prefix}mx-0 {\n  margin-left: 0 #{emma-important($emma-important)};\n  margin-right: 0 #{emma-important($emma-important)};\n}\n\n";
+      const expected =
+        '// Clearfix (Contain floats)\n.#{$emma-prefix}cf {\n  &::after { content: ""; display: table; clear: both; }\n}\n\n.#{$emma-prefix}mx-0 {\n  margin-left: 0 #{emma-important($emma-important)};\n  margin-right: 0 #{emma-important($emma-important)};\n}\n\n';
       assert(emmaMock.verify());
       assert(actual === expected);
     });
@@ -150,14 +153,15 @@ describe("Emma",() => {
       it("returns valid string", () => {
         const arg1: TEmmaDocMixinDecl[] = [
           {
-            "prop": "",
-            "value": "&::after { content: \"\"; display: table; clear: both; }"
-          },
+            prop: "",
+            value: '&::after { content: ""; display: table; clear: both; }'
+          }
         ];
         const arg2 = "";
 
         const actual = emma.generateMixinDecls(arg1, arg2);
-        const expected = "  &::after { content: \"\"; display: table; clear: both; }\n";
+        const expected =
+          '  &::after { content: ""; display: table; clear: both; }\n';
         assert(actual === expected);
       });
     });
@@ -166,18 +170,19 @@ describe("Emma",() => {
       it("returns valid string", () => {
         const arg1: TEmmaDocMixinDecl[] = [
           {
-            "prop": "margin-left",
-            "value": "0"
+            prop: "margin-left",
+            value: "0"
           },
           {
-            "prop": "margin-right",
-            "value": "0"
+            prop: "margin-right",
+            value: "0"
           }
         ];
         const arg2 = "#{emma-important($emma-important)}";
 
         const actual = emma.generateMixinDecls(arg1, arg2);
-        const expected = "  margin-left: 0 #{emma-important($emma-important)};\n  margin-right: 0 #{emma-important($emma-important)};\n";
+        const expected =
+          "  margin-left: 0 #{emma-important($emma-important)};\n  margin-right: 0 #{emma-important($emma-important)};\n";
         assert(actual === expected);
       });
     });
@@ -185,19 +190,19 @@ describe("Emma",() => {
 
   describe("isVar()", () => {
     it("returns true", () => {
-      assert(emma.isVar('$foo') === true);
-      assert(emma.isVar('$_foo') === true);
+      assert(emma.isVar("$foo") === true);
+      assert(emma.isVar("$_foo") === true);
     });
 
     it("returns false", () => {
-      assert(emma.isVar('foo$') === false);
-      assert(emma.isVar('f$oo') === false);
+      assert(emma.isVar("foo$") === false);
+      assert(emma.isVar("f$oo") === false);
     });
   });
 
   describe("prefixedVar()", () => {
     it("returns prefixed variable", () => {
-      assert(emma.prefixedVar('prefix-', 'name') === '$prefix-name');
+      assert(emma.prefixedVar("prefix-", "name") === "$prefix-name");
     });
   });
 
@@ -207,7 +212,8 @@ describe("Emma",() => {
       emmaMock.expects("writeFileSync").exactly(2);
 
       const actual = emma.generatePropRules(propsArg);
-      const expected = ".#{$emma-prefix}pos-s {\n  position: static #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}pos-a {\n  position: absolute #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}pos-r {\n  position: relative #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}pos-f {\n  position: fixed #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}t-a {\n  top: auto #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}t0 {\n  top: 0 #{emma-important($emma-important)};\n}\n\n";
+      const expected =
+        ".#{$emma-prefix}pos-s {\n  position: static #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}pos-a {\n  position: absolute #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}pos-r {\n  position: relative #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}pos-f {\n  position: fixed #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}t-a {\n  top: auto #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}t0 {\n  top: 0 #{emma-important($emma-important)};\n}\n\n";
       assert(emmaMock.verify());
       assert(actual === expected);
     });
@@ -215,25 +221,25 @@ describe("Emma",() => {
 
   describe("generateAbbr()", () => {
     it("returns valid string", () => {
-      assert(emma.generateAbbr('w', 'a') === 'w-a');
-      assert(emma.generateAbbr('w', '0') === 'w0');
-      assert(emma.generateAbbr('w', '1') === 'w1');
-      assert(emma.generateAbbr('w', '25vw') === 'w25vw');
-      assert(emma.generateAbbr('ti', '-9999') === 'ti-9999');
+      assert(emma.generateAbbr("w", "a") === "w-a");
+      assert(emma.generateAbbr("w", "0") === "w0");
+      assert(emma.generateAbbr("w", "1") === "w1");
+      assert(emma.generateAbbr("w", "25vw") === "w25vw");
+      assert(emma.generateAbbr("ti", "-9999") === "ti-9999");
     });
   });
 
   describe("isNumeric()", () => {
     it("returns true", () => {
-      assert(emma.isNumeric('0') === true);
-      assert(emma.isNumeric('10px') === true);
-      assert(emma.isNumeric('-3') === true);
+      assert(emma.isNumeric("0") === true);
+      assert(emma.isNumeric("10px") === true);
+      assert(emma.isNumeric("-3") === true);
     });
 
     it("returns false", () => {
-      assert(emma.isNumeric('a1') === false);
-      assert(emma.isNumeric('b-') === false);
-      assert(emma.isNumeric('-moz') === false);
+      assert(emma.isNumeric("a1") === false);
+      assert(emma.isNumeric("b-") === false);
+      assert(emma.isNumeric("-moz") === false);
     });
   });
 
@@ -243,7 +249,7 @@ describe("Emma",() => {
       emmaMock.expects("writeFileSync").exactly(1);
 
       const actual = emma.generatePropGroupImports(propsArg);
-      const expected = "@import \"display\";\n";
+      const expected = '@import "display";\n';
       assert(emmaMock.verify());
       assert(actual === expected);
     });
@@ -261,8 +267,9 @@ describe("Emma",() => {
 
   describe("generateRootFile()", () => {
     it("returns valid string", () => {
-      const actual = emma.generateRootFile('0.10.0');
-      const expected = "/*! Emma.css 0.10.0 | MIT License | https://git.io/emma */\n@import \"vars\";\n@import \"mixins\";\n@import \"rules\";\n";
+      const actual = emma.generateRootFile("0.10.0");
+      const expected =
+        '/*! Emma.css 0.10.0 | MIT License | https://git.io/emma */\n@import "vars";\n@import "mixins";\n@import "rules";\n';
       assert(actual === expected);
     });
   });
@@ -270,7 +277,10 @@ describe("Emma",() => {
   describe("writeFileSync()", () => {
     it("calls the original function", () => {
       const fsMock = sinon.mock(fs);
-      fsMock.expects("writeFileSync").withArgs("sass/foo.scss", "bar").exactly(1);
+      fsMock
+        .expects("writeFileSync")
+        .withArgs("sass/foo.scss", "bar")
+        .exactly(1);
 
       emma.writeFileSync("foo", "bar");
       assert(fsMock.verify());
@@ -280,7 +290,10 @@ describe("Emma",() => {
   describe("appendFileSync()", () => {
     it("calls the original function", () => {
       const fsMock = sinon.mock(fs);
-      fsMock.expects("appendFileSync").withArgs("sass/foo.scss", "bar").exactly(1);
+      fsMock
+        .expects("appendFileSync")
+        .withArgs("sass/foo.scss", "bar")
+        .exactly(1);
 
       emma.appendFileSync("foo", "bar");
       assert(fsMock.verify());
@@ -290,15 +303,15 @@ describe("Emma",() => {
   describe("loadEmmaDoc()", () => {
     it("returns doc", () => {
       let doc = emma.loadEmmaDoc();
-      assert(typeof doc === 'object');
+      assert(typeof doc === "object");
     });
 
     it("causes error", () => {
       assert.throws(
         () => {
-          emma.loadEmmaDoc('invalid_path');
+          emma.loadEmmaDoc("invalid_path");
         },
-        (error) => {
+        error => {
           const m = "ENOENT: no such file or directory, open 'invalid_path'";
           assert(error.message === m);
           return true;
@@ -306,5 +319,4 @@ describe("Emma",() => {
       );
     });
   });
-
 });

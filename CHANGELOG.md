@@ -1,7 +1,7 @@
 # CHANGELOG
 
 ## master (unreleased)
-* Nothing
+* Introduce Prettier (#12)
 
 ## 0.10.0
 * Move root Sass file (from `./emma.scss` to `./sass/all.scss`)

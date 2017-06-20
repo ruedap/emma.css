@@ -1,10 +1,10 @@
-import * as fs from 'fs-extra';
-import * as _ from 'lodash';
+import * as fs from "fs-extra";
+import * as _ from "lodash";
 
 export type TEmmaDocVar = {
   name: string;
   value: string;
-}
+};
 
 export type TEmmaDocProp = {
   name: string;
@@ -14,12 +14,12 @@ export type TEmmaDocProp = {
     name: string;
     abbr: string;
   }[];
-}
+};
 
 export type TEmmaDocMixinDecl = {
   prop: string;
   value: string;
-}
+};
 
 export type TEmmaDocMixin = {
   name: string;
@@ -27,7 +27,7 @@ export type TEmmaDocMixin = {
   desc?: string;
   group: string;
   decls: TEmmaDocMixinDecl[];
-}
+};
 
 export type TEmmaDoc = {
   ver: string;
@@ -36,24 +36,21 @@ export type TEmmaDoc = {
     props: TEmmaDocProp[];
     mixins: TEmmaDocMixin[];
   };
-}
+};
 
 export default class Emma {
   readonly PREFIX_VAR;
   readonly PREFIX_MIXIN;
-  readonly SASS_DIR = 'sass';
-  readonly TEMP_DIR = 'tmp';
-  readonly VAR_FILE = 'vars';
-  readonly MIXIN_FILE = 'mixins';
-  readonly RULE_FILE = 'rules';
-  readonly ROOT_FILE = 'all';
+  readonly SASS_DIR = "sass";
+  readonly TEMP_DIR = "tmp";
+  readonly VAR_FILE = "vars";
+  readonly MIXIN_FILE = "mixins";
+  readonly RULE_FILE = "rules";
+  readonly ROOT_FILE = "all";
   readonly EMMA_JSON = `${this.TEMP_DIR}/emma-data.json`;
   private emmaDoc: TEmmaDoc;
 
-  constructor(
-    prefix_var: string = 'emma-',
-    prefix_mixin: string = 'emma-',
-  ) {
+  constructor(prefix_var: string = "emma-", prefix_mixin: string = "emma-") {
     this.PREFIX_VAR = prefix_var;
     this.PREFIX_MIXIN = prefix_mixin;
   }
@@ -94,7 +91,7 @@ export default class Emma {
   private generateVars(vars: TEmmaDocVar[]): string {
     let result = `// Variables\n`;
 
-    _.forEach(vars, (v) => {
+    _.forEach(vars, v => {
       result += `$${this.PREFIX_VAR}${v.name}: ${v.value} !default;\n`;
     });
 
@@ -110,11 +107,12 @@ export default class Emma {
 
   private generateMixins(mixins: TEmmaDocMixin[]): string {
     const important = "#{emma-important($important)}";
-    let result = '';
+    let result = "";
 
-    _.forEach(mixins, (m) => {
+    _.forEach(mixins, m => {
       result += this.generateMixinDesc(m.desc);
-      result += `@mixin ${this.PREFIX_MIXIN}${m.abbr}($important: $emma-important) {\n`;
+      result += `@mixin ${this
+        .PREFIX_MIXIN}${m.abbr}($important: $emma-important) {\n`;
       result += this.generateMixinDecls(m.decls, important);
       result += `}\n\n`;
     });
@@ -124,10 +122,10 @@ export default class Emma {
 
   private generateMixinRules(mixins: TEmmaDocMixin[]): string {
     const important = "#{emma-important($emma-important)}";
-    let result = '';
+    let result = "";
 
-    _.forEach(mixins, (m) => {
-      let rulesets = '';
+    _.forEach(mixins, m => {
+      let rulesets = "";
       rulesets += this.generateMixinDesc(m.desc);
       rulesets += `.#{$emma-prefix}${m.abbr} {\n`;
       rulesets += this.generateMixinDecls(m.decls, important);
@@ -140,17 +138,24 @@ export default class Emma {
   }
 
   private generateMixinDesc(desc: string): string {
-    let result = '';
-    if (typeof desc === 'string') { result += `// ${desc}\n`; }
+    let result = "";
+    if (typeof desc === "string") {
+      result += `// ${desc}\n`;
+    }
     return result;
   }
 
-  private generateMixinDecls(decls: TEmmaDocMixinDecl[], important: string): string {
-    let result = '';
+  private generateMixinDecls(
+    decls: TEmmaDocMixinDecl[],
+    important: string
+  ): string {
+    let result = "";
 
-    _.forEach(decls, (d) => {
-      const r_value = (this.isVar(d.value)) ? this.prefixedVar(this.PREFIX_VAR, d.value) : d.value;
-      if (d.prop === '') {
+    _.forEach(decls, d => {
+      const r_value = this.isVar(d.value)
+        ? this.prefixedVar(this.PREFIX_VAR, d.value)
+        : d.value;
+      if (d.prop === "") {
         result += `  ${d.value}\n`;
       } else {
         result += `  ${d.prop}: ${r_value} ${important};\n`;
@@ -160,30 +165,36 @@ export default class Emma {
     return result;
   }
 
-  private isVar(str: string, target: string = '$'): boolean {
+  private isVar(str: string, target: string = "$"): boolean {
     return _.startsWith(str, target);
   }
 
-  private prefixedVar(prefix: string, name: string, sign: string = '$'): string {
+  private prefixedVar(
+    prefix: string,
+    name: string,
+    sign: string = "$"
+  ): string {
     return `${sign}${prefix}${_.trimStart(name, sign)}`;
   }
 
   private generatePropRules(props: TEmmaDocProp[]): string {
     const important = "#{emma-important($emma-important)}";
-    let result = '';
+    let result = "";
 
-    _.forEach(props, (p) => {
-      let rulesets = '';
+    _.forEach(props, p => {
+      let rulesets = "";
 
-      _.forEach(p.values, (v) => {
-        const v_name = this.isVar(v.name) ? this.prefixedVar(this.PREFIX_VAR, v.name) : v.name;
+      _.forEach(p.values, v => {
+        const v_name = this.isVar(v.name)
+          ? this.prefixedVar(this.PREFIX_VAR, v.name)
+          : v.name;
         const abbr = this.generateAbbr(p.abbr, v.abbr);
         rulesets += `.#{$emma-prefix}${abbr} {\n`;
         rulesets += `  ${p.name}: ${v_name} ${important};\n`;
         rulesets += `}\n\n`;
       });
 
-      const pFileName = _.trimStart(p.name, '-');
+      const pFileName = _.trimStart(p.name, "-");
       this.writeFileSync(`${this.RULE_FILE}/_${pFileName}`, rulesets);
       result += rulesets;
     });
@@ -204,19 +215,19 @@ export default class Emma {
   }
 
   private generatePropGroupImports(props: TEmmaDocProp[]): string {
-    const groups: any = _.groupBy(props, 'group');
+    const groups: any = _.groupBy(props, "group");
     if (_.isEmpty(groups)) {
-      throw new Error('Failed generate single group declarations.');
+      throw new Error("Failed generate single group declarations.");
     }
 
-    let result ='';
+    let result = "";
 
     _.forEach(groups, (v, groupName) => {
-      let imports = '';
+      let imports = "";
       result += `@import "${groupName}";\n`;
 
-      _.forEach(v, (p) => {
-        const pFileName = _.trimStart(p.name, '-');
+      _.forEach(v, p => {
+        const pFileName = _.trimStart(p.name, "-");
         imports += `@import "${this.RULE_FILE}/${pFileName}";\n`;
       });
 
@@ -227,16 +238,16 @@ export default class Emma {
   }
 
   private generateMixinGroupImports(mixins: TEmmaDocMixin[]): void {
-    const groups: any = _.groupBy(mixins, 'group');
+    const groups: any = _.groupBy(mixins, "group");
     if (_.isEmpty(groups)) {
-      throw new Error('Failed generate multiple group declarations.');
+      throw new Error("Failed generate multiple group declarations.");
     }
 
     _.forEach(groups, (v, groupName) => {
-      let imports = '';
+      let imports = "";
 
-      _.forEach(v, (p) => {
-        const pFileName = _.trimStart(p.name, '-');
+      _.forEach(v, p => {
+        const pFileName = _.trimStart(p.name, "-");
         imports += `@import "${this.RULE_FILE}/${pFileName}";\n`;
       });
 
@@ -245,12 +256,12 @@ export default class Emma {
   }
 
   private generateRootFile(ver: string): string {
-    let result = '';
+    let result = "";
 
-    result += `/*! Emma.css ${ver} | MIT License | https://git.io/emma */\n`
-    result += `@import "${this.VAR_FILE}";\n`
-    result += `@import "${this.MIXIN_FILE}";\n`
-    result += `@import "${this.RULE_FILE}";\n`
+    result += `/*! Emma.css ${ver} | MIT License | https://git.io/emma */\n`;
+    result += `@import "${this.VAR_FILE}";\n`;
+    result += `@import "${this.MIXIN_FILE}";\n`;
+    result += `@import "${this.RULE_FILE}";\n`;
 
     return result;
   }
@@ -267,7 +278,7 @@ export default class Emma {
     let doc;
 
     try {
-      doc = JSON.parse(fs.readFileSync(filename, 'utf8')) as TEmmaDoc;
+      doc = JSON.parse(fs.readFileSync(filename, "utf8")) as TEmmaDoc;
     } catch (e) {
       throw new Error(e.message);
     }
