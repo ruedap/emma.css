@@ -1,5 +1,8 @@
 // Clearfix (Contain floats)
 .#{$emma-prefix}cf {
-  &::after { content: ""; display: table; clear: both; }
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
-

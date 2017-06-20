@@ -58,6 +58,8 @@ $emma-color-purple: #b10dc9 !default;
 // Functions
 @function emma-important($bool: $emma-important) {
   $important: "";
-  @if $bool { $important: "!important"; }
+  @if $bool {
+    $important: "!important";
+  }
   @return $important;
 }
