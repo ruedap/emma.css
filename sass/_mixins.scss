@@ -1,10 +1,6 @@
 // Clearfix (Contain floats)
 @mixin emma-cf($important: $emma-important) {
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+  &::after { content: ""; display: table; clear: both; }
 }
 
 // Text truncation (ellipsis)
@@ -173,3 +169,4 @@
   -webkit-font-smoothing: antialiased #{emma-important($important)};
   -moz-osx-font-smoothing: grayscale #{emma-important($important)};
 }
+
