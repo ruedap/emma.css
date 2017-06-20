@@ -76,6 +76,7 @@
     "postcss": "^6.0.1",
     "postcss-map": "^0.9.0",
     "power-assert": "1.4",
+    "prettier": "^1.4.4",
     "rimraf": "^2.6.1",
     "semver-regex": "^1.0.0",
     "sinon": "2.2",
