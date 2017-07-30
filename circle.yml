@@ -8,6 +8,7 @@ machine:
 
 dependencies:
   pre:
+    - npm i -g npm
     - node --version
     - npm --version
 
