@@ -1,6 +1,7 @@
 # CHANGELOG
 
 ## master (unreleased)
+* Add package-lock.json
 * Introduce Prettier (#12)
 
 ## 0.10.0
