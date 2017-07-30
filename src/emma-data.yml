@@ -2696,6 +2696,14 @@ rules:
           name: stretch
           abbr: s
     -
+      name: transform
+      abbr: trf
+      group: other
+      values:
+        -
+          name: none
+          abbr: n
+    -
       name: resize
       abbr: rz
       group: other

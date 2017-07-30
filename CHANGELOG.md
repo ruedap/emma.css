@@ -1,6 +1,8 @@
 # CHANGELOG
 
 ## master (unreleased)
+* Add snippet:
+    * `trf-n` (`transform: none`)
 * Change group of backface-visibility
 * Add package-lock.json and remove yarn
 * Introduce Prettier (#12)

@@ -717,6 +717,7 @@
 .tehi { overflow: hidden !important; text-indent: 200% !important; white-space: nowrap !important; }
 .reli { list-style: none !important; padding-left: 0 !important; }
 .fsm-a { -webkit-font-smoothing: antialiased !important; -moz-osx-font-smoothing: grayscale !important; }
+.trf-n { transform: none !important; }
 .rz-n { resize: none !important; }
 .rz-b { resize: both !important; }
 .rz-h { resize: horizontal !important; }
