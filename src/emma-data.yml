@@ -2862,6 +2862,17 @@ rules:
         -
           name: none
           abbr: n
+    -
+      name: '-webkit-overflow-scrolling'
+      abbr: wkovs
+      group: other
+      values:
+        -
+          name: auto
+          abbr: a
+        -
+          name: touch
+          abbr: t
   mixins:
     -
       name: clearfix

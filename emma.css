@@ -751,3 +751,5 @@
 .us-t { user-select: text !important; }
 .wktc-d { -webkit-touch-callout: default !important; }
 .wktc-n { -webkit-touch-callout: none !important; }
+.wkovs-a { -webkit-overflow-scrolling: auto !important; }
+.wkovs-t { -webkit-overflow-scrolling: touch !important; }
