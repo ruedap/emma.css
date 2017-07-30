@@ -9,6 +9,7 @@
     * `l100p` (`left: 100%`)
     * `fx0-0-100p` (`flex: 0 0 100%`)
     * -webkit-overflow-scrolling
+* Change black color from #111111 to #000000
 * Change group of backface-visibility
 * Add package-lock.json and remove yarn
 * Introduce Prettier (#12)

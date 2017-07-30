@@ -125,7 +125,7 @@ vars:
     value: '#aaaaaa'
   -
     name: color-black
-    value: '#111111'
+    value: '#000000'
   -
     name: color-navy
     value: '#001f3f'
