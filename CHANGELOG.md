@@ -1,6 +1,22 @@
 # CHANGELOG
 
 ## master (unreleased)
+* Nothing
+
+## 0.11.0
+* Add snippets:
+    * `trf-n` (`transform: none`)
+    * `t100p` (`top: 100%`)
+    * `r100p` (`right: 100%`)
+    * `b100p` (`bottom: 100%`)
+    * `l100p` (`left: 100%`)
+    * `fx0-0-100p` (`flex: 0 0 100%`)
+    * -webkit-overflow-scrolling
+* Rename snippets:
+    * `wkfsm-a` -> `wkfsm-aa` (`-webkit-font-smoothing: antialiased`)
+    * `wkfsm-sa` -> `wkfsm-saa` (`-webkit-font-smoothing: subpixel-antialiased`)
+* Change black color from #111111 to #000000
+* Change group of backface-visibility
 * Add package-lock.json and remove yarn
 * Introduce Prettier (#12)
 

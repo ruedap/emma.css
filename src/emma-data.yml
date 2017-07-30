@@ -1,4 +1,4 @@
-ver: '0.10.1'
+ver: '0.11.0'
 vars:
   -
     name: prefix
@@ -125,7 +125,7 @@ vars:
     value: '#aaaaaa'
   -
     name: color-black
-    value: '#111111'
+    value: '#000000'
   -
     name: color-navy
     value: '#001f3f'
@@ -198,6 +198,9 @@ rules:
         -
           name: '0'
           abbr: '0'
+        -
+          name: 100%
+          abbr: 100p
     -
       name: right
       abbr: r
@@ -209,6 +212,9 @@ rules:
         -
           name: '0'
           abbr: '0'
+        -
+          name: 100%
+          abbr: 100p
     -
       name: bottom
       abbr: b
@@ -220,6 +226,9 @@ rules:
         -
           name: '0'
           abbr: '0'
+        -
+          name: 100%
+          abbr: 100p
     -
       name: left
       abbr: l
@@ -231,6 +240,9 @@ rules:
         -
           name: '0'
           abbr: '0'
+        -
+          name: 100%
+          abbr: 100p
     -
       name: z-index
       abbr: z
@@ -1185,17 +1197,6 @@ rules:
         -
           name: invert
           abbr: i
-    -
-      name: backface-visibility
-      abbr: bfv
-      group: border
-      values:
-        -
-          name: hidden
-          abbr: h
-        -
-          name: visible
-          abbr: v
     -
       name: border
       abbr: bd
@@ -2373,52 +2374,6 @@ rules:
           name: '1'
           abbr: '1'
     -
-      name: resize
-      abbr: rz
-      group: other
-      values:
-        -
-          name: none
-          abbr: n
-        -
-          name: both
-          abbr: b
-        -
-          name: horizontal
-          abbr: h
-        -
-          name: vertical
-          abbr: v
-    -
-      name: cursor
-      abbr: cur
-      group: other
-      values:
-        -
-          name: auto
-          abbr: a
-        -
-          name: default
-          abbr: d
-        -
-          name: crosshair
-          abbr: c
-        -
-          name: hand
-          abbr: ha
-        -
-          name: help
-          abbr: he
-        -
-          name: move
-          abbr: m
-        -
-          name: pointer
-          abbr: p
-        -
-          name: text
-          abbr: t
-    -
       name: flex-direction
       abbr: fxd
       group: display
@@ -2567,6 +2522,9 @@ rules:
         -
           name: '1 0 0%' # for flexbugs #4
           abbr: '1-0-0'
+        -
+          name: '0 0 100%'
+          abbr: '0-0-100p'
     -
       name: flex-grow
       abbr: fxg
@@ -2753,6 +2711,71 @@ rules:
           name: stretch
           abbr: s
     -
+      name: transform
+      abbr: trf
+      group: other
+      values:
+        -
+          name: none
+          abbr: n
+    -
+      name: resize
+      abbr: rz
+      group: other
+      values:
+        -
+          name: none
+          abbr: n
+        -
+          name: both
+          abbr: b
+        -
+          name: horizontal
+          abbr: h
+        -
+          name: vertical
+          abbr: v
+    -
+      name: cursor
+      abbr: cur
+      group: other
+      values:
+        -
+          name: auto
+          abbr: a
+        -
+          name: default
+          abbr: d
+        -
+          name: crosshair
+          abbr: c
+        -
+          name: hand
+          abbr: ha
+        -
+          name: help
+          abbr: he
+        -
+          name: move
+          abbr: m
+        -
+          name: pointer
+          abbr: p
+        -
+          name: text
+          abbr: t
+    -
+      name: backface-visibility
+      abbr: bfv
+      group: other
+      values:
+        -
+          name: hidden
+          abbr: h
+        -
+          name: visible
+          abbr: v
+    -
       name: object-fit
       abbr: obf
       group: other
@@ -2810,10 +2833,10 @@ rules:
       values:
         -
           name: antialiased
-          abbr: a
+          abbr: aa
         -
           name: subpixel-antialiased
-          abbr: sa
+          abbr: saa
         -
           name: none
           abbr: n
@@ -2839,6 +2862,17 @@ rules:
         -
           name: none
           abbr: n
+    -
+      name: '-webkit-overflow-scrolling'
+      abbr: wkovs
+      group: other
+      values:
+        -
+          name: auto
+          abbr: a
+        -
+          name: touch
+          abbr: t
   mixins:
     -
       name: clearfix

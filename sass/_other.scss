@@ -1,6 +1,9 @@
+@import "rules/transform";
 @import "rules/resize";
 @import "rules/cursor";
+@import "rules/backface-visibility";
 @import "rules/object-fit";
 @import "rules/appearance";
 @import "rules/user-select";
 @import "rules/webkit-touch-callout";
+@import "rules/webkit-overflow-scrolling";

@@ -19,7 +19,7 @@ describe("emma-data.json", () => {
   it("is valid length", () => {
     assert(doc.vars.length === 55);
     assert(doc.rules.mixins.length === 32);
-    assert(doc.rules.props.length === 106);
+    assert(doc.rules.props.length === 108);
     const propValuesLength = _.reduce(
       doc.rules.props,
       (result, v) => {
@@ -27,7 +27,7 @@ describe("emma-data.json", () => {
       },
       0
     );
-    assert(propValuesLength === 714);
+    assert(propValuesLength === 722);
   });
 
   it("is unique abbreviations", () => {
