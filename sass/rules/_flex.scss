@@ -21,3 +21,7 @@
 .#{$emma-prefix}fx1-0-0 {
   flex: 1 0 0% #{emma-important($emma-important)};
 }
+
+.#{$emma-prefix}fx0-0-100p {
+  flex: 0 0 100% #{emma-important($emma-important)};
+}

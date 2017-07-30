@@ -27,7 +27,7 @@ describe("emma-data.json", () => {
       },
       0
     );
-    assert(propValuesLength === 719);
+    assert(propValuesLength === 720);
   });
 
   it("is unique abbreviations", () => {

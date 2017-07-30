@@ -2522,6 +2522,9 @@ rules:
         -
           name: '1 0 0%' # for flexbugs #4
           abbr: '1-0-0'
+        -
+          name: '0 0 100%'
+          abbr: '0-0-100p'
     -
       name: flex-grow
       abbr: fxg

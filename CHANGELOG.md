@@ -7,6 +7,7 @@
     * `r100p` (`right: 100%`)
     * `b100p` (`bottom: 100%`)
     * `l100p` (`left: 100%`)
+    * `fx0-0-100p` (`flex: 0 0 100%`)
 * Change group of backface-visibility
 * Add package-lock.json and remove yarn
 * Introduce Prettier (#12)
