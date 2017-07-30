@@ -1,6 +1,9 @@
 # CHANGELOG
 
 ## master (unreleased)
+* Nothing
+
+## 0.11.0
 * Add snippets:
     * `trf-n` (`transform: none`)
     * `t100p` (`top: 100%`)
