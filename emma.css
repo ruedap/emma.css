@@ -444,8 +444,6 @@
 .ols-i { outline-style: inset !important; }
 .ols-o { outline-style: outset !important; }
 .olc-i { outline-color: invert !important; }
-.bfv-h { backface-visibility: hidden !important; }
-.bfv-v { backface-visibility: visible !important; }
 .bd-n { border: none !important; }
 .bd0 { border: 0 !important; }
 .bdcl-c { border-collapse: collapse !important; }
@@ -731,6 +729,8 @@
 .cur-m { cursor: move !important; }
 .cur-p { cursor: pointer !important; }
 .cur-t { cursor: text !important; }
+.bfv-h { backface-visibility: hidden !important; }
+.bfv-v { backface-visibility: visible !important; }
 .obf-f { object-fit: fill !important; }
 .obf-ct { object-fit: contain !important; }
 .obf-cv { object-fit: cover !important; }

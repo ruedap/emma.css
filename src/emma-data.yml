@@ -1186,17 +1186,6 @@ rules:
           name: invert
           abbr: i
     -
-      name: backface-visibility
-      abbr: bfv
-      group: border
-      values:
-        -
-          name: hidden
-          abbr: h
-        -
-          name: visible
-          abbr: v
-    -
       name: border
       abbr: bd
       group: border
@@ -2373,52 +2362,6 @@ rules:
           name: '1'
           abbr: '1'
     -
-      name: resize
-      abbr: rz
-      group: other
-      values:
-        -
-          name: none
-          abbr: n
-        -
-          name: both
-          abbr: b
-        -
-          name: horizontal
-          abbr: h
-        -
-          name: vertical
-          abbr: v
-    -
-      name: cursor
-      abbr: cur
-      group: other
-      values:
-        -
-          name: auto
-          abbr: a
-        -
-          name: default
-          abbr: d
-        -
-          name: crosshair
-          abbr: c
-        -
-          name: hand
-          abbr: ha
-        -
-          name: help
-          abbr: he
-        -
-          name: move
-          abbr: m
-        -
-          name: pointer
-          abbr: p
-        -
-          name: text
-          abbr: t
-    -
       name: flex-direction
       abbr: fxd
       group: display
@@ -2752,6 +2695,63 @@ rules:
         -
           name: stretch
           abbr: s
+    -
+      name: resize
+      abbr: rz
+      group: other
+      values:
+        -
+          name: none
+          abbr: n
+        -
+          name: both
+          abbr: b
+        -
+          name: horizontal
+          abbr: h
+        -
+          name: vertical
+          abbr: v
+    -
+      name: cursor
+      abbr: cur
+      group: other
+      values:
+        -
+          name: auto
+          abbr: a
+        -
+          name: default
+          abbr: d
+        -
+          name: crosshair
+          abbr: c
+        -
+          name: hand
+          abbr: ha
+        -
+          name: help
+          abbr: he
+        -
+          name: move
+          abbr: m
+        -
+          name: pointer
+          abbr: p
+        -
+          name: text
+          abbr: t
+    -
+      name: backface-visibility
+      abbr: bfv
+      group: other
+      values:
+        -
+          name: hidden
+          abbr: h
+        -
+          name: visible
+          abbr: v
     -
       name: object-fit
       abbr: obf
