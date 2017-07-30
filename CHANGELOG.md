@@ -1,7 +1,7 @@
 # CHANGELOG
 
 ## master (unreleased)
-* Add package-lock.json
+* Add package-lock.json and remove yarn
 * Introduce Prettier (#12)
 
 ## 0.10.0
