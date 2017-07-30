@@ -5,3 +5,7 @@
 .#{$emma-prefix}b0 {
   bottom: 0 #{emma-important($emma-important)};
 }
+
+.#{$emma-prefix}b100p {
+  bottom: 100% #{emma-important($emma-important)};
+}

@@ -5,3 +5,7 @@
 .#{$emma-prefix}r0 {
   right: 0 #{emma-important($emma-important)};
 }
+
+.#{$emma-prefix}r100p {
+  right: 100% #{emma-important($emma-important)};
+}

@@ -6,12 +6,16 @@
 .pos-f { position: fixed !important; }
 .t-a { top: auto !important; }
 .t0 { top: 0 !important; }
+.t100p { top: 100% !important; }
 .r-a { right: auto !important; }
 .r0 { right: 0 !important; }
+.r100p { right: 100% !important; }
 .b-a { bottom: auto !important; }
 .b0 { bottom: 0 !important; }
+.b100p { bottom: 100% !important; }
 .l-a { left: auto !important; }
 .l0 { left: 0 !important; }
+.l100p { left: 100% !important; }
 .z-a { z-index: auto !important; }
 .z0 { z-index: 0 !important; }
 .z1 { z-index: 1 !important; }
