@@ -2833,10 +2833,10 @@ rules:
       values:
         -
           name: antialiased
-          abbr: a
+          abbr: aa
         -
           name: subpixel-antialiased
-          abbr: sa
+          abbr: saa
         -
           name: none
           abbr: n

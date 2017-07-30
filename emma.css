@@ -713,8 +713,8 @@
 .op0_8 { opacity: 0.8 !important; }
 .op0_9 { opacity: 0.9 !important; }
 .op1 { opacity: 1 !important; }
-.wkfsm-a { -webkit-font-smoothing: antialiased !important; }
-.wkfsm-sa { -webkit-font-smoothing: subpixel-antialiased !important; }
+.wkfsm-aa { -webkit-font-smoothing: antialiased !important; }
+.wkfsm-saa { -webkit-font-smoothing: subpixel-antialiased !important; }
 .wkfsm-n { -webkit-font-smoothing: none !important; }
 .mzfsm-g { -moz-osx-font-smoothing: grayscale !important; }
 .mzfsm-u { -moz-osx-font-smoothing: unset !important; }

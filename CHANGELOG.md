@@ -9,6 +9,9 @@
     * `l100p` (`left: 100%`)
     * `fx0-0-100p` (`flex: 0 0 100%`)
     * -webkit-overflow-scrolling
+* Rename snippets:
+    * `wkfsm-a` -> `wkfsm-aa` (`-webkit-font-smoothing: antialiased`)
+    * `wkfsm-sa` -> `wkfsm-saa` (`-webkit-font-smoothing: subpixel-antialiased`)
 * Change black color from #111111 to #000000
 * Change group of backface-visibility
 * Add package-lock.json and remove yarn
