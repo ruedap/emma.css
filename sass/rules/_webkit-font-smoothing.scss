@@ -3,8 +3,7 @@
 }
 
 .#{$emma-prefix}wkfsm-sa {
-  -webkit-font-smoothing: subpixel-antialiased
-    #{emma-important($emma-important)};
+  -webkit-font-smoothing: subpixel-antialiased #{emma-important($emma-important)};
 }
 
 .#{$emma-prefix}wkfsm-n {
