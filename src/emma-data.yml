@@ -2890,9 +2890,6 @@ rules:
       group: text
       decls:
         -
-          prop: max-width
-          value: 100%
-        -
           prop: overflow
           value: hidden
         -

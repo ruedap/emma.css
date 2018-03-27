@@ -1,6 +1,5 @@
 // Text truncation (ellipsis)
 .#{$emma-prefix}tetr {
-  max-width: 100% #{emma-important($emma-important)};
   overflow: hidden #{emma-important($emma-important)};
   text-overflow: ellipsis #{emma-important($emma-important)};
   white-space: nowrap #{emma-important($emma-important)};

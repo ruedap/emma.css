@@ -5,7 +5,6 @@
 
 // Text truncation (ellipsis)
 @mixin emma-tetr($important: $emma-important) {
-  max-width: 100% #{emma-important($important)};
   overflow: hidden #{emma-important($important)};
   text-overflow: ellipsis #{emma-important($important)};
   white-space: nowrap #{emma-important($important)};
