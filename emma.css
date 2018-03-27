@@ -553,7 +553,7 @@
 .bdrs5 { border-radius: 5px !important; }
 .bdrs6 { border-radius: 6px !important; }
 .bdrs9999 { border-radius: 9999px !important; }
-.bdrs100p { border-radius: 100% !important; }
+.bdrs50p { border-radius: 50% !important; }
 .c-ih { color: inherit !important; }
 .c-white { color: #ffffff !important; }
 .c-silver { color: #dddddd !important; }

@@ -1605,8 +1605,8 @@ rules:
           name: 9999px
           abbr: '9999'
         -
-          name: 100%
-          abbr: 100p
+          name: 50%
+          abbr: 50p
     -
       name: background
       abbr: bg

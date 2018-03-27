@@ -1,7 +1,8 @@
 # CHANGELOG
 
 ## master (unreleased)
-* Nothing
+* Improve snippet:
+    * `bdrs` (`border-radius`)
 
 ## 0.11.0
 * Add snippets:
