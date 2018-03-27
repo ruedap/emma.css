@@ -1,3 +1,24 @@
+<a name="0.12.0"></a>
+# [0.12.0](https://github.com/ruedap/emma.css/compare/0.11.0...0.12.0) (2018-03-27)
+
+
+### Code Refactoring
+
+* Change SCSS files' directory name ([5091e6c](https://github.com/ruedap/emma.css/commit/5091e6c))
+
+
+### Features
+
+* Improve snippet: border-radius ([65f2506](https://github.com/ruedap/emma.css/commit/65f2506))
+* Improve snippet: tetr ([91849f2](https://github.com/ruedap/emma.css/commit/91849f2))
+
+
+### BREAKING CHANGES
+
+* The directory name of the SCSS files has changed from `sass /` to `scss /`.
+
+
+
 <a name="0.11.0"></a>
 # [0.11.0](https://github.com/ruedap/emma.css/compare/0.10.0...0.11.0) (2017-07-30)
 * Add snippets:

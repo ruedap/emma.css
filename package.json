@@ -1,6 +1,6 @@
 {
   "name": "emma.css",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "description": "Emma.css { emmet-like utility classes }",
   "scripts": {
     "build": "npm run clean && npm run compile && npm run test",
@@ -26,9 +26,22 @@
   "main": "emma.css",
   "style": "emma.css",
   "scss": "scss/all.scss",
-  "files": ["scss", "CHANGELOG.md", "emma.css", "LICENSE", "README.md"],
+  "files": [
+    "scss",
+    "CHANGELOG.md",
+    "emma.css",
+    "LICENSE",
+    "README.md"
+  ],
   "homepage": "https://github.com/ruedap/emma.css",
-  "keywords": ["sass", "scss", "css", "emmet", "utility", "coding"],
+  "keywords": [
+    "sass",
+    "scss",
+    "css",
+    "emmet",
+    "utility",
+    "coding"
+  ],
   "bugs": {
     "url": "https://github.com/ruedap/emma.scss/issues"
   },
