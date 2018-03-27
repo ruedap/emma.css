@@ -1,5 +1,3 @@
-# CHANGELOG
-
 <a name="0.11.0"></a>
 # [0.11.0](https://github.com/ruedap/emma.css/compare/0.10.0...0.11.0) (2017-07-30)
 * Add snippets:
