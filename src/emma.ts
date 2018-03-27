@@ -79,7 +79,7 @@ export default class Emma {
     this.writeFileSync(`_${this.RULE_FILE}`, imports);
 
     // Root
-    this.writeFileSync(`${this.ROOT_FILE}`, this.generateRootFile(ver));
+    this.writeFileSync(`${this.ROOT_FILE}`, this.generateRootFile(ver, props));
 
     // DEBUG
     console.log(`/*! Emma.css ${ver} */`);
@@ -255,13 +255,25 @@ export default class Emma {
     });
   }
 
-  private generateRootFile(ver: string): string {
+  private generateRootFile(ver: string, props: TEmmaDocProp[]): string {
     let result = "";
 
-    result += `/*! Emma.css ${ver} | MIT License | https://git.io/emma */\n`;
+    result += `/*! Emma.css ${ver} | MIT License | https://git.io/emma */\n\n`;
     result += `@import "${this.VAR_FILE}";\n`;
     result += `@import "${this.MIXIN_FILE}";\n`;
-    result += `@import "${this.RULE_FILE}";\n`;
+
+    const groups: any = _.groupBy(props, "group");
+    if (_.isEmpty(groups)) {
+      throw new Error("Failed generate single group declarations.");
+    }
+
+    let imports = "";
+    _.forEach(groups, (v, groupName) => {
+      imports += `\n// ${groupName}\n`;
+      imports += this.readFileSync(`_${groupName}`);
+    });
+
+    result += `${imports}`;
 
     return result;
   }
@@ -272,6 +284,10 @@ export default class Emma {
 
   private appendFileSync(filename: string, str: string): void {
     fs.appendFileSync(`${this.SCSS_DIR}/${filename}.scss`, str);
+  }
+
+  private readFileSync(filename: string): Buffer {
+    return fs.readFileSync(`${this.SCSS_DIR}/${filename}.scss`);
   }
 
   private loadEmmaDoc(filename: string = this.EMMA_JSON): TEmmaDoc {

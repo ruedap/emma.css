@@ -1,6 +1,7 @@
 import * as mocha from "mocha";
 import * as sinon from "sinon";
 import * as assert from "power-assert";
+import * as fs from "fs-extra";
 
 import {
   default as Emma,
@@ -10,7 +11,6 @@ import {
   TEmmaDocMixin,
   TEmmaDoc
 } from "../src/emma";
-import * as fs from "fs-extra";
 
 describe("Emma", () => {
   const varsArg: TEmmaDocVar[] = [
@@ -267,9 +267,12 @@ describe("Emma", () => {
 
   describe("generateRootFile()", () => {
     it("returns valid string", () => {
-      const actual = emma.generateRootFile("0.10.0");
+      const emmaMock = sinon.mock(emma);
+      emmaMock.expects("readFileSync").exactly(1);
+
+      const actual = emma.generateRootFile("0.10.0", propsArg);
       const expected =
-        '/*! Emma.css 0.10.0 | MIT License | https://git.io/emma */\n@import "vars";\n@import "mixins";\n@import "rules";\n';
+        '/*! Emma.css 0.10.0 | MIT License | https://git.io/emma */\n\n@import "vars";\n@import "mixins";\n\n// display\nundefined';
       assert(actual === expected);
     });
   });
