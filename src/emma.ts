@@ -41,7 +41,7 @@ export type TEmmaDoc = {
 export default class Emma {
   readonly PREFIX_VAR;
   readonly PREFIX_MIXIN;
-  readonly SASS_DIR = "sass";
+  readonly SCSS_DIR = "scss";
   readonly TEMP_DIR = "tmp";
   readonly VAR_FILE = "vars";
   readonly MIXIN_FILE = "mixins";
@@ -63,7 +63,7 @@ export default class Emma {
     const props = this.emmaDoc.rules.props;
 
     // Make dir
-    fs.ensureDirSync(`${this.SASS_DIR}/${this.RULE_FILE}`);
+    fs.ensureDirSync(`${this.SCSS_DIR}/${this.RULE_FILE}`);
 
     // Vars
     this.writeFileSync(`_${this.VAR_FILE}`, this.generateVars(vars));
@@ -267,11 +267,11 @@ export default class Emma {
   }
 
   private writeFileSync(filename: string, str: string): void {
-    fs.writeFileSync(`${this.SASS_DIR}/${filename}.scss`, str);
+    fs.writeFileSync(`${this.SCSS_DIR}/${filename}.scss`, str);
   }
 
   private appendFileSync(filename: string, str: string): void {
-    fs.appendFileSync(`${this.SASS_DIR}/${filename}.scss`, str);
+    fs.appendFileSync(`${this.SCSS_DIR}/${filename}.scss`, str);
   }
 
   private loadEmmaDoc(filename: string = this.EMMA_JSON): TEmmaDoc {

@@ -279,7 +279,7 @@ describe("Emma", () => {
       const fsMock = sinon.mock(fs);
       fsMock
         .expects("writeFileSync")
-        .withArgs("sass/foo.scss", "bar")
+        .withArgs("scss/foo.scss", "bar")
         .exactly(1);
 
       emma.writeFileSync("foo", "bar");
@@ -292,7 +292,7 @@ describe("Emma", () => {
       const fsMock = sinon.mock(fs);
       fsMock
         .expects("appendFileSync")
-        .withArgs("sass/foo.scss", "bar")
+        .withArgs("scss/foo.scss", "bar")
         .exactly(1);
 
       emma.appendFileSync("foo", "bar");
