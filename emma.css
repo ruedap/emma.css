@@ -553,7 +553,7 @@
 .bdrs5 { border-radius: 5px !important; }
 .bdrs6 { border-radius: 6px !important; }
 .bdrs9999 { border-radius: 9999px !important; }
-.bdrs100p { border-radius: 100% !important; }
+.bdrs50p { border-radius: 50% !important; }
 .c-ih { color: inherit !important; }
 .c-white { color: #ffffff !important; }
 .c-silver { color: #dddddd !important; }
@@ -718,7 +718,7 @@
 .wkfsm-n { -webkit-font-smoothing: none !important; }
 .mzfsm-g { -moz-osx-font-smoothing: grayscale !important; }
 .mzfsm-u { -moz-osx-font-smoothing: unset !important; }
-.tetr { max-width: 100% !important; overflow: hidden !important; text-overflow: ellipsis !important; white-space: nowrap !important; word-wrap: normal !important; }
+.tetr { overflow: hidden !important; text-overflow: ellipsis !important; white-space: nowrap !important; word-wrap: normal !important; }
 .tehi { overflow: hidden !important; text-indent: 200% !important; white-space: nowrap !important; }
 .reli { list-style: none !important; padding-left: 0 !important; }
 .fsm-a { -webkit-font-smoothing: antialiased !important; -moz-osx-font-smoothing: grayscale !important; }

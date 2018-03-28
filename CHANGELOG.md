@@ -1,9 +1,26 @@
-# CHANGELOG
+<a name="0.12.0"></a>
+# [0.12.0](https://github.com/ruedap/emma.css/compare/0.11.0...0.12.0) (2018-03-27)
 
-## master (unreleased)
-* Nothing
 
-## 0.11.0
+### Code Refactoring
+
+* Change SCSS files' directory name ([5091e6c](https://github.com/ruedap/emma.css/commit/5091e6c))
+
+
+### Features
+
+* Improve snippet: border-radius ([65f2506](https://github.com/ruedap/emma.css/commit/65f2506))
+* Improve snippet: tetr ([91849f2](https://github.com/ruedap/emma.css/commit/91849f2))
+
+
+### BREAKING CHANGES
+
+* The directory name of the SCSS files has changed from `sass /` to `scss /`.
+
+
+
+<a name="0.11.0"></a>
+# [0.11.0](https://github.com/ruedap/emma.css/compare/0.10.0...0.11.0) (2017-07-30)
 * Add snippets:
     * `trf-n` (`transform: none`)
     * `t100p` (`top: 100%`)
@@ -20,7 +37,9 @@
 * Add package-lock.json and remove yarn
 * Introduce Prettier (#12)
 
-## 0.10.0
+
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/ruedap/emma.css/compare/0.9.0...0.10.0) (2017-05-27)
 * Move root Sass file (from `./emma.scss` to `./sass/all.scss`)
 * Remove default prefix `u-`
 * Avoid hyphenation at numeric values (e.g. `mt-0` -> `mt0`)
@@ -63,25 +82,40 @@
     * `fw-l` (`font-weight: light`)
 * [Bower is deprecated](https://github.com/bower/bower/pull/2458)
 
-## 0.9.0
+
+
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/ruedap/emma.css/compare/0.8.0...0.9.0) (2017-05-21)
 * Restructure based on YAML documents
 
-## 0.8.0
+
+
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/ruedap/emma.css/compare/0.7.0...0.8.0) (2017-04-10)
 * Add snippet: `fz-0` (`font-size: 0`)
 * Add snippet: horizontal and vertical padding
 * Add snippet: horizontal and vertical margin
 
-## 0.7.0
+
+
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/ruedap/emma.css/compare/0.6.0...0.7.0) (2016-08-08)
 * Add snippet: `ff-j` (`font-family for Japanese`)
 * Add snippet: `z-9999` (`z-index: 9999`)
 * Change from ruby-sass to node-sass
 * Introduce npm run commands to build sass
 
-## 0.6.0
+
+
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/ruedap/emma.css/compare/0.5.0...0.6.0) (2016-06-03)
 * Change `$emma-alternative-colors` default value from false to true
 * Add Makefile
 
-## 0.5.0
+
+
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/ruedap/emma.css/compare/0.4.0...0.5.0) (2016-03-31)
 * Add max-width sizes
 * Add border-radius sizes
 * Add 5 colors
@@ -89,15 +123,24 @@
 * Change line-height variables
 * Change font-size variables
 
-## 0.4.0
+
+
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/ruedap/emma.css/compare/0.3.0...0.4.0) (2015-04-25)
 * Rename snippet name: `lire` -> `reli`
 * Improve snippet: `tehi`
 * Improve snippet: `abce`
 
-## 0.3.0
+
+
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/ruedap/emma.css/compare/0.2.0...0.3.0) (2015-03-25)
 * Add snippet: `tehi` (Text hiding)
 
-## 0.2.0
+
+
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/ruedap/emma.css/compare/0.1.0...0.2.0) (2015-03-20)
 * Rename `opacity` snippet names (e.g. `op-01` -> `op-0_1`)
 * Rename multiple declaration snippet names
     * `tet` -> `tetr`
@@ -106,5 +149,8 @@
 * Add snippet: `m-a` (`margin: auto`)
 * Add snippet: `m-0_a` (`margin: 0 auto`)
 
-## 0.1.0
+
+
+<a name="0.1.0"></a>
+# 0.1.0 (2015-03-20)
 * Initial public release

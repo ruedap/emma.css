@@ -41,7 +41,7 @@ export type TEmmaDoc = {
 export default class Emma {
   readonly PREFIX_VAR;
   readonly PREFIX_MIXIN;
-  readonly SASS_DIR = "sass";
+  readonly SCSS_DIR = "scss";
   readonly TEMP_DIR = "tmp";
   readonly VAR_FILE = "vars";
   readonly MIXIN_FILE = "mixins";
@@ -63,7 +63,7 @@ export default class Emma {
     const props = this.emmaDoc.rules.props;
 
     // Make dir
-    fs.ensureDirSync(`${this.SASS_DIR}/${this.RULE_FILE}`);
+    fs.ensureDirSync(`${this.SCSS_DIR}/${this.RULE_FILE}`);
 
     // Vars
     this.writeFileSync(`_${this.VAR_FILE}`, this.generateVars(vars));
@@ -79,7 +79,7 @@ export default class Emma {
     this.writeFileSync(`_${this.RULE_FILE}`, imports);
 
     // Root
-    this.writeFileSync(`${this.ROOT_FILE}`, this.generateRootFile(ver));
+    this.writeFileSync(`${this.ROOT_FILE}`, this.generateRootFile(ver, props));
 
     // DEBUG
     console.log(`/*! Emma.css ${ver} */`);
@@ -255,23 +255,39 @@ export default class Emma {
     });
   }
 
-  private generateRootFile(ver: string): string {
+  private generateRootFile(ver: string, props: TEmmaDocProp[]): string {
     let result = "";
 
-    result += `/*! Emma.css ${ver} | MIT License | https://git.io/emma */\n`;
+    result += `/*! Emma.css ${ver} | MIT License | https://git.io/emma */\n\n`;
     result += `@import "${this.VAR_FILE}";\n`;
     result += `@import "${this.MIXIN_FILE}";\n`;
-    result += `@import "${this.RULE_FILE}";\n`;
+
+    const groups: any = _.groupBy(props, "group");
+    if (_.isEmpty(groups)) {
+      throw new Error("Failed generate single group declarations.");
+    }
+
+    let imports = "";
+    _.forEach(groups, (v, groupName) => {
+      imports += `\n// ${groupName}\n`;
+      imports += this.readFileSync(`_${groupName}`);
+    });
+
+    result += `${imports}`;
 
     return result;
   }
 
   private writeFileSync(filename: string, str: string): void {
-    fs.writeFileSync(`${this.SASS_DIR}/${filename}.scss`, str);
+    fs.writeFileSync(`${this.SCSS_DIR}/${filename}.scss`, str);
   }
 
   private appendFileSync(filename: string, str: string): void {
-    fs.appendFileSync(`${this.SASS_DIR}/${filename}.scss`, str);
+    fs.appendFileSync(`${this.SCSS_DIR}/${filename}.scss`, str);
+  }
+
+  private readFileSync(filename: string): Buffer {
+    return fs.readFileSync(`${this.SCSS_DIR}/${filename}.scss`);
   }
 
   private loadEmmaDoc(filename: string = this.EMMA_JSON): TEmmaDoc {
