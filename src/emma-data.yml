@@ -2151,6 +2151,51 @@ rules:
         -
           name: normal
           abbr: nm
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: 1px
+          abbr: '1'
+        -
+          name: 2px
+          abbr: '2'
+        -
+          name: 3px
+          abbr: '3'
+        -
+          name: 4px
+          abbr: '4'
+        -
+          name: 5px
+          abbr: '5'
+        -
+          name: 6px
+          abbr: '6'
+        -
+          name: 0.01em
+          abbr: 0_01e
+        -
+          name: 0.1em
+          abbr: 0_1e
+        -
+          name: 0.2em
+          abbr: 0_2e
+        -
+          name: 0.3em
+          abbr: 0_3e
+        -
+          name: -0.01em
+          abbr: -0_01e
+        -
+          name: -0.1em
+          abbr: -0_1e
+        -
+          name: -0.2em
+          abbr: -0_2e
+        -
+          name: -0.3em
+          abbr: -0_3e
     -
       name: font-weight
       abbr: fw
