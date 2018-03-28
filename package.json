@@ -19,6 +19,7 @@
     "watch": "watch 'npm run test' src/ test/ --wait 10 -d -u",
     "test": "npm run compile:json && mocha",
     "test:ci": "npm run build && mocha",
+    "bump": "gulp bump-version-number -v",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1 && git add CHANGELOG.md"
   },
   "author": "ruedap",
