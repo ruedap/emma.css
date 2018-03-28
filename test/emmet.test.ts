@@ -77,7 +77,15 @@ describe("emma-data.json", () => {
             "ord6",
             "ord9999",
             "ord-1",
-            "fx1-0-0"
+            "fx1-0-0",
+            "lts0_01e",
+            "lts0_1e",
+            "lts0_2e",
+            "lts0_3e",
+            "lts-0_01e",
+            "lts-0_1e",
+            "lts-0_2e",
+            "lts-0_3e"
           ];
           if (_.includes(invalidEmmetAbbrList, abbr)) {
             return;

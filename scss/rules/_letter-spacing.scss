@@ -1,3 +1,63 @@
 .#{$emma-prefix}lts-nm {
   letter-spacing: normal #{emma-important($emma-important)};
 }
+
+.#{$emma-prefix}lts0 {
+  letter-spacing: 0 #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lts1 {
+  letter-spacing: 1px #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lts2 {
+  letter-spacing: 2px #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lts3 {
+  letter-spacing: 3px #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lts4 {
+  letter-spacing: 4px #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lts5 {
+  letter-spacing: 5px #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lts6 {
+  letter-spacing: 6px #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lts0_01e {
+  letter-spacing: 0.01em #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lts0_1e {
+  letter-spacing: 0.1em #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lts0_2e {
+  letter-spacing: 0.2em #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lts0_3e {
+  letter-spacing: 0.3em #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lts-0_01e {
+  letter-spacing: -0.01em #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lts-0_1e {
+  letter-spacing: -0.1em #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lts-0_2e {
+  letter-spacing: -0.2em #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}lts-0_3e {
+  letter-spacing: -0.3em #{emma-important($emma-important)};
+}
