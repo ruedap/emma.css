@@ -1,3 +1,13 @@
+<a name="0.13.0"></a>
+# [0.13.0](https://github.com/ruedap/emma.css/compare/v0.12.0...v0.13.0) (2018-03-28)
+
+
+### Features
+
+* Improve snippet: letter-spacing ([9f30b4c](https://github.com/ruedap/emma.css/commit/9f30b4c))
+
+
+
 <a name="0.12.0"></a>
 # [0.12.0](https://github.com/ruedap/emma.css/compare/0.11.0...0.12.0) (2018-03-27)
 
