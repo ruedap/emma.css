@@ -1,0 +1,7 @@
+.#{$emma-prefix}trsp-a {
+  transition-property: all #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}trsp-n {
+  transition-property: none #{emma-important($emma-important)};
+}

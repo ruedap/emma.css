@@ -1,0 +1,19 @@
+.#{$emma-prefix}trstf-e {
+  transition-timing-function: ease #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}trstf-ei {
+  transition-timing-function: ease-in #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}trstf-eo {
+  transition-timing-function: ease-out #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}trstf-eio {
+  transition-timing-function: ease-in-out #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}trstf-l {
+  transition-timing-function: linear #{emma-important($emma-important)};
+}

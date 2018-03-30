@@ -10,23 +10,25 @@ gulp.task("remove-empty-lines", () => {
 });
 
 gulp.task("bump-version-number", () => {
-  const ymlPath = "./src/emma-data.yml";
-  const bowerPath = "./bower.json";
-  const doc = yaml.safeLoad(fs.readFileSync(ymlPath, "utf8"));
+  const emmaDataFile = "./src/emma-data.yml";
+  const bowerFile = "./bower.json";
+  const pkg = JSON.parse(fs.readFileSync("./package.json", "utf8"));
+  const emmaData = yaml.safeLoad(fs.readFileSync(emmaDataFile, "utf8"));
   const argv = minimist(process.argv.slice(2));
 
-  if (argv.v === true) {
+  if (argv.v === true || argv.v === undefined) {
     throw new Error("Invalid arguments");
   }
 
   gulp
-    .src(ymlPath)
-    .pipe(replace(`ver: '${doc.ver}'`, `ver: '${argv.v}'`))
+    .src(emmaDataFile)
+    .pipe(replace(`ver: '${pkg.version}'`, `ver: '${argv.v}'`))
     .pipe(gulp.dest("./src"));
+
   gulp
-    .src(bowerPath)
-    .pipe(replace(`"version": "${doc.ver}"`, `"version": "${argv.v}"`))
+    .src(bowerFile)
+    .pipe(replace(`"version": "${pkg.version}"`, `"version": "${argv.v}"`))
     .pipe(gulp.dest("./"));
 
-  console.log(`Bumped version number: ${doc.ver} -> ${argv.v}`);
+  console.log(`Bumped version number: ${pkg.version} -> ${argv.v}`);
 });
