@@ -42,11 +42,12 @@
 .d-tbc { display: table-cell !important; }
 .d-li { display: list-item !important; }
 .d-ih { display: inherit !important; }
+.fx-a { flex: auto !important; }
+.fx-n { flex: none !important; }
 .fx0-1-a { flex: 0 1 auto !important; }
 .fx1-0-a { flex: 1 0 auto !important; }
 .fx1-1-a { flex: 1 1 auto !important; }
 .fx0-0-a { flex: 0 0 auto !important; }
-.fx-n { flex: none !important; }
 .fx1-0-0 { flex: 1 0 0% !important; }
 .fx0-0-100p { flex: 0 0 100% !important; }
 .fxb-a { flex-basis: auto !important; }
