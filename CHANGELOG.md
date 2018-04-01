@@ -25,7 +25,7 @@
 
 ### BREAKING CHANGES
 
-* The directory name of the SCSS files has changed from `sass /` to `scss /`.
+* The directory name of the SCSS files has changed from `sass/` to `scss/`.
 
 
 
