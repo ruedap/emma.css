@@ -1,3 +1,11 @@
+.#{$emma-prefix}fx-a {
+  flex: auto #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fx-n {
+  flex: none #{emma-important($emma-important)};
+}
+
 .#{$emma-prefix}fx0-1-a {
   flex: 0 1 auto #{emma-important($emma-important)};
 }
@@ -12,10 +20,6 @@
 
 .#{$emma-prefix}fx0-0-a {
   flex: 0 0 auto #{emma-important($emma-important)};
-}
-
-.#{$emma-prefix}fx-n {
-  flex: none #{emma-important($emma-important)};
 }
 
 .#{$emma-prefix}fx1-0-0 {

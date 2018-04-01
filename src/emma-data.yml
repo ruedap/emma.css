@@ -342,6 +342,12 @@ rules:
       group: display
       values:
         -
+          name: auto
+          abbr: a
+        -
+          name: none
+          abbr: n
+        -
           name: '0 1 auto'
           abbr: '0-1-a'
         -
@@ -353,9 +359,6 @@ rules:
         -
           name: '0 0 auto'
           abbr: '0-0-a'
-        -
-          name: none
-          abbr: n
         -
           name: '1 0 0%' # for flexbugs #4
           abbr: '1-0-0'
