@@ -20,7 +20,8 @@
     "test": "npm run compile:json && mocha",
     "test:ci": "npm run build && mocha",
     "bump": "gulp bump-version-number -v",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1 && git add CHANGELOG.md"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1",
+    "version": "npm run changelog && git add CHANGELOG.md"
   },
   "author": "ruedap",
   "license": "MIT",
