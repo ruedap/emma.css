@@ -9,7 +9,7 @@
 
 
 <a name="0.12.0"></a>
-# [0.12.0](https://github.com/ruedap/emma.css/compare/0.11.0...0.12.0) (2018-03-27)
+# [0.12.0](https://github.com/ruedap/emma.css/compare/0.11.0...v0.12.0) (2018-03-27)
 
 
 ### Code Refactoring
