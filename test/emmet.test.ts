@@ -85,7 +85,25 @@ describe("emma-data.json", () => {
             "lts-0_01e",
             "lts-0_1e",
             "lts-0_2e",
-            "lts-0_3e"
+            "lts-0_3e",
+            "trsdl0_1s",
+            "trsdl0_2s",
+            "trsdl0_3s",
+            "trsdl0_4s",
+            "trsdl0_5s",
+            "trsdl0_6s",
+            "trsdl0_7s",
+            "trsdl0_8s",
+            "trsdl0_9s",
+            "trsdr0_1s",
+            "trsdr0_2s",
+            "trsdr0_3s",
+            "trsdr0_4s",
+            "trsdr0_5s",
+            "trsdr0_6s",
+            "trsdr0_7s",
+            "trsdr0_8s",
+            "trsdr0_9s"
           ];
           if (_.includes(invalidEmmetAbbrList, abbr)) {
             return;

@@ -2844,6 +2844,143 @@ rules:
           name: '1'
           abbr: '1'
     -
+      name: transition-delay
+      abbr: trsdl
+      group: other
+      values:
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: '0.1s'
+          abbr: '0_1s'
+        -
+          name: '0.2s'
+          abbr: '0_2s'
+        -
+          name: '0.3s'
+          abbr: '0_3s'
+        -
+          name: '0.4s'
+          abbr: '0_4s'
+        -
+          name: '0.5s'
+          abbr: '0_5s'
+        -
+          name: '0.6s'
+          abbr: '0_6s'
+        -
+          name: '0.7s'
+          abbr: '0_7s'
+        -
+          name: '0.8s'
+          abbr: '0_8s'
+        -
+          name: '0.9s'
+          abbr: '0_9s'
+        -
+          name: 1s
+          abbr: 1s
+        -
+          name: 2s
+          abbr: 2s
+        -
+          name: 3s
+          abbr: 3s
+        -
+          name: 4s
+          abbr: 4s
+        -
+          name: 5s
+          abbr: 5s
+        -
+          name: 6s
+          abbr: 6s
+    -
+      name: transition-timing-function
+      abbr: trstf
+      group: other
+      values:
+        -
+          name: ease
+          abbr: e
+        -
+          name: ease-in
+          abbr: ei
+        -
+          name: ease-out
+          abbr: eo
+        -
+          name: ease-in-out
+          abbr: eio
+        -
+          name: linear
+          abbr: l
+    -
+      name: transition-duration
+      abbr: trsdr
+      group: other
+      values:
+        -
+          name: '0'
+          abbr: '0'
+        -
+          name: '0.1s'
+          abbr: '0_1s'
+        -
+          name: '0.2s'
+          abbr: '0_2s'
+        -
+          name: '0.3s'
+          abbr: '0_3s'
+        -
+          name: '0.4s'
+          abbr: '0_4s'
+        -
+          name: '0.5s'
+          abbr: '0_5s'
+        -
+          name: '0.6s'
+          abbr: '0_6s'
+        -
+          name: '0.7s'
+          abbr: '0_7s'
+        -
+          name: '0.8s'
+          abbr: '0_8s'
+        -
+          name: '0.9s'
+          abbr: '0_9s'
+        -
+          name: 1s
+          abbr: 1s
+        -
+          name: 2s
+          abbr: 2s
+        -
+          name: 3s
+          abbr: 3s
+        -
+          name: 4s
+          abbr: 4s
+        -
+          name: 5s
+          abbr: 5s
+        -
+          name: 6s
+          abbr: 6s
+    -
+      name: transition-property
+      abbr: trsp
+      group: other
+      values:
+        -
+          name: all
+          abbr: a
+        -
+          name: none
+          abbr: n
+    -
       name: transform
       abbr: trf
       group: other
