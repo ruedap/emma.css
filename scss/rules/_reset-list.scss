@@ -1,5 +1,7 @@
 // Reset list
 .#{$emma-prefix}reli {
-  list-style: none #{emma-important($emma-important)};
+  list-style-type: none #{emma-important($emma-important)};
   padding-left: 0 #{emma-important($emma-important)};
+  margin-top: 0 #{emma-important($emma-important)};
+  margin-bottom: 0 #{emma-important($emma-important)};
 }

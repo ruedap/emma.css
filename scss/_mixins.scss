@@ -20,8 +20,10 @@
 
 // Reset list
 @mixin emma-reli($important: $emma-important) {
-  list-style: none #{emma-important($important)};
+  list-style-type: none #{emma-important($important)};
   padding-left: 0 #{emma-important($important)};
+  margin-top: 0 #{emma-important($important)};
+  margin-bottom: 0 #{emma-important($important)};
 }
 
 // Absolute center

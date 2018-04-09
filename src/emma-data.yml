@@ -3108,10 +3108,16 @@ rules:
       group: text
       decls:
         -
-          prop: list-style
+          prop: list-style-type
           value: none
         -
           prop: padding-left
+          value: '0'
+        -
+          prop: margin-top
+          value: '0'
+        -
+          prop: margin-bottom
           value: '0'
     -
       name: absolute-center
