@@ -154,6 +154,7 @@
 .v-c { visibility: collapse !important; }
 .tbl-a { table-layout: auto !important; }
 .tbl-f { table-layout: fixed !important; }
+.cxcy { display: flex !important; align-items: center !important; justify-content: center !important; }
 .fl-n { float: none !important; }
 .fl-l { float: left !important; }
 .fl-r { float: right !important; }

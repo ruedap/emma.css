@@ -3162,6 +3162,21 @@ rules:
           prop: margin-bottom
           value: 1em
     -
+      name: center-x-center-y
+      abbr: cxcy
+      desc: 'Center X & Y'
+      group: display
+      decls:
+        -
+          prop: display
+          value: flex
+        -
+          prop: align-items
+          value: center
+        -
+          prop: justify-content
+          value: center
+    -
       name: margin-x0
       abbr: mx0
       group: margin
