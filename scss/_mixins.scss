@@ -44,16 +44,6 @@
   margin-bottom: 1em #{emma-important($important)};
 }
 
-// Absolute center
-@mixin emma-abce($important: $emma-important) {
-  bottom: 0 #{emma-important($important)};
-  left: 0 #{emma-important($important)};
-  margin: auto #{emma-important($important)};
-  position: auto #{emma-important($important)};
-  right: 0 #{emma-important($important)};
-  top: 0 #{emma-important($important)};
-}
-
 @mixin emma-mx0($important: $emma-important) {
   margin-left: 0 #{emma-important($important)};
   margin-right: 0 #{emma-important($important)};

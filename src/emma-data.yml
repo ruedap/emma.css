@@ -3162,30 +3162,6 @@ rules:
           prop: margin-bottom
           value: 1em
     -
-      name: absolute-center
-      abbr: abce
-      desc: 'Absolute center'
-      group: display
-      decls:
-        -
-          prop: bottom
-          value: '0'
-        -
-          prop: left
-          value: '0'
-        -
-          prop: margin
-          value: auto
-        -
-          prop: position
-          value: auto
-        -
-          prop: right
-          value: '0'
-        -
-          prop: top
-          value: '0'
-    -
       name: margin-x0
       abbr: mx0
       group: margin
