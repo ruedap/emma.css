@@ -1,0 +1,6 @@
+// Center X & Y
+.#{$emma-prefix}cxcy {
+  display: flex #{emma-important($emma-important)};
+  align-items: center #{emma-important($emma-important)};
+  justify-content: center #{emma-important($emma-important)};
+}

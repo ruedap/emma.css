@@ -28,7 +28,7 @@
 @import "rules/overflow-y";
 @import "rules/visibility";
 @import "rules/table-layout";
-@import "rules/absolute-center";
+@import "rules/center-x-center-y";
 
 // float
 @import "rules/float";
@@ -115,6 +115,8 @@
 @import "rules/text-truncation";
 @import "rules/text-hiding";
 @import "rules/reset-list";
+@import "rules/default-ol";
+@import "rules/default-ul";
 @import "rules/font-smoothing-antialiased";
 
 // other

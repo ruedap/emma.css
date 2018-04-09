@@ -154,7 +154,7 @@
 .v-c { visibility: collapse !important; }
 .tbl-a { table-layout: auto !important; }
 .tbl-f { table-layout: fixed !important; }
-.abce { bottom: 0 !important; left: 0 !important; margin: auto !important; position: auto !important; right: 0 !important; top: 0 !important; }
+.cxcy { display: flex !important; align-items: center !important; justify-content: center !important; }
 .fl-n { float: none !important; }
 .fl-l { float: left !important; }
 .fl-r { float: right !important; }
@@ -575,7 +575,9 @@
 .op1 { opacity: 1 !important; }
 .tetr { overflow: hidden !important; text-overflow: ellipsis !important; white-space: nowrap !important; word-wrap: normal !important; }
 .tehi { overflow: hidden !important; text-indent: 200% !important; white-space: nowrap !important; }
-.reli { list-style: none !important; padding-left: 0 !important; }
+.reli { list-style-type: none !important; padding-left: 0 !important; margin-top: 0 !important; margin-bottom: 0 !important; }
+.deol { list-style-type: decimal !important; padding-left: 40px !important; padding-left: 40px !important; margin-top: 1em !important; margin-bottom: 1em !important; }
+.deul { list-style-type: disc !important; padding-left: 40px !important; padding-left: 40px !important; margin-top: 1em !important; margin-bottom: 1em !important; }
 .fsm-a { -webkit-font-smoothing: antialiased !important; -moz-osx-font-smoothing: grayscale !important; }
 .cur-a { cursor: auto !important; }
 .cur-d { cursor: default !important; }

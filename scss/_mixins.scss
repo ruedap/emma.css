@@ -20,18 +20,35 @@
 
 // Reset list
 @mixin emma-reli($important: $emma-important) {
-  list-style: none #{emma-important($important)};
+  list-style-type: none #{emma-important($important)};
   padding-left: 0 #{emma-important($important)};
+  margin-top: 0 #{emma-important($important)};
+  margin-bottom: 0 #{emma-important($important)};
 }
 
-// Absolute center
-@mixin emma-abce($important: $emma-important) {
-  bottom: 0 #{emma-important($important)};
-  left: 0 #{emma-important($important)};
-  margin: auto #{emma-important($important)};
-  position: auto #{emma-important($important)};
-  right: 0 #{emma-important($important)};
-  top: 0 #{emma-important($important)};
+// Default ol
+@mixin emma-deol($important: $emma-important) {
+  list-style-type: decimal #{emma-important($important)};
+  padding-left: 40px #{emma-important($important)};
+  padding-left: 40px #{emma-important($important)};
+  margin-top: 1em #{emma-important($important)};
+  margin-bottom: 1em #{emma-important($important)};
+}
+
+// Default ul
+@mixin emma-deul($important: $emma-important) {
+  list-style-type: disc #{emma-important($important)};
+  padding-left: 40px #{emma-important($important)};
+  padding-left: 40px #{emma-important($important)};
+  margin-top: 1em #{emma-important($important)};
+  margin-bottom: 1em #{emma-important($important)};
+}
+
+// Center X & Y
+@mixin emma-cxcy($important: $emma-important) {
+  display: flex #{emma-important($important)};
+  align-items: center #{emma-important($important)};
+  justify-content: center #{emma-important($important)};
 }
 
 @mixin emma-mx0($important: $emma-important) {

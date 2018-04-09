@@ -3108,35 +3108,74 @@ rules:
       group: text
       decls:
         -
-          prop: list-style
+          prop: list-style-type
           value: none
         -
           prop: padding-left
           value: '0'
+        -
+          prop: margin-top
+          value: '0'
+        -
+          prop: margin-bottom
+          value: '0'
     -
-      name: absolute-center
-      abbr: abce
-      desc: 'Absolute center'
+      name: default-ol
+      abbr: deol
+      desc: 'Default ol'
+      group: text
+      decls:
+        -
+          prop: list-style-type
+          value: decimal
+        -
+          prop: padding-left
+          value: 40px
+        -
+          prop: padding-left
+          value: 40px
+        -
+          prop: margin-top
+          value: 1em
+        -
+          prop: margin-bottom
+          value: 1em
+    -
+      name: default-ul
+      abbr: deul
+      desc: 'Default ul'
+      group: text
+      decls:
+        -
+          prop: list-style-type
+          value: disc
+        -
+          prop: padding-left
+          value: 40px
+        -
+          prop: padding-left
+          value: 40px
+        -
+          prop: margin-top
+          value: 1em
+        -
+          prop: margin-bottom
+          value: 1em
+    -
+      name: center-x-center-y
+      abbr: cxcy
+      desc: 'Center X & Y'
       group: display
       decls:
         -
-          prop: bottom
-          value: '0'
+          prop: display
+          value: flex
         -
-          prop: left
-          value: '0'
+          prop: align-items
+          value: center
         -
-          prop: margin
-          value: auto
-        -
-          prop: position
-          value: auto
-        -
-          prop: right
-          value: '0'
-        -
-          prop: top
-          value: '0'
+          prop: justify-content
+          value: center
     -
       name: margin-x0
       abbr: mx0
