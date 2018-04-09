@@ -3120,6 +3120,48 @@ rules:
           prop: margin-bottom
           value: '0'
     -
+      name: default-ol
+      abbr: deol
+      desc: 'Default ol'
+      group: text
+      decls:
+        -
+          prop: list-style-type
+          value: decimal
+        -
+          prop: padding-left
+          value: 40px
+        -
+          prop: padding-left
+          value: 40px
+        -
+          prop: margin-top
+          value: 1em
+        -
+          prop: margin-bottom
+          value: 1em
+    -
+      name: default-ul
+      abbr: deul
+      desc: 'Default ul'
+      group: text
+      decls:
+        -
+          prop: list-style-type
+          value: disc
+        -
+          prop: padding-left
+          value: 40px
+        -
+          prop: padding-left
+          value: 40px
+        -
+          prop: margin-top
+          value: 1em
+        -
+          prop: margin-bottom
+          value: 1em
+    -
       name: absolute-center
       abbr: abce
       desc: 'Absolute center'

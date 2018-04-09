@@ -26,6 +26,24 @@
   margin-bottom: 0 #{emma-important($important)};
 }
 
+// Default ol
+@mixin emma-deol($important: $emma-important) {
+  list-style-type: decimal #{emma-important($important)};
+  padding-left: 40px #{emma-important($important)};
+  padding-left: 40px #{emma-important($important)};
+  margin-top: 1em #{emma-important($important)};
+  margin-bottom: 1em #{emma-important($important)};
+}
+
+// Default ul
+@mixin emma-deul($important: $emma-important) {
+  list-style-type: disc #{emma-important($important)};
+  padding-left: 40px #{emma-important($important)};
+  padding-left: 40px #{emma-important($important)};
+  margin-top: 1em #{emma-important($important)};
+  margin-bottom: 1em #{emma-important($important)};
+}
+
 // Absolute center
 @mixin emma-abce($important: $emma-important) {
   bottom: 0 #{emma-important($important)};
