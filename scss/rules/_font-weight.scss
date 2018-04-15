@@ -1,9 +1,9 @@
 .#{$emma-prefix}fw-nm {
-  font-weight: normal #{emma-important($emma-important)};
+  font-weight: $emma-font-weight-normal #{emma-important($emma-important)};
 }
 
 .#{$emma-prefix}fw-b {
-  font-weight: bold #{emma-important($emma-important)};
+  font-weight: $emma-font-weight-bold #{emma-important($emma-important)};
 }
 
 .#{$emma-prefix}fw-br {

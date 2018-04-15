@@ -432,8 +432,8 @@
 .fs-nm { font-style: normal !important; }
 .fs-i { font-style: italic !important; }
 .fs-o { font-style: oblique !important; }
-.fw-nm { font-weight: normal !important; }
-.fw-b { font-weight: bold !important; }
+.fw-nm { font-weight: 400 !important; }
+.fw-b { font-weight: 700 !important; }
 .fw-br { font-weight: bolder !important; }
 .fw-lr { font-weight: lighter !important; }
 .fw100 { font-weight: 100 !important; }
