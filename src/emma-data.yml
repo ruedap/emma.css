@@ -40,6 +40,15 @@ vars:
     name: font-size-h6
     value: 1.0rem
   -
+    name: font-weight-light
+    value: '300'
+  -
+    name: font-weight-normal
+    value: '400'
+  -
+    name: font-weight-bold
+    value: '700'
+  -
     name: line-height-xs
     value: '1.25'
   -
@@ -1588,11 +1597,14 @@ rules:
       group: text
       values:
         -
-          name: normal
+          name: $font-weight-normal
           abbr: nm
         -
-          name: bold
+          name: $font-weight-bold
           abbr: b
+        -
+          name: $font-weight-light
+          abbr: l
         -
           name: bolder
           abbr: br
