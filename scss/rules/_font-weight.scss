@@ -6,6 +6,10 @@
   font-weight: $emma-font-weight-bold #{emma-important($emma-important)};
 }
 
+.#{$emma-prefix}fw-l {
+  font-weight: $emma-font-weight-light #{emma-important($emma-important)};
+}
+
 .#{$emma-prefix}fw-br {
   font-weight: bolder #{emma-important($emma-important)};
 }
