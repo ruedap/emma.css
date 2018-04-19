@@ -1,3 +1,29 @@
+<a name="0.14.0"></a>
+# [0.14.0](https://github.com/ruedap/emma.css/compare/v0.13.0...v0.14.0) (2018-04-19)
+
+
+### Bug Fixes
+
+* Remove snippet `abce` ([c98c7c0](https://github.com/ruedap/emma.css/commit/c98c7c0))
+
+
+### Features
+
+* Add snippet `cxcy` ([02f3b89](https://github.com/ruedap/emma.css/commit/02f3b89))
+* Add snippet `fw-l` (font-weight: 300) ([f58fb4c](https://github.com/ruedap/emma.css/commit/f58fb4c))
+* Add snippet `fx-a` ([9b5e1f0](https://github.com/ruedap/emma.css/commit/9b5e1f0))
+* Add snippets `deol`, `deul` ([dedc8e3](https://github.com/ruedap/emma.css/commit/dedc8e3))
+* Add snippets `trsdl`, `trstf`, `trsdr` , `trsp` ([29f77e2](https://github.com/ruedap/emma.css/commit/29f77e2))
+* Improve font-weight values (normal -> 400, bold -> 700) ([92122e5](https://github.com/ruedap/emma.css/commit/92122e5))
+* Improve snippet `reli` ([2867cc2](https://github.com/ruedap/emma.css/commit/2867cc2))
+
+
+### BREAKING CHANGES
+
+* The snippet `abce` has been removed.
+
+
+
 <a name="0.13.0"></a>
 # [0.13.0](https://github.com/ruedap/emma.css/compare/v0.12.0...v0.13.0) (2018-03-28)
 
