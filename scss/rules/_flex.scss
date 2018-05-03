@@ -6,6 +6,22 @@
   flex: none #{emma-important($emma-important)};
 }
 
+.#{$emma-prefix}fx0 {
+  flex: 0 #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fx1 {
+  flex: 1 #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fx2 {
+  flex: 2 #{emma-important($emma-important)};
+}
+
+.#{$emma-prefix}fx3 {
+  flex: 3 #{emma-important($emma-important)};
+}
+
 .#{$emma-prefix}fx0-1-a {
   flex: 0 1 auto #{emma-important($emma-important)};
 }
