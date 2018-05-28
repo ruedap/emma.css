@@ -64,6 +64,33 @@ vars:
     name: font-weight-bold
     value: '700'
   -
+    name: font-weight-100
+    value: '100'
+  -
+    name: font-weight-200
+    value: '200'
+  -
+    name: font-weight-300
+    value: '300'
+  -
+    name: font-weight-400
+    value: '400'
+  -
+    name: font-weight-500
+    value: '500'
+  -
+    name: font-weight-600
+    value: '600'
+  -
+    name: font-weight-700
+    value: '700'
+  -
+    name: font-weight-800
+    value: '800'
+  -
+    name: font-weight-900
+    value: '900'
+  -
     name: line-height-xs
     value: '1.25'
   -
@@ -1624,31 +1651,31 @@ rules:
           name: lighter
           abbr: lr
         -
-          name: '100'
+          name: $font-weight-100
           abbr: '100'
         -
-          name: '200'
+          name: $font-weight-200
           abbr: '200'
         -
-          name: '300'
+          name: $font-weight-300
           abbr: '300'
         -
-          name: '400'
+          name: $font-weight-400
           abbr: '400'
         -
-          name: '500'
+          name: $font-weight-500
           abbr: '500'
         -
-          name: '600'
+          name: $font-weight-600
           abbr: '600'
         -
-          name: '700'
+          name: $font-weight-700
           abbr: '700'
         -
-          name: '800'
+          name: $font-weight-800
           abbr: '800'
         -
-          name: '900'
+          name: $font-weight-900
           abbr: '900'
     -
       name: font-variant
