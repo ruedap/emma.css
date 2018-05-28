@@ -1,3 +1,21 @@
+<a name="0.15.0"></a>
+# [0.15.0](https://github.com/ruedap/emma.css/compare/v0.14.0...v0.15.0) (2018-05-28)
+
+
+### Features
+
+* Add snippets `fx0`, `fx1`, `fx2`, `fx3` ([2c7c200](https://github.com/ruedap/emma.css/commit/2c7c200))
+* Declare variables of font-family ([6e97b9f](https://github.com/ruedap/emma.css/commit/6e97b9f))
+* Declare variables of font-weight ([370db6e](https://github.com/ruedap/emma.css/commit/370db6e))
+* Remove snippets `ff-a`, `ff-t`, `ff-v`, `ff-l`, `ff-ja` ([f3a0cdc](https://github.com/ruedap/emma.css/commit/f3a0cdc))
+
+
+### BREAKING CHANGES
+
+* Several snippets of the font-family have been deleted.
+
+
+
 <a name="0.14.0"></a>
 # [0.14.0](https://github.com/ruedap/emma.css/compare/v0.13.0...v0.14.0) (2018-04-19)
 
