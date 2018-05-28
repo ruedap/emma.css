@@ -1,43 +1,19 @@
 .#{$emma-prefix}ff-s {
-  font-family: serif #{emma-important($emma-important)};
+  font-family: $emma-font-family-serif #{emma-important($emma-important)};
 }
 
 .#{$emma-prefix}ff-ss {
-  font-family: sans-serif #{emma-important($emma-important)};
+  font-family: $emma-font-family-sans #{emma-important($emma-important)};
 }
 
 .#{$emma-prefix}ff-c {
-  font-family: cursive #{emma-important($emma-important)};
+  font-family: $emma-font-family-cursive #{emma-important($emma-important)};
 }
 
 .#{$emma-prefix}ff-f {
-  font-family: fantasy #{emma-important($emma-important)};
+  font-family: $emma-font-family-fantasy #{emma-important($emma-important)};
 }
 
 .#{$emma-prefix}ff-m {
-  font-family: monospace #{emma-important($emma-important)};
-}
-
-.#{$emma-prefix}ff-a {
-  font-family: Arial, "Helvetica Neue", Helvetica,
-    sans-serif #{emma-important($emma-important)};
-}
-
-.#{$emma-prefix}ff-t {
-  font-family: "Times New Roman", Times, Baskerville, Georgia,
-    serif #{emma-important($emma-important)};
-}
-
-.#{$emma-prefix}ff-v {
-  font-family: Verdana, Geneva, sans-serif #{emma-important($emma-important)};
-}
-
-.#{$emma-prefix}ff-l {
-  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial,
-    "Helvetica Neue", Helvetica, sans-serif #{emma-important($emma-important)};
-}
-
-.#{$emma-prefix}ff-ja {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Kaku Gothic ProN",
-    "Yu Gothic", YuGothic, Meiryo, sans-serif #{emma-important($emma-important)};
+  font-family: $emma-font-family-mono #{emma-important($emma-important)};
 }

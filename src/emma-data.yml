@@ -7,6 +7,21 @@ vars:
     name: important
     value: 'true'
   -
+    name: font-family-serif
+    value: serif
+  -
+    name: font-family-sans
+    value: sans-serif
+  -
+    name: font-family-cursive
+    value: cursive
+  -
+    name: font-family-fantasy
+    value: fantasy
+  -
+    name: font-family-mono
+    value: monospace
+  -
     name: font-size-xs
     value: 0.75rem
   -
@@ -48,6 +63,33 @@ vars:
   -
     name: font-weight-bold
     value: '700'
+  -
+    name: font-weight-100
+    value: '100'
+  -
+    name: font-weight-200
+    value: '200'
+  -
+    name: font-weight-300
+    value: '300'
+  -
+    name: font-weight-400
+    value: '400'
+  -
+    name: font-weight-500
+    value: '500'
+  -
+    name: font-weight-600
+    value: '600'
+  -
+    name: font-weight-700
+    value: '700'
+  -
+    name: font-weight-800
+    value: '800'
+  -
+    name: font-weight-900
+    value: '900'
   -
     name: line-height-xs
     value: '1.25'
@@ -1480,35 +1522,20 @@ rules:
       group: text
       values:
         -
-          name: serif
+          name: $font-family-serif
           abbr: s
         -
-          name: sans-serif
+          name: $font-family-sans
           abbr: ss
         -
-          name: cursive
+          name: $font-family-cursive
           abbr: c
         -
-          name: fantasy
+          name: $font-family-fantasy
           abbr: f
         -
-          name: monospace
+          name: $font-family-mono
           abbr: m
-        -
-          name: 'Arial, "Helvetica Neue", Helvetica, sans-serif'
-          abbr: a
-        -
-          name: '"Times New Roman", Times, Baskerville, Georgia, serif'
-          abbr: t
-        -
-          name: 'Verdana, Geneva, sans-serif'
-          abbr: v
-        -
-          name: '"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif'
-          abbr: l
-        -
-          name: '"Helvetica Neue", Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, Meiryo, sans-serif'
-          abbr: ja
     -
       name: font-size
       abbr: fz
@@ -1624,31 +1651,31 @@ rules:
           name: lighter
           abbr: lr
         -
-          name: '100'
+          name: $font-weight-100
           abbr: '100'
         -
-          name: '200'
+          name: $font-weight-200
           abbr: '200'
         -
-          name: '300'
+          name: $font-weight-300
           abbr: '300'
         -
-          name: '400'
+          name: $font-weight-400
           abbr: '400'
         -
-          name: '500'
+          name: $font-weight-500
           abbr: '500'
         -
-          name: '600'
+          name: $font-weight-600
           abbr: '600'
         -
-          name: '700'
+          name: $font-weight-700
           abbr: '700'
         -
-          name: '800'
+          name: $font-weight-800
           abbr: '800'
         -
-          name: '900'
+          name: $font-weight-900
           abbr: '900'
     -
       name: font-variant
