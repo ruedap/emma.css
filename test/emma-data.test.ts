@@ -17,7 +17,7 @@ describe("emma-data.json", () => {
   });
 
   it("is valid length", () => {
-    assert(doc.vars.length === 58);
+    assert(doc.vars.length === 63);
     assert(doc.rules.mixins.length === 34);
     assert(doc.rules.props.length === 112);
     const propValuesLength = _.reduce(

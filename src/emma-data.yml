@@ -7,6 +7,21 @@ vars:
     name: important
     value: 'true'
   -
+    name: font-family-serif
+    value: serif
+  -
+    name: font-family-sans
+    value: sans-serif
+  -
+    name: font-family-cursive
+    value: cursive
+  -
+    name: font-family-fantasy
+    value: fantasy
+  -
+    name: font-family-mono
+    value: monospace
+  -
     name: font-size-xs
     value: 0.75rem
   -
@@ -1480,19 +1495,19 @@ rules:
       group: text
       values:
         -
-          name: serif
+          name: $font-family-serif
           abbr: s
         -
-          name: sans-serif
+          name: $font-family-sans
           abbr: ss
         -
-          name: cursive
+          name: $font-family-cursive
           abbr: c
         -
-          name: fantasy
+          name: $font-family-fantasy
           abbr: f
         -
-          name: monospace
+          name: $font-family-mono
           abbr: m
         -
           name: 'Arial, "Helvetica Neue", Helvetica, sans-serif'
