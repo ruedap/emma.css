@@ -403,11 +403,6 @@
 .ff-c { font-family: cursive !important; }
 .ff-f { font-family: fantasy !important; }
 .ff-m { font-family: monospace !important; }
-.ff-a { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important; }
-.ff-t { font-family: "Times New Roman", Times, Baskerville, Georgia, serif !important; }
-.ff-v { font-family: Verdana, Geneva, sans-serif !important; }
-.ff-l { font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif !important; }
-.ff-ja { font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, Meiryo, sans-serif !important; }
 .fz-xs { font-size: 0.75rem !important; }
 .fz-sm { font-size: 0.875rem !important; }
 .fz-md { font-size: 1rem !important; }
