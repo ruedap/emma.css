@@ -580,7 +580,7 @@ rules:
       values:
         -
           name: nowrap
-          abbr: n
+          abbr: nw
         -
           name: wrap
           abbr: w

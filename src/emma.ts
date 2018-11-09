@@ -111,8 +111,9 @@ export default class Emma {
 
     _.forEach(mixins, m => {
       result += this.generateMixinDesc(m.desc);
-      result += `@mixin ${this
-        .PREFIX_MIXIN}${m.abbr}($important: $emma-important) {\n`;
+      result += `@mixin ${this.PREFIX_MIXIN}${
+        m.abbr
+      }($important: $emma-important) {\n`;
       result += this.generateMixinDecls(m.decls, important);
       result += `}\n\n`;
     });

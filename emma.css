@@ -99,7 +99,7 @@
 .fxd-rr { flex-direction: row-reverse !important; }
 .fxd-c { flex-direction: column !important; }
 .fxd-cr { flex-direction: column-reverse !important; }
-.fxw-n { flex-wrap: nowrap !important; }
+.fxw-nw { flex-wrap: nowrap !important; }
 .fxw-w { flex-wrap: wrap !important; }
 .fxw-wr { flex-wrap: wrap-reverse !important; }
 .fxs0 { flex-shrink: 0 !important; }
