@@ -22,9 +22,9 @@ describe("emma-data.json", () => {
     doc = JSON.parse(fs.readFileSync(emma.EMMA_JSON, "utf8"));
     const registry = new SnippetsRegistry();
     const emmaProps = {};
-    _.each(doc.rules.props, p => {
+    _.each(doc.rules.props, (p) => {
       let values = "";
-      _.each(_.reverse(p.values), v => {
+      _.each(_.reverse(p.values), (v) => {
         values += `${v.name}|`;
       });
       values = _.trimEnd(values, "|");
@@ -42,8 +42,8 @@ describe("emma-data.json", () => {
 
   describe("[rules] [props]", () => {
     it("is valid Emmet abbreviation spec", () => {
-      _.each(doc.rules.props, p => {
-        _.each(p.values, v => {
+      _.each(doc.rules.props, (p) => {
+        _.each(p.values, (v) => {
           // FIXME: variable name
           if (emma.isVar(v.name)) {
             return;
@@ -103,7 +103,7 @@ describe("emma-data.json", () => {
             "trsdr0_6s",
             "trsdr0_7s",
             "trsdr0_8s",
-            "trsdr0_9s"
+            "trsdr0_9s",
           ];
           if (_.includes(invalidEmmetAbbrList, abbr)) {
             return;

@@ -91,7 +91,7 @@ export default class Emma {
   private generateVars(vars: TEmmaDocVar[]): string {
     let result = `// Variables\n`;
 
-    _.forEach(vars, v => {
+    _.forEach(vars, (v) => {
       result += `$${this.PREFIX_VAR}${v.name}: ${v.value} !default;\n`;
     });
 
@@ -109,11 +109,9 @@ export default class Emma {
     const important = "#{emma-important($important)}";
     let result = "";
 
-    _.forEach(mixins, m => {
+    _.forEach(mixins, (m) => {
       result += this.generateMixinDesc(m.desc);
-      result += `@mixin ${this.PREFIX_MIXIN}${
-        m.abbr
-      }($important: $emma-important) {\n`;
+      result += `@mixin ${this.PREFIX_MIXIN}${m.abbr}($important: $emma-important) {\n`;
       result += this.generateMixinDecls(m.decls, important);
       result += `}\n\n`;
     });
@@ -125,7 +123,7 @@ export default class Emma {
     const important = "#{emma-important($emma-important)}";
     let result = "";
 
-    _.forEach(mixins, m => {
+    _.forEach(mixins, (m) => {
       let rulesets = "";
       rulesets += this.generateMixinDesc(m.desc);
       rulesets += `.#{$emma-prefix}${m.abbr} {\n`;
@@ -152,7 +150,7 @@ export default class Emma {
   ): string {
     let result = "";
 
-    _.forEach(decls, d => {
+    _.forEach(decls, (d) => {
       const r_value = this.isVar(d.value)
         ? this.prefixedVar(this.PREFIX_VAR, d.value)
         : d.value;
@@ -182,10 +180,10 @@ export default class Emma {
     const important = "#{emma-important($emma-important)}";
     let result = "";
 
-    _.forEach(props, p => {
+    _.forEach(props, (p) => {
       let rulesets = "";
 
-      _.forEach(p.values, v => {
+      _.forEach(p.values, (v) => {
         const v_name = this.isVar(v.name)
           ? this.prefixedVar(this.PREFIX_VAR, v.name)
           : v.name;
@@ -227,7 +225,7 @@ export default class Emma {
       let imports = "";
       result += `@import "${groupName}";\n`;
 
-      _.forEach(v, p => {
+      _.forEach(v, (p) => {
         const pFileName = _.trimStart(p.name, "-");
         imports += `@import "${this.RULE_FILE}/${pFileName}";\n`;
       });
@@ -247,7 +245,7 @@ export default class Emma {
     _.forEach(groups, (v, groupName) => {
       let imports = "";
 
-      _.forEach(v, p => {
+      _.forEach(v, (p) => {
         const pFileName = _.trimStart(p.name, "-");
         imports += `@import "${this.RULE_FILE}/${pFileName}";\n`;
       });

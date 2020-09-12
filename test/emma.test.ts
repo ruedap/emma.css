@@ -9,23 +9,23 @@ import {
   TEmmaDocProp,
   TEmmaDocMixinDecl,
   TEmmaDocMixin,
-  TEmmaDoc
+  TEmmaDoc,
 } from "../src/emma";
 
 describe("Emma", () => {
   const varsArg: TEmmaDocVar[] = [
     {
       name: "prefix",
-      value: '"u-"'
+      value: '"u-"',
     },
     {
       name: "important",
-      value: "true"
+      value: "true",
     },
     {
       name: "font-size-xs",
-      value: "0.75rem"
-    }
+      value: "0.75rem",
+    },
   ];
   const mixinsArg: TEmmaDocMixin[] = [
     {
@@ -36,9 +36,9 @@ describe("Emma", () => {
       decls: [
         {
           prop: "",
-          value: '&::after { content: ""; display: table; clear: both; }'
-        }
-      ]
+          value: '&::after { content: ""; display: table; clear: both; }',
+        },
+      ],
     },
     {
       name: "margin-x-0",
@@ -47,14 +47,14 @@ describe("Emma", () => {
       decls: [
         {
           prop: "margin-left",
-          value: "0"
+          value: "0",
         },
         {
           prop: "margin-right",
-          value: "0"
-        }
-      ]
-    }
+          value: "0",
+        },
+      ],
+    },
   ];
   const propsArg: TEmmaDocProp[] = [
     {
@@ -64,21 +64,21 @@ describe("Emma", () => {
       values: [
         {
           name: "static",
-          abbr: "s"
+          abbr: "s",
         },
         {
           name: "absolute",
-          abbr: "a"
+          abbr: "a",
         },
         {
           name: "relative",
-          abbr: "r"
+          abbr: "r",
         },
         {
           name: "fixed",
-          abbr: "f"
-        }
-      ]
+          abbr: "f",
+        },
+      ],
     },
     {
       name: "top",
@@ -87,14 +87,14 @@ describe("Emma", () => {
       values: [
         {
           name: "auto",
-          abbr: "a"
+          abbr: "a",
         },
         {
           name: "0",
-          abbr: "0"
-        }
-      ]
-    }
+          abbr: "0",
+        },
+      ],
+    },
   ];
   let emma;
 
@@ -154,8 +154,8 @@ describe("Emma", () => {
         const arg1: TEmmaDocMixinDecl[] = [
           {
             prop: "",
-            value: '&::after { content: ""; display: table; clear: both; }'
-          }
+            value: '&::after { content: ""; display: table; clear: both; }',
+          },
         ];
         const arg2 = "";
 
@@ -171,12 +171,12 @@ describe("Emma", () => {
         const arg1: TEmmaDocMixinDecl[] = [
           {
             prop: "margin-left",
-            value: "0"
+            value: "0",
           },
           {
             prop: "margin-right",
-            value: "0"
-          }
+            value: "0",
+          },
         ];
         const arg2 = "#{emma-important($emma-important)}";
 
@@ -314,7 +314,7 @@ describe("Emma", () => {
         () => {
           emma.loadEmmaDoc("invalid_path");
         },
-        error => {
+        (error) => {
           const m = "ENOENT: no such file or directory, open 'invalid_path'";
           assert(error.message === m);
           return true;

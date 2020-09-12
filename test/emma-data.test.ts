@@ -33,12 +33,12 @@ describe("emma-data.json", () => {
 
   it("is unique abbreviations", () => {
     let actual = [];
-    _.each(doc.rules.props, p => {
-      _.each(p.values, v => {
+    _.each(doc.rules.props, (p) => {
+      _.each(p.values, (v) => {
         actual.push(emma.generateAbbr(p.abbr, v.abbr));
       });
     });
-    _.each(doc.rules.mixins, m => {
+    _.each(doc.rules.mixins, (m) => {
       actual.push(m.abbr);
     });
     assert(_.isEqual(actual, _.uniq(actual)));
@@ -71,14 +71,14 @@ describe("emma-data.json", () => {
 
       describe("[values]", () => {
         it("is unique [name]", () => {
-          _.forEach(doc.rules.props, p => {
+          _.forEach(doc.rules.props, (p) => {
             let actual = _.map(p.values, "name");
             assert(_.isEqual(actual, _.uniq(actual)));
           });
         });
 
         it("is unique [abbr]", () => {
-          _.forEach(doc.rules.props, p => {
+          _.forEach(doc.rules.props, (p) => {
             let actual = _.map(p.values, "abbr");
             assert(_.isEqual(actual, _.uniq(actual)));
           });
