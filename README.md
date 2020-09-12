@@ -61,16 +61,10 @@ Emma.css only:
 
 Install or download Emma.css from one of these sources.
 
-**NPM**
+**npm**
 
 ```sh
 npm install emma.css
-```
-
-**Bower**
-
-```sh
-bower install emma.css
 ```
 
 **Rails** ([RubyGems](https://rubygems.org/gems/emma-css-rails))
