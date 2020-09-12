@@ -3,7 +3,7 @@
   "version": "0.15.0",
   "description": "Emma.css { emmet-like utility classes }",
   "scripts": {
-    "build": "npm run clean && npm run compile && npm run test",
+    "build": "npm run clean && npm run compile",
     "clean": "rimraf tmp/ scss/ && mkdirp tmp/",
     "convert:data": "js-yaml src/emma-data.yml > tmp/emma-data.json",
     "convert:schema": "js-yaml src/emma-schema.yml > tmp/emma-schema.json",
@@ -16,8 +16,7 @@
     "compile:scss": "node-sass --output-style compact ./scss/all.scss ./emma.css && npm run format:scss",
     "compile": "npm run compile:json && npm run compile:ts && npm run compile:js && npm run compile:scss",
     "watch": "watch 'npm run test' src/ test/ --wait 10 -d -u",
-    "test": "npm run compile:json && mocha --require espower-typescript/guess test/**/**.ts",
-    "test:ci": "npm run build && mocha --require espower-typescript/guess test/**/**.ts",
+    "test": "mocha --require espower-typescript/guess test/**/**.ts",
     "bump": "gulp bump-version-number -v",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1",
     "version": "npm run changelog && git add CHANGELOG.md"
