@@ -5,7 +5,8 @@ import * as assert from "power-assert";
 import Emma from "../src/emma";
 import * as fs from "fs-extra";
 import * as _ from "lodash";
-import * as semverRegex from "semver-regex";
+
+const semverRegex = require("semver-regex");
 
 describe("emma-data.json", () => {
   let emma;

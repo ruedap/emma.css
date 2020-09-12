@@ -16,8 +16,8 @@
     "compile:scss": "node-sass --output-style compact ./scss/all.scss ./emma.css && npm run format:scss",
     "compile": "npm run compile:json && npm run compile:ts && npm run compile:js && npm run compile:scss",
     "watch": "watch 'npm run test' src/ test/ --wait 10 -d -u",
-    "test": "npm run compile:json && mocha",
-    "test:ci": "npm run build && mocha",
+    "test": "npm run compile:json && mocha --require espower-typescript/guess test/**/**.ts",
+    "test:ci": "npm run build && mocha --require espower-typescript/guess test/**/**.ts",
     "bump": "gulp bump-version-number -v",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1",
     "version": "npm run changelog && git add CHANGELOG.md"
