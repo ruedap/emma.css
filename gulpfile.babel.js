@@ -1,13 +1,8 @@
 import gulp from "gulp";
-import removeEmptyLines from "gulp-remove-empty-lines";
 import replace from "gulp-replace";
 import yaml from "js-yaml";
 import minimist from "minimist";
 import fs from "fs";
-
-gulp.task("remove-empty-lines", () => {
-  gulp.src("./emma.css").pipe(removeEmptyLines()).pipe(gulp.dest("./"));
-});
 
 gulp.task("bump-version-number", () => {
   const emmaDataFile = "./src/emma-data.yml";
