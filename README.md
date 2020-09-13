@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src="http://ruedap.github.io/emma.css/logo-box.svg" style="max-width:100%;"></img>
+<img src="https://github.com/ruedap/emma.css/raw/assets/images/logo-box.svg" style="max-width:100%;" />
 </h1>
 
 <p align="center">Emmet-like utility classes for rapid and easy front-end development.</p>
@@ -61,8 +61,6 @@ Emma.css only:
 
 Install or download Emma.css from one of these sources.
 
-**npm**
-
 ```sh
 npm install emma.css
 ```
@@ -81,9 +79,6 @@ https://github.com/ruedap/emma.css/releases
 
 https://github.com/ruedap/alfred-emma-css-workflow
 
-**CLI** (Golang)
-
-https://github.com/ruedap/go-emma
 
 ## Getting Started
 
