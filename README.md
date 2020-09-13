@@ -17,8 +17,8 @@
 | .d-b      | d-b     | display: block;                                                     |
 | .d-fx     | d-fx    | display: flex;                                                      |
 | .m-a      | m-a     | marign: auto;                                                       |
-| .p0       | p0      | padding: 0;                                                         |
-| ―         | p-5     | padding: -5px;                                                      |
+| .m0       | m0      | margin: 0;                                                         |
+| ―         | m-5     | margin: -5px;                                                      |
 | .w1       | w1      | width: 1px;                                                         |
 | .h100p    | h100p   | height: 100%;                                                       |
 | .mah50vh  | mah50vh | max-height: 50vh;                                                   |
