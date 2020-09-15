@@ -6,8 +6,6 @@ updates:
       interval: "monthly"
       timezone: "Asia/Tokyo"
     open-pull-requests-limit: 20
-    reviewers:
-      - "ruedap"
     labels:
       - "deps"
     versioning-strategy: "increase"
