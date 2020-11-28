@@ -81,7 +81,7 @@
     "postcss": "8.1.10",
     "postcss-map": "0.11.0",
     "power-assert": "1.6.1",
-    "prettier": "2.2.0",
+    "prettier": "2.2.1",
     "rimraf": "3.0.2",
     "semver-regex": "3.1.1",
     "sinon": "9.2.1",
