@@ -78,7 +78,7 @@
     "mkdirp": "1.0.4",
     "mocha": "8.2.1",
     "node-sass": "5.0.0",
-    "postcss": "8.2.2",
+    "postcss": "8.2.3",
     "postcss-map": "0.11.0",
     "power-assert": "1.6.1",
     "prettier": "2.2.1",
