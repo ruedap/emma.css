@@ -59,7 +59,7 @@
     "@types/js-yaml": "4.0.0",
     "@types/lodash": "4.14.169",
     "@types/mocha": "8.2.2",
-    "@types/node": "14.14.44",
+    "@types/node": "14.14.45",
     "@types/power-assert": "1.5.3",
     "@types/sinon": "10.0.0",
     "ajv-cli": "5.0.0",
