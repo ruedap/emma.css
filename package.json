@@ -57,7 +57,7 @@
     "@emmetio/stylesheet-formatters": "0.2.1",
     "@types/fs-extra": "9.0.12",
     "@types/js-yaml": "4.0.0",
-    "@types/lodash": "4.14.172",
+    "@types/lodash": "4.14.173",
     "@types/mocha": "8.2.2",
     "@types/node": "14.14.45",
     "@types/power-assert": "1.5.4",
