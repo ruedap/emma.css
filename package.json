@@ -13,7 +13,7 @@
     "compile:ts": "npm run format:ts && tsc",
     "compile:js": "node tmp/index.js",
     "format:scss": "prettier --write scss/**/*.scss",
-    "compile:scss": "node-sass --output-style compact ./scss/all.scss ./emma.css && npm run format:scss",
+    "compile:scss": "sass --style=expanded --no-source-map ./scss/all.scss ./emma.css && npm run format:scss",
     "compile": "npm run compile:json && npm run compile:ts && npm run compile:js && npm run compile:scss",
     "test": "mocha --require espower-typescript/guess test/**/**.ts"
   },
@@ -69,12 +69,12 @@
     "minimist": "1.2.6",
     "mkdirp": "1.0.4",
     "mocha": "10.0.0",
-    "node-sass": "7.0.3",
     "postcss": "8.4.17",
     "postcss-map": "0.11.0",
     "power-assert": "1.6.1",
     "prettier": "2.7.1",
     "rimraf": "3.0.2",
+    "sass": "^1.55.0",
     "semver-regex": "3.1.4",
     "sinon": "14.0.1",
     "typescript": "4.8.4"
