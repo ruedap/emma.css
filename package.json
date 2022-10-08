@@ -13,7 +13,7 @@
     "compile:ts": "npm run format:ts && tsc",
     "compile:js": "node tmp/index.js",
     "format:scss": "prettier --write scss/**/*.scss",
-    "compile:scss": "node-sass --output-style compact ./scss/all.scss ./emma.css && npm run format:scss",
+    "compile:scss": "sass --style=expanded --no-source-map ./scss/all.scss ./emma.css && npm run format:scss",
     "compile": "npm run compile:json && npm run compile:ts && npm run compile:js && npm run compile:scss",
     "test": "mocha --require espower-typescript/guess test/**/**.ts"
   },
