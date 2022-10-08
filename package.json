@@ -1,6 +1,6 @@
 {
   "name": "emma.css",
-  "version": "0.15.0",
+  "version": "0.15.1",
   "description": "Emma.css { emmet-like utility classes }",
   "scripts": {
     "build": "npm run clean && npm run compile",
