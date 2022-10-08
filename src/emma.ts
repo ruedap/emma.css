@@ -107,7 +107,7 @@ export default class Emma {
 
   private generateMixins(mixins: TEmmaDocMixin[]): string {
     const important = "#{emma-important($important)}";
-    let result = "";
+    let result = `@use "./_vars" as *;\n\n`;
 
     _.forEach(mixins, (m) => {
       result += this.generateMixinDesc(m.desc);
@@ -124,7 +124,7 @@ export default class Emma {
     let result = "";
 
     _.forEach(mixins, (m) => {
-      let rulesets = "";
+      let rulesets = `@use "../_vars" as *;\n`;
       rulesets += this.generateMixinDesc(m.desc);
       rulesets += `.#{$emma-prefix}${m.abbr} {\n`;
       rulesets += this.generateMixinDecls(m.decls, important);
@@ -181,7 +181,7 @@ export default class Emma {
     let result = "";
 
     _.forEach(props, (p) => {
-      let rulesets = "";
+      let rulesets = `@use "../_vars" as *;\n`;
 
       _.forEach(p.values, (v) => {
         const v_name = this.isVar(v.name)
@@ -223,11 +223,11 @@ export default class Emma {
 
     _.forEach(groups, (v, groupName) => {
       let imports = "";
-      result += `@import "${groupName}";\n`;
+      result += `@forward "${groupName}";\n`;
 
       _.forEach(v, (p) => {
         const pFileName = _.trimStart(p.name, "-");
-        imports += `@import "${this.RULE_FILE}/${pFileName}";\n`;
+        imports += `@forward "${this.RULE_FILE}/${pFileName}";\n`;
       });
 
       this.writeFileSync(`_${groupName}`, imports);
@@ -247,7 +247,7 @@ export default class Emma {
 
       _.forEach(v, (p) => {
         const pFileName = _.trimStart(p.name, "-");
-        imports += `@import "${this.RULE_FILE}/${pFileName}";\n`;
+        imports += `@forward "${this.RULE_FILE}/${pFileName}";\n`;
       });
 
       this.appendFileSync(`_${groupName}`, imports);
@@ -258,8 +258,8 @@ export default class Emma {
     let result = "";
 
     result += `/*! Emma.css ${ver} | MIT License | https://git.io/emma */\n\n`;
-    result += `@import "${this.VAR_FILE}";\n`;
-    result += `@import "${this.MIXIN_FILE}";\n`;
+    result += `@forward "${this.VAR_FILE}";\n`;
+    result += `@forward "${this.MIXIN_FILE}";\n`;
 
     const groups: any = _.groupBy(props, "group");
     if (_.isEmpty(groups)) {
