@@ -52,7 +52,7 @@
     "@emmetio/snippets-registry": "0.3.1",
     "@emmetio/stylesheet-formatters": "0.2.1",
     "@types/fs-extra": "9.0.13",
-    "@types/js-yaml": "4.0.5",
+    "@types/js-yaml": "4.0.6",
     "@types/lodash": "4.14.198",
     "@types/mocha": "10.0.0",
     "@types/node": "18.11.18",
