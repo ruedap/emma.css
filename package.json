@@ -57,7 +57,7 @@
     "@types/mocha": "10.0.0",
     "@types/node": "18.11.18",
     "@types/power-assert": "1.5.4",
-    "@types/sinon": "10.0.15",
+    "@types/sinon": "10.0.16",
     "ajv-cli": "5.0.0",
     "babel": "6.23.0",
     "babel-preset-es2015": "6.24.1",
