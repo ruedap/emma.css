@@ -64,7 +64,7 @@
     "babel-register": "6.26.0",
     "espower-typescript": "10.0.1",
     "fs-extra": "11.1.0",
-    "js-yaml": "4.1.0",
+    "js-yaml": "4.1.1",
     "lodash": "4.17.21",
     "minimist": "1.2.8",
     "mkdirp": "1.0.4",
