@@ -48,7 +48,7 @@ export default class Emma {
   readonly RULE_FILE = "rules";
   readonly ROOT_FILE = "all";
   readonly EMMA_JSON = `${this.TEMP_DIR}/emma-data.json`;
-  private emmaDoc: TEmmaDoc;
+  private emmaDoc!: TEmmaDoc;
 
   constructor(prefix_var: string = "emma-", prefix_mixin: string = "emma-") {
     this.PREFIX_VAR = prefix_var;
@@ -110,7 +110,7 @@ export default class Emma {
     let result = "";
 
     _.forEach(mixins, (m) => {
-      result += this.generateMixinDesc(m.desc);
+      result += this.generateMixinDesc(m.desc as string);
       result += `@mixin ${this.PREFIX_MIXIN}${m.abbr}($important: $emma-important) {\n`;
       result += this.generateMixinDecls(m.decls, important);
       result += `}\n\n`;
@@ -125,7 +125,7 @@ export default class Emma {
 
     _.forEach(mixins, (m) => {
       let rulesets = "";
-      rulesets += this.generateMixinDesc(m.desc);
+      rulesets += this.generateMixinDesc(m.desc as string);
       rulesets += `.#{$emma-prefix}${m.abbr} {\n`;
       rulesets += this.generateMixinDecls(m.decls, important);
       rulesets += `}\n\n`;
@@ -146,7 +146,7 @@ export default class Emma {
 
   private generateMixinDecls(
     decls: TEmmaDocMixinDecl[],
-    important: string
+    important: string,
   ): string {
     let result = "";
 
@@ -171,7 +171,7 @@ export default class Emma {
   private prefixedVar(
     prefix: string,
     name: string,
-    sign: string = "$"
+    sign: string = "$",
   ): string {
     return `${sign}${prefix}${_.trimStart(name, sign)}`;
   }
@@ -295,7 +295,7 @@ export default class Emma {
     try {
       doc = JSON.parse(fs.readFileSync(filename, "utf8")) as TEmmaDoc;
     } catch (e) {
-      throw new Error(e.message);
+      throw new Error((e as Error).message);
     }
 
     return doc;

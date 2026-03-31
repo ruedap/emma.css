@@ -1,7 +1,7 @@
 import * as mocha from "mocha";
-import * as sinon from "sinon";
-import * as assert from "power-assert";
-import * as fs from "fs-extra";
+import sinon from "sinon";
+import assert from "power-assert";
+import fs from "fs-extra";
 
 import {
   default as Emma,
@@ -318,7 +318,7 @@ describe("Emma", () => {
           const m = "ENOENT: no such file or directory, open 'invalid_path'";
           assert(error.message === m);
           return true;
-        }
+        },
       );
     });
   });

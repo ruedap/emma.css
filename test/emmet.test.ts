@@ -1,16 +1,16 @@
 import * as mocha from "mocha";
-import * as sinon from "sinon";
-import * as assert from "power-assert";
+import sinon from "sinon";
+import assert from "power-assert";
 
-import * as parse from "@emmetio/css-abbreviation";
-import * as SnippetsRegistry from "@emmetio/snippets-registry";
-import * as Profile from "@emmetio/output-profile";
+import parse from "@emmetio/css-abbreviation";
+import SnippetsRegistry from "@emmetio/snippets-registry";
+import Profile from "@emmetio/output-profile";
 import resolveSnippets from "@emmetio/css-snippets-resolver";
 import stringify from "@emmetio/stylesheet-formatters";
 
 import Emma from "../src/emma";
-import * as fs from "fs-extra";
-import * as _ from "lodash";
+import fs from "fs-extra";
+import _ from "lodash";
 
 describe("emma-data.json", () => {
   let emma;
