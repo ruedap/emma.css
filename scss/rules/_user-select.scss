@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}us-a {
   user-select: auto #{emma-important($emma-important)};
 }

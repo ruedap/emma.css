@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}fxd-r {
   flex-direction: row #{emma-important($emma-important)};
 }

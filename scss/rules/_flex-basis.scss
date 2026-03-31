@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}fxb-a {
   flex-basis: auto #{emma-important($emma-important)};
 }

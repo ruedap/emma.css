@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}list-n {
   list-style-type: none #{emma-important($emma-important)};
 }

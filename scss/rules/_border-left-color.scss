@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}bdlc-t {
   border-left-color: transparent #{emma-important($emma-important)};
 }

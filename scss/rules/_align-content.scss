@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}ac-fs {
   align-content: flex-start #{emma-important($emma-important)};
 }

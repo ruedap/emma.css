@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}rz-n {
   resize: none #{emma-important($emma-important)};
 }

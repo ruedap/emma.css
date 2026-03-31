@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}fl-n {
   float: none #{emma-important($emma-important)};
 }

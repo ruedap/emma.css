@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}d-i {
   display: inline #{emma-important($emma-important)};
 }

@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}lisp-i {
   list-style-position: inside #{emma-important($emma-important)};
 }

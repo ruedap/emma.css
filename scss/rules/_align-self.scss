@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}as-a {
   align-self: auto #{emma-important($emma-important)};
 }

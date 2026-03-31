@@ -1,8 +1,8 @@
-@import "rules/background";
-@import "rules/background-color";
-@import "rules/background-image";
-@import "rules/background-repeat";
-@import "rules/background-attachment";
-@import "rules/background-position";
-@import "rules/background-size";
-@import "rules/box-shadow";
+@use "rules/background";
+@use "rules/background-color";
+@use "rules/background-image";
+@use "rules/background-repeat";
+@use "rules/background-attachment";
+@use "rules/background-position";
+@use "rules/background-size";
+@use "rules/box-shadow";

@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}wob-nm {
   word-break: normal #{emma-important($emma-important)};
 }

@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}fz-xs {
   font-size: $emma-font-size-xs #{emma-important($emma-important)};
 }

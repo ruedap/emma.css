@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}tbl-a {
   table-layout: auto #{emma-important($emma-important)};
 }

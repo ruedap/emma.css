@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}wkfsm-aa {
   -webkit-font-smoothing: antialiased #{emma-important($emma-important)};
 }

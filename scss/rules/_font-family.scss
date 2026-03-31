@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}ff-s {
   font-family: $emma-font-family-serif #{emma-important($emma-important)};
 }

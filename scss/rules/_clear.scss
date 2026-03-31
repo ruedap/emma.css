@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}cl-n {
   clear: none #{emma-important($emma-important)};
 }

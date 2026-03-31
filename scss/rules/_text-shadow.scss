@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}tsh-n {
   text-shadow: none #{emma-important($emma-important)};
 }

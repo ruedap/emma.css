@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}wkovs-a {
   -webkit-overflow-scrolling: auto #{emma-important($emma-important)};
 }

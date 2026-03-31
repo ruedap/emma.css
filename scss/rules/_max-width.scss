@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}maw-n {
   max-width: none #{emma-important($emma-important)};
 }

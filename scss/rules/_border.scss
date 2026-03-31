@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}bd-n {
   border: none #{emma-important($emma-important)};
 }

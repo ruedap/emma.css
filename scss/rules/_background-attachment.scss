@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}bga-f {
   background-attachment: fixed #{emma-important($emma-important)};
 }

@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}lh-nm {
   line-height: normal #{emma-important($emma-important)};
 }

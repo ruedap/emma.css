@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}wow-nm {
   word-wrap: normal #{emma-important($emma-important)};
 }

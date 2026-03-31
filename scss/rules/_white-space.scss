@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}whs-nm {
   white-space: normal #{emma-important($emma-important)};
 }

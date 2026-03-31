@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}ta-l {
   text-align: left #{emma-important($emma-important)};
 }

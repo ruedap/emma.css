@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}px-xl {
   padding-left: $emma-padding-xl #{emma-important($emma-important)};
   padding-right: $emma-padding-xl #{emma-important($emma-important)};

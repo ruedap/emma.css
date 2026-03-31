@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 // Center X & Y
 .#{$emma-prefix}cxcy {
   display: flex #{emma-important($emma-important)};

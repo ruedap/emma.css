@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}z-a {
   z-index: auto #{emma-important($emma-important)};
 }

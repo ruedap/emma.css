@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}wktc-d {
   -webkit-touch-callout: default #{emma-important($emma-important)};
 }

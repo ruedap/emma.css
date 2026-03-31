@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}pos-s {
   position: static #{emma-important($emma-important)};
 }

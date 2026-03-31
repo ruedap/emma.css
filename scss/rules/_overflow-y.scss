@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}ovy-v {
   overflow-y: visible #{emma-important($emma-important)};
 }
