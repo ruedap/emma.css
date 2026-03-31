@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}mr0 {
   margin-right: 0 #{emma-important($emma-important)};
 }

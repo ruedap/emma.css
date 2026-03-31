@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}bgi-n {
   background-image: none #{emma-important($emma-important)};
 }

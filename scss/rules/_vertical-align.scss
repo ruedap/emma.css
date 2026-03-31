@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}va-sup {
   vertical-align: super #{emma-important($emma-important)};
 }

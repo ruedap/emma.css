@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 // Default ol
 .#{$emma-prefix}deol {
   list-style-type: decimal #{emma-important($emma-important)};

@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}ovx-v {
   overflow-x: visible #{emma-important($emma-important)};
 }

@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}miw0 {
   min-width: 0 #{emma-important($emma-important)};
 }

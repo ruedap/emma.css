@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}h-a {
   height: auto #{emma-important($emma-important)};
 }

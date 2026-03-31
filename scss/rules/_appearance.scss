@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}ap-n {
   appearance: none #{emma-important($emma-important)};
 }

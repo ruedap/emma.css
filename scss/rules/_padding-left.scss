@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}pl0 {
   padding-left: 0 #{emma-important($emma-important)};
 }

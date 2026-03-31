@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}t-a {
   top: auto #{emma-important($emma-important)};
 }

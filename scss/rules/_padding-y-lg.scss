@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}py-lg {
   padding-top: $emma-padding-lg #{emma-important($emma-important)};
   padding-bottom: $emma-padding-lg #{emma-important($emma-important)};

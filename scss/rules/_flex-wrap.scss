@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}fxw-nw {
   flex-wrap: nowrap #{emma-important($emma-important)};
 }

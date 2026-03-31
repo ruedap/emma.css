@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}trsdl0 {
   transition-delay: 0 #{emma-important($emma-important)};
 }

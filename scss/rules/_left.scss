@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}l-a {
   left: auto #{emma-important($emma-important)};
 }

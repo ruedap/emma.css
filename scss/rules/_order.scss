@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}ord0 {
   order: 0 #{emma-important($emma-important)};
 }

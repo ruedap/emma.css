@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}fv-nm {
   font-variant: normal #{emma-important($emma-important)};
 }

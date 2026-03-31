@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}trstf-e {
   transition-timing-function: ease #{emma-important($emma-important)};
 }

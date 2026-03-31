@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}bxz-cb {
   box-sizing: content-box #{emma-important($emma-important)};
 }

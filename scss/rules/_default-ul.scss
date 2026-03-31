@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 // Default ul
 .#{$emma-prefix}deul {
   list-style-type: disc #{emma-important($emma-important)};

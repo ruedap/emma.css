@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 // Reset list
 .#{$emma-prefix}reli {
   list-style-type: none #{emma-important($emma-important)};

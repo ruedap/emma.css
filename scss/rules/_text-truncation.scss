@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 // Text truncation (ellipsis)
 .#{$emma-prefix}tetr {
   overflow: hidden #{emma-important($emma-important)};

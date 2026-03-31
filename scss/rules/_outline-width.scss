@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}olw-tn {
   outline-width: thin #{emma-important($emma-important)};
 }

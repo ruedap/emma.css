@@ -2,7 +2,7 @@ name: Tests
 
 env:
   CI: true
-  NODE_VERSION: 16.x
+  NODE_VERSION: 24.x
 
 on:
   - push
@@ -19,26 +19,15 @@ jobs:
     needs: prepare
     steps:
       - name: Clone repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           submodules: true
 
       - name: Set up Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: "${{ env.NODE_VERSION }}"
-
-      - name: Cache node modules
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-node-modules
-        with:
-          # npm cache files are stored in `~/.npm` on Linux/macOS
-          path: ~/.npm
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}
-            ${{ runner.os }}-build-${{ env.cache-name }}-
+          cache: 'npm'
 
       - name: Install node modules
         run: npm ci

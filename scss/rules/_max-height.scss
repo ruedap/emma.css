@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}mah-n {
   max-height: none #{emma-important($emma-important)};
 }

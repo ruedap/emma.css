@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}bgz-a {
   background-size: auto #{emma-important($emma-important)};
 }

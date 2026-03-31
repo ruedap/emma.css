@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}ai-fs {
   align-items: flex-start #{emma-important($emma-important)};
 }

@@ -1,16 +1,21 @@
 import * as mocha from "mocha";
-import * as sinon from "sinon";
-import * as assert from "power-assert";
+import sinon from "sinon";
+import assert from "power-assert";
 
 import Emma from "../src/emma";
-import * as fs from "fs-extra";
-import * as _ from "lodash";
+import fs from "fs-extra";
+import _ from "lodash";
 
-const semverRegex = require("semver-regex");
+let semverRegex: () => RegExp;
 
 describe("emma-data.json", () => {
   let emma;
   let doc;
+
+  before(async () => {
+    const mod = await import("semver-regex");
+    semverRegex = mod.default;
+  });
 
   beforeEach(() => {
     emma = new Emma();
@@ -26,7 +31,7 @@ describe("emma-data.json", () => {
       (result, v) => {
         return result + v.values.length;
       },
-      0
+      0,
     );
     assert(propValuesLength === 777);
   });

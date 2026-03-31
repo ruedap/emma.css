@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}bdrs-xs {
   border-radius: $emma-border-radius-xs #{emma-important($emma-important)};
 }

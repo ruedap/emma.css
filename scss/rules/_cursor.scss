@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}cur-a {
   cursor: auto #{emma-important($emma-important)};
 }

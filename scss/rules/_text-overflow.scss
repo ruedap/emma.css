@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}tov-e {
   text-overflow: ellipsis #{emma-important($emma-important)};
 }

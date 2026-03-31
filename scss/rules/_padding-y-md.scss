@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}py-md {
   padding-top: $emma-padding-md #{emma-important($emma-important)};
   padding-bottom: $emma-padding-md #{emma-important($emma-important)};

@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}te-n {
   text-emphasis: none #{emma-important($emma-important)};
 }

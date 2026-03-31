@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}ols-n {
   outline-style: none #{emma-important($emma-important)};
 }

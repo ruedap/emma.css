@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}w-a {
   width: auto #{emma-important($emma-important)};
 }

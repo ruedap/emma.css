@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}bgp-t {
   background-position: top #{emma-important($emma-important)};
 }

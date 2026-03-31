@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}fsm-a {
   -webkit-font-smoothing: antialiased #{emma-important($emma-important)};
   -moz-osx-font-smoothing: grayscale #{emma-important($emma-important)};

@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}bfv-h {
   backface-visibility: hidden #{emma-important($emma-important)};
 }

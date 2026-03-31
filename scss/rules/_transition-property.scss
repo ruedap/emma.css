@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}trsp-a {
   transition-property: all #{emma-important($emma-important)};
 }

@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}my-a {
   margin-top: auto #{emma-important($emma-important)};
   margin-bottom: auto #{emma-important($emma-important)};

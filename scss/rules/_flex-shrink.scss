@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .#{$emma-prefix}fxs0 {
   flex-shrink: 0 #{emma-important($emma-important)};
 }

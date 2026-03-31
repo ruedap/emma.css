@@ -1,7 +1,7 @@
 import * as mocha from "mocha";
-import * as sinon from "sinon";
-import * as assert from "power-assert";
-import * as fs from "fs-extra";
+import sinon from "sinon";
+import assert from "power-assert";
+import fs from "fs-extra";
 
 import {
   default as Emma,
@@ -123,7 +123,7 @@ describe("Emma", () => {
     it("returns valid string", () => {
       const actual = emma.generateMixins(mixinsArg);
       const expected =
-        '// Clearfix (Contain floats)\n@mixin emma-cf($important: $emma-important) {\n  &::after { content: ""; display: table; clear: both; }\n}\n\n@mixin emma-mx-0($important: $emma-important) {\n  margin-left: 0 #{emma-important($important)};\n  margin-right: 0 #{emma-important($important)};\n}\n\n';
+        '@use "vars" as *;\n\n// Clearfix (Contain floats)\n@mixin emma-cf($important: $emma-important) {\n  &::after { content: ""; display: table; clear: both; }\n}\n\n@mixin emma-mx-0($important: $emma-important) {\n  margin-left: 0 #{emma-important($important)};\n  margin-right: 0 #{emma-important($important)};\n}\n\n';
       assert(actual === expected);
     });
   });
@@ -135,7 +135,7 @@ describe("Emma", () => {
 
       const actual = emma.generateMixinRules(mixinsArg);
       const expected =
-        '// Clearfix (Contain floats)\n.#{$emma-prefix}cf {\n  &::after { content: ""; display: table; clear: both; }\n}\n\n.#{$emma-prefix}mx-0 {\n  margin-left: 0 #{emma-important($emma-important)};\n  margin-right: 0 #{emma-important($emma-important)};\n}\n\n';
+        '@use "../vars" as *;\n\n// Clearfix (Contain floats)\n.#{$emma-prefix}cf {\n  &::after { content: ""; display: table; clear: both; }\n}\n\n@use "../vars" as *;\n\n.#{$emma-prefix}mx-0 {\n  margin-left: 0 #{emma-important($emma-important)};\n  margin-right: 0 #{emma-important($emma-important)};\n}\n\n';
       assert(emmaMock.verify());
       assert(actual === expected);
     });
@@ -213,7 +213,7 @@ describe("Emma", () => {
 
       const actual = emma.generatePropRules(propsArg);
       const expected =
-        ".#{$emma-prefix}pos-s {\n  position: static #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}pos-a {\n  position: absolute #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}pos-r {\n  position: relative #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}pos-f {\n  position: fixed #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}t-a {\n  top: auto #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}t0 {\n  top: 0 #{emma-important($emma-important)};\n}\n\n";
+        '@use "../vars" as *;\n\n.#{$emma-prefix}pos-s {\n  position: static #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}pos-a {\n  position: absolute #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}pos-r {\n  position: relative #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}pos-f {\n  position: fixed #{emma-important($emma-important)};\n}\n\n@use "../vars" as *;\n\n.#{$emma-prefix}t-a {\n  top: auto #{emma-important($emma-important)};\n}\n\n.#{$emma-prefix}t0 {\n  top: 0 #{emma-important($emma-important)};\n}\n\n';
       assert(emmaMock.verify());
       assert(actual === expected);
     });
@@ -249,7 +249,7 @@ describe("Emma", () => {
       emmaMock.expects("writeFileSync").exactly(1);
 
       const actual = emma.generatePropGroupImports(propsArg);
-      const expected = '@import "display";\n';
+      const expected = '@use "display";\n';
       assert(emmaMock.verify());
       assert(actual === expected);
     });
@@ -272,7 +272,7 @@ describe("Emma", () => {
 
       const actual = emma.generateRootFile("0.10.0", propsArg);
       const expected =
-        '/*! Emma.css 0.10.0 | MIT License | https://git.io/emma */\n\n@import "vars";\n@import "mixins";\n\n// display\nundefined';
+        '/*! Emma.css 0.10.0 | MIT License | https://git.io/emma */\n\n@use "vars" as *;\n@use "mixins";\n\n// display\nundefined';
       assert(actual === expected);
     });
   });
@@ -318,7 +318,7 @@ describe("Emma", () => {
           const m = "ENOENT: no such file or directory, open 'invalid_path'";
           assert(error.message === m);
           return true;
-        }
+        },
       );
     });
   });
