@@ -58,7 +58,7 @@
     "@types/js-yaml": "4.0.9",
     "@types/lodash": "4.17.24",
     "@types/mocha": "10.0.10",
-    "@types/node": "25.5.0",
+    "@types/node": "25.5.2",
     "@types/power-assert": "1.5.12",
     "@types/sinon": "21.0.0",
     "ajv-cli": "5.0.0",
