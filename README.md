@@ -56,28 +56,17 @@ Emma.css only:
 </article>
 ```
 
-
 ## Installation
 
 Install or download Emma.css from one of these sources.
 
 ```sh
-npm install emma.css
-```
-
-**Rails** ([RubyGems](https://rubygems.org/gems/emma-css-rails))
-
-```sh
-gem install emma-css-rails
+npm install --ignore-scripts emma.css
 ```
 
 **Download**
 
 https://github.com/ruedap/emma.css/releases
-
-**Alfred**
-
-https://github.com/ruedap/alfred-emma-css-workflow
 
 
 ## Getting Started
