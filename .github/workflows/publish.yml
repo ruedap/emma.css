@@ -1,0 +1,43 @@
+name: Publish to npm
+
+env:
+  CI: true
+  NODE_VERSION: 24.x
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment: release
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "${{ env.NODE_VERSION }}"
+          cache: 'npm'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install node modules
+        run: npm ci
+
+      - name: Build emma.css file
+        run: npm run build
+
+      - name: Run test
+        run: npm t
+
+      - name: Publish to npm
+        run: npm publish --provenance
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
